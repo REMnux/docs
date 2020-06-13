@@ -1,0 +1,22 @@
+---
+description: >-
+  This page is still a work in progress. License terms might be revised before
+  the completion of the closed beta process of the upcoming REMnux release (v7).
+---
+
+# License
+
+The tools that are a part of REMnux are free, but they come with individual licenses. The [listing of these tools](discover-the-tools/details-coming-soon.md) includes pointers to these licenses whenever practical for your convenience. However, it's up to you to make sure that you understand and follow each tool's license restrictions.
+
+The configuration, code, and other contents created for the REMnux toolkit that "glue" the tools together are licensed under [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) unless stated otherwise.
+
+In addition, note that:
+
+{% hint style="warning" %}
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+{% endhint %}
+
+REMnux is a registered trademark of Zeltser Security Corp.
+
+
+
