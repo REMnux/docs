@@ -54,7 +54,7 @@ For "addon" use the command:
 sudo salt-call --local state.sls remnux.addon
 ```
 
-You can supply the parameter `-l debug` to the `sudo-call` command to see verbose debug-level output of the installation.
+You can supply the parameter `-l debug` to the `salt-call` command to see verbose debug-level output of the installation.
 
 {% hint style="info" %}
 If the name of your current user isn't `remnux`, you'll need to specify the following parameter to the `salt-call` command:
