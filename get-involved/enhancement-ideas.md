@@ -39,3 +39,7 @@ dmidecode -s system-product-name | grep VMware
 
 At the moment, the installation of Thug requires compiling the tool's dependencies during install time, which can take 20 minutes. To speed up the process, it would be good to generate a Debian package for Thug.
 
+## BinNavi Needs a Database in PostgreSQL <a id="binnavi-database"></a>
+
+[BinNavi](https://github.com/google/binnavi), installed by [binnavi.sls](https://github.com/REMnux/salt-states/blob/master/remnux/tools/binnavi.sls), requires a PostgreSQL database to operate. The database application itself is already installed on REMnux via [postgresql.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/postgresql.sls). It would be nice to craft a new Salt State file under r[emnux/theme ](https://github.com/REMnux/salt-states/tree/master/remnux/theme)to create a database for BinNavi with default credentials  `remnux`/`malware`.
+
