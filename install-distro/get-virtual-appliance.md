@@ -6,7 +6,7 @@ The fastest and easiest way to get the REMnux distro is to download the REMnux v
 
 The REMnux virtual appliance comes as the industry-standard OVA file, which you can import into your virtualization software. The file is approximately 4.5 GB.
 
-[Download the REMnux OVA file via this Google Drive link.](https://drive.google.com/file/d/1OPjI3QILUov2QPjYP6d1hWcecJXDgOCz/view?usp=sharing)
+[Download the REMnux OVA file via this link.](https://app.box.com/shared/static/8b0cprlvm6qjib8kppld6kqzbrnfw2km.ova)
 
 {% hint style="danger" %}
 The download link above is for the limited beta version of the upcoming v7 release of REMnux. See the [older documentation site](https://REMnux.org/docs) if you're interested in v6 version of REMnux.
