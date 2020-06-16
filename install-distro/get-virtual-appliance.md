@@ -30,7 +30,6 @@ Use your virtualization software to import the downloaded OVA file. If you're no
 * [VMware vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-17BEDA21-43F6-41F4-8FB2-E01D275FE9B4.html)
 * [VMware Fusion](https://docs.vmware.com/en/VMware-Fusion/11/com.vmware.fusion.using.doc/GUID-275EF202-CF74-43BF-A9E9-351488E16030.html)
 * [Oracle VM VirtualBox](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
-* [Google Cloud](https://cloud.google.com/compute/docs/import/import-ovf-files)
 {% endtab %}
 
 {% tab title="Conversion" %}
