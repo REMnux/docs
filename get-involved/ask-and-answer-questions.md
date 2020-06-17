@@ -10,5 +10,15 @@ If you need help with some aspect of REMnux, please open an issue in "Issues" ar
 * Contents of this REMnux documentation site: [REMnux/docs-beta](https://github.com/REMnux/docs-beta)
 * Docker images available as part of the toolkit: [REMnux/docker](https://github.com/REMnux/docker/issues)
 
+{% hint style="warning" %}
+If you receive an error installing or updating the REMnux distro, refresh your APT package database using the following commands and then try the operation again:
+
+```text
+sudo apt update
+sudo apt autoremove
+sudo apt --fix-broken install
+```
+{% endhint %}
+
 If you're an experienced user of REMnux and related technologies, consider reviewing the locations above and sharing your expertise by helping resolve the reported issues.
 
