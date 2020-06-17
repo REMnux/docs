@@ -14,7 +14,13 @@ After logging into your existing system based on Ubuntu 18.04, download the REMn
 wget https://REMnux.org/remnux-cli
 ```
 
-Validate that the SHA-256 of the downloaded file matches the expected value `eea66d6bbda1954a990bc79e03c94093b680938290eb90165f290dedc2baa895`. To generate the hash of your  file, run:
+Validate that the SHA-256 of the downloaded file matches the expected value:
+
+```text
+ef887858f75e1f182406d520d7544f855b61dcf581979db441bc755cb35a6d4f
+```
+
+To generate the hash of your  file, run:
 
 ```text
 sha256sum remnux-cli
