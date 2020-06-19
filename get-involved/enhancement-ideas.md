@@ -1,4 +1,4 @@
-# Implement Enhancement Ideas
+# Implement Enhancements
 
 This page outlines enhancement ideas for REMnux. If you have the time and expertise to address implement them, please consider lending a hand.
 

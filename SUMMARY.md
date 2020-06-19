@@ -23,7 +23,7 @@
 * [Add or Update Tools](get-involved/add-or-update-tools/README.md)
   * [Contribute a Salt State File](get-involved/add-or-update-tools/contribute-a-salt-state-file.md)
   * [Contribute a Debian Package](get-involved/add-or-update-tools/contribute-a-debian-package.md)
-* [Implement Enhancement Ideas](get-involved/enhancement-ideas.md)
+* [Implement Enhancements](get-involved/enhancement-ideas.md)
 
 ## Behind the Scenes
 
