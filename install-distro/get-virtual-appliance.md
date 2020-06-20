@@ -14,7 +14,7 @@ The download link above is for the limited beta version of the upcoming v7 relea
 
 ## Step 2: Confirm the Hash the File <a id="confirm-hash"></a>
 
-Validate the SHA-256 hash of the downloaded file to make sure it matches this expected value:
+Use the `sha256sum` command to validate the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```text
 4508c262c35dff6e563297a214d74f0151c1b57f43244c39f72b600d1edb725f
