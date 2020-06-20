@@ -39,5 +39,8 @@
 * [REMnux Website](https://REMnux.org/)
 * [Tips About REMnux Tools](elsewhere/tips-about-remnux-tools.md)
 * [SANS Malware Analysis Course](elsewhere/sans-malware-analysis-course.md)
+
+---
+
 * [License](license.md)
 
