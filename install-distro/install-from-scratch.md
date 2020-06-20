@@ -34,7 +34,7 @@ Download the REMnux installer from the REMnux website by running this command on
 wget https://REMnux.org/remnux-cli
 ```
 
-Use the `sha256sum` command to validate the SHA-256 hash of the downloaded file to make sure it matches this expected value:
+Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```text
 05dae35991e451f47103239a0d2376d6d456529b75ede48055fe6afc85549fd6
