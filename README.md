@@ -31,11 +31,7 @@ Keep your REMnux system up to date by running the following command once in a wh
 sudo remnux upgrade
 ```
 
-If you added REMnux to an existing system when installing the distro, add the parameter `--mode=addon` to avoid modifying the look and feel of your system.
-
-{% hint style="info" %}
 If you're running the REMnux distro in a virtual machine, consider taking a snapshot before upgrading, so you can revert to a good state in case something goes wrong.
-{% endhint %}
 
 ## Run Tools in Containers <a id="run-in-containers"></a>
 
