@@ -45,13 +45,13 @@ sudo git clone https://github.com/REMnux/salt-states.git /srv/salt
 Finally, invoke Salt Stack to install the desired Salt State file grouping. For "dedicated" use the command:
 
 ```text
-sudo salt-call --local state.sls remnux.dedicated
+sudo salt-call -l debug --local state.sls remnux.dedicated
 ```
 
 For "addon" use the command:
 
 ```text
-sudo salt-call --local state.sls remnux.addon
+sudo salt-call -l debug --local state.sls remnux.addon
 ```
 
 You can supply the parameter `-l debug` to the `salt-call` command to see verbose debug-level output of the installation.
