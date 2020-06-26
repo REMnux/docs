@@ -28,7 +28,7 @@ You can [download the REMnux distro as a pre-built virtual appliance](install-di
 Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements:
 
 ```text
-sudo remnux upgrade
+remnux upgrade
 ```
 
 If you're running the REMnux distro in a virtual machine, consider taking a snapshot before upgrading, so you can revert to a good state in case something goes wrong.

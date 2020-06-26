@@ -90,7 +90,7 @@ After the reboot, REMnux will automatically log you in. There is no logon screen
 Run the following command once in a while to keep your REMnux environment up-to-date, so you benefit from the latest enhancements:
 
 ```text
-sudo remnux upgrade
+remnux upgrade
 ```
 
 You don't need to run this command now, since you've just installed a fresh version of the distro. When you are ready to upgrade, keep in mind that it requires an internet access.

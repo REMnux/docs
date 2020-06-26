@@ -89,7 +89,7 @@ If you converted the virtual appliance to KVM/QEMU, install install the "[spice-
 Run the following command inside your REMnux virtual appliance to upgrade it to the latest version of applications and their dependencies:
 
 ```text
-sudo remnux upgrade
+remnux upgrade
 ```
 
 Run that command periodically to keep your REMnux environment up-to-date, so you benefit from the latest enhancements.
