@@ -33,14 +33,12 @@
   * [REMnux Installer](behind-the-scenes/technologies/remnux-installer.md)
   * [Debian Packages](behind-the-scenes/technologies/debian-packages.md)
   * [Docker Containers](behind-the-scenes/technologies/docker-containers.md)
+* [License](behind-the-scenes/license.md)
 
-## Elsewhere
+## Tips and More <a id="tips"></a>
 
+* [REMnux Configuration Tips](tips/remnux-config-tips.md)
+* [REMnux Tools Tips](tips/remnux-tools-tips.md)
+* [SANS Malware Analysis Course](tips/sans-malware-analysis-course.md)
 * [REMnux Website](https://REMnux.org/)
-* [Tips About REMnux Tools](elsewhere/tips-about-remnux-tools.md)
-* [SANS Malware Analysis Course](elsewhere/sans-malware-analysis-course.md)
-
----
-
-* [License](license.md)
 

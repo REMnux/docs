@@ -49,5 +49,5 @@ You can participate in the REMnux project by:
 
 You can learn about the [people](behind-the-scenes/people.md) and [technologies](behind-the-scenes/technologies/) that make REMnux possible.
 
-For articles and videos about using the tools that REMnux provides, see the [tips section of this site](elsewhere/tips-about-remnux-tools.md).
+For articles and videos about using the tools that REMnux provides, see the [tips section of this site](tips/remnux-config-tips.md).
 
