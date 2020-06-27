@@ -17,7 +17,7 @@ The download link above is for the limited beta version of the upcoming v7 relea
 Use the `sha256sum` command to validate the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```text
-6688cdb5ce8164b245319ea726bf9b79fbaf6b84f53fe30be68977bdea7a0eae
+19a1cc45cd1481d53087addee15cfe0fc386564af2d74705cea834dab0f99df8
 ```
 
 ## Step 3: Import the OVA File <a id="import-ova-file"></a>
