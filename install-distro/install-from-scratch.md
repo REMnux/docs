@@ -64,10 +64,18 @@ sudo apt install -y gnupg
 
 ## Step 3: Run the REMnux Installer <a id="run-remnux-installer"></a>
 
-You're now ready to install the REMnux distro. To kick off the installation, run:
+You're now ready to install the REMnux distro.
+
+If you're planning to run REMnux in a local lab, kick off the installation by runing this command:
 
 ```text
 sudo remnux install
+```
+
+If you're depoying REMnux in a remote cloud environment and will need to keep the SSH daemon enabled for remotely accessing the system, use the following command instead and remember to harden the system after it installs to avoid unauthorized logins:
+
+```text
+sudo remnux install --mode=cloud
 ```
 
 The installation will take about an hour, depending on your resources and internet connection.

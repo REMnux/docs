@@ -52,7 +52,7 @@ Username: `remnux`
 Password: `malware`
 {% endhint %}
 
-Depending on which hypervisor you're using, you might need to take a few steps:
+Depending on which hypervisor or environment you're using, you might need to take a few steps:
 
 ### VirtualBox
 
@@ -83,6 +83,15 @@ Reboot.
 ### KVM/QEMU
 
 If you converted the virtual appliance to KVM/QEMU, install install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package to be able to resize the windows of your virtual machine and copy/paste between it and your host.
+
+### Remote Cloud
+
+The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
+
+1. Edit the /etc/remnux-config and change the mode from `dedicated` to `cloud`.
+2. Enable the SSH daemon by running: `sudo systemctl enable ssh`.
+3. Change the default user's password and otherwise strengthen the SSH authentication method according to your requirements and risk tolerance.
+4. Reboot the REMnux system.
 
 ## Step 5: Upgrade the REMnux Virtual Appliance <a id="upgrade-remnux"></a>
 
