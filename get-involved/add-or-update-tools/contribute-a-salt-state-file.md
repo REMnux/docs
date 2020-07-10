@@ -53,7 +53,7 @@ The command will produce verbose debug-level output, so you can diagnose any iss
 
 ## 5. Add Metadata to the Salt State File
 
-To make sure the tool is properly included in the [REMnux tool listing](../../discover-the-tools/details-coming-soon.md), included the following metadata comments on top of your Salt State file to describe the tool:
+To make sure the tool is properly included in the [REMnux tool listing](), included the following metadata comments on top of your Salt State file to describe the tool:
 
 ```text
 # Name: 

@@ -16,7 +16,7 @@ Erik designed the back-end architecture based on SaltStack for the REMnux distro
 
 ## Tool Authors
 
-REMnux wouldn't be possible without the authors of the tools that comprise the distro. These individuals have been making the world a better place since the beginning of time. Whenever practical, [the listing of REMnux tools](../discover-the-tools/details-coming-soon.md) includes the author's name.
+REMnux wouldn't be possible without the authors of the tools that comprise the distro. These individuals have been making the world a better place since the beginning of time. Whenever practical, [the listing of REMnux tools]() includes the author's name.
 
 ## Special Thanks
 

@@ -10,8 +10,6 @@
 
 ## Discover the Tools
 
-* [Partial Tool Listing](discover-the-tools/details-coming-soon.md)
-
 ## Run Tools in Containers
 
 * [Details Coming Soon](run-tools-in-containers/remnux-containers.md)
