@@ -33,7 +33,6 @@ apt update -y
 apt install -y salt-minion git 
 systemctl disable salt-minion
 systemctl stop salt-minion
-echo "file_client: local" > /etc/salt/minion
 ```
 
 Next, download the desired Salt Stack archive from the "releases" area of the REMnux/salt-states repository or clone the repo like this:
