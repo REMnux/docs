@@ -11,6 +11,9 @@
 ## Discover the Tools
 
 * [Statically Analyze Code](discover-the-tools/statically+analyze+code/README.md)
+  * [Unpacking](discover-the-tools/statically+analyze+code/unpacking.md)
+  * [Python](discover-the-tools/statically+analyze+code/python.md)
+  * [Java](discover-the-tools/statically+analyze+code/java.md)
   * [General](discover-the-tools/statically+analyze+code/general.md)
   * [Flash](discover-the-tools/statically+analyze+code/flash.md)
   * [Android](discover-the-tools/statically+analyze+code/android.md)
