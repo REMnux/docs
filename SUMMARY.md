@@ -10,6 +10,7 @@
 
 ## Discover the Tools
 
+* [Gather and Analyze Data](discover-the-tools/gather+and+analyze+data.md)
 * [Explore Network Interactions](discover-the-tools/explore+network+interactions/README.md)
   * [Services](discover-the-tools/explore+network+interactions/services.md)
   * [Monitoring](discover-the-tools/explore+network+interactions/monitoring.md)
