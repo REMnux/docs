@@ -10,7 +10,8 @@
 
 ## Discover the Tools
 
-* [Analyze Documents](discover-the-tools/analyze+documents.md)
+* [Analyze Documents](discover-the-tools/analyze+documents/README.md)
+  * [Email Messages](discover-the-tools/analyze+documents/email+messages.md)
 
 ## Run Tools in Containers
 
