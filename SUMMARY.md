@@ -11,6 +11,8 @@
 ## Discover the Tools
 
 * [Examine Static Properties](discover-the-tools/examine+static+properties/README.md)
+  * [ELF Files](discover-the-tools/examine+static+properties/elf+files.md)
+  * [Deobfuscation](discover-the-tools/examine+static+properties/deobfuscation.md)
   * [Decode Static Properties](discover-the-tools/examine+static+properties/decode+static+properties.md)
 * [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code/README.md)
   * [Shellcode](discover-the-tools/dynamically+reverse-engineer+code/shellcode.md)
