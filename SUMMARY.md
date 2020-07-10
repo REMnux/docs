@@ -11,6 +11,7 @@
 ## Discover the Tools
 
 * [Analyze Documents](discover-the-tools/analyze+documents/README.md)
+  * [General](discover-the-tools/analyze+documents/general.md)
   * [Email Messages](discover-the-tools/analyze+documents/email+messages.md)
 
 ## Run Tools in Containers
