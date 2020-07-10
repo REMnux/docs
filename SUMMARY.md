@@ -10,6 +10,8 @@
 
 ## Discover the Tools
 
+* [Statically Analyze Code](discover-the-tools/statically+analyze+code/README.md)
+  * [Android](discover-the-tools/statically+analyze+code/android.md)
 * [Perform Memory Forensics](discover-the-tools/perform+memory+forensics.md)
 * [Investigate System Interactions](discover-the-tools/investigate+system+interactions.md)
 * [General Utilities](discover-the-tools/general+utilities.md)
