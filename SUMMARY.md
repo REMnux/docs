@@ -10,6 +10,10 @@
 
 ## Discover the Tools
 
+* [Perform Memory Forensics](discover-the-tools/perform+memory+forensics.md)
+* [Investigate System Interactions](discover-the-tools/investigate+system+interactions.md)
+* [General Utilities](discover-the-tools/general+utilities.md)
+* [Gather and Analyze Data](discover-the-tools/gather+and+analyze+data.md)
 * [Explore Network Interactions](discover-the-tools/explore+network+interactions/README.md)
   * [Services](discover-the-tools/explore+network+interactions/services.md)
   * [Monitoring](discover-the-tools/explore+network+interactions/monitoring.md)
