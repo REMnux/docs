@@ -4,6 +4,16 @@ description: Discover the Tools
 
 # General Utilities
 
+## REMnux Installer
+
+Install and upgrade the REMnux distro.
+
+**Website**: [https://github.com/REMnux/distro/blob/master/files/myip](https://github.com/REMnux/remnux-cli)  
+**Author**: Harbingers LLC, Erik Kristensen, revisions by Lenny Zeltser  
+**License**: MIT License: [https://github.com/REMnux/remnux-cli/blob/master/LICENSE](https://github.com/REMnux/remnux-cli/blob/master/LICENSE)  
+**Notes**: remnux  
+**State File**: [remnux.tools.remnux-cli](https://github.com/REMnux/salt-states/blob/master/remnux/tools/remnux-cli.sls)
+
 ## myip
 
 Determine the IP address of the default network interface.

@@ -4,6 +4,16 @@ description: Discover the Tools
 
 # Perform Memory Forensics
 
+## Volatility Framework
+
+Memory forensics tool and framework
+
+**Website**: [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3)  
+**Author**: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt)  
+**License**: GNU General Public License \(GPL\) v2: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt)  
+**Notes**: vol.py  
+**State File**: [remnux.python-packages.volatility](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/volatility.sls)
+
 ## Volatility 3
 
 Memory forensics tool and framework
