@@ -10,6 +10,8 @@
 
 ## Discover the Tools
 
+* [Examine Static Properties](discover-the-tools/examine+static+properties/README.md)
+  * [Decode Static Properties](discover-the-tools/examine+static+properties/decode+static+properties.md)
 * [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code/README.md)
   * [Shellcode](discover-the-tools/dynamically+reverse-engineer+code/shellcode.md)
   * [Scripts](discover-the-tools/dynamically+reverse-engineer+code/scripts.md)
