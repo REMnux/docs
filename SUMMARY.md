@@ -10,7 +10,6 @@
 
 ## Discover the Tools
 
-* [Explore Network Interactions](discover-the-tools/explore+network+interactions.md)
 * [Examine Static Properties](discover-the-tools/examine+static+properties/README.md)
   * [PE Files](discover-the-tools/examine+static+properties/pe+files.md)
   * [General](discover-the-tools/examine+static+properties/general.md)
