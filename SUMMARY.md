@@ -11,6 +11,7 @@
 ## Discover the Tools
 
 * [Analyze Documents](discover-the-tools/analyze+documents/README.md)
+  * [Microsoft Office](discover-the-tools/analyze+documents/microsoft+office.md)
   * [General](discover-the-tools/analyze+documents/general.md)
   * [Email Messages](discover-the-tools/analyze+documents/email+messages.md)
 
