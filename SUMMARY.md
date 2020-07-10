@@ -10,6 +10,8 @@
 
 ## Discover the Tools
 
+* [Analyze Documents](discover-the-tools/analyze+documents.md)
+
 ## Run Tools in Containers
 
 * [Details Coming Soon](run-tools-in-containers/remnux-containers.md)
