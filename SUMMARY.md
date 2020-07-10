@@ -11,6 +11,7 @@
 ## Discover the Tools
 
 * [Examine Static Properties](discover-the-tools/examine+static+properties/README.md)
+  * [General](discover-the-tools/examine+static+properties/general.md)
   * [ELF Files](discover-the-tools/examine+static+properties/elf+files.md)
   * [Deobfuscation](discover-the-tools/examine+static+properties/deobfuscation.md)
   * [Decode Static Properties](discover-the-tools/examine+static+properties/decode+static+properties.md)
