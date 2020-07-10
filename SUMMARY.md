@@ -11,6 +11,8 @@
 ## Discover the Tools
 
 * [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code/README.md)
+  * [Shellcode](discover-the-tools/dynamically+reverse-engineer+code/shellcode.md)
+  * [Scripts](discover-the-tools/dynamically+reverse-engineer+code/scripts.md)
   * [General](discover-the-tools/dynamically+reverse-engineer+code/general.md)
   * [ELF Files](discover-the-tools/dynamically+reverse-engineer+code/elf+files.md)
 * [Analyze Documents](discover-the-tools/analyze+documents/README.md)
