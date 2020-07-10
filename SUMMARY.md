@@ -10,7 +10,9 @@
 
 ## Discover the Tools
 
-* [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code.md)
+* [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code/README.md)
+  * [General](discover-the-tools/dynamically+reverse-engineer+code/general.md)
+  * [ELF Files](discover-the-tools/dynamically+reverse-engineer+code/elf+files.md)
 * [Analyze Documents](discover-the-tools/analyze+documents/README.md)
   * [PDF](discover-the-tools/analyze+documents/pdf.md)
   * [Microsoft Office](discover-the-tools/analyze+documents/microsoft+office.md)
