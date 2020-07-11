@@ -3,8 +3,6 @@
 The following steps describe how you can build and locally test a Debian-based package for a new tool, in case you'd like to contribute it to REMnux.
 
 {% hint style="info" %}
-
-
 Before starting this work, consider [reaching out to Lenny Zeltser](https://zeltser.com/contact) to confirm that it makes sense to include the tool as part of REMnux. Also, become familiar with the way REMnux uses [custom Debian packages](../../behind-the-scenes/technologies/debian-packages.md) to install tools when practical.
 {% endhint %}
 
@@ -31,6 +29,14 @@ export DEBFULLNAME="REMnux Distribution"
 export DEBEMAIL="distro@remnux.org"
 export DISTRIBUTION=bionic
 ```
+
+{% hint style="success" %}
+If you use your pbuilder environment later, its APT package listing will become outdated. To update the packages, run the following command:
+
+```text
+sudo pbuilder-dist bionic update
+```
+{% endhint %}
 
 ## 2. Create the Skeleton for the Package
 
