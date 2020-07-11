@@ -1,5 +1,7 @@
 # Keep the Distro Up to Date
 
+## Upgrading and Updating the REMnux Distro <a id="upgrading-updating-remnux"></a>
+
 Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements. Be sure to first connect the system to the internet.
 
 ```text
@@ -17,6 +19,18 @@ To sum up, the `upgrade` option updates all the tools and adds new ones that mig
 {% hint style="info" %}
 If you're running the REMnux distro in a virtual machine, consider taking a snapshot before upgrading or updating your VM, so you can revert to a good state if something goes wrong.
 {% endhint %}
+
+## Issues Upgrading and Updating the REMnux Distro <a id="issues-upgrading-updating-remnux"></a>
+
+If you receive an error [upgrading or updating the REMnux distro](keep-the-distro-up-to-date.md) when using the `remnux` command, first reboot your REMnux system, then try the operation again.
+
+If rebooting doesn't update the problem, refresh your [APT package database](../behind-the-scenes/technologies/debian-packages.md)  by issuing the following commands, then trying the operation again:
+
+```text
+sudo apt update
+sudo apt autoremove
+sudo apt --fix-broken install
+```
 
 ##  <a id="run-in-containers"></a>
 

@@ -44,8 +44,8 @@ You can participate in the REMnux project by:
 You can learn about:
 
 * [People](behind-the-scenes/people.md) and [technologies](behind-the-scenes/technologies/) that make REMnux possible
-* [REMnux configuration tips](tips/remnux-config-tips.md) for getting the most out of the distro
-* [Tips for using the tools](tips/remnux-tools-tips.md) on REMnux.
+* [REMnux distro tips](tips/remnux-distro-tips.md) for getting the most out of the distro
+* [Tips for using the tools](tips/remnux-tools-tips.md) on REMnux
 
 Many of the tools available in the REMnux toolkit are discussed in the SANS course [FOR610: Reverse Engineering Malware](https://sans.org/for610). Lenny Zeltser, the founder and primary maintainer of REMnux, is also the primary author of this course.
 
