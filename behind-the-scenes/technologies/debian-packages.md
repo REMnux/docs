@@ -6,7 +6,7 @@ A common way of installing software on Linux distributions derived from [Debian]
 
 Whenever possible, REMnux installs Debian-formatted packages from the standard Ubuntu repositories. In addition, there is a REMnux-specific repository of custom packages, which is [hosted on Launchpad](https://launchpad.net/~remnux/+archive/ubuntu/stable/+packages)--a website maintaned by Ubuntu's parent company.
 
-As part of the REMnux installation, the r[emnux.sls](https://github.com/REMnux/salt-states/blob/master/remnux/repos/remnux.sls) Salt State file adds the REMnux package repository to the system, so it's available to the APT package manager. The installation also adds [other repositories](https://github.com/REMnux/salt-states/tree/master/remnux/repos) where some packages reside, including the one for [SIFT Workstation](https://digital-forensics.sans.org/community/downloads).
+As part of the REMnux installation, the [remnux.sls](https://github.com/REMnux/salt-states/blob/master/remnux/repos/remnux.sls) Salt State file adds the REMnux package repository to the system, so it's available to the APT package manager. The installation also adds [other repositories](https://github.com/REMnux/salt-states/tree/master/remnux/repos) where some packages reside, including the one for [SIFT Workstation](https://digital-forensics.sans.org/community/downloads).
 
 Once built and tested, custom Debian-based packages are digitally signed using the REMnux private key, and are upladed to Launchpad, which validates the signature and makes the available to REMnux systems via the APT package manager.
 
