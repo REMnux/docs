@@ -7,13 +7,13 @@ The REMnux installer is the tool that starts the installation or upgrade of the 
 At a high level, the REMnux installer takes the following actions:
 
 1. Installs, if necessary, a recent version of [SaltStack](https://www.saltstack.com), which [manages the setup and configuraton of REMnux tools](saltstack-management.md).
-2. Retrieves the appropriate release of REMnux SaltStack state files from the [REMnux/salt-states](https://github.com/REMnux/salt-states) repository on GitHub, which describe how SaltStack should install and configure the tools.
+2. Retrieves the appropriate release of REMnux Salt state files from the [REMnux/salt-states](https://github.com/REMnux/salt-states) repository on GitHub, which describe how SaltStack should install and configure the tools.
 3. Validates that the retrieved state files are properly signed with the REMnux PGP key.
 4. Runs SaltState, directing it to execute state files that correspond to specified installation or upgrade options.
 
 ## State File Retrieval and Validation
 
-The REMnux installer retrieves SaltStack state files as a compressed archive from the "releases" area of the REMnux/salt-states repository. After extracting the contents, it places them under /var/cache/remnux/cli  in a subdirectory named according to the release version.
+The REMnux installer retrieves Salt state files as a compressed archive from the "releases" area of the REMnux/salt-states repository. After extracting the contents, it places them under /var/cache/remnux/cli  in a subdirectory named according to the release version.
 
 To validate the digital signature of the retrieved archive, the installer uses the REMnux public PGP key, which is embedded into the installer. To accommodate this, each release of the state files is signed with the corresponding REMnux private PGP key. The key ID is `28CD19DB`.
 

@@ -101,7 +101,7 @@ In the example above:
 * `user` and `group` specify that the file should be owned by the user and the user's group.
 * `makedirs` direct SaltStack to create the directory structure so the file can be placed in the location specified by `name`.
 
-The Salt State instructions above rely on the values `home` and `user`, which are set earlier in the file:
+The state file instructions above rely on the values `home` and `user`, which are set earlier in the file:
 
 ```text
 {%- set user = salt['pillar.get']('remnux_user', 'remnux') -%}
@@ -112,5 +112,5 @@ The Salt State instructions above rely on the values `home` and `user`, which ar
 {%- endif -%}
 ```
 
-This excerpt from the Ghidra configuration Salt State file uses the "[pillars](https://docs.saltstack.com/en/master/ref/modules/all/salt.modules.pillar.html#salt.modules.pillar.get)" feature of SaltStack, which gives SaltStack access to named values defined before the Salt State file has a chance to run. In this case, the Salt State file sets the `user` value by retrieving the pillar variable named `remnux_user`, which is normally set by [the REMnux installer](remnux-installer.md); if it's not available, SaltStack is directed to use the default value "remnux." Further, depending on the `user` value, the Salt State file sets the `home` value to point to the user's home directory.
+This excerpt from the Ghidra configuration state file uses the "[pillars](https://docs.saltstack.com/en/master/ref/modules/all/salt.modules.pillar.html#salt.modules.pillar.get)" feature of SaltStack, which gives SaltStack access to named values defined before the state file has a chance to run. In this case, the state file sets the `user` value by retrieving the pillar variable named `remnux_user`, which is normally set by [the REMnux installer](remnux-installer.md); if it's not available, SaltStack is directed to use the default value "remnux." Further, depending on the `user` value, the state file sets the `home` value to point to the user's home directory.
 
