@@ -95,13 +95,7 @@ sudo reboot
 After the reboot, REMnux will automatically log you in. There is no logon screen for accessing the REMnux environment, because analysts generally use REMnux on a system to which physical access is already restricted.
 
 {% hint style="success" %}
-Run the following command once in a while to keep your REMnux environment up-to-date, so you benefit from the latest enhancements:
-
-```text
-remnux upgrade
-```
-
-You don't need to run this command now, since you've just installed a fresh version of the distro. When you are ready to upgrade, keep in mind that it requires an internet access.
+For details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](https://docs.remnux.org/#keep-remnux-up-to-date) section.
 {% endhint %}
 
 ## Step 5: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
