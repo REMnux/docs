@@ -1,6 +1,6 @@
 # License
 
-The tools that are a part of REMnux are free, but they come with individual licenses. The [listing of these tools](https://docs.remnux.org/discover-the-tools) includes information about these licenses whenever practical. However, it's up to you to make sure that you understand and follow each tool's license restrictions.
+The tools that are a part of REMnux are free, but they come with individual licenses. The [listing of these tools](../discover-the-tools/examine+static+properties/) includes information about these licenses whenever practical. However, it's up to you to make sure that you understand and follow each tool's license restrictions.
 
 The configuration, code, and other contents created for the REMnux toolkit that "glue" the tools together are licensed under [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) unless stated otherwise.
 

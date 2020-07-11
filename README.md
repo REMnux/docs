@@ -21,7 +21,7 @@ The heart of the toolkit is the REMnux Linux distribution based on [Ubuntu](http
 * [Analyze malicious documents.](discover-the-tools/analyze+documents/)
 * [Gather and analyze threat data.](discover-the-tools/gather+and+analyze+data.md)
 
-The [Discover the Tools](https://docs.remnux.org/discover-the-tools) section of this site lists and describes the tools comprise the REMnux distro. To start using them right away, you can:
+The [Discover the Tools](discover-the-tools/examine+static+properties/) section of this site lists and describes the tools comprise the REMnux distro. To start using them right away, you can:
 
 * [Download the virtual appliance](install-distro/get-virtual-appliance.md) of the REMnux distro.
 * [Install the REMnux distro from scratch](install-distro/install-from-scratch.md) on a dedicated system.
