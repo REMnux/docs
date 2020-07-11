@@ -7,6 +7,7 @@
 * [Get the REMnux Virtual Appliance](install-distro/get-virtual-appliance.md)
 * [Install REMnux from Scratch](install-distro/install-from-scratch.md)
 * [Add REMnux to an Existing System](install-distro/add-to-existing-system.md)
+* [Keep the Distro Up to Date](install-distro/keep-the-distro-up-to-date.md)
 
 ## Discover the Tools
 
@@ -34,14 +35,14 @@
   * [Monitoring](discover-the-tools/explore+network+interactions/monitoring.md)
   * [Connecting](discover-the-tools/explore+network+interactions/connecting.md)
 * [Investigate System Interactions](discover-the-tools/investigate+system+interactions.md)
-* [General Utilities](discover-the-tools/general+utilities.md)
-* [View or Edit Files](discover-the-tools/view+or+edit+files.md)
 * [Analyze Documents](discover-the-tools/analyze+documents/README.md)
   * [General](discover-the-tools/analyze+documents/general.md)
   * [PDF](discover-the-tools/analyze+documents/pdf.md)
   * [Microsoft Office](discover-the-tools/analyze+documents/microsoft+office.md)
   * [Email Messages](discover-the-tools/analyze+documents/email+messages.md)
 * [Gather and Analyze Data](discover-the-tools/gather+and+analyze+data.md)
+* [View or Edit Files](discover-the-tools/view+or+edit+files.md)
+* [General Utilities](discover-the-tools/general+utilities.md)
 
 ## Run Tools in Containers
 

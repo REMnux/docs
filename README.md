@@ -10,42 +10,26 @@ This site provides official documentation for [REMnux](https://REMnux.org/)®, a
 
 ## Install the REMnux Distro
 
-The heart of the toolkit is the REMnux Linux distribution based on Ubuntu 18.04. It incorporates many tools for analyzing malicious:
+The heart of the toolkit is the REMnux Linux distribution based on [Ubuntu](https://ubuntu.com), which incorporates many tools for performing malware analysis tasks such as:
 
-* Executables and binaries
-* Scripts, including JavaScript
-* Documents, including Microsoft Office and PDF files
-* Network interactions, such as C2 communications
+* [Examine static properties of a suspicious file](discover-the-tools/examine+static+properties/)
+* [Statically analyze malicious code](discover-the-tools/statically+analyze+code/)
+* [Dynamically reverse-engineer malicious code](discover-the-tools/dynamically+reverse-engineer+code/)
+* [Perform memory forensics of an infected system](discover-the-tools/perform+memory+forensics.md)
+* [Explore network interactions for behavioral analysis](discover-the-tools/explore+network+interactions/)
+* [Investigate system-level interactions of malware](discover-the-tools/investigate+system+interactions.md)
+* [Analyze malicious documents](discover-the-tools/analyze+documents/)
+* [Gather and analyze threat data](discover-the-tools/gather+and+analyze+data.md)
 
-The [Discover the Tools](https://docs.remnux.org/discover-the-tools) section of this site shows which tools comprise the REMnux distro. To start using these tools, you can:
+The [Discover the Tools](https://docs.remnux.org/discover-the-tools) section of this site lists and describes the tools comprise the REMnux distro. To start using them right away, you can:
 
 * [Download the REMnux distro as a pre-built virtual appliance.](install-distro/get-virtual-appliance.md)
 * [Install the REMnux distro from scratch on a dedicated system.](install-distro/install-from-scratch.md)
 * [Add the REMnux distro to an existing machine.](install-distro/add-to-existing-system.md)
 
-## Keep REMnux Up to Date
-
-Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements, after connecting the system to the internet:
-
-```text
-remnux upgrade
-```
-
-Even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following operation will make sure that you're running the latest versions of the installed [Debian packages](behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
-
-```text
-remnux update
-```
-
-To sum up, the `upgrade` option updates all the tools and adds new ones that might have been incorporated into the REMnux distro. The `update` command is a subset, and updates your existing Debian packages and Python modules.
-
-{% hint style="info" %}
-If you're running the REMnux distro in a virtual machine, consider taking a snapshot before upgrading or updating your VM, so you can revert to a good state if something goes wrong.
-{% endhint %}
-
 ## Run Tools in Containers <a id="run-in-containers"></a>
 
-The REMnux toolkit also offers [Docker images of popular malware analysis tools](run-tools-in-containers/remnux-containers.md), making it possible to run the applications as containers without having to install them directly on the system.
+The REMnux toolkit also offers [Docker images of popular malware analysis tools](run-tools-in-containers/remnux-containers.md), making it possible to run them as containers without having to install the tools directly.
 
 ## Get Involved with the Project
 
@@ -57,7 +41,11 @@ You can participate in the REMnux project by:
 
 ## Learn More About REMnux
 
-You can learn about the [people](behind-the-scenes/people.md) and [technologies](behind-the-scenes/technologies/) that make REMnux possible.
+You can learn about:
 
-For articles and videos about using the tools that REMnux provides, see the [tips section of this site](tips/remnux-config-tips.md).
+* [People](behind-the-scenes/people.md) and [technologies](behind-the-scenes/technologies/) that make REMnux possible
+* [REMnux configuration tips](tips/remnux-config-tips.md) for getting the most out of the distro
+* [Tips for using the tools](tips/remnux-tools-tips.md) on REMnux.
+
+Many of the tools available in the REMnux toolkit are discussed in the SANS course [FOR610: Reverse Engineering Malware](https://sans.org/for610). Lenny Zeltser, the founder and primary maintainer of REMnux, is also the primary author of this course.
 

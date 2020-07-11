@@ -61,13 +61,7 @@ sudo reboot
 Login to your system to start benefiting from the tools that the REMnux distro includes.
 
 {% hint style="success" %}
-Run the following command once in a while to keep your REMnux environment up-to-date, so you benefit from the latest enhancements:
-
-```text
-remnux upgrade
-```
-
-You don't need to run this command now, since you've just installed a fresh version of the distro.
+To keep your REMnux environment up-to-date run the REMnux installer periodically as described 
 {% endhint %}
 
 ## Step 5: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>

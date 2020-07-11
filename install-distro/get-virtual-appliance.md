@@ -1,6 +1,6 @@
 # Get the REMnux Virtual Appliance
 
-The fastest and easiest way to get the REMnux distro is to download the REMnux virtual appliance, then run the upgrade command to make sure it's up-to-date. The virtual appliance is based on Ununtu 18.04.
+The easiest way to get the REMnux distro is usually to download the REMnux virtual appliance, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date. The virtual appliance is based on Ununtu 18.04.
 
 ## Step 1: Download the Virtual Appliance File <a id="download-virtual-appliance"></a>
 
@@ -9,7 +9,7 @@ The REMnux virtual appliance comes as the industry-standard OVA file, which you 
 [Download the REMnux OVA file from Box.com via this link.](https://app.box.com/s/5wgvvc69apq71c8k0r47w3161z7yxzo0)
 
 {% hint style="danger" %}
-The download link above is for the limited beta version of the upcoming v7 release of REMnux. See the [older documentation site](https://REMnux.org/docs) if you're interested in v6 version of REMnux.
+The download link above is for the beta version of the upcoming v7 release of REMnux. See the [older documentation site](https://REMnux.org/docs) if you're interested in v6 version of REMnux.
 {% endhint %}
 
 ## Step 2: Confirm the Hash the File <a id="confirm-hash"></a>
@@ -101,7 +101,7 @@ After installing the REMnux virtual appliance, run the following command inside 
 remnux upgrade
 ```
 
-For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](https://docs.remnux.org/#keep-remnux-up-to-date) section.
+For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](keep-the-distro-up-to-date.md) section.
 
 ## Step 6: Take a Snapshot of the Virtual Appliance <a id="take-snapshot"></a>
 
