@@ -1,4 +1,4 @@
-# REMnux Tools Tips
+# REMnux Tool Tips
 
 This content hasn't been written yet. Stay tuned...
 

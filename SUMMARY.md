@@ -70,7 +70,7 @@
 ## Tips and More <a id="tips"></a>
 
 * [REMnux Distro Tips](tips/remnux-distro-tips.md)
-* [REMnux Tools Tips](tips/remnux-tools-tips.md)
+* [REMnux Tool Tips](tips/remnux-tool-tips.md)
 * [SANS Malware Analysis Course](tips/sans-malware-analysis-course.md)
 * [REMnux Website](https://REMnux.org/)
 
