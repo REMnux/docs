@@ -29,5 +29,5 @@ At the moment, the installation of Thug requires compiling the tool's dependenci
 
 ## BinNavi Needs a Database in PostgreSQL <a id="binnavi-database"></a>
 
-[BinNavi](https://github.com/google/binnavi), installed by [binnavi.sls](https://github.com/REMnux/salt-states/blob/master/remnux/tools/binnavi.sls), requires a PostgreSQL database to operate. The database application itself is already installed on REMnux via [postgresql.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/postgresql.sls). It would be nice to craft a new Salt State file under r[emnux/theme ](https://github.com/REMnux/salt-states/tree/master/remnux/theme)to create a database for BinNavi with default credentials  `remnux`/`malware`.
+[BinNavi](https://github.com/google/binnavi), installed by [binnavi.sls](https://github.com/REMnux/salt-states/blob/master/remnux/tools/binnavi.sls), requires a PostgreSQL database to operate. The database application itself is already installed on REMnux via [postgresql.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/postgresql.sls). It would be nice to craft a new Salt State file under [remnux/theme ](https://github.com/REMnux/salt-states/tree/master/remnux/theme)to create a database for BinNavi with default credentials  `remnux`/`malware`.
 
