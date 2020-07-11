@@ -23,9 +23,9 @@ The heart of the toolkit is the REMnux Linux distribution based on [Ubuntu](http
 
 The [Discover the Tools](https://docs.remnux.org/discover-the-tools) section of this site lists and describes the tools comprise the REMnux distro. To start using them right away, you can:
 
-* [Download the REMnux distro as a pre-built virtual appliance.](install-distro/get-virtual-appliance.md)
-* [Install the REMnux distro from scratch on a dedicated system.](install-distro/install-from-scratch.md)
-* [Add the REMnux distro to an existing machine.](install-distro/add-to-existing-system.md)
+* [Download the virtual appliance](install-distro/get-virtual-appliance.md) of the REMnux distro.
+* [Install the REMnux distro from scratch](install-distro/install-from-scratch.md) on a dedicated system.
+* [Add the REMnux distro](install-distro/add-to-existing-system.md) to an existing machine.
 
 ## Run Tools in Containers <a id="run-in-containers"></a>
 
