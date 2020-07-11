@@ -12,14 +12,14 @@ This site provides official documentation for [REMnux](https://REMnux.org/)®, a
 
 The heart of the toolkit is the REMnux Linux distribution based on [Ubuntu](https://ubuntu.com), which incorporates many tools for performing malware analysis tasks such as:
 
-* [Examine static properties of a suspicious file](discover-the-tools/examine+static+properties/)
-* [Statically analyze malicious code](discover-the-tools/statically+analyze+code/)
-* [Dynamically reverse-engineer malicious code](discover-the-tools/dynamically+reverse-engineer+code/)
-* [Perform memory forensics of an infected system](discover-the-tools/perform+memory+forensics.md)
-* [Explore network interactions for behavioral analysis](discover-the-tools/explore+network+interactions/)
-* [Investigate system-level interactions of malware](discover-the-tools/investigate+system+interactions.md)
-* [Analyze malicious documents](discover-the-tools/analyze+documents/)
-* [Gather and analyze threat data](discover-the-tools/gather+and+analyze+data.md)
+* [Examine static properties of a suspicious file.](discover-the-tools/examine+static+properties/)
+* [Statically analyze malicious code.](discover-the-tools/statically+analyze+code/)
+* [Dynamically reverse-engineer malicious code.](discover-the-tools/dynamically+reverse-engineer+code/)
+* [Perform memory forensics of an infected system.](discover-the-tools/perform+memory+forensics.md)
+* [Explore network interactions for behavioral analysis.](discover-the-tools/explore+network+interactions/)
+* [Investigate system-level interactions of malware.](discover-the-tools/investigate+system+interactions.md)
+* [Analyze malicious documents.](discover-the-tools/analyze+documents/)
+* [Gather and analyze threat data.](discover-the-tools/gather+and+analyze+data.md)
 
 The [Discover the Tools](https://docs.remnux.org/discover-the-tools) section of this site lists and describes the tools comprise the REMnux distro. To start using them right away, you can:
 
