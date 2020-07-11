@@ -25,7 +25,7 @@ The [Discover the Tools](https://docs.remnux.org/discover-the-tools) section of 
 
 ## Keep REMnux Up to Date
 
-Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements:
+Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements, after connecting the system to the internet:
 
 ```text
 remnux upgrade

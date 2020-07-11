@@ -95,17 +95,13 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 
 ## Step 5: Upgrade the REMnux Virtual Appliance <a id="upgrade-remnux"></a>
 
-Run the following command inside your REMnux virtual appliance to upgrade it to the latest version of applications and their dependencies:
+After installing the REMnux virtual appliance, run the following command inside the VM to upgrade it to the latest version of the distro:
 
 ```text
 remnux upgrade
 ```
 
-Run that command periodically to keep your REMnux environment up-to-date, so you benefit from the latest enhancements.
-
-{% hint style="info" %}
-Make sure that your REMnix virtual appliance has Internet access before trying to upgrade it.
-{% endhint %}
+For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](https://docs.remnux.org/#keep-remnux-up-to-date) section.
 
 ## Step 6: Take a Snapshot of the Virtual Appliance <a id="take-snapshot"></a>
 
