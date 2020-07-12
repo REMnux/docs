@@ -35,16 +35,10 @@ sudo git clone https://github.com/REMnux/salt-states.git /srv/salt
 
 ## Invoking SaltStack to Install State File Groupings
 
-You can invoke SaltStack's `salt-call` utility to install the desired state file grouping. For "dedicated" use the command:
+You can invoke SaltStack's `salt-call` utility to install the desired state file grouping. For example, for "dedicated" you'd use the command:
 
 ```text
 sudo salt-call -l debug --local state.sls remnux.dedicated
-```
-
-For "addon" use the command:
-
-```text
-sudo salt-call -l debug --local state.sls remnux.addon
 ```
 
 The parameter `-l debug` to the `salt-call` command provides verbose debug-level output of the operation. You can skip this parameter if you don't want that level of detail.
