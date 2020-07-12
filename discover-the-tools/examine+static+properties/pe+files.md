@@ -74,10 +74,10 @@ Statically analyze PE files.
 
 ## bearparser
 
-Parse PE file contnents
+Parse PE file contents.
 
 **Website**: [https://github.com/hasherezade/bearparser/wiki](https://github.com/hasherezade/bearparser/wiki)  
-**Author**: hasherezade: hasherezade@op.pl  
+**Author**: hasherezade: [hasherezade@op.pl](https://twitter.com/hasherezade)  
 **License**: BSD 2-Clause "Simplified" License: [https://github.com/hasherezade/bearparser/blob/master/LICENSE](https://github.com/hasherezade/bearparser/blob/master/LICENSE)  
 **Notes**: bearcommander  
 **State File**: [remnux.packages.bearparser](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/bearparser.sls)
