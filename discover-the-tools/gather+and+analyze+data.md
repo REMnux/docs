@@ -52,6 +52,15 @@ Query public repositories of malware data \(e.g., VirusTotal, HybridAnalysis\).
 **Notes**: malwoverview.py, add API keys to ~/.malwapi.conf  
 **State File**: [remnux.python-packages.malwoverview](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/malwoverview.sls)
 
+## nsrllookup
+
+Look up MD5 file hashes in the NIST National Software Reference Library \(NSRL\).
+
+**Website**: [https://github.com/rjhansen/nsrllookup](https://github.com/rjhansen/nsrllookup)  
+**Author**: Robert J. Hansen: [https://twitter.com/robertjhansen](https://twitter.com/robertjhansen)  
+**License**: ISC License: [https://github.com/rjhansen/nsrllookup/blob/master/LICENSE](https://github.com/rjhansen/nsrllookup/blob/master/LICENSE)  
+**State File**: [remnux.python-packages.nsrllookup](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/nsrllookup.sls)
+
 ## Viper
 
 Organize and query a collection of malware samples.
