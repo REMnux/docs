@@ -16,13 +16,23 @@ Locate and decode strings obfuscated using common techniques.
 
 ## CyberChef
 
-Decode and otherwise analyze data
+Decode and otherwise analyze data using this browser app.
 
 **Website**: [https://github.com/gchq/CyberChef/](https://github.com/gchq/CyberChef/)  
 **Author**: GCHQ  
 **License**: Apache License 2.0: [https://github.com/gchq/CyberChef/blob/master/LICENSE](https://github.com/gchq/CyberChef/blob/master/LICENSE)  
 **Notes**: cyberchef  
 **State File**: [remnux.tools.cyberchef](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/cyberchef.sls)
+
+## Chepy
+
+Decode and otherwise analyze data using this command-line tool and Python library.
+
+**Website**: [https://github.com/securisec/chepy](https://github.com/securisec/chepy)  
+**Author**: Hapsida Securisec: [https://twitter.com/securisec](https://twitter.com/securisec)  
+**License**: GNU General Public License \(GPL\) v3: [https://github.com/securisec/chepy/blob/master/LICENSE](https://github.com/securisec/chepy/blob/master/LICENSE)  
+**Notes**: chepy  
+**State File**: [remnux.python-packages.chepy](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/chepy.sls)
 
 ## xortool
 
@@ -162,4 +172,14 @@ Search for XOR encoded strings in a file.
 **Author**: Didier Stevens  
 **License**: Free, unknown license  
 **State File**: [remnux.packages.xorstrings](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/xorstrings.sls)
+
+## FLOSS
+
+Extract and deobfuscate strings from PE executables.
+
+**Website**: [https://github.com/fireeye/flare-floss](https://github.com/fireeye/flare-floss)  
+**Author**: FireEye Inc, Willi Ballenthin: [https://twitter.com/williballenthin](https://twitter.com/williballenthin), Moritz Raabe  
+**License**: Apache License 2.0: [https://github.com/fireeye/flare-floss/blob/master/LICENSE.txt](https://github.com/fireeye/flare-floss/blob/master/LICENSE.txt)  
+**Notes**: floss  
+**State File**: [remnux.packages.flare-floss](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/flare-floss.sls)
 
