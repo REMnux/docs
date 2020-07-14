@@ -8,7 +8,7 @@ description: Discover the Tools
 
 Install and upgrade the REMnux distro.
 
-**Website**: [https://github.com/REMnux/distro/blob/master/files/myip](https://github.com/REMnux/remnux-cli)  
+**Website**: [https://github.com/REMnux/distro/blob/master/files/remnux-cli](https://github.com/REMnux/remnux-cli)  
 **Author**: Harbingers LLC, Erik Kristensen, revisions by Lenny Zeltser  
 **License**: MIT License: [https://github.com/REMnux/remnux-cli/blob/master/LICENSE](https://github.com/REMnux/remnux-cli/blob/master/LICENSE)  
 **Notes**: remnux  
