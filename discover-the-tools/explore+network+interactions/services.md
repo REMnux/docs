@@ -49,7 +49,7 @@ Web server
 **Website**: [https://nginx.org](https://nginx.org)  
 **Author**: Igor Sysoev, Nginx Inc.  
 **License**: Free, custom license: [https://nginx.org/LICENSE](https://nginx.org/LICENSE)  
-**Notes**: The webroot directory is /var/www/html. Control the daemon using: https &lt;start\|stop\|status\|restart&gt;.  
+**Notes**: The webroot directory is /var/www/html. Control the daemon using: httpd &lt;start\|stop\|status\|restart&gt;.  
 **State File**: [remnux.packages.nginx](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/nginx.sls)
 
 ## inspircd 3
