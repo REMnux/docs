@@ -24,6 +24,16 @@ Examine network traffic and carve PCAP capture files.
 **Notes**: networkminer  
 **State File**: [remnux.tools.networkminer](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/networkminer.sls)
 
+## PolarProxy
+
+Intercept and decrypt TLS traffic.
+
+**Website**: [https://www.netresec.com/](https://www.netresec.com/)  
+**Author**: NETRESEC AB  
+**License**: Creative Commons Attribution-NoDerivatives 4.0 International \(CC BY-ND 4.0\) License: [https://www.netresec.com/?page=PolarProxy](https://www.netresec.com/?page=PolarProxy)  
+**Notes**: polarproxy  
+**State File**: [remnux.tools.polarproxy](https://github.com/REMnux/salt-states/edit/master/remnux/tools/polarproxy.sls)
+
 ## mitmproxy
 
 Investigate website interactions using this web proxy.
