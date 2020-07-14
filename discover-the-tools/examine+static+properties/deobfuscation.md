@@ -12,7 +12,7 @@ Locate and decode strings obfuscated using common techniques.
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Public Domain  
 **Notes**: xorsearch  
-**State File**: [remnux.tools.xorsearch](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/xorsearch.sls)
+**State File**: [remnux.packages.xorsearch](https://github.com/REMnux/salt-states/blob/master/remnux/packages/xorsearch.sls)
 
 ## CyberChef
 

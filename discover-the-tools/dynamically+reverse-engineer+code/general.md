@@ -14,6 +14,16 @@ Run Windows applications.
 **Notes**: wine  
 **State File**: [remnux.packages.wine](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/wine.sls)
 
+## Frida
+
+Trace the execution of a process to analyze its behavior.
+
+**Website**: [https://frida.re](https://frida.re)  
+**Author**: Ole André Vadla Ravnås  
+**License**: wxWindows Library License 3.1: [https://github.com/frida/frida/blob/master/COPYING](https://github.com/frida/frida/blob/master/COPYING)  
+**Notes**: frida, frida-ps, frida-trace, frida-discover, frida-ls-devices, frida-kill  
+**State File**: remnux.python-packages.frida
+
 ## radare2
 
 Examine binary files, including disassembling and debugging.
