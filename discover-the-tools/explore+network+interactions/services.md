@@ -26,7 +26,7 @@ Intercept and examine SMTP email activity with this fake SMTP server.
 
 Accept connections to all IPv4 and IPv6 addresses and redirect it to the corresponding local port.
 
-**Website**: [https://github.com/REMnux/distro/blob/master/files/strdeob.pl](https://github.com/REMnux/distro/blob/master/files/strdeob.pl)  
+**Website**: [https://github.com/REMnux/distro/blob/master/files/accept-all-ips](https://github.com/REMnux/distro/blob/master/files/accept-all-ips)  
 **Author**: Lenny Zeltser, with input from the community  
 **License**: GNU General Public License \(GPL\) v3+  
 **Notes**: accept-all-ips &lt;start\|stop&gt;  
