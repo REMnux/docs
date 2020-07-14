@@ -29,6 +29,7 @@ Accept connections to all IPv4 and IPv6 addresses and redirect it to the corresp
 **Website**: [https://github.com/REMnux/distro/blob/master/files/strdeob.pl](https://github.com/REMnux/distro/blob/master/files/strdeob.pl)  
 **Author**: Lenny Zeltser, with input from the community  
 **License**: GNU General Public License \(GPL\) v3+  
+**Notes**: accept-all-ips &lt;start\|stop&gt;  
 **State File**: [remnux.scripts.accept-all-ips](https://github.com/REMnux/salt-states/blob/master/./remnux/scripts/accept-all-ips.sls)
 
 ## netcat
