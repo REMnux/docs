@@ -66,7 +66,7 @@ Parse Microsoft Office OLE2 compound documents.
 Analyze OLE2 Structured Storage files.
 
 **Website**: [https://blog.didierstevens.com/programs/oledump-py/](https://blog.didierstevens.com/programs/oledump-py/)  
-**Author**: Didier Stevens  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Public Domain  
 **Notes**: oledump.py  
 **State File**: [remnux.packages.oledump](https://github.com/REMnux/salt-states/blob/master/remnux/packages/oledump.sls)
