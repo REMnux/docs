@@ -108,6 +108,15 @@ Statically examine properties and code of suspicious PE and ELF executables.
 **License**: GNU General Public License \(GPL\): [https://github.com/joxeankoret/pyew/blob/VERSION\_3X/COPYING](https://github.com/joxeankoret/pyew/blob/VERSION_3X/COPYING)  
 **State File**: [remnux.packages.pyew](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/pyew.sls)
 
+## zipdump.py
+
+Analyze zip-compressed files.
+
+**Website**: [https://blog.didierstevens.com/2020/04/30/update-zipdump-py-version-0-0-19/](https://blog.didierstevens.com/2020/04/30/update-zipdump-py-version-0-0-19/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
+
 ## Hachoir
 
 View, edit, and carve contents of various binary file types.

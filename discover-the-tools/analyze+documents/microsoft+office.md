@@ -100,6 +100,15 @@ Encrypt and decrypt OOXML Microsoft Office documents.
 **License**: Free, custom license: [https://github.com/herumi/msoffice/blob/master/COPYRIGHT](https://github.com/herumi/msoffice/blob/master/COPYRIGHT)  
 **State File**: [remnux.packages.msoffice-crypt](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/msoffice-crypt.sls)
 
+## zipdump.py
+
+Analyze zip-compressed files.
+
+**Website**: [https://blog.didierstevens.com/2020/04/30/update-zipdump-py-version-0-0-19/](https://blog.didierstevens.com/2020/04/30/update-zipdump-py-version-0-0-19/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
+
 ## Hachoir
 
 View, edit, and carve contents of various binary file types.
