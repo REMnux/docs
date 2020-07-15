@@ -24,24 +24,6 @@ Convert 32 and 64-bit shellcode to a Windows executable file.
 **Notes**: Use full path name to specify the input file; look for the output file in /usr/local/shellcode2exe-bat  
 **State File**: [remnux.tools.shellcode2exe-bat](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/shellcode2exe-bat.sls)
 
-## InlineEgg-ng
-
-Python module for writing small assembly programs.
-
-**Website**: [https://www.coresecurity.com/core-labs/open-source-tools/inlineegg-cs](https://www.coresecurity.com/core-labs/open-source-tools/inlineegg-cs)  
-**Author**: Gerardo Richarte, maintained by evandrix  
-**License**: Free for non-commercial use, custom license: [https://github.com/radare/toys/blob/master/InlineEgg/LICENSE](https://github.com/radare/toys/blob/master/InlineEgg/LICENSE)  
-**State File**: [remnux.python-packages.inlineegg](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/inlineegg.sls)
-
-## shellcode2exe.py
-
-Convert 32-bit shellcode to a Windows executable file
-
-**Website**: [https://github.com/MarioVilas/shellcode\_tools](https://github.com/MarioVilas/shellcode_tools)  
-**Author**: Mario Vilas  
-**License**: Free, custom license: [https://github.com/MarioVilas/shellcode\_tools/blob/master/shellcode2exe.py\#L23](https://github.com/MarioVilas/shellcode_tools/blob/master/shellcode2exe.py#L23)  
-**State File**: [remnux.scripts.shellcode2exe-py](https://github.com/REMnux/salt-states/blob/master/./remnux/scripts/shellcode2exe-py.sls)
-
 ## cut-bytes.py
 
 Cut out a part of a data stream.
