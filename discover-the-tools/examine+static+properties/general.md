@@ -117,6 +117,15 @@ Analyze zip-compressed files.
 **License**: Public Domain  
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
 
+## StringSifter
+
+Automatically rank strings based on their relevance for malware analysis.
+
+**Website**: [https://github.com/fireeye/stringsifter](https://github.com/fireeye/stringsifter)  
+**Author**:  FireEye Inc.  
+**License**: Apache License 2.0: [https://github.com/fireeye/stringsifter/blob/master/LICENSE](https://github.com/fireeye/stringsifter/blob/master/LICENSE)  
+**State File**: [remnux.python-packages.stringsifter](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/stringsifter.sls)
+
 ## Hachoir
 
 View, edit, and carve contents of various binary file types.
