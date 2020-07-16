@@ -2,7 +2,7 @@
 
 ## Localhost Listener on TCP and UDP Ports 53 <a id="port-53-listener"></a>
 
-Ubuntu a daemon named "systemd-resolved" for resolving DNS queries that you initiate from the system. This daemon listens on the localhost interface on TCP and UDP ports 53. If you're running a tool that attempts to listen on these ports on localhost, your tool might not function properly.
+Ubuntu uses a daemon named "systemd-resolved" for resolving DNS queries that you initiate from the system. This daemon listens on the localhost interface on TCP and UDP ports 53. If you're running a tool that attempts to listen on these ports on localhost, your tool might not function properly.
 
 To get around this, reconfigure the tool so it listens on the Ethernet network interface of your REMnux system and not on the localhost network interface. For example, to do this for [FakeNet-NG](../discover-the-tools/explore+network+interactions/services.md#fakenet-ng), edit its configuration file /usr/lib/python2.7/dist-packages/fakenet/configs/default.ini so that the `LinuxRestrictInterface` parameter is set to your Ethernet network interface name, such as `ens33`.
 
@@ -12,7 +12,7 @@ Alternatively, you can disable the systemd-resolved daemon until the next reboot
 sudo systemctl stop systemd-resolved
 ```
 
-If you wish to disable systemd-resolved permanently issue the following command. However, note that if you disable this daemon, you will be unable to resolve DNS queries from your REMnux system unless you reconfigure the system's DNS resolver settings.
+If you wish to disable systemd-resolved permanently issue the following command. However, note that if you disable this daemon, you will be unable to resolve DNS queries from your REMnux system unless you reconfigure the system's DNS resolver settings. Also, some software, such as OpenVPN and other VPN clients, might not function properly if systemd-resolved is disabled.
 
 ```text
 sudo systemctl disable systemd-resolved
@@ -46,7 +46,7 @@ If you have the expertise, [consider suggesting a revision to REMnux installer](
 
 ## GUI Interactions When REMnux Is in the Cloud <a id="gui-cloud-remnux"></a>
 
-If you set up a REMnux system in a cloud environment, such as AWS, you can not only interact with it using the text-based SSH interface, but also using the graphical Gnome interface that comes with REMnux. One way to do this is to use [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
+If you set up a REMnux system in a cloud environment, such as AWS, you can not only interact with it using the text-based SSH interface, but also using the graphical Gnome interface that comes with REMnux. One way to do this is to set up X11 forwarding through SSH.Another is to use [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
 
 1. Harden the configuration of your cloud-based REMnux system and set up SSH authentication according to your requirements and risk tolerance.
 2. Install TigerVNC viewer on the local system from which you're planning to access the remote REMnux system.
