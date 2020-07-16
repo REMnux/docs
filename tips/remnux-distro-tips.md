@@ -46,16 +46,31 @@ If you have the expertise, [consider suggesting a revision to REMnux installer](
 
 ## GUI Interactions When REMnux Is in the Cloud <a id="gui-cloud-remnux"></a>
 
-If you set up a REMnux system in a cloud environment, such as AWS, you can not only interact with it using the text-based SSH interface, but also using the graphical Gnome interface that comes with REMnux. One way to do this is to set up X11 forwarding through SSH.Another is to use [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
+If you set up a REMnux system in a cloud environment, such as AWS, you can not only interact with it using the text-based SSH interface, but also using the graphical Gnome interface that comes with REMnux.
 
-1. Harden the configuration of your cloud-based REMnux system and set up SSH authentication according to your requirements and risk tolerance.
-2. Install TigerVNC viewer on the local system from which you're planning to access the remote REMnux system.
-3. Connect to your remote REMnux system using SSH.
-4. Install TigerVNC server on your remote REMnux system: `sudo apt install -y tigervnc-standalone-server`
-5. Set up your VNC password using the [vncpasswd](https://tigervnc.org/doc/vncpasswd.html) command.
-6. On your local system create an SSH tunnel from port 5901 to port 5901 using a command such as `ssh -L 5901:localhost:5901`
-7. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
-8. Start a VNC client on your local system, directing it to connect to "localhost:1"
+You'll need to activate the SSH daemon on your REMnux system; one way to do this is to run the `sshd start` command. Before doing this, be sure to harden the configuration of your cloud-based REMnux system and set up SSH authentication according to your requirements and risk tolerance.
 
+### X11 Forwarding
 
+One way to remotely interact with REMnux using a graphical interface is to use X11 forwarding through SSH. If you [installed REMnux in "addon" mode](../install-distro/add-to-existing-system.md), you'll need to configure your SSH daemon to support X11 forwarding; in other cases, SSH on REMnux is already set up appropriately.
+
+Next:
+
+1. Configure the SSH client on your local system to enable X11 forwarding.
+2. Connect to your remote REMnux system using SSH, assuming the SSH daemon on REMnux is configured and active.
+3. Activate X server software on your local system, unless you're running Linux. If you're using Linux as your local system, it will natively support receiving X11 connections. If you're using Windows or macOS, you'll need to install X server software. [Xming](http://www.straightrunning.com/XmingNotes/) and [VcXsrv](https://sourceforge.net/projects/vcxsrv/) for Windows and [XQuartz](https://www.xquartz.org) for macOS are reasonable free options.
+
+For an example of performing some of these steps, consider an AWS blog post on [setting up X11 forwarding](https://aws.amazon.com/de/blogs/compute/how-to-enable-x11-forwarding-from-red-hat-enterprise-linux-rhel-amazon-linux-suse-linux-ubuntu-server-to-support-gui-based-installations-from-amazon-ec2/).
+
+### VNC Access
+
+Another way to remotely interact with the REMnux graphical environment is to use a VNC tol such as [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
+
+1. Install TigerVNC viewer on the local system from which you're planning to access the remote REMnux system.
+2. Connect to your remote REMnux system using SSH, assuming the SSH daemon on REMnux is active.
+3. Install TigerVNC server on your remote REMnux system: `sudo apt install -y tigervnc-standalone-server`
+4. Set up your VNC password using the [vncpasswd](https://tigervnc.org/doc/vncpasswd.html) command.
+5. On your local system create an SSH tunnel from port 5901 to port 5901 using a command such as `ssh -L 5901:localhost:5901`
+6. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
+7. Start a VNC client on your local system, directing it to connect to "localhost:1"
 
