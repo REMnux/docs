@@ -42,6 +42,8 @@ Next, to install REMnux or upgrade it later, follow instructions to:
 1. [Retrieve the latest REMnux Salt state files.](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#retrieving-remnux-state-files)
 2. [Invoke SaltStack to install the state file grouping](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#invoking-saltstack-to-install-state-file-groupings) appropriate for you \(e.g., `remnux.dedicated`\)
 
+If you have the expertise, [consider suggesting a revision to REMnux installer](https://app.gitbook.com/@lennyzeltser/s/remnux/get-involved/enhancement-ideas#the-remnux-installer-should-work-with-non-transparent-proxies) that corrects its inability to connect through non-transparent proxies.
+
 ## GUI Interactions When REMnux Is in the Cloud <a id="gui-cloud-remnux"></a>
 
 If you set up a REMnux system in a cloud environment, such as AWS, you can not only interact with it using the text-based SSH interface, but also using the graphical Gnome interface that comes with REMnux. One way to do this is to use [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
