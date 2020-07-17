@@ -4,21 +4,41 @@ The easiest way to get the REMnux distro is usually to download the REMnux virtu
 
 ## Step 1: Download the Virtual Appliance File <a id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance comes as the industry-standard OVA file, which you can import into your virtualization software. The file is just approximately 5 GB.
+The REMnux virtual appliance is approximately 5 GB. It comes as the industry-standard OVA file, which you can import into your virtualization software.
 
-[Download the REMnux OVA file from Box.com via this link.](https://app.box.com/s/tqhv9ws3h7elov2xcbh6qllda36ev7zp)
+Pick one of the two OVA files: Unless you're using Oracle VM VirtualBox, get the general-purpose OVA. If you're using VirtualBox, get the VirtualBox version.
+
+{% tabs %}
+{% tab title="General OVA Link" %}
+[Download the REMnux General OVA file.](https://app.box.com/s/tqhv9ws3h7elov2xcbh6qllda36ev7zp)
+{% endtab %}
+
+{% tab title="VirtualBox OVA Link" %}
+[Download the REMnux VirtualBox OVA.](https://app.box.com/s/diuu2ry92zfxn3oaz7184ptb61zxctpz)
+{% endtab %}
+{% endtabs %}
 
 ## Step 2: Confirm the Hash the File <a id="confirm-hash"></a>
 
 Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum` or `shasum` to make sure it matches this expected value:
 
+{% tabs %}
+{% tab title="General OVA Hash" %}
 ```text
 d6079cdfab61a7824200e8ee1e5121fe056b95d7cf47165786ea578d2319c98b
 ```
+{% endtab %}
+
+{% tab title="VirtualBox VM Hash" %}
+```text
+d14a810216f1860e73c39af4f123a6fb1d013b011ccba87ffe600645f813b2f6
+```
+{% endtab %}
+{% endtabs %}
 
 ## Step 3: Import the OVA File <a id="import-ova-file"></a>
 
-Use your virtualization software to import the downloaded OVA file. If you're not sure how to do that, follow the instructions below:
+If possible, upgrade your virtualization software to the latest version. Then, use it to import the downloaded OVA file. If you're not sure how to do that, follow the instructions below:
 
 {% tabs %}
 {% tab title="Direct Import" %}
@@ -37,9 +57,9 @@ Use your virtualization software to import the downloaded OVA file. If you're no
 
 When importing the REMnux virtual appliance, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run.
 
-## Step 4: Start the REMnux Virtual Appliance
+## Step 4: Start the REMnux Virtual Machine <a id="start-remnux-vm"></a>
 
-Once you start your REMnux virtual appliance, it will automatically log you into the REMnux environment.
+Once you start your REMnux virtual machine, it will automatically log you into the REMnux environment.
 
 There is no logon screen for accessing the REMnux environment, because analysts generally use REMnux on a system to which physical access is already restricted. When you need to elevate your privileges or access the REMnux virtual appliance remotely, note the follow default credentials:
 
@@ -48,50 +68,26 @@ Username: `remnux`
 Password: `malware`
 {% endhint %}
 
-Depending on which hypervisor or environment you're using, you might need to take a few steps:
+## Step 5: Consider Special Hypervisor Requirements <a id="hypervisor-requirements"></a>
 
-### VirtualBox
+Depending on which hypervisor or environment you're using, you might need to take the following steps:
 
-When you start your imported virtual machine, it won't have a network interface card besides the loopback adapter. To correct this:
+### Remote Cloud, Such as AWS
 
-Determine the name of your VM's network adapter by looking running the following command and identifying the adapter of type "ether." Its name will look something like "enp0s17":
-
-```text
-networkctl
-```
-
-Set up the network interface by replacing "YOUR\_NIC" in the following command with the name you've identified in the previous step:
-
-```text
-sudo ip link set up YOUR_NIC
-```
-
-Edit /etc/netplan/01-netcfg.yaml and under `ethernets:` replace the name there \(e.g, "ens33"\) with the name of your network card \(e.g., enp0s17\). Then reboot.
-
-Next, [install VirtualBox Guest Additions](https://linuxize.com/post/how-to-install-virtualbox-guest-additions-in-ubuntu/) in your VM. Start by adding an optical drive to your virtual machine using VirtualBox and mount the Guest Additions ISO file. In the virtual machine use the `mount` command to see the directory where the virtual CD was mounted, then go there, and run this command:
-
-```text
-sudo sh ./VBoxLinuxAdditions.run
-```
-
-Reboot.
-
-### KVM/QEMU
-
-If you converted the virtual appliance to KVM/QEMU, install install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package to be able to resize the windows of your virtual machine and copy/paste between it and your host.
-
-### Remote Cloud
-
-The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
+The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
 
 1. Edit the /etc/remnux-config and change the mode from `dedicated` to `cloud`.
 2. Enable the SSH daemon by running: `sudo systemctl enable ssh`.
 3. Change the default user's password and otherwise strengthen the SSH authentication method according to your requirements and risk tolerance.
-4. Reboot the REMnux system.
+4. Reboot your REMnux system.
 
-## Step 5: Upgrade the REMnux Virtual Appliance <a id="upgrade-remnux"></a>
+### KVM/QEMU
 
-After installing the REMnux virtual appliance, run the following command inside the VM to upgrade it to the latest version of the distro:
+If you converted the REMnux virtual appliance to KVM/QEMU, install install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package in the virtual machine to be able to resize the windows of your VM and copy/paste between it and your host.
+
+## Step 5: Upgrade the REMnux Virtual Machine <a id="upgrade-remnux"></a>
+
+After installing the REMnux virtual machine, run the following command inside the VM to upgrade it to the latest version of the distro:
 
 ```text
 remnux upgrade
@@ -99,7 +95,7 @@ remnux upgrade
 
 For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](keep-the-distro-up-to-date.md) section.
 
-## Step 6: Take a Snapshot of the Virtual Appliance <a id="take-snapshot"></a>
+## Step 6: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
 
-Consider taking a snapshot of your REMnux virtual appliance, so you can return it to a known good state if the need arises.
+Consider taking a snapshot of your REMnux virtual machine, so you can return it to a known good state if the need arises.
 
