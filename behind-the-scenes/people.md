@@ -1,6 +1,6 @@
 # People
 
-The following people are involved with the REMnux project in a significant capacity.
+The following people are involved with the REMnux project in a significant capacity, in addition to members of the community who help test the distro, suggest tools, and help diagnose and correct issues.
 
 ## Lenny Zeltser
 
@@ -16,7 +16,7 @@ Erik designed the back-end architecture based on SaltStack for the REMnux distro
 
 ## Tool Authors
 
-REMnux wouldn't be possible without the authors of the tools that comprise the distro. These individuals have been making the world a better place since the beginning of time. [The listing of REMnux tools](https://docs.remnux.org/discover-the-tools) includes the author's name and the tool's license whenever possible.
+REMnux wouldn't be possible without the authors of the tools that comprise the distro. They are the hear of the REMnux project. These individuals have been propelling the draft and craft of cybersecurity by sharing their skills and tools with the community. [The listing of REMnux tools](https://docs.remnux.org/discover-the-tools) includes the author's name and the tool's license whenever possible.
 
 ## Special Thanks
 

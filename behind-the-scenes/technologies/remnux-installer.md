@@ -11,6 +11,10 @@ At a high level, the REMnux installer takes the following actions:
 3. Validates that the retrieved state files are properly signed with the REMnux PGP key.
 4. Runs SaltState, directing it to execute state files that correspond to specified installation or upgrade options.
 
+{% hint style="info" %}
+REMnux installer is presently [incompatible with non-transparent proxies](../../tips/remnux-config-tips.md#behind-proxy).
+{% endhint %}
+
 ## State File Retrieval and Validation
 
 The REMnux installer retrieves Salt state files as a compressed archive from the "releases" area of the REMnux/salt-states repository. After extracting the contents, it places them under /var/cache/remnux/cli  in a subdirectory named according to the release version.

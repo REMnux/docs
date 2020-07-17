@@ -1,12 +1,12 @@
 ---
-description: Welcome to REMnux Documentation (Beta)
+description: REMnux Documentation
 ---
 
 # REMnux: A Linux Toolkit for Malware Analysts
 
 ![](.gitbook/assets/remnux-logo.png)
 
-This site provides official documentation for [REMnux](https://REMnux.org/)®, a Linux toolkit for reverse-engineering or otherwise examining malicious software. REMnux provides a curated collection of free tools created by the community. Malware analysts can start investigating malware without having to find, install, and configure the tools.
+This site provides official documentation for [REMnux](https://REMnux.org/)®, a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can start investigating malware without having to find, install, and configure the tools.
 
 ## Install the REMnux Distro
 
@@ -21,7 +21,7 @@ The heart of the toolkit is the REMnux Linux distribution based on [Ubuntu](http
 * [Analyze malicious documents.](discover-the-tools/analyze+documents/)
 * [Gather and analyze threat data.](discover-the-tools/gather+and+analyze+data.md)
 
-The [Discover the Tools](discover-the-tools/examine+static+properties/) section of this site lists and describes the tools comprise the REMnux distro. To start using them, you can:
+The [Discover the Tools](discover-the-tools/examine+static+properties/) section of this documentation site lists and describes the tools comprise the REMnux distro. To start using them, you can:
 
 * [Download the virtual appliance](install-distro/get-virtual-appliance.md) of the REMnux distro.
 * [Install the REMnux distro from scratch](install-distro/install-from-scratch.md) on a dedicated system.
@@ -29,7 +29,7 @@ The [Discover the Tools](discover-the-tools/examine+static+properties/) section 
 
 ## Run Tools in Containers <a id="run-in-containers"></a>
 
-The REMnux toolkit also offers [Docker images of popular malware analysis tools](run-tools-in-containers/remnux-containers.md), making it possible to run them as containers without having to install the tools directly.
+The REMnux toolkit also offers [Docker images of popular malware analysis tools](run-tools-in-containers/remnux-containers.md), making it possible to run them as containers without having to install the tools directly even if you don't use the REMnux distro.
 
 ## Get Involved with the Project
 
@@ -44,7 +44,7 @@ You can participate in the REMnux project by:
 You can learn about:
 
 * [People](behind-the-scenes/people.md) and [technologies](behind-the-scenes/technologies/) that make REMnux possible
-* [REMnux distro tips](tips/remnux-config-tips.md) for getting the most out of the distro
+* [REMnux configuration tips](tips/remnux-config-tips.md) for getting the most out of the distro
 * [Tips for using the tools](tips/remnux-tool-tips.md) on REMnux
 
 Many of the tools available in the REMnux toolkit are discussed in the SANS course [FOR610: Reverse Engineering Malware](https://sans.org/for610). Lenny Zeltser, the founder and primary maintainer of REMnux, is also the primary author of this course.

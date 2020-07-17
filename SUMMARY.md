@@ -56,14 +56,13 @@
   * [REMnux Installer](behind-the-scenes/technologies/remnux-installer.md)
   * [State Files Without the REMnux Installer](behind-the-scenes/technologies/state-files-without-the-remnux-installer.md)
   * [Debian Packages](behind-the-scenes/technologies/debian-packages.md)
-  * [Docker Containers](behind-the-scenes/technologies/docker-containers.md)
 * [License](behind-the-scenes/license.md)
 
 ## Tips and More <a id="tips"></a>
 
 * [REMnux Configuration Tips](tips/remnux-config-tips.md)
 * [REMnux Tool Tips](tips/remnux-tool-tips.md)
-* [SANS Malware Analysis Course](tips/sans-malware-analysis-course.md)
+* [Malware Analysis Training](tips/malware-analysis-training.md)
 * [REMnux Website](https://REMnux.org/)
 
 ## Get Involved
@@ -73,6 +72,6 @@
 * [Add or Update Tools](get-involved/add-or-update-tools/README.md)
   * [Contribute a Salt State File](get-involved/add-or-update-tools/contribute-a-salt-state-file.md)
   * [Contribute a Debian Package](get-involved/add-or-update-tools/contribute-a-debian-package.md)
-  * [Contribute a Dockerfile](get-involved/add-or-update-tools/contribute-a-dockerfile.md)
+  * [Contribute a Dockerfile](get-involved/add-or-update-tools/contribute-dockerfile.md)
 * [Implement Enhancements](get-involved/enhancement-ideas.md)
 
