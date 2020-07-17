@@ -48,16 +48,6 @@
 
 * [Docker Images of Malware Analysis Tools](run-tools-in-containers/remnux-containers.md)
 
-## Get Involved
-
-* [Ask and Answer Questions](get-involved/ask-and-answer-questions.md)
-* [Write About the Tools](get-involved/write-about-the-tools.md)
-* [Add or Update Tools](get-involved/add-or-update-tools/README.md)
-  * [Contribute a Salt State File](get-involved/add-or-update-tools/contribute-a-salt-state-file.md)
-  * [Contribute a Debian Package](get-involved/add-or-update-tools/contribute-a-debian-package.md)
-  * [Contribute a Dockerfile](get-involved/add-or-update-tools/contribute-a-dockerfile.md)
-* [Implement Enhancements](get-involved/enhancement-ideas.md)
-
 ## Behind the Scenes
 
 * [People](behind-the-scenes/people.md)
@@ -71,8 +61,18 @@
 
 ## Tips and More <a id="tips"></a>
 
-* [REMnux Distro Tips](tips/remnux-distro-tips.md)
+* [REMnux Configuration Tips](tips/remnux-config-tips.md)
 * [REMnux Tool Tips](tips/remnux-tool-tips.md)
 * [SANS Malware Analysis Course](tips/sans-malware-analysis-course.md)
 * [REMnux Website](https://REMnux.org/)
+
+## Get Involved
+
+* [Ask and Answer Questions](get-involved/ask-and-answer-questions.md)
+* [Write About the Tools](get-involved/write-about-the-tools.md)
+* [Add or Update Tools](get-involved/add-or-update-tools/README.md)
+  * [Contribute a Salt State File](get-involved/add-or-update-tools/contribute-a-salt-state-file.md)
+  * [Contribute a Debian Package](get-involved/add-or-update-tools/contribute-a-debian-package.md)
+  * [Contribute a Dockerfile](get-involved/add-or-update-tools/contribute-a-dockerfile.md)
+* [Implement Enhancements](get-involved/enhancement-ideas.md)
 
