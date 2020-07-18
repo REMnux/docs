@@ -4,7 +4,7 @@ description: REMnux Documentation
 
 # REMnux: A Linux Toolkit for Malware Analysts
 
-![](.gitbook/assets/remnux-logo.png)
+![](.gitbook/assets/remnux_v7_banner.jpeg)
 
 This site provides official documentation for [REMnux](https://REMnux.org/)®, a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can start investigating malware without having to find, install, and configure the tools.
 
