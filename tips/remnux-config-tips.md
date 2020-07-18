@@ -1,5 +1,17 @@
 # REMnux Configuration Tips
 
+## Changing the Keyboard Layout <a id="keyboard-layout-change"></a>
+
+To change the keyboard layout of your REMnux system, perhaps to another language, take the following steps:
+
+1. Open the Settings window using the command `gnome-control-center`.
+2. Go to the Region & Language area.
+3. Press the + button in the Input Sources area.
+4. Select the desired language and click the Add button.
+5. Close the Settings window.
+
+You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
+
 ## Localhost Listener on TCP and UDP Ports 53 <a id="port-53-listener"></a>
 
 Ubuntu uses a daemon named "systemd-resolved" for resolving DNS queries that you initiate from the system. This daemon listens on the localhost interface on TCP and UDP ports 53. If you're running a tool that attempts to listen on these ports on localhost, your tool might not function properly.
