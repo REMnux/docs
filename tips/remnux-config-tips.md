@@ -10,6 +10,8 @@ To change the keyboard layout of your REMnux system, perhaps to another language
 4. Select the desired language and click the Add button.
 5. Close the Settings window.
 
+Sometimes you might need to reboot for the setting to take into effect. 
+
 You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
 
 ## Localhost Listener on TCP and UDP Ports 53 <a id="port-53-listener"></a>
