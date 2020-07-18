@@ -68,7 +68,7 @@ Username: `remnux`
 Password: `malware`
 {% endhint %}
 
-If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboard-layout-change) of your system to match your keyboard and layout.
+If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboard-layout-change) of your system to match your locale and setup.
 
 ## Step 5: Consider Special Hypervisor Requirements <a id="hypervisor-requirements"></a>
 

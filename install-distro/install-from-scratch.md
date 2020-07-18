@@ -90,6 +90,8 @@ sudo reboot
 
 After the reboot, REMnux will automatically log you in. There is no logon screen for accessing the REMnux environment, because analysts generally use REMnux on a system to which physical access is already restricted.
 
+If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboard-layout-change) of your system to match your locale and setup.
+
 {% hint style="success" %}
 For details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](https://docs.remnux.org/#keep-remnux-up-to-date) section.
 {% endhint %}
