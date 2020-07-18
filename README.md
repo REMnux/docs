@@ -2,7 +2,7 @@
 description: REMnux Documentation
 ---
 
-# REMnux: A Linux Toolkit for Malware Analysts
+# REMnux: A Linux Toolkit for Malware Analysis
 
 ![](.gitbook/assets/remnux-banner-v7.png)
 

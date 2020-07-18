@@ -1,6 +1,6 @@
 # Table of contents
 
-* [REMnux: A Linux Toolkit for Malware Analysts](README.md)
+* [REMnux: A Linux Toolkit for Malware Analysis](README.md)
 
 ## Install the Distro <a id="install-distro"></a>
 
