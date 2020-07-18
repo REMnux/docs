@@ -29,7 +29,7 @@ The [Discover the Tools](discover-the-tools/examine+static+properties/) section 
 
 ## Run Tools in Containers <a id="run-in-containers"></a>
 
-The REMnux toolkit also offers [Docker images of popular malware analysis tools](run-tools-in-containers/remnux-containers.md), making it possible to run them as containers without having to install the tools directly even if you don't use the REMnux distro.
+The REMnux toolkit also offers [Docker images of popular malware analysis tools](run-tools-in-containers/remnux-containers.md), making it possible to run them as containers without having to install the tools directly on the system.
 
 ## Get Involved with the Project
 
