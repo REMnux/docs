@@ -17,7 +17,7 @@ If you decide to interact with REMnux' Salt state files without the REMnux insta
 ```text
 sudo -s
 wget -O - https://repo.saltstack.com/apt/ubuntu/18.04/amd64/latest/SALTSTACK-GPG-KEY.pub | apt-key add -
-deb [arch=amd64] http://repo.saltstack.com/apt/ubuntu/18.04/amd64/3000 bionic main | sudo tee /etc/apt/sources.list.d/saltstack.list
+echo deb [arch=amd64] http://repo.saltstack.com/apt/ubuntu/18.04/amd64/3000 bionic main >> /etc/apt/sources.list.d/saltstack.list
 apt update -y
 apt install -y salt-minion git 
 systemctl disable salt-minion
