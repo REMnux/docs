@@ -16,7 +16,7 @@ Username: `remnux`
 Password: `malware`
 {% endhint %}
 
-If you're installing Ubuntu in a virtual machine, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run.
+If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your refrence, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4GB RAM and 50GB disk.
 
 At the "Software selection" screen don't select any software and simply press "Continue." The REMnux installer will install the necessary packages in a later step.
 
