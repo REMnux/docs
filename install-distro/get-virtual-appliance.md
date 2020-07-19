@@ -74,6 +74,10 @@ If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboar
 
 Depending on which hypervisor or environment you're using, you might need to take the following steps:
 
+### VirtualBox
+
+The VirtualBox version of the REMnux virtual appliance is shipped with display scaling set to 200%. If this doesn't look good on your screen, adjust it by going to the VirtualBox menu `View` &gt; `Virtual Screen 1` &gt; `Scale to 100%`.
+
 ### Remote Cloud, Such as AWS
 
 The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
