@@ -14,7 +14,7 @@ Pick one OVA to download: Unless you're using Oracle VM VirtualBox, get the gene
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
-[Download the REMnux VirtualBox OVA.](https://app.box.com/s/diuu2ry92zfxn3oaz7184ptb61zxctpz)
+[Download the REMnux VirtualBox OVA.](https://app.box.com/s/pfavunxdntp6a72d8pv3tw5rpe1occ1u)
 {% endtab %}
 {% endtabs %}
 
@@ -31,7 +31,7 @@ d6079cdfab61a7824200e8ee1e5121fe056b95d7cf47165786ea578d2319c98b
 
 {% tab title="VirtualBox VM Hash" %}
 ```text
-d14a810216f1860e73c39af4f123a6fb1d013b011ccba87ffe600645f813b2f6
+d3fb2e3ee7b548967a5445d8dc054ce40797564598251a1448fe827098534030
 ```
 {% endtab %}
 {% endtabs %}
