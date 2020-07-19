@@ -39,7 +39,7 @@ Microsoft Office OLE2 compound documents.
 **Website**: [http://www.decalage.info/python/oletools](http://www.decalage.info/python/oletools)  
 **Author**: Philippe Lagadec: [https://twitter.com/decalage2](https://twitter.com/decalage2)  
 **License**: Free, custom license: [https://github.com/decalage2/oletools/blob/master/LICENSE.md](https://github.com/decalage2/oletools/blob/master/LICENSE.md)  
-**Notes**: mraptor, msodde, olebrowse, oledir, oleid, olemap, olemeta, oleobj, oletimes, olevba, pyxswf, rtfobj  
+**Notes**: mraptor, msodde, olebrowse, oledir, oleid, olemap, olemeta, oleobj, oletimes, olevba, pyxswf, rtfobj, ezhexviewer  
 **State File**: [remnux.python-packages.oletools](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/oletools.sls)
 
 ## XLMMacroDeobfuscator
