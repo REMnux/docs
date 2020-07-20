@@ -6,15 +6,21 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 
 The REMnux virtual appliance is approximately 5 GB. It comes as the industry-standard OVA file, which you can import into your virtualization software.
 
-Pick one OVA to download: Unless you're using Oracle VM VirtualBox, get the general OVA. If you're using VirtualBox, get the VirtualBox version.
+Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version.
 
 {% tabs %}
 {% tab title="General OVA Link" %}
-[Download the REMnux General OVA file.](https://app.box.com/s/tqhv9ws3h7elov2xcbh6qllda36ev7zp)
+Download the REMnux general OVA file from:
+
+* [Box](https://app.box.com/s/aag3olb4ilajqazsb7d0acbibb6sxhe4) \(primary\)
+* SourceForge \(mirror, available soon\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
-[Download the REMnux VirtualBox OVA.](https://app.box.com/s/pfavunxdntp6a72d8pv3tw5rpe1occ1u)
+Download the REMnux VirtualBox OVA from:
+
+* [Box](https://app.box.com/s/pfavunxdntp6a72d8pv3tw5rpe1occ1u) \(primary\)
+* SourceForge \(mirror, available soon\)
 {% endtab %}
 {% endtabs %}
 
@@ -29,7 +35,7 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 {% tabs %}
 {% tab title="General OVA Hash" %}
 ```text
-d6079cdfab61a7824200e8ee1e5121fe056b95d7cf47165786ea578d2319c98b
+41790c9b4136455e5f7f403728e2b18c81271c8a7fedf3c82f4391a7cf4f6652
 ```
 {% endtab %}
 
