@@ -19,7 +19,7 @@ Pick one OVA to download: Unless you're using Oracle VM VirtualBox, get the gene
 {% endtabs %}
 
 {% hint style="info" %}
-Sometimes, your browser will change the extension of the REMnux OVA file, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension before proceeding.
+Sometimes, your browser will change the extension of the REMnux OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension before proceeding.
 {% endhint %}
 
 ## Step 2: Confirm the Hash the File <a id="confirm-hash"></a>
