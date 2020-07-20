@@ -19,13 +19,13 @@ Download the REMnux general OVA file from:
 {% tab title="VirtualBox OVA Link" %}
 Download the REMnux VirtualBox OVA from:
 
-* [Box](https://app.box.com/s/pfavunxdntp6a72d8pv3tw5rpe1occ1u) \(primary\)
+* [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(primary\)
 * SourceForge \(mirror, available soon\)
 {% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
-Sometimes, your browser will change the extension of the REMnux OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension before proceeding.
+Some browser change the extension of the REMnux OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension before proceeding.
 {% endhint %}
 
 ## Step 2: Confirm the Hash the File <a id="confirm-hash"></a>
@@ -41,7 +41,7 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 
 {% tab title="VirtualBox VM Hash" %}
 ```text
-d3fb2e3ee7b548967a5445d8dc054ce40797564598251a1448fe827098534030
+00a497f9f3cf4560017198e4916753491c629940518842df05c8293c2593b282
 ```
 {% endtab %}
 {% endtabs %}

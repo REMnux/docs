@@ -20,7 +20,7 @@ One way to run Thug as a Docker image is to invoke it using the following comman
 docker run --rm -it --entrypoint "/bin/bash" remnux/thug
 ```
 
-For more details and execution options see the [remnux/thug page on Docker Hub](https://github.com/REMnux/docker/tree/master/thug).
+For more details about the image and its execution options see the [remnux/thug page on Docker Hub](https://github.com/REMnux/docker/tree/master/thug).
 
 ## JSDetox JavaScript Analysis Tool <a id="jsdetox"></a>
 
@@ -32,19 +32,42 @@ You can use the following command to launch the JSDetox Docker image, with the a
 docker run -d --rm --name jsdetox -p 3000:3000 remnux/jsdetox
 ```
 
-To stop JSDetox, use  the command `docker stop jsdetox`. For more details, see the [remnux/jsdetox page on Docker Hub](https://hub.docker.com/r/remnux/jsdetox/).
+To stop JSDetox, use  the command `docker stop jsdetox`. For more details about the image see the [remnux/jsdetox page on Docker Hub](https://hub.docker.com/r/remnux/jsdetox/).
 
 ## Rekall Memory Forensic and Incident Response Framework <a id="rekall"></a>
 
 [Rekall](https://github.com/google/rekall) is a set of tools for extracting digital artifacts from memory and other aspects of a system when performing incident response. Its components were [written by multiple people](https://github.com/google/rekall/blob/master/AUTHORS.md), and are licensed under  [GNU General Public License \(GPL\) v2](https://github.com/google/rekall/blob/master/LICENSE.txt). 
 
-To run Rekall, first created a directory where you'll store the forensic evidence and make it world-accessible \(e.g, `chmod a+xwr`\). Then, use a command like this to open a shell inside the Docker container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
+To run Rekall, first create a directory where you'll store the forensic evidence and make it world-accessible \(e.g, `chmod a+xwr`\). Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
 
 ```text
 docker run --rm -it -v <evidence_directory>:/home/nonroot/files remnux/rekall bash
 ```
 
-For more dtails, see the [remnux/rekall page on Docker Hub](https://hub.docker.com/repository/docker/remnux/rekall).
+For more details about the image see the [remnux/rekall page on Docker Hub](https://hub.docker.com/repository/docker/remnux/rekall).
+
+## RetDec Retargetable Machine-Code Decompiler <a id="retdec"></a>
+
+[RetDec](https://retdec.com) is a decompiler that supports a variety of file formats, include PE and ELF, and several 32 and 64-bit architectures. It was created by [Avast Software](https://www.avast.com), and is licensed under [MIT License](https://github.com/avast/retdec/blob/master/LICENSE) with [third-party components](https://github.com/avast/retdec/blob/master/LICENSE-THIRD-PARTY) that are distributed under their own licenses.
+
+To run RetDec, create a directory where you'll store the files you plan to examine and make it world-accessible \(e.g, `chmod a+xwr`\). Then,  open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/tmp/files` inside the container:
+
+```text
+docker run -it --rm -v <path_to_binary>:/tmp/files remnux/retdec /bin/bash
+```
+
+The login credentials for the container are:
+
+Username: `retdec`  
+Password: `retdec`
+
+For more details about the image see the [remnux/retdec page on Docker Hub](https://hub.docker.com/repository/docker/remnux/retdec).
+
+{% hint style="info" %}
+The commands provided by RetDec include: 
+
+retdec-ar-extractor, retdec-config, retdec-fileinfo.py, retdec-macho-extractor, retdec-unpacker, retdec-archive-decompiler.py, retdec-config.py, retdec-getsig, retdec-pat2yara, retdec-unpacker.py, retdec-bin2llvmir, retdec-decompiler.py, retdec-idb2pat, retdec-signature-from-library-creator.py, retdec-utils.py, retdec-bin2pat, retdec-fileinfo, retdec-llvmir2hll, retdec-stacofin, retdec-yarac
+{% endhint %}
 
 ## More to come...
 
