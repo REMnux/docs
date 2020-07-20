@@ -28,7 +28,7 @@ Download the REMnux VirtualBox OVA from one of these locations:
 Some browser change the extension of the REMnux OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension before proceeding.
 {% endhint %}
 
-## Step 2: Confirm the Hash the File <a id="confirm-hash"></a>
+## Step 2: Confirm the Hash the OVA File <a id="confirm-hash"></a>
 
 Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum` or `shasum` to make sure it matches this expected value:
 
