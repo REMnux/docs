@@ -86,7 +86,7 @@ Depending on which hypervisor or environment you're using, you might need to tak
 
 ### VirtualBox
 
-The VirtualBox version of the REMnux virtual appliance is shipped with display scaling set to 200%. If this doesn't look good on your screen, adjust it by going to the VirtualBox menu `View` &gt; `Virtual Screen 1` &gt; `Scale to 100%`.
+If your REMnux window is too small when you boot it up the system in VirtualBox, increase its scaling from 100% by going to the VirtualBox menu `View` &gt; `Virtual Screen 1`. The best scaling factor depends on the size and resolution of your physical screen, but `Scale to 200%` often works well.
 
 ### Remote Cloud, Such as AWS
 
