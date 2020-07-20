@@ -62,6 +62,7 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 * [KVM/QEMU](https://blog.ricosharp.com/posts/2019/Converting-ova-file-to-qcow2)
 * [AWS](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
 * [Hyper-V and Azure](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn873998%28v=ws.11%29?redirectedfrom=MSDN)
+* [Proxmox](https://www.proxmox.com/)
 {% endtab %}
 {% endtabs %}
 
@@ -100,6 +101,13 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 ### KVM/QEMU
 
 If you converted the REMnux virtual appliance to KVM/QEMU, install install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package in the virtual machine to be able to resize the windows of your VM and copy/paste between it and your host.
+
+### Proxmox
+
+If you're planning to use the REMnux virtual appliance in Proxmox, [follow the steps in this article](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) to import the OVA. Once done, consider taking the following steps using the Proxmox interface:
+
+1. VM &gt; Hardware &gt; Display &gt; Set to -&gt; SPICE\(qxl\)
+2. VM &gt; Hardware &gt; Option &gt; Spice Enhancements &gt; Video Streaming: all
 
 ## Step 5: Upgrade the REMnux Virtual Machine <a id="upgrade-remnux"></a>
 

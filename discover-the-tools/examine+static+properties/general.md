@@ -21,6 +21,7 @@ Tool to read from, write to, and edit EXIF metadata of various file types
 **Website**: [https://exiftool.org/](https://exiftool.org/)  
 **Author**: Phil Harvey  
 **License**: "This is free software; you can redistribute it and/or modify it under the same terms as Perl itself": [https://exiftool.org/\#license](https://exiftool.org/#license)  
+**Notes**: exiftool  
 **State File**: [remnux.perl-packages.exiftool](https://github.com/REMnux/salt-states/blob/master/./remnux/perl-packages/exiftool.sls)
 
 ## DroidLysis
@@ -124,6 +125,7 @@ Automatically rank strings based on their relevance for malware analysis.
 **Website**: [https://github.com/fireeye/stringsifter](https://github.com/fireeye/stringsifter)  
 **Author**:  FireEye Inc.  
 **License**: Apache License 2.0: [https://github.com/fireeye/stringsifter/blob/master/LICENSE](https://github.com/fireeye/stringsifter/blob/master/LICENSE)  
+**Notes**: flarestrings  
 **State File**: [remnux.python-packages.stringsifter](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/stringsifter.sls)
 
 ## Hachoir

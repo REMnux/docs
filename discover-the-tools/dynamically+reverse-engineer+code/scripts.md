@@ -40,6 +40,7 @@ Reformat JavaScript scripts for easier analysis.
 **Website**: [https://beautifier.io/](https://beautifier.io/)  
 **Author**: Einar Lielmanis, Liam Newman, and contributors  
 **License**: MIT License: [https://github.com/beautify-web/js-beautify/blob/master/LICENSE](https://github.com/beautify-web/js-beautify/blob/master/LICENSE)  
+**Notes**: js-beautify  
 **State File**: [remnux.python-packages.jsbeautifier](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/jsbeautifier.sls)
 
 ## box-js
@@ -79,6 +80,7 @@ GUI JavaScript debugger
 **Website**: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Debugger](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Debugger)  
 **Author**: Mozilla Project  
 **License**: Mozilla Public License v2.0: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License)  
+**Notes**: rhino-debugger  
 **State File**: [remnux.packages.rhino](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/rhino.sls)
 
 ## PowerShell  Core

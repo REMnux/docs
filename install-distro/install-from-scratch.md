@@ -72,7 +72,7 @@ If you're planning to run REMnux in a local lab, kick off the installation by ru
 sudo remnux install
 ```
 
-If you're depoying REMnux in a remote cloud environment and will need to keep the SSH daemon enabled for remotely accessing the system, use the following command instead and remember to harden the system after it installs to avoid unauthorized logins:
+If you're depoying REMnux in a remote cloud environment and will need to keep the SSH daemon enabled for remotely accessing the system, use the following command instead to avoid disabling the SSH daemon. Remember to harden the system after it installs to avoid unauthorized logins:
 
 ```text
 sudo remnux install --mode=cloud

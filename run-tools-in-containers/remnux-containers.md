@@ -2,6 +2,10 @@
 
 The REMnux toolkit provides [Docker](https://www.docker.com) images of popular malware analysis tools that you can run on any compatible system even without installing the REMnux distro. These images reside in the [REMnux repository on Docker Hub](https://hub.docker.com/u/remnux), and are based on the files maintained in the [REMnux Github repository](https://github.com/REMnux/docker).
 
+{% hint style="success" %}
+In addition to the Docker images of individual tools, described below, you can run the [REMnux distro inside a pre-built Docker container](../install-distro/remnux-in-a-container.md).
+{% endhint %}
+
 Docker is installed as part of the REMnux distro. If you're planning to run REMnux Docker images on another system, you may need to [install Docker](https://docs.docker.com/get-docker/). The first time you run an [image](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/) \(e.g., using the `docker run` command\), Docker will automatically download the image from Docker Hub, run it locally as an active [container](https://www.docker.com/resources/what-container). Your system will need to be connected to the internet to retrieve the image; afterwards, Docker will use a locally cached copy. You can use the `docker pull` command to update the cached version of the image. To update all local images from a Linux-like shell, run:
 
 ```text
@@ -20,7 +24,7 @@ One way to run Thug as a Docker image is to invoke it using the following comman
 docker run --rm -it --entrypoint "/bin/bash" remnux/thug
 ```
 
-For more details about the image and its execution options see the [remnux/thug page on Docker Hub](https://github.com/REMnux/docker/tree/master/thug).
+The remnux/thug image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/thug).
 
 ## JSDetox JavaScript Analysis Tool <a id="jsdetox"></a>
 
@@ -32,19 +36,21 @@ You can use the following command to launch the JSDetox Docker image, with the a
 docker run -d --rm --name jsdetox -p 3000:3000 remnux/jsdetox
 ```
 
-To stop JSDetox, use  the command `docker stop jsdetox`. For more details about the image see the [remnux/jsdetox page on Docker Hub](https://hub.docker.com/r/remnux/jsdetox/).
+To stop JSDetox, use  the command `docker stop jsdetox`.
+
+The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/jsdetox/).
 
 ## Rekall Memory Forensic and Incident Response Framework <a id="rekall"></a>
 
 [Rekall](https://github.com/google/rekall) is a set of tools for extracting digital artifacts from memory and other aspects of a system when performing incident response. Its components were [written by multiple people](https://github.com/google/rekall/blob/master/AUTHORS.md), and are licensed under  [GNU General Public License \(GPL\) v2](https://github.com/google/rekall/blob/master/LICENSE.txt). 
 
-To run Rekall, first create a directory where you'll store the forensic evidence and make it world-accessible \(e.g, `chmod a+xwr`\). Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
+To run Rekall, first create a directory where you'll store the forensic evidence. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
 
 ```text
 docker run --rm -it -v <evidence_directory>:/home/nonroot/files remnux/rekall bash
 ```
 
-For more details about the image see the [remnux/rekall page on Docker Hub](https://hub.docker.com/repository/docker/remnux/rekall).
+The remnux/rekall image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rekall).
 
 ## RetDec Retargetable Machine-Code Decompiler <a id="retdec"></a>
 
@@ -61,13 +67,11 @@ The login credentials for the container are:
 Username: `retdec`  
 Password: `retdec`
 
-For more details about the image see the [remnux/retdec page on Docker Hub](https://hub.docker.com/repository/docker/remnux/retdec).
-
 {% hint style="info" %}
-The commands provided by RetDec include: 
-
-retdec-ar-extractor, retdec-config, retdec-fileinfo.py, retdec-macho-extractor, retdec-unpacker, retdec-archive-decompiler.py, retdec-config.py, retdec-getsig, retdec-pat2yara, retdec-unpacker.py, retdec-bin2llvmir, retdec-decompiler.py, retdec-idb2pat, retdec-signature-from-library-creator.py, retdec-utils.py, retdec-bin2pat, retdec-fileinfo, retdec-llvmir2hll, retdec-stacofin, retdec-yarac
+The commands provided by RetDec include start with the `retdec-` prefix and include retdec-decompiler.py, retdec-unpacker, and retdec-fileinfo.
 {% endhint %}
+
+The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
 
 ## More to come...
 
