@@ -13,14 +13,14 @@ Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the
 Download the REMnux general OVA file from one of these locations:
 
 * [Box](https://app.box.com/s/aag3olb4ilajqazsb7d0acbibb6sxhe4) \(primary\)
-* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7.ova/download) \(mirror, available soon\)
+* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7.ova/download) \(mirror\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
 Download the REMnux VirtualBox OVA from one of these locations:
 
 * [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(primary\)
-* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7-virtualbox.ova/download) \(mirror, available soon\)
+* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7-virtualbox.ova/download) \(mirror\)
 {% endtab %}
 {% endtabs %}
 
