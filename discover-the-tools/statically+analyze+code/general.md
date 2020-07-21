@@ -31,6 +31,7 @@ Reverse engineering platform powered by radare2
 **Website**: [https://cutter.re](https://cutter.re)  
 **Author**: Unknown  
 **License**: GNU General Public License \(GPL\) v3.0: [https://github.com/radareorg/cutter/blob/master/COPYING](https://github.com/radareorg/cutter/blob/master/COPYING)  
+**Notes**: If you're planning to use Cutter when running REMnux as a Docker container, you'll need to include the `--privileged` parameter when invoking the REMnux distro image in Docker.  
 **State File**: [remnux.tools.cutter](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/cutter.sls)
 
 ## Vivisect

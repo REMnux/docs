@@ -44,10 +44,10 @@ The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.c
 
 [Rekall](https://github.com/google/rekall) is a set of tools for extracting digital artifacts from memory and other aspects of a system when performing incident response. Its components were [written by multiple people](https://github.com/google/rekall/blob/master/AUTHORS.md), and are licensed under  [GNU General Public License \(GPL\) v2](https://github.com/google/rekall/blob/master/LICENSE.txt). 
 
-To run Rekall, first create a directory where you'll store the forensic evidence. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
+To run Rekall, first create a directory where you'll store the files you plan to examine. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
 
 ```text
-docker run --rm -it -v <evidence_directory>:/home/nonroot/files remnux/rekall bash
+docker run --rm -it -v <files_directory>:/home/nonroot/files remnux/rekall bash
 ```
 
 The remnux/rekall image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rekall).
@@ -56,10 +56,10 @@ The remnux/rekall image is hosted on [its Docker Hub page](https://hub.docker.co
 
 [RetDec](https://retdec.com) is a decompiler that supports a variety of file formats, include PE and ELF, and several 32 and 64-bit architectures. It was created by [Avast Software](https://www.avast.com), and is licensed under [MIT License](https://github.com/avast/retdec/blob/master/LICENSE) with [third-party components](https://github.com/avast/retdec/blob/master/LICENSE-THIRD-PARTY) that are distributed under their own licenses.
 
-To run RetDec, create a directory where you'll store the files you plan to examine and make it world-accessible \(e.g, `chmod a+xwr`\). Then,  open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/tmp/files` inside the container:
+To run RetDec, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/tmp/files` inside the container:
 
 ```text
-docker run -it --rm -v <path_to_binary>:/tmp/files remnux/retdec /bin/bash
+docker run -it --rm -v <files_directory>:/tmp/files remnux/retdec bash
 ```
 
 The login credentials for the container are:
@@ -73,5 +73,15 @@ The commands provided by RetDec include start with the `retdec-` prefix and incl
 
 The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
 
-## More to come...
+## Radare2 Reverse-Engineering Framework <a id="radare2"></a>
+
+[Radare2](https://www.radare.org/) is a reverse-engineering framework that includes a disassembler and analysis capabilities for a variety of executable formats and architectures. It's licensed under [GNU Lesser General Public License \(LGPL\) v3](https://github.com/radareorg/radare2/blob/master/COPYING).
+
+To run Radare2, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run Radare2 commands and have your local directory mapped as `/home/nonroot/workdir` inside the container:
+
+```text
+docker run -it --rm -v <files_directory>:/home/nonroot/workdir remnux/retdec bash
+```
+
+The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
