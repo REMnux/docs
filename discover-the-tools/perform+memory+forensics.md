@@ -8,7 +8,7 @@ description: Discover the Tools
 
 Memory forensics tool and framework
 
-**Website**: [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3)  
+**Website**: [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)  
 **Author**: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt)  
 **License**: GNU General Public License \(GPL\) v2: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt)  
 **Notes**: vol.py  
@@ -41,7 +41,7 @@ Find 128-bit and 256-bit AES keys in a memory image.
 **Website**: [https://citp.princeton.edu/our-work/memory/](https://citp.princeton.edu/our-work/memory/)  
 **Author**: Nadia Heninger, Alex Halderman  
 **License**: Free, unknown license  
-**Notes**: rsakeyfind  
+**Notes**: aeskeyfind  
 **State File**: [remnux.packages.aeskeyfind](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/aeskeyfind.sls)
 
 ## bulk\_extractor
