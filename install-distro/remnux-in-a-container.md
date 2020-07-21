@@ -17,7 +17,7 @@ docker run --rm -it -v <local_directory>:/home/remnux/files remnux/remnux-distro
 If you'd like to access the REMnux distro container using SSH, you can invoke it by mapping your system's TCP port 22 to the container's internal TCP port 22. One way to do this is to use the following command, which will open the SSH listener and run the container in the background:
 
 ```text
-docker run -p 22:22 remnux/remnux-distro
+docker run -d -p 22:22 remnux/remnux-distro
 ```
 
 If you're connecting to your REMnux container, you can access the REMnux graphical interface by [tunneling the GUI through SSH](../tips/remnux-config-tips.md#gui-cloud-remnux).
