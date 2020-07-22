@@ -19,7 +19,7 @@ Analyze I/O operations of a suspicious PE file by emulating its execution.
 Detect suspicious capabilites in PE files.
 
 **Website**: [https://github.com/fireeye/capa](https://github.com/fireeye/capa)  
-**Author**: FireEye Inc, Willi Ballenthin: [https://twitter.com/williballenthin](https://twitter.com/williballenthin), Moritz Raabe  
+**Author**: FireEye Inc, Willi Ballenthin: [https://twitter.com/williballenthin](https://twitter.com/williballenthin), Moritz Raabe: [https://twitter.com/m\_r\_tz](https://twitter.com/m_r_tz)  
 **License**: Apache License 2.0: [https://github.com/fireeye/capa/blob/master/LICENSE.txt](https://github.com/fireeye/capa/blob/master/LICENSE.txt)  
 **State File**: [remnux.packages.capa](https://github.com/REMnux/salt-states/blob/master/remnux/packages/capa.sls)
 
