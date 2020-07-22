@@ -21,8 +21,8 @@ Download the REMnux general OVA file from one of these locations:
 Download the REMnux VirtualBox OVA from one of these locations:
 
 * [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(primary\)
-* [Uploadfile.io](https://ufile.io/jqnqtp2p) \(morror 1\)
-* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7-virtualbox.ova/download) \(mirror 2\)
+* [Uploadfile.io](https://ufile.io/jqnqtp2p) \(mirror\)
+* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7-virtualbox.ova/download) \(mirror\)
 {% endtab %}
 {% endtabs %}
 
