@@ -12,17 +12,17 @@ Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the
 {% tab title="General OVA Link" %}
 Download the REMnux general OVA file from one of these locations:
 
-* [Box](https://app.box.com/s/aag3olb4ilajqazsb7d0acbibb6sxhe4) \(primary\)
-* [Uploadfile.io](https://ufile.io/ile9dpsf) \(mirror\)
-* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7.ova/download) \(mirror\)
+* [Box](https://app.box.com/s/aag3olb4ilajqazsb7d0acbibb6sxhe4) \(Primary\)
+* [Uploadfile.io](https://ufile.io/ile9dpsf) \(Mirror 1\)
+* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7.ova/download) \(Mirror 2\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
 Download the REMnux VirtualBox OVA from one of these locations:
 
-* [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(primary\)
-* [Uploadfile.io](https://ufile.io/jqnqtp2p) \(mirror\)
-* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7-virtualbox.ova/download) \(mirror\)
+* [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(Primary\)
+* [Uploadfile.io](https://ufile.io/jqnqtp2p) \(Mirror 1\)
+* [SourceForge](https://sourceforge.net/projects/remnux/files/version7/remnux-v7-virtualbox.ova/download) \(Mirror 2\)
 {% endtab %}
 {% endtabs %}
 
