@@ -26,7 +26,7 @@ The [Discover the Tools](discover-the-tools/examine+static+properties/) section 
 * [Download the virtual appliance](install-distro/get-virtual-appliance.md) of the REMnux distro.
 * [Install the REMnux distro from scratch](install-distro/install-from-scratch.md) on a dedicated system.
 * [Add the REMnux distro](install-distro/add-to-existing-system.md) to an existing machine.
-* [Run the REMnux distro in a Docker container.](install-distro/remnux-in-a-container.md)
+* [Run the REMnux distro as a Docker container.](install-distro/remnux-as-a-container.md)
 
 ## Run Tools in Containers <a id="run-in-containers"></a>
 

@@ -1,6 +1,6 @@
-# Run REMnux in a Container
+# Run REMnux as a Container
 
-You can run the REMnux distro in a [Docker](https://www.docker.com) container by using a prebuilt image, hosted in [the REMnux repository on Docker Hub](https://hub.docker.com/repository/docker/remnux/remnux-distro).
+You can run the REMnux distro as a [Docker](https://www.docker.com) container by using a prebuilt image, hosted in [the REMnux repository on Docker Hub](https://hub.docker.com/repository/docker/remnux/remnux-distro).
 
 ## Local Interactive Shell
 
