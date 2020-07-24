@@ -21,6 +21,7 @@ Statically analyze PE and Microsoft Office files.
 **Website**: [https://github.com/guelfoweb/peframe](https://github.com/guelfoweb/peframe)  
 **Author**: Gianni Amato: [https://twitter.com/guelfoweb](https://twitter.com/guelfoweb)  
 **License**: Free, unknown license  
+**Notes**: [p](https://github.com/erocarrera/pefile/blob/wiki/UsageExamples.md#introduction)eframe  
 **State File**: [remnux.python-packages.peframe](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/peframe.sls)
 
 ## pefile
