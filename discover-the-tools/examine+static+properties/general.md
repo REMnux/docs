@@ -6,13 +6,22 @@ description: Examine Static Properties
 
 ## TrID
 
-Identify file type.
+Identify file type using signatures.
 
 **Website**: [https://mark0.net/soft-trid-e.html](https://mark0.net/soft-trid-e.html)  
 **Author**: Marco Pontello  
 **License**: Free, unknown license  
 **Notes**: trid, tridupdate  
 **State File**: [remnux.tools.trid](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/trid.sls)
+
+## file
+
+Identify file type using "magic" numbers.
+
+**Website**: [http://astron.com/pub/file/README](http://astron.com/pub/file/README)  
+**Author**: Ian F. Darwin, Christos Zoulas  
+**License**: BSD 2-Clause "Alike" License: [https://github.com/file/file/blob/master/COPYING](https://github.com/file/file/blob/master/COPYING)  
+**State File**: [remnux.packages.file](https://github.com/REMnux/salt-states/blob/master/remnux/packages/file.sls)
 
 ## ExifTool
 
