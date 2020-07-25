@@ -43,16 +43,6 @@ Python library for analyzing static properties of PE files.
 **Notes**: [https://github.com/erocarrera/pefile/blob/wiki/UsageExamples.md\#introduction](https://github.com/erocarrera/pefile/blob/wiki/UsageExamples.md#introduction)  
 **State File**: [remnux.python-packages.pefile](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/pefile.sls)
 
-## userdb.txt
-
-A database of signatures for identifying packers.
-
-**Website**: [https://github.com/cuckoosandbox/cuckoo/blob/master/cuckoo/private/peutils/UserDB.TXT](https://github.com/cuckoosandbox/cuckoo/blob/master/cuckoo/private/peutils/UserDB.TXT)  
-**Author**: Unknown  
-**License**: Free, unknown license.  
-**Notes**: The databse is designed for the tool PEiD, but is also used by various other tools, such as pecheck.py. This version of the file is from the Cuckoo Sandbox project.  
-**State File**: [remnux.config.userdb](https://github.com/REMnux/salt-states/blob/master/remnux/config/userdb.sls)
-
 ## pedump
 
 Statically analyze PE files.
