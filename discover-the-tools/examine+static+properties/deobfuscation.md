@@ -121,7 +121,7 @@ Help guess a file's 256-byte XOR by using frequency analysis.
 
 ## brxor.py
 
-Bruteforce XOR'ed strings.
+Bruteforce XOR'ed strings to find those that are English words.
 
 **Website**: [https://github.com/REMnux/distro/blob/master/files/brxor.py](https://github.com/REMnux/distro/blob/master/files/brxor.py)  
 **Author**: Alexander Hanel, Trenton Tait  
