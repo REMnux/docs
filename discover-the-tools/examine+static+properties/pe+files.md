@@ -52,16 +52,6 @@ Statically analyze PE files.
 **License**: MIT License: [https://github.com/zed-0xff/pedump/blob/master/LICENSE.txt](https://github.com/zed-0xff/pedump/blob/master/LICENSE.txt)  
 **State File**: [remnux.rubygems.pedump](https://github.com/REMnux/salt-states/blob/master/./remnux/rubygems/pedump.sls)
 
-## ClamAV
-
-Scan files for malware signatures.
-
-**Website**: [https://www.clamav.net](https://www.clamav.net)  
-**Author**: [https://www.clamav.net/about](https://www.clamav.net/about)  
-**License**: GNU General Public License \(GPL\): [https://www.clamav.net/about](https://www.clamav.net/about)  
-**Notes**: clamscan, freshclam  
-**State File**: [remnux.packages.clamav-daemon](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/clamav-daemon.sls)
-
 ## pev
 
 Analyze PE files and extract strings from them
@@ -81,6 +71,16 @@ Statically analyze PE files.
 **License**: Apache License 2.0: [https://github.com/katjahahn/PortEx/blob/master/LICENSE](https://github.com/katjahahn/PortEx/blob/master/LICENSE)  
 **Notes**: portex  
 **State File**: [remnux.packages.portex](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/portex.sls)
+
+## StringSifter
+
+Automatically rank strings based on their relevance to the analysis of suspicious Windows executables.
+
+**Website**: [https://github.com/fireeye/stringsifter](https://github.com/fireeye/stringsifter)  
+**Author**:  FireEye Inc.  
+**License**: Apache License 2.0: [https://github.com/fireeye/stringsifter/blob/master/LICENSE](https://github.com/fireeye/stringsifter/blob/master/LICENSE)  
+**Notes**: flarestrings  
+**State File**: [remnux.python-packages.stringsifter](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/stringsifter.sls)
 
 ## bearparser
 

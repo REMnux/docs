@@ -21,7 +21,7 @@ Memory forensics tool and framework
 **Website**: [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3)  
 **Author**: The Volatility Foundation  
 **License**: Volatility Software License: [https://github.com/volatilityfoundation/volatility3/blob/master/LICENSE.txt](https://github.com/volatilityfoundation/volatility3/blob/master/LICENSE.txt)  
-**Notes**: vol3, volshell3  
+**Notes**: Invoke using: vol3, volshell3. Before using, download symbols by following the links from [https://github.com/volatilityfoundation/volatility3\#symbol-tables](https://github.com/volatilityfoundation/volatility3#symbol-tables) and place them in `/usr/local/lib/python3.6/dist-packages/volatility/symbols`.  
 **State File**: [remnux.python-packages.volatility3](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/volatility3.sls)
 
 ## linux\_mem\_diff\_tool

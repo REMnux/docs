@@ -53,6 +53,16 @@ Manipulate embedded digital signatures.
 **Notes**: disitool.py  
 **State File**: [remnux.scripts.disitool](https://github.com/REMnux/salt-states/blob/master/./remnux/scripts/disitool.sls)
 
+## ClamAV
+
+Scan files for malware signatures.
+
+**Website**: [https://www.clamav.net](https://www.clamav.net)  
+**Author**: [https://www.clamav.net/about](https://www.clamav.net/about)  
+**License**: GNU General Public License \(GPL\): [https://www.clamav.net/about](https://www.clamav.net/about)  
+**Notes**: clamscan, freshclam  
+**State File**: [remnux.packages.clamav-daemon](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/clamav-daemon.sls)
+
 ## Hash ID
 
 Identify dfferent types of hashes.
@@ -136,16 +146,6 @@ Analyze zip-compressed files.
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Public Domain  
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
-
-## StringSifter
-
-Automatically rank strings based on their relevance for malware analysis.
-
-**Website**: [https://github.com/fireeye/stringsifter](https://github.com/fireeye/stringsifter)  
-**Author**:  FireEye Inc.  
-**License**: Apache License 2.0: [https://github.com/fireeye/stringsifter/blob/master/LICENSE](https://github.com/fireeye/stringsifter/blob/master/LICENSE)  
-**Notes**: flarestrings  
-**State File**: [remnux.python-packages.stringsifter](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/stringsifter.sls)
 
 ## Hachoir
 
