@@ -11,7 +11,7 @@ Perform static analysis of suspicious PE files.
 **Website**: [https://github.com/JusticeRage/Manalyze](https://github.com/JusticeRage/Manalyze)  
 **Author**: Ivan Kwiatkowski: [https://twitter.com/JusticeRage](https://twitter.com/JusticeRage)  
 **License**: GNU General Public License \(GPL\) v3: [https://github.com/zrax/pycdc/blob/master/LICENSE](https://github.com/zrax/pycdc/blob/master/LICENSE)  
-**Notes**: Run "manalyze" to invoke the tool. To update the tool's Yara rules to include ClamAV, run "sudo /usr/local/manalyze/yara\_rules/update\_clamav\_signatures.py".  
+**Notes**: Run "manalyze" to invoke the tool. To update the tool's Yara rules to include ClamAV, run "sudo /usr/local/manalyze/yara\_rules/update\_clamav\_signatures.py". To query VirusTotal, add your API key to /usr/local/manalyze/manalyze.conf.  
 **State File**: [remnux.tools.manalyze](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/manalyze.sls)
 
 ## PEframe
@@ -61,6 +61,16 @@ Scan files for malware signatures.
 **License**: GNU General Public License \(GPL\): [https://www.clamav.net/about](https://www.clamav.net/about)  
 **Notes**: clamscan, freshclam  
 **State File**: [remnux.packages.clamav-daemon](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/clamav-daemon.sls)
+
+## Yara Rules
+
+Scan files for malware signatures.
+
+**Website**: [https://github.com/Yara-Rules/rules](https://github.com/Yara-Rules/rules)  
+**Author**: A group of IT security researchers: [https://twitter.com/yararules](https://twitter.com/yararules)  
+**License**: GNU General Public License \(GPL\) v2: [https://github.com/Yara-Rules/rules/blob/master/LICENSE](https://github.com/Yara-Rules/rules/blob/master/LICENSE)  
+**Notes**: To scan a file using these rules, you can use the wrapper around Yara: `yara-rules FILE`, where `FILE` is the path to the file you wish to scan.  
+**State File**: [remnux.tools.yara-rules](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-rules.sls)
 
 ## pev
 
