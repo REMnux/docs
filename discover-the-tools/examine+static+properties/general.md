@@ -72,6 +72,16 @@ Find patterns of common encryption, compression, or encoding algorithms
 **License**: Free, unknown license  
 **State File**: [remnux.packages.signsrch](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/signsrch.sls)
 
+## Yara Rules
+
+Scan files for malware signatures.
+
+**Website**: [https://github.com/Yara-Rules/rules](https://github.com/Yara-Rules/rules)  
+**Author**: A group of IT security researchers: [https://twitter.com/yararules](https://twitter.com/yararules)  
+**License**: GNU General Public License \(GPL\) v2: [https://github.com/Yara-Rules/rules/blob/master/LICENSE](https://github.com/Yara-Rules/rules/blob/master/LICENSE)  
+**Notes**: To scan a file using these rules, you can use the wrapper around Yara: `yara-rules FILE`, where `FILE` is the path to the file you wish to scan.  
+**State File**: [remnux.tools.yara-rules](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-rules.sls)
+
 ## ssdeep
 
 Compute Context Triggered Piecewise Hashes \(CTPH\), also known as fuzzy hashes.
