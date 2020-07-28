@@ -68,7 +68,7 @@ Emulate common network services and interact with malware.
 **Website**: [https://www.inetsim.org/](https://www.inetsim.org/)  
 **Author**: Thomas Hungenberg, Matthias Eckert  
 **License**: GNU General Public License \(GPL\) v3  
-**Notes**: Run the tool using `sudo fakenet`. First, edit `/usr/lib/python2.7/dist-packages/fakenet/configs/default.ini`, changing the `LinuxRestrictInterface` parameter to your Ethernet network interface name, such as `ens33`.  
+**Notes**: inetsim  
 **State File**: [remnux.packages.inetsim](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/inetsim.sls)
 
 ## FakeNet-NG
@@ -78,6 +78,6 @@ Emulate common network services and interact with malware.
 **Website**: [https://github.com/fireeye/flare-fakenet-ng](https://github.com/fireeye/flare-fakenet-ng)  
 **Author**: FireEye Inc, Peter Kacherginsky, Michael Bailey: [https://github.com/fireeye/flare-fakenet-ng/blob/master/AUTHORS](https://github.com/fireeye/flare-fakenet-ng/blob/master/AUTHORS)  
 **License**: Apache License 2.0: [https://github.com/fireeye/flare-fakenet-ng/blob/master/LICENSE.txt](https://github.com/fireeye/flare-fakenet-ng/blob/master/LICENSE.txt)  
-**Notes**: fakenet  
+**Notes**: Run the tool using `sudo fakenet`. First, edit `/usr/lib/python2.7/dist-packages/fakenet/configs/default.ini`, changing the `LinuxRestrictInterface` parameter to your Ethernet network interface name, such as `ens33`.  
 **State File**: [remnux.packages.fakenet-ng](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/fakenet-ng.sls)
 
