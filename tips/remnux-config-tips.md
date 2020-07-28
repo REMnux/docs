@@ -18,7 +18,7 @@ You can switch between the keyboard layouts by clicking the language icon in the
 
 Ubuntu uses a daemon named "systemd-resolved" for resolving DNS queries that you initiate from the system. This daemon listens on the localhost interface on TCP and UDP ports 53. If you're running a tool that attempts to listen on these ports on localhost, your tool might not function properly.
 
-To get around this, reconfigure the tool so it listens on the Ethernet network interface of your REMnux system and not on the localhost network interface. For example, to do this for [FakeNet-NG](../discover-the-tools/explore+network+interactions/services.md#fakenet-ng), edit its configuration file /usr/lib/python2.7/dist-packages/fakenet/configs/default.ini so that the `LinuxRestrictInterface` parameter is set to your Ethernet network interface name, such as `ens33`.
+To get around this, reconfigure the tool so it listens on the Ethernet network interface of your REMnux system and not on the localhost network interface.
 
 Alternatively, you can disable the systemd-resolved daemon until the next reboot like this:
 

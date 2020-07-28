@@ -68,7 +68,7 @@ Emulate common network services and interact with malware.
 **Website**: [https://www.inetsim.org/](https://www.inetsim.org/)  
 **Author**: Thomas Hungenberg, Matthias Eckert  
 **License**: GNU General Public License \(GPL\) v3  
-**Notes**: inetsim  
+**Notes**: Run the tool using `sudo fakenet`. First, edit `/usr/lib/python2.7/dist-packages/fakenet/configs/default.ini`, changing the `LinuxRestrictInterface` parameter to your Ethernet network interface name, such as `ens33`.  
 **State File**: [remnux.packages.inetsim](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/inetsim.sls)
 
 ## FakeNet-NG

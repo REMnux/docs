@@ -91,7 +91,7 @@ Extract files from network traffic.
 
 ## tcpflow
 
-Analyyze the flow of network traffic.
+Analyze the flow of network traffic.
 
 **Website**: [http://downloads.digitalcorpora.org/downloads/tcpflow/](http://downloads.digitalcorpora.org/downloads/tcpflow/)  
 **Author**: Simson L. Garfinkel  
