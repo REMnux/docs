@@ -28,19 +28,24 @@ The line `edb-debugger:` specifies the name of the Ubuntu package that SaltStack
 
 ## Salt State File to Install a pip Package <a id="state-file-pip"></a>
 
-Here's an example of a Salt state file [oletools.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/oletools.sls) to install [oletools](http://www.decalage.info/python/oletools), a set of utilities for analyzing suspicious Microsoft Office documents. In this case, SaltStack will use pip to install this package from the standard PyPI repository of Python software:
+Here's an example of a Salt state file [pyzipper.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/pyzipper.sls) to install [pyzipper](https://github.com/danifus/pyzipper), a Python library for interacting with Zip file archives. SaltStack will use the Python 3 version of pip \(pip3\), which is installed using [remnux.packages.python3-pip](https://github.com/REMnux/salt-states/blob/master/remnux/packages/python3-pip.sls), to install pyzipper from the standard PyPI repository of Python software:
 
 ```text
 include:
+  - remnux.packages.python3-pip
   - remnux.packages.python-pip
 
-oletools:
+remnux-python-packages-pyzipper:
   pip.installed:
+    - name: pyzipper
+    - bin_env: /usr/bin/pip3
     - require:
-      - sls: remnux.packages.python-pip
+      - sls: remnux.packages.python3-pip
 ```
 
-For a more complex example, consider the state file [peframe.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/peframe.sls) for installing [peframe](https://github.com/guelfoweb/peframe), which helps with the analysis of Windows executables and Microsoft Office documents. In this case, SaltStack is directed to retrieve the latest version of peframe from its Github repository, because it's not available on PyPI. The GitHub repository includes the setup.py for this tool, which allows pip to install it. The State File explicitly specifies the need to use Python 3 for the installation and the dependency on several packages that SaltStack will install as well.
+Even though the module will be installed using pip3, SaltStack needs that the Python 2 version of pip be specified in the `include:` statement \(for some reason\).
+
+For another example, consider the state file [peframe.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/peframe.sls) for installing [peframe](https://github.com/guelfoweb/peframe), which helps with the analysis of Windows executables and Microsoft Office documents. In this case, SaltStack is directed to retrieve the latest version of peframe from its Github repository, because it's not available on PyPI. The GitHub repository includes the setup.py for this tool, which allows pip to install it. The State File explicitly specifies the need to install several dependencies when installing this tool.
 
 ```text
 include:
