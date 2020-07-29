@@ -46,9 +46,9 @@ Query Shodan, a search engine for internet-connected devices.
 
 Query public repositories of malware data \(e.g., VirusTotal, HybridAnalysis\).
 
-**Website**: [https://github.com/digitalsleuth/malwoverview](https://github.com/digitalsleuth/malwoverview)  
+**Website**: [https://github.com/alexandreborges/malwoverview](https://github.com/alexandreborges/malwoverview)  
 **Author**: Alexandre Borges  
-**License**: GNU General Public License v3: [https://github.com/digitalsleuth/malwoverview/blob/master/LICENSE](https://github.com/digitalsleuth/malwoverview/blob/master/LICENSE)  
+**License**: GNU General Public License v3: [https://github.com/alexandreborges/malwoverview/blob/master/LICENSE](https://github.com/alexandreborges/malwoverview/blob/master/LICENSE)  
 **Notes**: malwoverview.py, add API keys to ~/.malwapi.conf  
 **State File**: [remnux.python-packages.malwoverview](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/malwoverview.sls)
 
