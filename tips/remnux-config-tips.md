@@ -88,19 +88,5 @@ Another way to remotely interact with the REMnux graphical environment is to use
 6. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
 7. Start a VNC client on your local system, directing it to connect to `localhost:1`
 
-## Adding the REMnux Distro to SIFT Workstation <a id="add-remnux-to-sift"></a>
-
-You can use the REMnux installer to add the REMnux distro to [SIFT Workstation](https://www.sans.org/blog/investigate-and-fight-cyberattacks-with-sift-workstation/) based on Ubuntu 18.04. Doing so involves following the steps in the [Add REMnux to an Existing System](../install-distro/add-to-existing-system.md) section and running the installer with the options `install --mode=addon`.
-
-Before running the REMnux installer, you might need to manually upgrade the SaltStack version on your SIFT Workstation using the following commands:
-
-```text
-sudo -s
-wget -O - https://repo.saltstack.com/apt/ubuntu/18.04/amd64/3000/SALTSTACK-GPG-KEY.pub | apt-key add -
-echo deb [arch=amd64] http://repo.saltstack.com/apt/ubuntu/18.04/amd64/3000 bionic main >> /etc/apt/sources.list.d/saltstack.list
-apt update -y
-apt install -y salt-minion
-```
-
 
 
