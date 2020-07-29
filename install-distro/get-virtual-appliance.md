@@ -13,14 +13,14 @@ Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the
 Download the REMnux general OVA file from one of these locations:
 
 * [Box](https://app.box.com/s/aag3olb4ilajqazsb7d0acbibb6sxhe4) \(primary\)
-* [Uploadfile.io](https://ufile.io/ile9dpsf) \(mirror\)
+* [Uploadfiles.io](https://ufile.io/ile9dpsf) \(mirror\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
 Download the REMnux VirtualBox OVA from one of these locations:
 
 * [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(primary\)
-* [Uploadfile.io](https://ufile.io/jqnqtp2p) \(mirror\)
+* [Uploadfiles.io](https://ufile.io/jqnqtp2p) \(mirror\)
 {% endtab %}
 {% endtabs %}
 
