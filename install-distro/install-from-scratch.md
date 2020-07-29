@@ -2,10 +2,6 @@
 
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
-{% hint style="info" %}
-If you're looking to add REMnux to an existing system, follow the steps in the [Add REMnux to an Existing System](add-to-existing-system.md) section.
-{% endhint %}
-
 ## Step 1: Install Ubuntu 18.04 64-Bit Minimal <a id="install-ubuntu"></a>
 
 If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit [MinimalCD version of Ubuntu 18.04](https://help.ubuntu.com/community/Installation/MinimalCD) \("Bionic Beaver"\).
@@ -37,7 +33,7 @@ wget https://REMnux.org/remnux-cli
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```text
-dc79a10e31eb795dfe749f35c45b1570033676f1a3df4882917ae24c807cdd5e
+79796900999447d4ba3e256304b60a6c53ba4f1b26d6cb3b1c4231eb947eda8a
 ```
 
 To generate the hash of your  file, run:

@@ -13,7 +13,7 @@ wget https://REMnux.org/remnux-cli
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```text
-dc79a10e31eb795dfe749f35c45b1570033676f1a3df4882917ae24c807cdd5e
+79796900999447d4ba3e256304b60a6c53ba4f1b26d6cb3b1c4231eb947eda8a
 ```
 
 To generate the hash of your  file, run:
@@ -29,6 +29,10 @@ mv remnux-cli remnux
 chmod +x remnux
 sudo mv remnux /usr/local/bin
 ```
+
+{% hint style="info" %}
+
+{% endhint %}
 
 ## Step 3: Run the REMnux Installer <a id="run-remnux-installer"></a>
 

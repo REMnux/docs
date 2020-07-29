@@ -22,7 +22,6 @@ apt update -y
 apt install -y salt-minion git 
 systemctl disable salt-minion
 systemctl stop salt-minion
-exit
 ```
 
 ## Retrieving REMnux State Files
