@@ -31,7 +31,7 @@ sudo mv remnux /usr/local/bin
 ```
 
 {% hint style="warning" %}
-Before running the REMnux installers on your existing system, please reboot it. This helps avoid issues with the system's state that might interfere with the installation.
+Before running the REMnux installer on your existing system, please reboot it. This helps avoid issues with the system's state that might interfere with the installation.
 {% endhint %}
 
 ## Step 3: Run the REMnux Installer <a id="run-remnux-installer"></a>

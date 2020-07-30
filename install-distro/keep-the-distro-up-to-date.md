@@ -8,6 +8,10 @@ Keep your REMnux system up to date by running the following command once in a wh
 remnux upgrade
 ```
 
+{% hint style="info" %}
+It's a good idea to reboot your system before upgrading it. This helps avoid issues with the system's state that might interfere with the upgrade.
+{% endhint %}
+
 Even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following operation will make sure that you're running the latest versions of the installed [Debian packages](../behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
 
 ```text
