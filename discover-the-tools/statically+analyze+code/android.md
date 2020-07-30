@@ -23,6 +23,15 @@ Perform static analysis of Android applications.
 **Notes**: droidlysis3.py  
 **State File**: [remnux.python-packages.droidlysis](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/droidlysis.sls)
 
+## baksmali
+
+Disassembler for the dex format used by Dalvik, Android's Java VM implementation.
+
+**Website**: [https://bitbucket.org/JesusFreke/smali](https://bitbucket.org/JesusFreke/smali)  
+**Author**: Ben Gruver  
+**License**: Free, unknown license  
+**State File**: [remnux.packages.baksmali](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/baksmali.sls)
+
 ## androguard
 
 Examine Android files.
@@ -33,14 +42,15 @@ Examine Android files.
 **Notes**: androarsc.py, androauto.py, androaxml.py, androcg.py, androdd.py, androdis.py, androguard, androgui.py, androlyze.py, androsign.py  
 **State File**: [remnux.python-packages.androguard](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/androguard.sls)
 
-## baksmali
+## AndroidProjectCreator
 
-Disassembler for the dex format used by Dalvik, Android's Java VM implementation.
+Convert an Android APK application file into an Android Studio project for easier analysis.
 
-**Website**: [https://bitbucket.org/JesusFreke/smali](https://bitbucket.org/JesusFreke/smali)  
-**Author**: Ben Gruver  
-**License**: Free, unknown license  
-**State File**: [remnux.packages.baksmali](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/baksmali.sls)
+**Website**: [https://maxkersten.nl/projects/androidprojectcreator](https://maxkersten.nl/projects/androidprojectcreator)  
+**Author**: Max Kersten: [https://twitter.com/LibraAnalysis](https://twitter.com/LibraAnalysis)  
+**License**: GNU General Public License \(GPL\) v3: [https://github.com/ThisIsLibra/AndroidProjectCreator/blob/master/LICENSE](https://github.com/ThisIsLibra/AndroidProjectCreator/blob/master/LICENSE)  
+**Notes**: Use AndroidProjectCreator to run the tool. Before running it for the first time, execute `AndroidProjectCreator -compactInstall` to download the latest depenencies. Use Android Studio to examine the output of the tool.  
+**State File**: [remnux.packages.android-project-creator](https://github.com/REMnux/salt-states/blob/master/remnux/packages/android-project-creator.sls)
 
 ## dex2jar
 
