@@ -26,7 +26,7 @@ If you're running the REMnux distro in a virtual machine, consider taking a snap
 
 ## Issues Upgrading and Updating the REMnux Distro <a id="issues-upgrading-updating-remnux"></a>
 
-If you receive an error [upgrading or updating the REMnux distro](keep-the-distro-up-to-date.md) when using the `remnux` command, first reboot your REMnux system, then try the operation again. This often fixes the issue.
+If you receive an error upgrading or updating the REMnux distro when using the `remnux` command, first reboot your REMnux system, then try the operation again. This often fixes the issue.
 
 If rebooting doesn't update the problem, refresh your [APT package database](../behind-the-scenes/technologies/debian-packages.md)  by issuing the following commands, then trying the operation again:
 
