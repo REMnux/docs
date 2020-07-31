@@ -94,5 +94,5 @@ If you installed REMnux using one installation mode, for example `addon`, you ca
 
 1. Edit the /etc/remnux-config and change the mode from `addon` to `dedicated`.
 2. Run the command `remnux update`.
-3. Reboot
+3. Reboot.
 
