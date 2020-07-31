@@ -2,15 +2,13 @@
 
 ## Upgrading and Updating the REMnux Distro <a id="upgrading-updating-remnux"></a>
 
+Unless you've installed REMnux in the `addon` mode, the distro disabled automated Ubuntu update mechanisms for the OS. This allows you to control how and when your REMnux system attempts to initiate network connections, and avoids issues when REMnux on an isolated network.
+
 Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements. Be sure to first connect the system to the internet.
 
 ```text
 remnux upgrade
 ```
-
-{% hint style="info" %}
-It's a good idea to reboot your system before upgrading it. This helps avoid issues with the system's state that might interfere with the upgrade.
-{% endhint %}
 
 Even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following operation will make sure that you're running the latest versions of the installed [Debian packages](../behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
 
