@@ -88,5 +88,11 @@ Another way to remotely interact with the REMnux graphical environment is to use
 6. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
 7. Start a VNC client on your local system, directing it to connect to `localhost:1`
 
+## Switching from Installation Mode After the Install <a id="switch-mode"></a>
 
+If you installed REMnux using one installation mode, for example `addon`, you can switch to another installation mode, for example `dedicated`, by taking the following steps:
+
+1. Edit the /etc/remnux-config and change the mode from `addon` to `dedicated`.
+2. Run the command `remnux update`.
+3. Reboot
 
