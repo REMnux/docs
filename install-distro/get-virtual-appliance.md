@@ -1,4 +1,4 @@
-# Get the REMnux Virtual Appliance
+# Get the Virtual Appliance
 
 The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format, import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date. The virtual appliance is based on Ununtu 18.04.
 

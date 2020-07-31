@@ -4,9 +4,9 @@
 
 ## Install the Distro <a id="install-distro"></a>
 
-* [Get the REMnux Virtual Appliance](install-distro/get-virtual-appliance.md)
-* [Install REMnux from Scratch](install-distro/install-from-scratch.md)
-* [Add REMnux to an Existing System](install-distro/add-to-existing-system.md)
+* [Get the Virtual Appliance](install-distro/get-virtual-appliance.md)
+* [Install from Scratch](install-distro/install-from-scratch.md)
+* [Add to an Existing System](install-distro/add-to-existing-system.md)
 * [Run REMnux as a Container](install-distro/remnux-as-a-container.md)
 * [Keep the Distro Up to Date](install-distro/keep-the-distro-up-to-date.md)
 

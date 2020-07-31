@@ -1,4 +1,4 @@
-# Install REMnux from Scratch
+# Install from Scratch
 
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
