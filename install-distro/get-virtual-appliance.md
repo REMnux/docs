@@ -4,7 +4,7 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 
 ## Step 1: Download the Virtual Appliance File <a id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance is approximately 5 GB. It comes as the industry-standard OVA file, which you can import into your virtualization software.
+The REMnux virtual appliance just over 54 GB. It comes as the industry-standard OVA file, which you can import into your virtualization software.
 
 Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version.
 
@@ -12,15 +12,15 @@ Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the
 {% tab title="General OVA Link" %}
 Download the REMnux general OVA file from one of these locations:
 
-* [Box](https://app.box.com/s/aag3olb4ilajqazsb7d0acbibb6sxhe4) \(primary\)
-* [Uploadfiles.io](https://ufile.io/ile9dpsf) \(mirror\)
+* [Uploadfiles.io](https://ufile.io/gq4plfnf) \(primary\)
+* Google Drive \(mirror\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
 Download the REMnux VirtualBox OVA from one of these locations:
 
-* [Box](https://app.box.com/s/kncftoqrh8wronl5cmkzyalrlvzrf5wy) \(primary\)
-* [Uploadfiles.io](https://ufile.io/jqnqtp2p) \(mirror\)
+* [Uploadfiles.io](https://ufile.io/525nlqcz) \(primary\)
+* Google Drive \(mirror\)
 {% endtab %}
 {% endtabs %}
 
@@ -35,13 +35,13 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 {% tabs %}
 {% tab title="General OVA Hash" %}
 ```text
-41790c9b4136455e5f7f403728e2b18c81271c8a7fedf3c82f4391a7cf4f6652
+0fd090c1a7f60db557c4004308fb6fa7f72531a1777278c93f50979d0ed55994
 ```
 {% endtab %}
 
 {% tab title="VirtualBox VM Hash" %}
 ```text
-00a497f9f3cf4560017198e4916753491c629940518842df05c8293c2593b282
+711be9f5966980991f8fb07ba789c993afd9ea0bfeb992b10bd3da1164ba431b
 ```
 {% endtab %}
 {% endtabs %}
