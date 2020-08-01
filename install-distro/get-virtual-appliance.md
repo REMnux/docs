@@ -13,7 +13,7 @@ Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the
 Download the REMnux general OVA file from one of these locations:
 
 * [Uploadfiles.io](https://ufile.io/gq4plfnf) \(primary\)
-* Google Drive \(mirror\)
+* [Google Drive](https://drive.google.com/file/d/1vtkSorb-FRS45JKkH2v4fBusGh_LTIXx/view?usp=sharing) \(mirror\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
