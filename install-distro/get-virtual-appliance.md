@@ -20,7 +20,7 @@ Download the REMnux general OVA file from one of these locations:
 Download the REMnux VirtualBox OVA from one of these locations:
 
 * [Uploadfiles.io](https://ufile.io/525nlqcz) \(primary\)
-* Google Drive \(mirror\)
+* [Google Drive](https://drive.google.com/file/d/1WthwREUah1iDF_rVxMU3i_SLDxOBfcpB/view?usp=sharing) \(mirror\)
 {% endtab %}
 {% endtabs %}
 
