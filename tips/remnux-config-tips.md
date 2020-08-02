@@ -112,7 +112,7 @@ Yet another method to transfer files in and out of REMnux is to use removable me
 
 If you are running [REMnux as a Docker container](../install-distro/remnux-as-a-container.md), you can invoke the container by mapping a directory on your local system into the container to create a shared location for your files. You can use [Docker's `-v` or `--mount` parameters](https://docs.docker.com/storage/volumes/) when launching the container to achieve this.
 
-## Switching from Installation Mode After the Install <a id="switch-mode"></a>
+## Switching REMnux Installation Mode After the Install <a id="switch-mode"></a>
 
 If you installed REMnux using one installation mode, for example `addon`, you can switch to another installation mode, for example `dedicated`, by taking the following steps:
 
