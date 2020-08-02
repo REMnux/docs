@@ -43,7 +43,7 @@ The `addon` mode will avoid modifications that can modify the look and feel of y
 The installation will take about an hour, depending on your resources and internet connection.
 
 {% hint style="info" %}
-If the REMnux installer produces an error, understand the issue by reviewing the saltstack.log file under /var/cache/remnux/cli in the subdirectory that matches the REMnux version you're installing. Pay particular attention to lines that start with`[ERROR]`. Sometimes problems occur due to network issues, in which case retrying the installation later might work.
+If the REMnux installer produces an error, diagnose the issue by reviewing the saltstack.log file under /var/cache/remnux/cli in the subdirectory that matches the REMnux state-files version you're installing. Search for the log file for `result: false` messages and look at the surrounding 5 lines or the 8 lines above each message to see the state file that caused the issue. \(`grep -i -C 5 'result: false'` or `grep -i -B 8 'result: false'`\).
 {% endhint %}
 
 ## Step 4: Reboot the  REMnux System <a id="reboot-remnux"></a>
@@ -57,7 +57,7 @@ sudo reboot
 Login to your system to start benefiting from the tools that the REMnux distro includes.
 
 {% hint style="success" %}
-To keep your REMnux environment up-to-date run the REMnux installer periodically as described 
+To keep your REMnux environment up-to-date run the REMnux installer periodically as described in the [Keep the Distro Up to Date](keep-the-distro-up-to-date.md) section.
 {% endhint %}
 
 ## Step 5: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
