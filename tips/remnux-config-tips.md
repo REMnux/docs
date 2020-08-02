@@ -88,6 +88,30 @@ Another way to remotely interact with the REMnux graphical environment is to use
 6. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
 7. Start a VNC client on your local system, directing it to connect to `localhost:1`
 
+## Transferring Files In and Out of REMnux <a id="transferring-files"></a>
+
+There are several ways of transferring files, such as malware samples, in and out of REMnux.
+
+### Virtual Machine Tools <a id="vm-tools"></a>
+
+If you're running REMnux as a local VM, one way to transfer files in and out of the VM is to use the copy-and-paste or file transfer capabilities of your hypervisor. If using copy-and-paste, you can place files in and out of the VM by copying them to or from [Nautilus](../discover-the-tools/general+utilities.md#nautilus), which is the GUI file browsing tool on REMnux.
+
+If REMnux is running in VirtualBox, you can go to the Devices menu of VirtualBox for your REMnux VM and select `Shared Folders`, `Shared Clipboard` , and `Drag and Drop`. To enable this functionality, you need to have Guest Additions installed in the REMnux virtual machine, which is preinstalled as part of the VirtualBox version of the REMnux virtual appliance. The appliance ships with `Shared Clipboard` and `Drag and Drop` enabled.
+
+In VMware, similar functionality is supported by the open-vm-tools package, which is prenistalled in the general version of the REMnux virtual appliance and if you installed the distro from scratch using the REMnux installer. You can modify settings of your REMnux virtual machine to disable `Drag and Drop` and `Copy and Paste`, if you wish; they're enabled by default. You can also enable `Shared Folders`, which are disabled by default.
+
+### SFTP
+
+Another way to get files in and out of REMnux is to use the SFTP protocol, which is supported by [OpenSSH](../discover-the-tools/general+utilities.md#openssh). Unless you installed REMnux in `cloud` mode or are running [REMnux as a Docker container](../install-distro/remnux-as-a-container.md), OpenSSH is disabled by default. You can activate OpenSSH in your VM using the `sshd start` command. You can then use an SFTP client to connect to or from REMnux; the SFTP client built into REMnux is the command-line tool `sftp`.
+
+### Removable Media
+
+Yet another method to transfer files in and out of REMnux is to use removable media, such as a USB drive. If running REMnux as a VM, you'd need to use your hypervisor to map the USB drive into the virtual machine.
+
+### Mapping Files into the Container <a id="mapping-files"></a>
+
+If you are running [REMnux as a Docker container](../install-distro/remnux-as-a-container.md), you can invoke the container by mapping a directory on your local system into the container to create a shared location for your files. You can use [Docker's `-v` or `--mount` parameters](https://docs.docker.com/storage/volumes/) when launching the container to achieve this.
+
 ## Switching from Installation Mode After the Install <a id="switch-mode"></a>
 
 If you installed REMnux using one installation mode, for example `addon`, you can switch to another installation mode, for example `dedicated`, by taking the following steps:
