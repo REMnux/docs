@@ -100,6 +100,10 @@ If REMnux is running in VirtualBox, you can go to the Devices menu of VirtualBox
 
 In VMware, similar functionality is supported by the open-vm-tools package, which is prenistalled in the general version of the REMnux virtual appliance and if you installed the distro from scratch using the REMnux installer. You can modify settings of your REMnux virtual machine to disable `Drag and Drop` and `Copy and Paste`, if you wish; they're enabled by default. You can also enable `Shared Folders`, which are disabled by default.
 
+{% hint style="danger" %}
+Enabling hypervisor-based file and clipboard sharing capabilities someone increases the risk that if you run malicious code in your REMnux virtual machine, the malware will adversely affect your underlying code. Many analysts consider this an acceptable risk.
+{% endhint %}
+
 ### SFTP
 
 Another way to get files in and out of REMnux is to use the SFTP protocol, which is supported by [OpenSSH](../discover-the-tools/general+utilities.md#openssh). Unless you installed REMnux in `cloud` mode or are running [REMnux as a Docker container](../install-distro/remnux-as-a-container.md), OpenSSH is disabled by default. You can activate OpenSSH in your VM using the `sshd start` command. You can then use an SFTP client to connect to or from REMnux; the SFTP client built into REMnux is the command-line tool `sftp`.
