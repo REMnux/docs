@@ -83,5 +83,7 @@ To run Radare2, create a directory where you'll store the files you plan to exam
 docker run --rm -it --cap-drop=ALL --cap-add=SYS_PTRACE -v ~/workdir:/home/nonroot/workdir remnux/radare2
 ```
 
+You only need to supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` if you're planning to perform process tracing, syscall tracing, or kernel-mode debugging inside the container.
+
 The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
