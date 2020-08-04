@@ -80,7 +80,7 @@ The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docke
 To run Radare2, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run Radare2 commands and have your local directory mapped as `/home/nonroot/workdir` inside the container:
 
 ```text
-docker run -it --rm -v <files_directory>:/home/nonroot/workdir remnux/retdec bash
+docker run --rm -it --cap-drop=ALL --cap-add=SYS_PTRACE -v ~/workdir:/home/nonroot/workdir remnux/radare2
 ```
 
 The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
