@@ -24,7 +24,7 @@ One way to run Thug as a Docker image is to invoke it using the following comman
 docker run --rm -it --entrypoint "/bin/bash" remnux/thug
 ```
 
-The remnux/thug image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/thug).
+The password for the container's user `thug` is `thug`. The remnux/thug image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/thug).
 
 ## JSDetox JavaScript Analysis Tool <a id="jsdetox"></a>
 
@@ -36,9 +36,7 @@ You can use the following command to launch the JSDetox Docker image, with the a
 docker run -d --rm --name jsdetox -p 3000:3000 remnux/jsdetox
 ```
 
-To stop JSDetox, use  the command `docker stop jsdetox`.
-
-The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/jsdetox/).
+To stop JSDetox, use  the command `docker stop jsdetox`. The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/jsdetox/).
 
 ## Rekall Memory Forensic and Incident Response Framework <a id="rekall"></a>
 
@@ -50,7 +48,7 @@ To run Rekall, first create a directory where you'll store the files you plan to
 docker run --rm -it -v <files_directory>:/home/nonroot/files remnux/rekall bash
 ```
 
-The remnux/rekall image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rekall).
+The password for the container's user `nonroot` is `nonroot`. The remnux/rekall image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rekall).
 
 ## RetDec Retargetable Machine-Code Decompiler <a id="retdec"></a>
 
@@ -62,16 +60,11 @@ To run RetDec, create a directory where you'll store the files you plan to exami
 docker run -it --rm -v <files_directory>:/tmp/files remnux/retdec bash
 ```
 
-The login credentials for the container are:
-
-Username: `retdec`  
-Password: `retdec`
+The password for the container's user `retdec` is `retdec`. The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
 
 {% hint style="info" %}
 The commands provided by RetDec include start with the `retdec-` prefix and include retdec-decompiler.py, retdec-unpacker, and retdec-fileinfo.
 {% endhint %}
-
-The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
 
 ## Radare2 Reverse-Engineering Framework <a id="radare2"></a>
 
@@ -84,6 +77,8 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
 ```
 
 If you're planning to peform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
+
+The password for the container's user `nonroot` is `nonroot`.
 
 The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
