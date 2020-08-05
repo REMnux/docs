@@ -80,10 +80,10 @@ The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docke
 To run Radare2, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run Radare2 commands and have your local directory mapped as `/home/nonroot/workdir` inside the container:
 
 ```text
-docker run --rm -it --cap-drop=ALL --cap-add=SYS_PTRACE -v ~/workdir:/home/nonroot/workdir remnux/radare2
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
 ```
 
-You only need to supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` if you're planning to perform process tracing, syscall tracing, or kernel-mode debugging inside the container.
+If you're planning to peform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
 The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
