@@ -53,6 +53,16 @@ Interact with servers via HTTP, HTTPS, FTP, and FTPS using this command-line too
 **Notes**: wget  
 **State File**: [remnux.packages.wget](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/wget.sls)
 
+## Unfurl
+
+Deconstruct and decode data from a URL.
+
+**Website**: [https://github.com/obsidianforensics/unfurl](https://github.com/obsidianforensics/unfurl)  
+**Author**: Ryan Benson: [https://twitter.com/\_RyanBenson](https://twitter.com/_RyanBenson)  
+**License**: Apache License 2.0: [https://github.com/obsidianforensics/unfurl/blob/master/LICENSE](https://github.com/obsidianforensics/unfurl/blob/master/LICENSE)  
+**Notes**: For the command-line version of the tool, run `unfurl_cli.py`. For the local browser-based version, run `unfurl_app.py`.  
+**State File**: [remnux.python-packages.unfurl](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/unfurl.sls)
+
 ## cURL
 
 Interact with servers via supported protocols, including HTTP, HTTPS, FTP, IMAP, etc. using this command-line tool.
