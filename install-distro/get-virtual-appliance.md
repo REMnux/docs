@@ -66,7 +66,7 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 {% endtab %}
 {% endtabs %}
 
-When importing the REMnux virtual appliance, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run.
+When importing the REMnux virtual appliance, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. As a point of reference, most people find 4 GB RAM and 50 GB disk sufficient.
 
 ## Step 4: Start the REMnux Virtual Machine <a id="start-remnux-vm"></a>
 
