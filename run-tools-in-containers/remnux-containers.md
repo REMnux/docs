@@ -108,5 +108,5 @@ To run Ciphey using this Docker container, create a directory where you'll store
 docker run -it --rm -v ~/workdir:/home/nonroot/workdir remnux/ciphey
 ```
 
-The password for the container's user `nonroot` is `nonroot`. The [remnux/ciphey](https://hub.docker.com/repository/docker/remnux/ciphey/) image is hosted on its its Docker Hub page.
+The password for the container's user `nonroot` is `nonroot`. The [remnux/ciphey](https://hub.docker.com/repository/docker/remnux/ciphey/) image is hosted on its  [Docker Hub page](https://hub.docker.com/repository/docker/remnux/ciphey).
 
