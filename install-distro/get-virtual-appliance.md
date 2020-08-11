@@ -25,7 +25,7 @@ Download the REMnux VirtualBox OVA from one of these locations:
 {% endtabs %}
 
 {% hint style="warning" %}
-Some browsers change the extension of the OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension.
+Some browsers \([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)\) change the extension of the OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension.
 {% endhint %}
 
 ## Step 2: Confirm the Hash the OVA File <a id="confirm-hash"></a>
