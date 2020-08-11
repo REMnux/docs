@@ -42,7 +42,7 @@ To stop JSDetox, use  the command `docker stop jsdetox`. The remnux/jsdetox imag
 
 [Rekall](https://github.com/google/rekall) is a set of tools for extracting digital artifacts from memory and other aspects of a system when performing incident response. Its components were [written by multiple people](https://github.com/google/rekall/blob/master/AUTHORS.md), and are licensed under  [GNU General Public License \(GPL\) v2](https://github.com/google/rekall/blob/master/LICENSE.txt). 
 
-To run Rekall, first create a directory where you'll store the files you plan to examine. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
+To run Rekall, create a directory where you'll store the files you plan to examine. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
 
 ```text
 docker run --rm -it -v <files_directory>:/home/nonroot/files remnux/rekall bash
@@ -78,7 +78,23 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
 
 If you're planning to peform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
-The password for the container's user `nonroot` is `nonroot`.
+The password for the container's user `nonroot` is `nonroot`. The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
-The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
+## Viper Binary Analysis and Management Framework
+
+[Viper](https://github.com/viper-framework/viper) is a framework for analyzing and managing your collection of malware samples. It was created by [Claudio Guarnieri](https://nex.sx/) and is licensed under [BSD 3-Clause License](https://github.com/viper-framework/viper/blob/master/LICENSE).
+
+To run Viper, create a directory where you'll store your malware samples. Then, use a command like this to open a shell inside the container where you can run `viper` and have your samples directory mapped as `/home/nonroot/workdir` inside the container:
+
+```text
+docker run -it --rm -v ~/workdir:/home/nonroot/workdir remnux/viper
+```
+
+To run the "clamav" Viper plugin, the clamav-daemon must be running in the container. You can enable it by running the following command in the container:
+
+```text
+sudo service clamav-daemon start
+```
+
+The password for the container's user `nonroot` is `nonroot`. The remnux/viper image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/viper/).
 
