@@ -20,7 +20,7 @@ Perform static analysis of Android applications.
 **Website**: [https://github.com/cryptax/droidlysis](https://github.com/cryptax/droidlysis)  
 **Author**: cryptax  
 **License**: MIT License: [https://github.com/cryptax/droidlysis/blob/master/LICENSE](https://github.com/cryptax/droidlysis/blob/master/LICENSE)  
-**Notes**: droidlysis3.py  
+**Notes**: droidlysis  
 **State File**: [remnux.python-packages.droidlysis](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/droidlysis.sls)
 
 ## baksmali
