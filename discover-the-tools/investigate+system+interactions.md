@@ -23,6 +23,15 @@ Visualize and examine the output of Process Monitor.
 **Notes**: procdot  
 **State File**: [remnux.packages.procdot](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/procdot.sls)
 
+## sandfly-processdecloak
+
+Find hidden processes on the local Linux system.
+
+**Website**: [https://github.com/sandflysecurity/sandfly-processdecloak](https://github.com/sandflysecurity/sandfly-processdecloak)  
+**Author**: Sandfly Security: [https://twitter.com/SandflySecurity](https://twitter.com/SandflySecurity)  
+**License**: MIT License: [https://github.com/sandflysecurity/sandfly-processdecloak/blob/master/LICENSE](https://github.com/sandflysecurity/sandfly-processdecloak/blob/master/LICENSE)  
+**State File**: [remnux.packages.sandfly-processdecloak](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sandfly-processdecloak.sls)
+
 ## Unhide
 
 Find hidden processes or connections on the local Linux system.
