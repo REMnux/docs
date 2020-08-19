@@ -124,3 +124,21 @@ If you installed REMnux using one installation mode, for example `addon`, you ca
 2. Run the command `remnux update`.
 3. Reboot.
 
+## Fixing a VMware Issue by Switching from Wayland to Xorg <a id="vmware-wayland-x11"></a>
+
+There have been sporadic reports of VMware conflicting with the Ubuntu graphical environment, which by default uses [Wayland](https://wiki.ubuntu.com/Wayland) display protocol. The problems manifest themselves through the VM being unresponsive to keyboard and mouse; clipboard sharing and copy-and-paste VMware features might not be working, too.
+
+If you encounter this issue, try configring your REMnux virtual machine to switch from Wayland to Xorg. The change should be unnoticeable to your user experience, but it might address the VMware issue. To make the switch, switch to the root user account \(`sudo -s`\) and edit the file /etc/gdm3/custom.conf. Uncomment this line:
+
+```text
+#WaylandEnable=false
+```
+
+So it says:
+
+```text
+WaylandEnable=false
+```
+
+Then reboot your virtual machine \(`reboot`\).
+
