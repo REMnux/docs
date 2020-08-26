@@ -14,6 +14,16 @@ Analyze I/O operations of a suspicious PE file by emulating its execution.
 **Notes**: Before using this tool, place the files your sample requires under /opt/binee-files/win10\_32. For example, the Windows DLLs it needs should go /opt/binee-files/win10\_32/windows/system32. If you have a Windows 10 64-bit system, you can get the 32-bit DLLs from C:\Windows\SysWOW64 To  check which DLLs you might need by examining the import table using the "-i" parameter.  
 **State File**: [remnux.packages.binee](https://github.com/REMnux/salt-states/blob/master/remnux/packages/binee.sls)
 
+## Speakeasy
+
+Emulate code execution, including shellcode, Windows drivers, and Windows PE files.
+
+**Website**: [https://github.com/fireeye/speakeasy](https://github.com/fireeye/speakeasy)  
+**Author**: FireEye Inc, Andrew Davis  
+**License**: MIT License: [https://github.com/fireeye/speakeasy/blob/master/LICENSE.txt](https://github.com/fireeye/speakeasy/blob/master/LICENSE.txt)  
+**Notes**: run\_speakeasy.py, emu\_exe.py, emu\_dll.py  
+**State File**: [remnux.python-packages.speakeasy](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/speakeasy.sls)
+
 ## capa
 
 Detect suspicious capabilites in PE files.
