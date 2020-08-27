@@ -43,6 +43,16 @@ Analyze shellcode by emulating its execution.
 **Notes**: scdbg \(GUI\), scdbgc \(console\)  
 **State File**: [remnux.packages.scdbg](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/scdbg.sls)
 
+## Speakeasy
+
+Emulate code execution, including shellcode, Windows drivers, and Windows PE files.
+
+**Website**: [https://github.com/fireeye/speakeasy](https://github.com/fireeye/speakeasy)  
+**Author**: FireEye Inc, Andrew Davis  
+**License**: MIT License: [https://github.com/fireeye/speakeasy/blob/master/LICENSE.txt](https://github.com/fireeye/speakeasy/blob/master/LICENSE.txt)  
+**Notes**: run\_speakeasy.py, emu\_exe.py, emu\_dll.py  
+**State File**: [remnux.python-packages.speakeasy](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/speakeasy.sls)
+
 ## libemu
 
 A library for x86 code emulation and shellcode detection
