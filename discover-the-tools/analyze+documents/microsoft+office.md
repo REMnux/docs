@@ -101,6 +101,24 @@ Encrypt and decrypt OOXML Microsoft Office documents.
 **License**: Free, custom license: [https://github.com/herumi/msoffice/blob/master/COPYRIGHT](https://github.com/herumi/msoffice/blob/master/COPYRIGHT)  
 **State File**: [remnux.packages.msoffice-crypt](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/msoffice-crypt.sls)
 
+## msoffcrypto-crack.py
+
+Recover the password of an encrypted Microsoft Office document.
+
+**Website**: [https://blog.didierstevens.com/2018/12/31/new-tool-msoffcrypto-crack-py/](https://blog.didierstevens.com/2018/12/31/new-tool-msoffcrypto-crack-py/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.msoffcrypto-crack](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/msoffcrypto-crack.sls)
+
+## msoffcrypto-tool
+
+Decrypt a Microsoft Office file with password, intermediate key, or private key which generated its escrow key.
+
+**Website**: [https://github.com/nolze/msoffcrypto-tool](https://github.com/nolze/msoffcrypto-tool)  
+**Author**: nolze  
+**License**: MIT License: [https://github.com/nolze/msoffcrypto-tool/blob/master/LICENSE.txt](https://github.com/nolze/msoffcrypto-tool/blob/master/LICENSE.txt)  
+**State File**: [remnux.python-packages.msoffcrypto-tool](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/msoffcrypto-tool.sls)
+
 ## zipdump.py
 
 Analyze zip-compressed files.
