@@ -34,6 +34,16 @@ Reverse engineering platform powered by radare2
 **Notes**: If you're planning to use Cutter when running REMnux as a Docker container, you'll need to include the `--privileged` parameter when invoking the REMnux distro image in Docker.  
 **State File**: [remnux.tools.cutter](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/cutter.sls)
 
+## Qiling
+
+Emulate code execution of PE files, shellcode, etc. for a variety of OS and hardware platforms.
+
+**Website**: [https://www.qiling.io](https://www.qiling.io)  
+**Author**: [FireEye Inc, Andrew Davis](https://github.com/qilingframework/qiling/blob/master/AUTHORS.TXT)  
+**License**: GNU General Public License \(GPL\) v2.0: [https://github.com/qilingframework/qiling/blob/master/COPYING](https://github.com/qilingframework/qiling/blob/master/COPYING)  
+**Notes**: Use `qltool` to analyze artifacts. Before analyzing Windows artifacts, gather Windows DLLs and other components using the [dllscollector.bat](https://github.com/qilingframework/qiling/blob/master/examples/scripts/dllscollector.bat) script. Read the tool's [documentation](https://docs.qiling.io) to get started.  
+**State File**: [remnux.python-packages.qiling](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/qiling.sls)
+
 ## Vivisect
 
 Statically examine and emulate binary files.

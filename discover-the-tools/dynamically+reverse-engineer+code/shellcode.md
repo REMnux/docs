@@ -53,6 +53,16 @@ Emulate code execution, including shellcode, Windows drivers, and Windows PE fil
 **Notes**: run\_speakeasy.py, emu\_exe.py, emu\_dll.py  
 **State File**: [remnux.python-packages.speakeasy](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/speakeasy.sls)
 
+## Qiling
+
+Emulate code execution of PE files, shellcode, etc. for a variety of OS and hardware platforms.
+
+**Website**: [https://www.qiling.io](https://www.qiling.io)  
+**Author**: [FireEye Inc, Andrew Davis](https://github.com/qilingframework/qiling/blob/master/AUTHORS.TXT)  
+**License**: GNU General Public License \(GPL\) v2.0: [https://github.com/qilingframework/qiling/blob/master/COPYING](https://github.com/qilingframework/qiling/blob/master/COPYING)  
+**Notes**: Use `qltool` to analyze artifacts. Before analyzing Windows artifacts, gather Windows DLLs and other components using the [dllscollector.bat](https://github.com/qilingframework/qiling/blob/master/examples/scripts/dllscollector.bat) script. Read the tool's [documentation](https://docs.qiling.io) to get started.  
+**State File**: [remnux.python-packages.qiling](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/qiling.sls)
+
 ## libemu
 
 A library for x86 code emulation and shellcode detection
