@@ -30,7 +30,7 @@ chmod +x remnux
 sudo mv remnux /usr/local/bin
 ```
 
-Before proceeding, make sure your system doesn't have an active Ubuntu unattended upgrade in progress. One way to do this is check whether the "unattended-upgrade" process is active \(`ps aux | grep unattended-upgrade`.\) If the upgrade is active, let it finish, then reboot the system before installing REMnux.
+Before proceeding, make sure your system doesn't have an active Ubuntu unattended upgrade in progress. One way to do this is check whether the "unattended-upgrade" process is active \(`ps aux | grep unattended-upgrade`.\) If the upgrade is active, let it finish or [disable it](https://askubuntu.com/questions/1098757/ubuntu-18-10-unattended-upgrades-shutdown-wait-for-signal#1099258), then reboot the system before installing REMnux.
 
 ## Step 3: Run the REMnux Installer <a id="run-remnux-installer"></a>
 
