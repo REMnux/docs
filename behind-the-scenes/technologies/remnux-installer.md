@@ -40,6 +40,6 @@ remnux version
 To upgrade your system to the latest version, run the command:
 
 ```text
-sudo remnux upgrade
+remnux upgrade
 ```
 
