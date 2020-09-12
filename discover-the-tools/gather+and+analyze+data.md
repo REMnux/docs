@@ -65,6 +65,10 @@ Look up MD5 file hashes in the NIST National Software Reference Library \(NSRL\)
 
 Organize and query a collection of malware samples.
 
+{% hint style="warning" %}
+Viper was temporarily removed from the distro due address a dependency issue introduced in a recent Viper update. You can still use [Viper as a Docker image](../run-tools-in-containers/remnux-containers.md#viper-binary-analysis-and-management-framework), though.
+{% endhint %}
+
 **Website**: [https://github.com/viper-framework/viper](https://github.com/viper-framework/viper)  
 **Author**: Claudio Guarnieri: [https://nex.sx](https://nex.sx)  
 **License**: BSD 3-Clause License: [https://github.com/viper-framework/viper/blob/master/LICENSE](https://github.com/viper-framework/viper/blob/master/LICENSE)  
