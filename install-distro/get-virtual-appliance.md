@@ -21,14 +21,12 @@ Download the REMnux VirtualBox OVA from one of these locations:
 
 * [Uploadfiles.io](https://ufile.io/525nlqcz) \(primary\)
 * [Google Drive](https://drive.google.com/file/d/1WthwREUah1iDF_rVxMU3i_SLDxOBfcpB/view?usp=sharing) \(mirror\)
-
-{% hint style="danger" %}
-If you are using VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums.virtualbox.org/viewtopic.php?f=25&t=99390) using the command `bcdedit /set hypervisorlaunchtype off`. Do this even if Hyper-V appears disabled in the Windows Features listing. If you don't do this, you are likely to run into problems downloading files and updating REMnux.
-{% endhint %}
 {% endtab %}
 {% endtabs %}
 
+{% hint style="warning" %}
 Some browsers \([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)\) change the extension of the OVA file after downloading it, possibly giving it the incorrect .ovf extension. If that happens, rename the file so it has the .ova extension.
+{% endhint %}
 
 ## Step 2: Confirm the Hash the OVA File <a id="confirm-hash"></a>
 
@@ -88,6 +86,10 @@ If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboar
 Depending on which hypervisor or environment you're using, you might need to take the following steps:
 
 ### VirtualBox
+
+{% hint style="danger" %}
+If you're using VirtualBox on Windows 10, be sure to disable Hyper-V using the command `bcdedit /set hypervisorlaunchtype off`. Do this even if Hyper-V appears disabled in the Windows Features listing. If you don't, you are likely to run into problems downloading files and updating REMnux.
+{% endhint %}
 
 If your REMnux window is too small when you boot it up the system in VirtualBox, increase its scaling from 100% by going to the VirtualBox menu `View` &gt; `Virtual Screen 1`. The best scaling factor depends on the size and resolution of your physical screen, but `Scale to 200%` often works well.
 
