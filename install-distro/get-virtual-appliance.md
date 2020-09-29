@@ -109,7 +109,7 @@ If you're planning to use the REMnux virtual appliance in Proxmox, [follow the s
 1. VM &gt; Hardware &gt; Display &gt; Set to -&gt; SPICE\(qxl\)
 2. VM &gt; Hardware &gt; Option &gt; Spice Enhancements &gt; Video Streaming: all
 
-## Step 5: Upgrade the REMnux Virtual Machine <a id="upgrade-remnux"></a>
+## Step 6: Upgrade the REMnux Virtual Machine <a id="upgrade-remnux"></a>
 
 After installing the REMnux virtual machine, run the following command inside the VM to upgrade it to the latest version of the distro:
 
@@ -119,7 +119,7 @@ remnux upgrade
 
 For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](keep-the-distro-up-to-date.md) section.
 
-## Step 6: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
+## Step 7: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
 
 Consider taking a snapshot of your REMnux virtual machine, so you can return it to a known good state if the need arises.
 
