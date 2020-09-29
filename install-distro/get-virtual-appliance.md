@@ -21,6 +21,10 @@ Download the REMnux VirtualBox OVA from one of these locations:
 
 * [Uploadfiles.io](https://ufile.io/525nlqcz) \(primary\)
 * [Google Drive](https://drive.google.com/file/d/1WthwREUah1iDF_rVxMU3i_SLDxOBfcpB/view?usp=sharing) \(mirror\)
+
+{% hint style="danger" %}
+If you are using VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums.virtualbox.org/viewtopic.php?f=25&t=99390) using the command `bcdedit /set hypervisorlaunchtype off`. Do this even if Hyper-V appears disabled in the Windows Features listing. If you don't do this, you are likely to run into problems downloading files and updating REMnux.
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
