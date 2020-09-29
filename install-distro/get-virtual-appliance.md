@@ -28,9 +28,7 @@ If you are using VirtualBox on Windows 10, be sure to [disable Hyper-V](https://
 {% endtab %}
 {% endtabs %}
 
-{% hint style="warning" %}
-Some browsers \([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)\) change the extension of the OVA file after downloading it, possibly giving it the incorrect `.ovf` extension. If that happens, rename the file so it has the `.ova` extension.
-{% endhint %}
+Some browsers \([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)\) change the extension of the OVA file after downloading it, possibly giving it the incorrect .ovf extension. If that happens, rename the file so it has the .ova extension.
 
 ## Step 2: Confirm the Hash the OVA File <a id="confirm-hash"></a>
 
