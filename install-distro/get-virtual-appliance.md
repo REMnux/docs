@@ -12,15 +12,15 @@ Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the
 {% tab title="General OVA Link" %}
 Download the REMnux general OVA file from one of these locations:
 
-* [Uploadfiles.io](https://ufile.io/gq4plfnf) \(primary\)
-* [Google Drive](https://drive.google.com/file/d/1vtkSorb-FRS45JKkH2v4fBusGh_LTIXx/view?usp=sharing) \(mirror\)
+* [Uploadfiles.io](https://ufile.io/3jrlp4sl) \(primary\)
+* [Google Drive](https://drive.google.com/file/d/12RCtE9_5fd1hsfiFmQi-kOlW7nPj59Y8/view?usp=sharing) \(mirror\)
 {% endtab %}
 
 {% tab title="VirtualBox OVA Link" %}
 Download the REMnux VirtualBox OVA from one of these locations:
 
-* [Uploadfiles.io](https://ufile.io/525nlqcz) \(primary\)
-* [Google Drive](https://drive.google.com/file/d/1WthwREUah1iDF_rVxMU3i_SLDxOBfcpB/view?usp=sharing) \(mirror\)
+* [Uploadfiles.io](https://ufile.io/o6bc66wr) \(primary\)
+* [Google Drive](https://drive.google.com/file/d/1m8amrXlsZaIYMUfW0mJC27CFHIPoWLCN/view?usp=sharing) \(mirror\)
 {% endtab %}
 {% endtabs %}
 
@@ -35,13 +35,13 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 {% tabs %}
 {% tab title="General OVA Hash" %}
 ```text
-0fd090c1a7f60db557c4004308fb6fa7f72531a1777278c93f50979d0ed55994
+bf08a6d2b0b4813131b704c1cfcb921320e81ae917c825fa5c01e2131e0409c0
 ```
 {% endtab %}
 
 {% tab title="VirtualBox VM Hash" %}
 ```text
-711be9f5966980991f8fb07ba789c993afd9ea0bfeb992b10bd3da1164ba431b
+43f7e4fe7a58bd2012df5624423846307b4a028f655ad02cf40f929b6dc8231d
 ```
 {% endtab %}
 {% endtabs %}
@@ -87,9 +87,7 @@ Depending on which hypervisor or environment you're using, you might need to tak
 
 ### VirtualBox
 
-{% hint style="danger" %}
-If you're using VirtualBox on Windows 10, be sure to disable Hyper-V using the command `bcdedit /set hypervisorlaunchtype off`. Do this even if Hyper-V appears disabled in the Windows Features listing. If you don't, you are likely to run into problems downloading files and updating REMnux.
-{% endhint %}
+If running VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums.virtualbox.org/viewtopic.php?f=25&t=99390) using the command `bcdedit /set hypervisorlaunchtype off`. Do this even if Hyper-V appears disabled in the Windows Features listing. If you don't, you are likely to run into problems downloading files and updating REMnux.
 
 If your REMnux window is too small when you boot it up the system in VirtualBox, increase its scaling from 100% by going to the VirtualBox menu `View` &gt; `Virtual Screen 1`. The best scaling factor depends on the size and resolution of your physical screen, but `Scale to 200%` often works well.
 
