@@ -89,7 +89,7 @@ Depending on which hypervisor or environment you're using, you might need to tak
 
 If running VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums.virtualbox.org/viewtopic.php?f=25&t=99390) using the command `bcdedit /set hypervisorlaunchtype off`. Do this even if Hyper-V appears disabled in the Windows Features listing. If you don't, you are likely to run into problems downloading files and updating REMnux.
 
-If your REMnux window is too small when you boot it up the system in VirtualBox, increase its scaling from 100% by going to the VirtualBox menu `View` &gt; `Virtual Screen 1`. The best scaling factor depends on the size and resolution of your physical screen, but `Scale to 200%` often works well.
+If your REMnux window is too small when you boot it up the system in VirtualBox, activate the Scaling Mode for the VM via the VirtualBox menu View &gt; Scaling Mode.
 
 ### Remote Cloud, Such as AWS
 
