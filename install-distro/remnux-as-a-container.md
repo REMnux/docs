@@ -4,7 +4,7 @@ You can run the REMnux distro as a [Docker](https://www.docker.com) container by
 
 ## Local Interactive Shell
 
-If you have Docker installed, you can start the REMnux distro container in interactive mode using the following command, which will automatically download the distro image \(approximately 5 GB\) if your system doesn't already have it:
+If you have Docker installed, you can start the REMnux distro container in interactive mode using the following command, which will automatically download the distro image \(approximately 9 GB\) if your system doesn't already have it:
 
 ```text
 docker run --rm -it -u remnux remnux/remnux-distro bash
