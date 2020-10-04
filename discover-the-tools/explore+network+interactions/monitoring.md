@@ -36,7 +36,7 @@ Intercept and decrypt TLS traffic.
 
 ## CapTipper
 
-Investigate website interactions using this web proxy.
+Analyze HTTP traffic and extract embedded artifacts.
 
 **Website**: [https://github.com/omriher/CapTipper/tree/python3\_support](https://github.com/omriher/CapTipper/tree/python3_support)  
 **Author**: Omri Herscovici: [https://twitter.com/omriher](https://twitter.com/omriher)  
