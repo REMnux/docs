@@ -34,6 +34,16 @@ Intercept and decrypt TLS traffic.
 **Notes**: polarproxy  
 **State File**: [remnux.tools.polarproxy](https://github.com/REMnux/salt-states/edit/master/remnux/tools/polarproxy.sls)
 
+## CapTipper
+
+Investigate website interactions using this web proxy.
+
+**Website**: [https://github.com/omriher/CapTipper/tree/python3\_support](https://github.com/omriher/CapTipper/tree/python3_support)  
+**Author**: Omri Herscovici: [https://twitter.com/omriher](https://twitter.com/omriher)  
+**License**: GNU General Public License v3.0: [https://github.com/omriher/CapTipper/blob/python3\_support/LICENSE](https://github.com/omriher/CapTipper/blob/python3_support/LICENSE)  
+**Notes**: CapTipper.py  
+**State File**: [remnux.tools.captipper](https://github.com/REMnux/salt-states/blob/master/remnux/tools/captipper.sls)
+
 ## mitmproxy
 
 Investigate website interactions using this web proxy.
