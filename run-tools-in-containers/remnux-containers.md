@@ -28,15 +28,31 @@ The password for the container's user `thug` is `thug`. The remnux/thug image is
 
 ## JSDetox JavaScript Analysis Tool <a id="jsdetox"></a>
 
-[JSDetox](http://www.relentless-coding.com/projects/jsdetox) is a web-based tool for analyzing and deobfuscating JavaScript. It was created by [Sven Taute](https://twitter.com/sven_t) and is licensed under [GNU General Public License \(GPL\) v2](https://github.com/svent/jsdetox).
+[JSDetox](http://www.relentless-coding.com/projects/jsdetox) is a browser-based tool for analyzing and deobfuscating JavaScript. It was created by [Sven Taute](https://twitter.com/sven_t) and is licensed under [GNU General Public License \(GPL\) v2](https://github.com/svent/jsdetox).
 
-You can use the following command to launch the JSDetox Docker image, with the application listening localy on TCP port 3000. You can then connect to http://localhost:3000 using your web browser:
+You can use the following command to launch the JSDetox Docker image, with the application listening locally on TCP port 3000. You can then connect to http://localhost:3000 using your web browser:
 
 ```text
 docker run -d --rm --name jsdetox -p 3000:3000 remnux/jsdetox
 ```
 
 To stop JSDetox, use  the command `docker stop jsdetox`. The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/jsdetox/).
+
+## de4js JavaScript Deobfuscator and Unpacker <a id="de-4-js"></a>
+
+[de4js](https://github.com/lelinhtinh/de4js) is a browser-based tool for deobfuscating and unpacking JavaScript. It was created by Zzbaivong and is licensed under [MIT License](https://github.com/lelinhtinh/de4js/blob/master/LICENSE). If you don't want to run de4js locally using the Docker image outlined below, you can use [the version hosted on its author's website](https://lelinhtinh.github.io/de4js/).
+
+You can use the following command to launch the de4js Docker image, with the application listening locally on TCP port 4000. You can then connect to http://localhost:4000/de4js/ using your web browser:
+
+```text
+ docker run -d --rm -p 4000:4000 -p 35729:35729 --name de4js remnux/de4js
+```
+
+{% hint style="warning" %}
+It's important to remember the trailing slash as part of the de4js URL http://localhost:4000/de4js/.
+{% endhint %}
+
+To stop de4js, use  the command `docker stop de4js`. The remnux/de4js image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/de4js/).
 
 ## Rekall Memory Forensic and Incident Response Framework <a id="rekall"></a>
 
