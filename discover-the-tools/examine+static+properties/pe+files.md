@@ -24,6 +24,16 @@ Statically analyze PE and Microsoft Office files.
 **Notes**: peframe  
 **State File**: [remnux.python-packages.peframe](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/peframe.sls)
 
+## PE Tree
+
+Examine contents and structure of PE files.
+
+**Website**: [https://github.com/blackberry/pe\_tree](https://github.com/blackberry/pe_tree)  
+**Author**: BlackBerry Limited: [https://twitter.com/BlackBerrySpark](https://twitter.com/BlackBerrySpark) and Tom Bonner: thomas\_bonner  
+**License**: Apache License 2.0: [https://github.com/blackberry/pe\_tree/blob/master/LICENSE](https://github.com/blackberry/pe_tree/blob/master/LICENSE)  
+**Notes**: pe-tree  
+**State File**: [remnux.python-packages.pe-tree](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/pe-tree.sls)
+
 ## pecheck
 
 Analyze static properties of PE files.

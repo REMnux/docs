@@ -91,6 +91,24 @@ If running VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums
 
 If your REMnux window is too small when you boot it up the system in VirtualBox, activate the Scaling Mode for the VM via the VirtualBox menu View &gt; Scaling Mode.
 
+### VMware
+
+VMware sometimes conflicts with the Ubuntu graphical environment, which by default uses [Wayland](https://wiki.ubuntu.com/Wayland) display protocol. The problems manifest themselves through the VM being unresponsive to keyboard and mouse; clipboard sharing and copy-and-paste VMware features might not be working, too.
+
+If you encounter this issue, try configring your REMnux virtual machine to switch from Wayland to Xorg. The change should be unnoticeable to your user experience, but it might address the VMware issue. To make the switch, switch to the root user account \(`sudo -s`\) and edit the file /etc/gdm3/custom.conf. Uncomment this line:
+
+```text
+#WaylandEnable=false
+```
+
+So it says:
+
+```text
+WaylandEnable=false
+```
+
+Then reboot your virtual machine \(`reboot`\).
+
 ### Remote Cloud, Such as AWS
 
 The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:

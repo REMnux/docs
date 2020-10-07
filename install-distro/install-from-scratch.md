@@ -96,7 +96,11 @@ If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboar
 To keep your REMnux environment up-to-date run the REMnux installer periodically as described in the [Keep the Distro Up to Date](keep-the-distro-up-to-date.md) section.
 {% endhint %}
 
-## Step 5: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
+## Step 5: Review Configuration Tweaks Specific to Your Hypervisor <a id="hypervisor-tweaks"></a>
+
+Depending on the hypervisor you're using, you might need to implement a few configuration tweaks to address or preempt issues with your REMnux virtual machine. Please review the [Special Hypervisor Requirements](get-virtual-appliance.md#hypervisor-requirements) before considering your installation finalized.
+
+## Step 6: Take a Snapshot of the Virtual Machine <a id="take-snapshot"></a>
 
 If you installed REMnux inside a virtual machine, consider taking a snapshot of the VM, so you can return it to a known good state if the need arises.
 
