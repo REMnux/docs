@@ -12,8 +12,6 @@
 
 ## Discover the Tools
 
-* [PE Files](discover-the-tools/pe+files/README.md)
-  * [Statically Analyze Code](discover-the-tools/pe+files/statically+analyze+code.md)
 * [Connecting](discover-the-tools/connecting/README.md)
   * [Explore Network Interactions](discover-the-tools/connecting/explore+network+interactions.md)
 * [Examine Static Properties](discover-the-tools/examine+static+properties/README.md)
