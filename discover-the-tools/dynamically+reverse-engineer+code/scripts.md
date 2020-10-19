@@ -12,7 +12,7 @@ Execute and deobfuscate JavaScript using a patched version of Mozilla's standalo
 **Author**: SpiderMonkey by Mozilla Foundation, patched by Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Mozilla Public License 2.0: [https://github.com/mozilla/treeherder/blob/master/LICENSE.txt](https://github.com/mozilla/treeherder/blob/master/LICENSE.txt)  
 **Notes**: js-ascii, js-file  
-**State File**: [remnux.tools.js-patched](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/js-patched.sls)
+**State File**: [remnux.tools.js-patched](https://github.com/REMnux/salt-states/blob/master/remnux/tools/js-patched.sls)
 
 ## objects.js
 
@@ -22,7 +22,7 @@ Emulate common browser and PDF viewer objects, methods, and properties when deob
 **Author**: Lenny Zeltser  
 **License**: Public Domain  
 **Notes**: The file is in /usr/local/share/remnux  
-**State File**: [remnux.config.objects.init](https://github.com/REMnux/salt-states/blob/master/./remnux/config/objects/init.sls)
+**State File**: [remnux.config.objects.init](https://github.com/REMnux/salt-states/blob/master/remnux/config/objects/init.sls)
 
 ## STPyV8
 
@@ -31,7 +31,7 @@ Python3 and JavaScript interop engine, fork of the original PyV8 project
 **Website**: [https://github.com/area1/stpyv8](https://github.com/area1/stpyv8)  
 **Author**: Area1 Security  
 **License**: Apache License 2.0: [https://github.com/area1/stpyv8/blob/master/LICENSE.txt](https://github.com/area1/stpyv8/blob/master/LICENSE.txt)  
-**State File**: [remnux.python-packages.stpyv8](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/stpyv8.sls)
+**State File**: [remnux.python3-packages.stpyv8](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/stpyv8.sls)
 
 ## JS Beautifier
 
@@ -41,7 +41,7 @@ Reformat JavaScript scripts for easier analysis.
 **Author**: Einar Lielmanis, Liam Newman, and contributors  
 **License**: MIT License: [https://github.com/beautify-web/js-beautify/blob/master/LICENSE](https://github.com/beautify-web/js-beautify/blob/master/LICENSE)  
 **Notes**: js-beautify  
-**State File**: [remnux.python-packages.jsbeautifier](https://github.com/REMnux/salt-states/blob/master/./remnux/python-packages/jsbeautifier.sls)
+**State File**: [remnux.python3-packages.jsbeautifier](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/jsbeautifier.sls)
 
 ## box-js
 
@@ -51,7 +51,7 @@ Analyze suspicious JavaScript scripts.
 **Author**: CapacitorSet  
 **License**: MIT License: [https://github.com/CapacitorSet/box-js/blob/master/LICENSE](https://github.com/CapacitorSet/box-js/blob/master/LICENSE)  
 **Notes**: box-js, box-export  
-**State File**: [remnux.node-packages.box-js](https://github.com/REMnux/salt-states/blob/master/./remnux/node-packages/box-js.sls)
+**State File**: [remnux.node-packages.box-js](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/box-js.sls)
 
 ## ExtractScripts
 
@@ -61,7 +61,7 @@ Extract scripts from HTML files.
 **Author**: Didier Stevens  
 **License**: Public Domain  
 **Notes**: extractscripts.py  
-**State File**: [remnux.scripts.extractscripts](https://github.com/REMnux/salt-states/blob/master/./remnux/scripts/extractscripts.sls)
+**State File**: [remnux.scripts.extractscripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/extractscripts.sls)
 
 ## SpiderMonkey
 
@@ -71,7 +71,7 @@ Execute and deobfuscate JavaScript using Mozilla's standalone JavaScript engine.
 **Author**: Mozilla Foundation  
 **License**: Mozilla Public License 2.0: [https://github.com/mozilla/treeherder/blob/master/LICENSE.txt](https://github.com/mozilla/treeherder/blob/master/LICENSE.txt)  
 **Notes**: js  
-**State File**: [remnux.packages.spidermonkey](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/spidermonkey.sls)
+**State File**: [remnux.packages.spidermonkey](https://github.com/REMnux/salt-states/blob/master/remnux/packages/spidermonkey.sls)
 
 ## Rhino Debugger
 
@@ -81,7 +81,7 @@ GUI JavaScript debugger
 **Author**: Mozilla Project  
 **License**: Mozilla Public License v2.0: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License)  
 **Notes**: rhino-debugger  
-**State File**: [remnux.packages.rhino](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/rhino.sls)
+**State File**: [remnux.packages.rhino](https://github.com/REMnux/salt-states/blob/master/remnux/packages/rhino.sls)
 
 ## PowerShell  Core
 
@@ -91,5 +91,5 @@ Run PowerShell scripts and commands.
 **Author**: Microsoft Corporation  
 **License**: MIT License: [https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt](https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt)  
 **Notes**: pwsh  
-**State File**: [remnux.packages.powershell](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/powershell.sls)
+**State File**: [remnux.packages.powershell](https://github.com/REMnux/salt-states/blob/master/remnux/packages/powershell.sls)
 
