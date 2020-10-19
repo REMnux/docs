@@ -12,6 +12,7 @@
 
 ## Discover the Tools
 
+* [Connecting](discover-the-tools/connecting.md)
 * [Examine Static Properties](discover-the-tools/examine+static+properties/README.md)
   * [General](discover-the-tools/examine+static+properties/general.md)
   * [PE Files](discover-the-tools/examine+static+properties/pe+files.md)
