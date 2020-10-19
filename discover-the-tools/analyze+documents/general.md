@@ -12,7 +12,7 @@ Locate and decode strings encoded in Base64 and other common encodings.
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Public Domain  
 **Notes**: base64dump.py  
-**State File**: [remnux.scripts.base64dump](https://github.com/REMnux/salt-states/blob/master/./remnux/scripts/base64dump.sls)
+**State File**: [remnux.scripts.base64dump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/base64dump.sls)
 
 ## Tesseract OCR
 
@@ -22,5 +22,5 @@ Examine images to identify and extract text using optical character recognition 
 **Author**: [https://github.com/tesseract-ocr/tesseract/blob/master/AUTHORS](https://github.com/tesseract-ocr/tesseract/blob/master/AUTHORS)  
 **License**: Apache License 2.0: [https://github.com/tesseract-ocr/tesseract/blob/master/LICENSE](https://github.com/tesseract-ocr/tesseract/blob/master/LICENSE)  
 **Notes**: tesseract  
-**State File**: [remnux.packages.tesseract-ocr](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/tesseract-ocr.sls)
+**State File**: [remnux.packages.tesseract-ocr](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tesseract-ocr.sls)
 
