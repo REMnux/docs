@@ -4,16 +4,6 @@ description: Dynamically Reverse-Engineer Code
 
 # Shellcode
 
-## XORSearch
-
-Locate and decode strings obfuscated using common techniques.
-
-**Website**: [https://blog.didierstevens.com/programs/xorsearch/](https://blog.didierstevens.com/programs/xorsearch/)  
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
-**License**: Public Domain  
-**Notes**: xorsearch  
-**State File**: [remnux.tools.xorsearch](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/xorsearch.sls)
-
 ## shellcode2exe.bat
 
 Convert 32 and 64-bit shellcode to a Windows executable file.
@@ -22,26 +12,7 @@ Convert 32 and 64-bit shellcode to a Windows executable file.
 **Author**: Ori Damari: [https://twitter.com/0xrepnz](https://twitter.com/0xrepnz)  
 **License**: Free, unknown license  
 **Notes**: Use full path name to specify the input file; look for the output file in /usr/local/shellcode2exe-bat  
-**State File**: [remnux.tools.shellcode2exe-bat](https://github.com/REMnux/salt-states/blob/master/./remnux/tools/shellcode2exe-bat.sls)
-
-## cut-bytes.py
-
-Cut out a part of a data stream.
-
-**Website**: [https://blog.didierstevens.com/2015/10/14/cut-bytes-py/](https://blog.didierstevens.com/2015/10/14/cut-bytes-py/)  
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
-**License**: Public Domain  
-**State File**: [remnux.scripts.cut-bytes](https://github.com/REMnux/salt-states/blob/master/./remnux/scripts/cut-bytes.sls)
-
-## scdbg
-
-Analyze shellcode by emulating its execution.
-
-**Website**: [http://sandsprite.com/blogs/index.php?uid=7&pid=152](http://sandsprite.com/blogs/index.php?uid=7&pid=152)  
-**Author**: David Zimmer  
-**License**: Free, unknown license  
-**Notes**: scdbg \(GUI\), scdbgc \(console\)  
-**State File**: [remnux.packages.scdbg](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/scdbg.sls)
+**State File**: [remnux.tools.shellcode2exe-bat](https://github.com/REMnux/salt-states/blob/master/remnux/tools/shellcode2exe-bat.sls)
 
 ## Speakeasy
 
@@ -51,17 +22,36 @@ Emulate code execution, including shellcode, Windows drivers, and Windows PE fil
 **Author**: FireEye Inc, Andrew Davis  
 **License**: MIT License: [https://github.com/fireeye/speakeasy/blob/master/LICENSE.txt](https://github.com/fireeye/speakeasy/blob/master/LICENSE.txt)  
 **Notes**: run\_speakeasy.py, emu\_exe.py, emu\_dll.py  
-**State File**: [remnux.python-packages.speakeasy](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/speakeasy.sls)
+**State File**: [remnux.python3-packages.speakeasy](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/speakeasy.sls)
 
 ## Qiling
 
 Emulate code execution of PE files, shellcode, etc. for a variety of OS and hardware platforms.
 
 **Website**: [https://www.qiling.io](https://www.qiling.io)  
-**Author**: [FireEye Inc, Andrew Davis](https://github.com/qilingframework/qiling/blob/master/AUTHORS.TXT)  
+**Author**: [https://github.com/qilingframework/qiling/blob/master/AUTHORS.TXT](https://github.com/qilingframework/qiling/blob/master/AUTHORS.TXT)  
 **License**: GNU General Public License \(GPL\) v2.0: [https://github.com/qilingframework/qiling/blob/master/COPYING](https://github.com/qilingframework/qiling/blob/master/COPYING)  
 **Notes**: Use `qltool` to analyze artifacts. Before analyzing Windows artifacts, gather Windows DLLs and other components using the [dllscollector.bat](https://github.com/qilingframework/qiling/blob/master/examples/scripts/dllscollector.bat) script. Read the tool's [documentation](https://docs.qiling.io) to get started.  
-**State File**: [remnux.python-packages.qiling](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/qiling.sls)
+**State File**: [remnux.python3-packages.qiling](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/qiling.sls)
+
+## cut-bytes.py
+
+Cut out a part of a data stream.
+
+**Website**: [https://blog.didierstevens.com/2015/10/14/cut-bytes-py/](https://blog.didierstevens.com/2015/10/14/cut-bytes-py/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.cut-bytes](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/cut-bytes.sls)
+
+## scdbg
+
+Analyze shellcode by emulating its execution.
+
+**Website**: [http://sandsprite.com/blogs/index.php?uid=7&amp;pid=152](http://sandsprite.com/blogs/index.php?uid=7&amp;pid=152)  
+**Author**: David Zimmer  
+**License**: Free, unknown license  
+**Notes**: scdbg \(GUI\), scdbgc \(console\)  
+**State File**: [remnux.packages.scdbg](https://github.com/REMnux/salt-states/blob/master/remnux/packages/scdbg.sls)
 
 ## libemu
 
@@ -70,5 +60,15 @@ A library for x86 code emulation and shellcode detection
 **Website**: [https://github.com/buffer/libemu](https://github.com/buffer/libemu)  
 **Author**: [https://github.com/buffer/libemu/blob/master/AUTHORS](https://github.com/buffer/libemu/blob/master/AUTHORS)  
 **License**: Free, unknown license  
-**State File**: [remnux.packages.libemu](https://github.com/REMnux/salt-states/blob/master/./remnux/packages/libemu.sls)
+**State File**: [remnux.packages.libemu](https://github.com/REMnux/salt-states/blob/master/remnux/packages/libemu.sls)
+
+## XORSearch
+
+Locate and decode strings obfuscated using common techniques.
+
+**Website**: [https://blog.didierstevens.com/programs/xorsearch/](https://blog.didierstevens.com/programs/xorsearch/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**Notes**: xorsearch  
+**State File**: [remnux.packages.xorsearch](https://github.com/REMnux/salt-states/blob/master/remnux/packages/xorsearch.sls)
 
