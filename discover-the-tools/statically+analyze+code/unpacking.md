@@ -24,15 +24,6 @@ Generate byte-usage-histograms for all types of files with a focus PE files.
 **Notes**: bytehist  
 **State File**: [remnux.tools.bytehist](https://github.com/REMnux/salt-states/blob/master/remnux/tools/bytehist.sls)
 
-## de4dot
-
-.NET deobfuscator and unpacker
-
-**Website**: [https://github.com/0xd4d/de4dot](https://github.com/0xd4d/de4dot)  
-**Author**: 0xd4d  
-**License**: GNU General Public License \(GPL\) v3.0: [https://github.com/0xd4d/de4dot/blob/master/COPYING](https://github.com/0xd4d/de4dot/blob/master/COPYING)  
-**State File**: [remnux.tools.de4dot](https://github.com/REMnux/salt-states/blob/master/remnux/tools/de4dot.sls)
-
 ## ClamAV
 
 Scan files for malware signatures.
