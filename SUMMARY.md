@@ -18,6 +18,7 @@
   * [ELF Files](discover-the-tools/examine+static+properties/elf+files.md)
   * [Deobfuscation](discover-the-tools/examine+static+properties/deobfuscation.md)
 * [Statically Analyze Code](discover-the-tools/statically+analyze+code/README.md)
+  * [.NET](discover-the-tools/statically+analyze+code/.net.md)
   * [General](discover-the-tools/statically+analyze+code/general.md)
   * [Unpacking](discover-the-tools/statically+analyze+code/unpacking.md)
   * [PE Files](discover-the-tools/statically+analyze+code/pe-files.md)
