@@ -23,6 +23,7 @@
   * [PE Files](discover-the-tools/statically+analyze+code/pe-files.md)
   * [Python](discover-the-tools/statically+analyze+code/python.md)
   * [Java](discover-the-tools/statically+analyze+code/java.md)
+  * [.NET](discover-the-tools/statically+analyze+code/.net.md)
   * [Flash](discover-the-tools/statically+analyze+code/flash.md)
   * [Android](discover-the-tools/statically+analyze+code/android.md)
 * [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code/README.md)

@@ -53,6 +53,16 @@ Analyze suspicious JavaScript scripts.
 **Notes**: box-js, box-export  
 **State File**: [remnux.node-packages.box-js](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/box-js.sls)
 
+## JStillery
+
+Deobfuscate JavaScript scripts using AST and Partial Evaluation techniques.
+
+**Website**: [https://github.com/mindedsecurity/jstillery](https://github.com/mindedsecurity/jstillery)  
+**Author**: Stefano Di Paola, Minded Security: [http://www.mindedsecurity.com](http://www.mindedsecurity.com)  
+**License**: GNU General Public License \(GPL\) v3: [https://github.com/mindedsecurity/JStillery/blob/master/LICENSE](https://github.com/mindedsecurity/JStillery/blob/master/LICENSE)  
+**Notes**: jstillery  
+**State File**: [remnux.node-packages.jstillery](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/jstillery.sls)
+
 ## ExtractScripts
 
 Extract scripts from HTML files.
