@@ -4,6 +4,16 @@ description: Statically Analyze Code
 
 # Android
 
+## JADX
+
+Generate Java source code from Dalvik Executable \(dex\) and Android APK files
+
+**Website**: [https://github.com/skylot/jadx](https://github.com/skylot/jadx)  
+**Author**: Skylot  
+**License**: Apache License 2.0: [https://github.com/skylot/jadx/blob/master/LICENSE](https://github.com/skylot/jadx/blob/master/LICENSE), also see [https://github.com/skylot/jadx/blob/master/NOTICE](https://github.com/skylot/jadx/blob/master/NOTICE)  
+**Notes**: jadx, jadx-gui  
+**State File**: [remnux.tools.jadx](https://github.com/REMnux/salt-states/blob/master/remnux/tools/jadx.sls)
+
 ## apktool
 
 Reverse-engineer Android APK files.
