@@ -43,16 +43,6 @@ Reformat JavaScript scripts for easier analysis.
 **Notes**: js-beautify  
 **State File**: [remnux.python3-packages.jsbeautifier](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/jsbeautifier.sls)
 
-## box-js
-
-Analyze suspicious JavaScript scripts.
-
-**Website**: [https://github.com/CapacitorSet/box-js](https://github.com/CapacitorSet/box-js)  
-**Author**: CapacitorSet  
-**License**: MIT License: [https://github.com/CapacitorSet/box-js/blob/master/LICENSE](https://github.com/CapacitorSet/box-js/blob/master/LICENSE)  
-**Notes**: box-js, box-export  
-**State File**: [remnux.node-packages.box-js](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/box-js.sls)
-
 ## JStillery
 
 Deobfuscate JavaScript scripts using AST and Partial Evaluation techniques.
@@ -62,6 +52,16 @@ Deobfuscate JavaScript scripts using AST and Partial Evaluation techniques.
 **License**: GNU General Public License \(GPL\) v3: [https://github.com/mindedsecurity/JStillery/blob/master/LICENSE](https://github.com/mindedsecurity/JStillery/blob/master/LICENSE)  
 **Notes**: jstillery  
 **State File**: [remnux.node-packages.jstillery](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/jstillery.sls)
+
+## box-js
+
+Analyze suspicious JavaScript scripts.
+
+**Website**: [https://github.com/CapacitorSet/box-js](https://github.com/CapacitorSet/box-js)  
+**Author**: CapacitorSet  
+**License**: MIT License: [https://github.com/CapacitorSet/box-js/blob/master/LICENSE](https://github.com/CapacitorSet/box-js/blob/master/LICENSE)  
+**Notes**: box-js, box-export  
+**State File**: [remnux.node-packages.box-js](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/box-js.sls)
 
 ## ExtractScripts
 
