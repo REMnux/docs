@@ -63,12 +63,3 @@ Disassemble binary files.
 **License**: GNU General Public License \(GPL\)  
 **State File**: [remnux.packages.binutils](https://github.com/REMnux/salt-states/blob/master/remnux/packages/binutils.sls)
 
-## pyew
-
-Statically examine properties and code of suspicious PE and ELF executables.
-
-**Website**: [https://github.com/joxeankoret/pyew](https://github.com/joxeankoret/pyew)  
-**Author**: Joxean Koret  
-**License**: GNU General Public License \(GPL\): [https://github.com/joxeankoret/pyew/blob/VERSION\_3X/COPYING](https://github.com/joxeankoret/pyew/blob/VERSION_3X/COPYING)  
-**State File**: [remnux.packages.pyew](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pyew.sls)
-

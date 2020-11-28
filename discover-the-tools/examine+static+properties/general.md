@@ -129,15 +129,6 @@ Extract interesting strings from binary files.
 **License**: Portions Public Domain, portions MIT License: [https://github.com/simsong/bulk\_extractor/blob/master/LICENSE.md](https://github.com/simsong/bulk_extractor/blob/master/LICENSE.md)  
 **State File**: [remnux.packages.bulk-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/bulk-extractor.sls)
 
-## pyew
-
-Statically examine properties and code of suspicious PE and ELF executables.
-
-**Website**: [https://github.com/joxeankoret/pyew](https://github.com/joxeankoret/pyew)  
-**Author**: Joxean Koret  
-**License**: GNU General Public License \(GPL\): [https://github.com/joxeankoret/pyew/blob/VERSION\_3X/COPYING](https://github.com/joxeankoret/pyew/blob/VERSION_3X/COPYING)  
-**State File**: [remnux.packages.pyew](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pyew.sls)
-
 ## Hachoir
 
 View, edit, and carve contents of various binary file types.
