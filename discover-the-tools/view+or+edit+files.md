@@ -13,15 +13,15 @@ View images.
 **License**: Free, custom license: [https://git.finalrewind.org/feh/plain/COPYING](https://git.finalrewind.org/feh/plain/COPYING)  
 **State File**: [remnux.packages.feh](https://github.com/REMnux/salt-states/blob/master/remnux/packages/feh.sls)
 
-## Xpdf
+## Evince
 
-View and manipulate PDF files.
+View documents in a variety of formats, including PDF.
 
-**Website**: [http://www.xpdfreader.com](http://www.xpdfreader.com)  
-**Author**: Derek Noonburg  
-**License**: Dual-licensed under GNU General Public License \(GPL\) v2 and GPL v3: [http://www.xpdfreader.com/opensource.html](http://www.xpdfreader.com/opensource.html)  
-**Notes**: xpdf  
-**State File**: [remnux.packages.xpdf](https://github.com/REMnux/salt-states/blob/master/remnux/packages/xpdf.sls)
+**Website**: [https://wiki.gnome.org/Apps/Evince](https://wiki.gnome.org/Apps/Evince)  
+**Author**: Jonathan Blandford, Nickolay V. Shmyrev, Carlos Garcia Campos  
+**License**: GNU General Public License \(GPL\) v2: [https://gitlab.gnome.org/GNOME/evince/-/blob/master/COPYING](https://gitlab.gnome.org/GNOME/evince/-/blob/master/COPYING)  
+**Notes**: evince  
+**State File**: [remnux.packages.evince](https://github.com/REMnux/salt-states/blob/master/remnux/packages/evince.sls)
 
 ## dos2unix
 
