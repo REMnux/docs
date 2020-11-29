@@ -131,7 +131,7 @@ If you're planning to use the REMnux virtual appliance in Proxmox, [follow the s
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a id="upgrade-remnux"></a>
 
-After installing the REMnux virtual machine, run the following command inside the VM to upgrade it to the latest version of the distro:
+After installing the REMnux virtual machine, run the following command inside the VM as a regular, non-root user to upgrade it to the latest version of the distro:
 
 ```text
 remnux upgrade

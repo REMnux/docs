@@ -4,13 +4,13 @@
 
 Unless you've installed REMnux in the `addon` mode, the distro disabled automated Ubuntu update mechanisms for the OS. This allows you to control how and when your REMnux system attempts to initiate network connections, and avoids issues when REMnux on an isolated network.
 
-Keep your REMnux system up to date by running the following command once in a while, so you benefit from the latest enhancements. Be sure to first connect the system to the internet.
+Keep your REMnux system up to date by running the following command once in a while as a regular, non-root user, so you benefit from the latest enhancements. Be sure to first connect the system to the internet.
 
 ```text
 remnux upgrade
 ```
 
-Even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following operation will make sure that you're running the latest versions of the installed [Debian packages](../behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
+Even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following command will make sure that you're running the latest versions of the installed [Debian packages](../behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
 
 ```text
 remnux update
@@ -24,7 +24,9 @@ If you're running the REMnux distro in a virtual machine, consider taking a snap
 
 ## Issues Upgrading and Updating the REMnux Distro <a id="issues-upgrading-updating-remnux"></a>
 
-If you receive an error upgrading or updating the REMnux distro when using the `remnux` command, refresh your [APT package database](../behind-the-scenes/technologies/debian-packages.md)  by issuing the following commands, then trying the operation again:
+If you receive an error upgrading or updating the REMnux distro when using the `remnux` command, first make sure that you're running the command as a regular, non-root user. Also, try rebooting your system and trying the operation again.
+
+If you still run into problems, refresh your [APT package database](../behind-the-scenes/technologies/debian-packages.md)  by issuing the following commands, then try the operation again:
 
 ```text
 sudo apt update
