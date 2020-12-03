@@ -34,7 +34,7 @@ Emulate code execution of PE files, shellcode, etc. for a variety of OS and hard
 **Notes**: Use `qltool` to analyze artifacts. Before analyzing Windows artifacts, gather Windows DLLs and other components using the [dllscollector.bat](https://github.com/qilingframework/qiling/blob/master/examples/scripts/dllscollector.bat) script. Read the tool's [documentation](https://docs.qiling.io) to get started.  
 **State File**: [remnux.python3-packages.qiling](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/qiling.sls)
 
-## The Bitdefender Disassembler \(bddisasm\) <a id="bddisasm"></a>
+## Bitdefender Disassembler \(bddisasm\) <a id="bddisasm"></a>
 
 Disassemble 32 and 64-bit assembly instructions and emulate shellcode execution.
 
