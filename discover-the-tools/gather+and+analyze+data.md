@@ -36,7 +36,7 @@ Query public repositories of malware data \(e.g., VirusTotal, HybridAnalysis\).
 
 ## Viper
 
-Organize and query a collection of malware samples.
+Organize and query a collection of malware samples. \(Temporarily excluded from the distro.\)
 
 **Website**: [https://github.com/viper-framework/viper](https://github.com/viper-framework/viper)  
 **Author**: Claudio Guarnieri: [https://nex.sx](https://nex.sx)  
