@@ -82,6 +82,20 @@ The password for the container's user `retdec` is `retdec`. The remnux/retdec im
 The commands provided by RetDec include start with the `retdec-` prefix and include retdec-decompiler.py, retdec-unpacker, and retdec-fileinfo.
 {% endhint %}
 
+## Rizin Reverse-Engineering Framework <a id="rizin"></a>
+
+[Rizin](https://rizin.re) is a reverse-engineering framework that includes a disassembler and analysis capabilities for a variety of executable formats and architectures. It's licensed under [GNU Lesser General Public License \(LGPL\) v3](https://github.com/rizinorg/rizin/blob/master/COPYING). This is a [fork of the Radare2 project](https://rizin.re/posts/faq/#why-did-you-fork-radare2).
+
+To run Rizin, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run Rizin commands \(`rizin` and others that start with `rz-`\) and have your local directory mapped as `/home/nonroot/workdir` inside the container:
+
+```text
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/rizin
+```
+
+If you're planning to peform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
+
+The password for the container's user `nonroot` is `nonroot`. The remnux/rizin image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rizin).
+
 ## Radare2 Reverse-Engineering Framework <a id="radare2"></a>
 
 [Radare2](https://www.radare.org/) is a reverse-engineering framework that includes a disassembler and analysis capabilities for a variety of executable formats and architectures. It's licensed under [GNU Lesser General Public License \(LGPL\) v3](https://github.com/radareorg/radare2/blob/master/COPYING).
