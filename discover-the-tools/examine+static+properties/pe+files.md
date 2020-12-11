@@ -80,6 +80,7 @@ Analyze static properties of PE files.
 **Website**: [https://blog.didierstevens.com/2020/03/15/pecheck-py-version-0-7-10/](https://blog.didierstevens.com/2020/03/15/pecheck-py-version-0-7-10/)  
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Public Domain  
+**Notes**: pecheck.py  
 **State File**: [remnux.scripts.pecheck](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pecheck.sls)
 
 ## pev
