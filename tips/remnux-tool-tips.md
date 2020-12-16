@@ -3,6 +3,7 @@
 If you create an article, blog post, or video, showcasing how you use a tool installed on REMnux for malware analysis, please [reach out to Lenny Zeltser,](https://zeltser.com/contact) so he can point to your content from here.
 
 * One-page [cheat sheet for using REMnux](https://zeltser.com/remnux-malware-analysis-tips/), providing an overview of some of the most ueful tools available as part of the distro.
-* Video that showcases how you can [use memory forensics and other tools installed on REMnux](https://www.youtube.com/watch?v=AONAkmt0Vdg) for malware analysis, Presented by [Aaron Sparling](https://twitter.com/OSINTlabworks).
-* Video that explains [what's new in REMnux v7](https://www.youtube.com/watch?v=AcPnOfXoqIg) and shows typical analysis workflow, used to examine a real-world malware sample, presented by Lenny Zeltser.
+* How you can [use memory forensics and other tools installed on REMnux](https://www.youtube.com/watch?v=AONAkmt0Vdg) for malware analysis: A video by [Aaron Sparling](https://twitter.com/OSINTlabworks).
+* [How you can analyze a suspicious Microsoft Office document](https://github.com/jstrosch/malware-samples/blob/master/malware_analysis_exercises/2020/December/solution.md) using [oledump](../discover-the-tools/analyze+documents/microsoft+office.md#oledump) and other tools: A post by Josh Stroschein
+* [What's new in REMnux v7](https://www.youtube.com/watch?v=AcPnOfXoqIg) and what is the typical analysis workflow: A video presented by Lenny Zeltser.
 
