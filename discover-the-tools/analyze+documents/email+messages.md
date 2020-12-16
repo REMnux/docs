@@ -6,16 +6,26 @@ description: Analyze Documents
 
 ## emldump
 
-Parse and analyze EML files
+Parse and analyze EML files.
 
 **Website**: [https://blog.didierstevens.com/2017/07/21/update-emldump-py-version-0-0-10/](https://blog.didierstevens.com/2017/07/21/update-emldump-py-version-0-0-10/)  
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Free, unknown license  
 **State File**: [remnux.scripts.emldump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/emldump.sls)
 
+## msg-extractor
+
+Extract emails and attachments from MSG files.
+
+**Website**: [https://github.com/TeamMsgExtractor/msg-extractor](https://github.com/TeamMsgExtractor/msg-extractor)  
+**Author**: [https://github.com/TeamMsgExtractor/msg-extractor\#credits](https://github.com/TeamMsgExtractor/msg-extractor#credits)  
+**License**: GNU General Public LIcense v3.0: [https://github.com/TeamMsgExtractor/msg-extractor/blob/master/LICENSE.txt](https://github.com/TeamMsgExtractor/msg-extractor/blob/master/LICENSE.txt)  
+**Notes:** extract\_msg  
+**State File**: [remnux.python3-packages.msg-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/msg-extractor.sls)
+
 ## msgconvert
 
-Perl tool to convert msg files to mbox files
+Perl tool to convert MSG files to MBOX files.
 
 **Website**: [https://www.matijs.net/software/msgconv/](https://www.matijs.net/software/msgconv/)  
 **Author**: Matijs van Zuijlen  
