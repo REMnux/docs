@@ -53,6 +53,15 @@ Analyze zip-compressed files.
 **License**: Public Domain  
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
 
+## numbers-to-string.py <a id="numbers-to-string"></a>
+
+Convert decimal numbers to strings.
+
+**Website**: [https://blog.didierstevens.com/2020/12/12/update-numbers-to-string-py-version-0-0-11/](https://blog.didierstevens.com/2020/12/12/update-numbers-to-string-py-version-0-0-11/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.numbers-to-string](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/numbers-to-string.sls)
+
 ## disitool
 
 Manipulate embedded digital signatures.
