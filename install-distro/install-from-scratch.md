@@ -2,7 +2,7 @@
 
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
-## Step 1: Install Ubuntu 18.04 or 20.04 64-Bit <a id="install-ubuntu"></a>
+## Step 1: Install Ubuntu 18.04 or 20.04 <a id="install-ubuntu"></a>
 
 If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit minimal ISO installation file. Get one of the following files, depending on the Ubuntu version you'd like to use as your base OS:
 
