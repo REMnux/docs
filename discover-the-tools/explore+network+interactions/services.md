@@ -8,7 +8,7 @@ description: Explore Network Interactions
 
 Respond to DNS queries with the specified IP address.
 
-**Website**: [https://code.activestate.com/recipes/491264-mini-fake-dns-server/](https://code.activestate.com/recipes/491264-mini-fake-dns-server/)  
+**Website**: [https://github.com/REMnux/distro/blob/master/files/fakedns.py](https://github.com/REMnux/distro/blob/master/files/fakedns.py)  
 **Author**: Francisco Santos, modifications by Kevin Murray  
 **License**: Free, unknown license  
 **State File**: [remnux.tools.fakedns](https://github.com/REMnux/salt-states/blob/master/remnux/tools/fakedns.sls)
