@@ -12,7 +12,7 @@ The Salt state files for the REMnux distro are grouped into "bundles," so it's e
 
 ## Manually Installing SaltStack
 
-If you decide to interact with REMnux' Salt state files without the REMnux installer, first make sure a recent version of SaltStack is installed by executing the following commands:
+If you decide to interact with REMnux' Salt state files without the REMnux installer, first make sure a recent version of SaltStack is installed by executing the following commands, assuming you're using Ubuntu 18.04 \(Bionic\) as the base OS:
 
 ```text
 sudo -s
@@ -23,6 +23,8 @@ apt install -y salt-minion git
 systemctl disable salt-minion
 systemctl stop salt-minion
 ```
+
+If you're using Ubuntu 20.04 \(Focal\) as the base OS, replace in the "wget" and "echo" commands above `18.04` with `20.04` and `bionic` with `focal`.
 
 ## Retrieving REMnux State Files
 
