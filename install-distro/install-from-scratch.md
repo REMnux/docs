@@ -2,11 +2,29 @@
 
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
-## Step 1: Install Ubuntu 18.04 64-Bit Minimal <a id="install-ubuntu"></a>
+## Step 1: Install Ubuntu 18.04 or 20.04 64-Bit Minimal <a id="install-ubuntu"></a>
 
-If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit [MinimalCD version of Ubuntu 18.04](https://help.ubuntu.com/community/Installation/MinimalCD) \("Bionic Beaver"\).
+If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit minimal ISO installation file. Get one of the following files, depending on the Ubuntu version you'd like to use as your base OS:
 
-Install Ubuntu. It's OK to follow default settings, but be sure to adjust them according to your needs.
+{% tabs %}
+{% tab title="Ubuntu 18.04 \(Bionic\)" %}
+[Download the Ubuntu 18.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso) SHA-256 hash of the file should be: 
+
+```text
+bed8a55ae2a657f8349fe3271097cff3a5b8c3d1048cf258568f1601976fa30d 
+```
+{% endtab %}
+
+{% tab title="Ubuntu 20.04 \(Focal\)" %}
+[Download the Ubuntu 20.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/mini.iso) SHA-256 hash of the file should be: 
+
+```text
+0e79e00bf844929d40825b1f0e8634415cda195ba23bae0b041911fde4dfe018
+```
+{% endtab %}
+{% endtabs %}
+
+Install Ubuntu using the downloaded ISO installer. It's OK to follow default settings, but be sure to adjust them according to your needs.
 
 {% hint style="success" %}
 When the Ubuntu installer prompts you for details about the user it will create, select the following to stay consistent with the default configuration of REMnux:
@@ -16,7 +34,7 @@ Username: `remnux`
 Password: `malware`
 {% endhint %}
 
-If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your refrence, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 50 GB disk.
+If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your refrence, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 60 GB disk.
 
 At the "Software selection" screen don't select any software and simply press "Continue." The REMnux installer will install the necessary packages in a later step.
 
@@ -52,7 +70,7 @@ sudo mv remnux /usr/local/bin
 
 ## Step 2: Install GnuPG <a id="install-gnupg"></a>
 
-The MinimalCD version of Ubuntu includes very few components. Install GnuPG, so that the REMnux installer can automatically validate the signature of the REMux configuration files it will download during the installation process. To install GnuPG, run:
+The minimal version of Ubuntu includes very few components. Install GnuPG, so that the REMnux installer can automatically validate the signature of the REMux configuration files it will download during the installation process. To install GnuPG, run:
 
 ```text
 sudo apt install -y gnupg
