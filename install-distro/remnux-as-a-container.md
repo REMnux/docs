@@ -6,13 +6,13 @@ You can run the REMnux distro as a [Docker](https://www.docker.com) container by
 
 If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image \(approximately 4 GB\) if your system doesn't already have it.
 
-To run the REMnux version built on top of Ununtu 18.04 \(bionic\), use the following command:
+To run the REMnux version built on top of Ununtu 18.04 \(Bionic\), use the following command:
 
 ```text
 docker run --rm -it -u remnux remnux/remnux-distro:bionic bash
 ```
 
-To run the REMnux version built on top of Ununtu 20.04 \(focal\), use the following command instead:
+To run the REMnux version built on top of Ununtu 20.04 \(Focal\), use the following command instead:
 
 ```text
 docker run --rm -it -u remnux remnux/remnux-distro:focal bash
@@ -30,13 +30,13 @@ The `--rm` parameter above directs Docker to create a transient container, which
 
 To access the REMnux distro container using SSH, you can invoke it by mapping your system's TCP port 22 to the container's internal TCP port 22. One way to do this is to use the following command, which will open the SSH listener and run the container in the background.
 
-To run the REMnux version built on top of Ununtu 18.04 \(bionic\), use:
+To run the REMnux version built on top of Ununtu 18.04 \(Bionic\), use:
 
 ```text
 docker run -d -p 22:22 remnux/remnux-distro:bionic
 ```
 
-To run the REMnux version built on top of Ununtu 20.04 \(focal\), use:
+To run the REMnux version built on top of Ununtu 20.04 \(Focal\), use:
 
 ```text
 docker run -d -p 22:22 remnux/remnux-distro:focal
