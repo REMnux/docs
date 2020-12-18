@@ -6,26 +6,25 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 
 The REMnux virtual appliance approximately 5 GB. It comes as the industry-standard OVA file, which you can import into your virtualization software.
 
-Pick one OVA file to download: Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version.
+Decide which OVA file to download by making two choices:
+
+* **Will you use VirtualBox or another hypervisor?** Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. 
+* **Do you prefer to Ubuntu 18.04 \(Bionic\) or 20.04 \(Focal\) as the base OS?** The 20.04 version is currently "beta," so get the 28.04 version if you're looking for a more thoroughly tested release.
+
+Then download your preferred OVA file:
 
 {% tabs %}
-{% tab title="General OVA Link" %}
-Download the REMnux general OVA file from one of these locations:
-
-* [Uploadfiles.io](https://ufile.io/3jrlp4sl) \(primary\)
-* [Google Drive](https://drive.google.com/file/d/12RCtE9_5fd1hsfiFmQi-kOlW7nPj59Y8/view?usp=sharing) \(mirror\)
+{% tab title="General OVA" %}
+Download the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/3jrlp4sl) or the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/s9woxw5y). This general version works with most hypervisors; if you're using VirtualBox, get the VirtualBox version.
 {% endtab %}
 
-{% tab title="VirtualBox OVA Link" %}
-Download the REMnux VirtualBox OVA from one of these locations:
-
-* [Uploadfiles.io](https://ufile.io/o6bc66wr) \(primary\)
-* [Google Drive](https://drive.google.com/file/d/1m8amrXlsZaIYMUfW0mJC27CFHIPoWLCN/view?usp=sharing) \(mirror\)
+{% tab title="VirtualBox OVA" %}
+Download the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr) or the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/2mh8nsyo). This VirtualBox version is specifically for VirtualBox; get the general version if you're using other hypervisors.
 {% endtab %}
 {% endtabs %}
 
 {% hint style="warning" %}
-Some browsers \([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)\) change the extension of the OVA file after downloading it, possibly giving it the incorrect .ovf extension. If that happens, rename the file so it has the .ova extension.
+Some browsers \([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)\) change the extension of the OVA file after downloading it, possibly giving it the incorrect .ovf extension. If that happens, rename the file so it has the .ova extension before proceeding.
 {% endhint %}
 
 ## Step 2: Confirm the Hash the OVA File <a id="confirm-hash"></a>
