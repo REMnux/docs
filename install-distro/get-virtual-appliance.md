@@ -4,7 +4,7 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 
 ## Step 1: Download the Virtual Appliance File <a id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance approximately 5 GB. It comes as the industry-standard OVA file, which you can import into your virtualization software.
+The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software.
 
 Decide which OVA file to download by making two choices:
 
