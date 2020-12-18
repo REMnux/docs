@@ -33,14 +33,30 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 
 {% tabs %}
 {% tab title="General OVA Hash" %}
+Ubuntu 18.04 \(Bionic\) general OVA file:
+
 ```text
 bf08a6d2b0b4813131b704c1cfcb921320e81ae917c825fa5c01e2131e0409c0
 ```
+
+Ubuntu 20.04 \(Focal\) general OVA file:
+
+```text
+20e7547bcd0c0e6a3f572a5af3de679bce716be965e9def0665a22d5ea977750
+```
 {% endtab %}
 
-{% tab title="VirtualBox VM Hash" %}
+{% tab title="VirtualBox OVA Hash" %}
+Ubuntu 18.04 \(Bionic\) VirtualBox OVA file:
+
 ```text
 43f7e4fe7a58bd2012df5624423846307b4a028f655ad02cf40f929b6dc8231d
+```
+
+Ubuntu 20.04 \(Focal\) VirtualBox OVA file:
+
+```text
+d023ad740843939c253ccd3d9d5f07170961874ff21fa24491b6a56af05dabcd
 ```
 {% endtab %}
 {% endtabs %}
