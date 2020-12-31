@@ -40,10 +40,6 @@ At the "Software selection" screen don't select any software and simply press "C
 
 Boot into your new Ubuntu system. You should find yourself at the command prompt. Login using the credentials you specified during the Ubuntu installation.
 
-{% hint style="danger" %}
-REMnux distro based on Ununtu 20.04 \(Focal\) is currently in "beta." For a more stable, well-tested version, use the distro based on Ubuntu 18.04 \(Bionic\).
-{% endhint %}
-
 ## Step 2: Get the REMnux Installer <a id="get-remnux-installer"></a>
 
 Download the REMnux installer from the REMnux website by running this command on your new Ubuntu system:

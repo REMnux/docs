@@ -26,10 +26,6 @@ docker run --rm -it -u remnux -v <local_directory>:/home/remnux/files remnux/rem
 
 The `--rm` parameter above directs Docker to create a transient container, which will stop running after you exit the shell. To keep the container active in the background even after you exit, don't supply `--rm`. 
 
-{% hint style="danger" %}
-REMnux distro based on Ununtu 20.04 \(Focal\) is currently in "beta." For a more stable, well-tested version, use the distro based on Ubuntu 18.04 \(Bionic\).
-{% endhint %}
-
 ## SSH and Graphical Interface Access
 
 To access the REMnux distro container using SSH, you can invoke it by mapping your system's TCP port 22 to the container's internal TCP port 22. One way to do this is to use the following command, which will open the SSH listener and run the container in the background.

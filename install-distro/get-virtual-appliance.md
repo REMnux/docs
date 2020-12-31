@@ -9,7 +9,7 @@ The REMnux virtual appliance approximately 5 GB. It comes as an industry-standar
 Decide which OVA file to download by making two choices:
 
 * _Will you use VirtualBox or another hypervisor?_ Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. 
-* _Do you prefer to Ubuntu 18.04 \(Bionic\) or 20.04 \(Focal\) as the base OS?_ The 20.04 version is currently "beta," so get the 18.04 version if you're looking for a more thoroughly tested release.
+* _Do you prefer to Ubuntu 18.04 \(Bionic\) or 20.04 \(Focal\) as the base OS?_ The 20.04 version is newer, and will be supported longer.
 
 Then download your preferred OVA file:
 
