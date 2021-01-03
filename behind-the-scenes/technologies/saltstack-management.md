@@ -28,56 +28,23 @@ The line `edb-debugger:` specifies the name of the Ubuntu package that SaltStack
 
 ## Salt State File to Install a pip Package <a id="state-file-pip"></a>
 
-Here's an example of a Salt state file [pyzipper.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/pyzipper.sls) to install [pyzipper](https://github.com/danifus/pyzipper), a Python library for interacting with Zip file archives. SaltStack will use the Python 3 version of pip \(pip3\), which is installed using [remnux.packages.python3-pip](https://github.com/REMnux/salt-states/blob/master/remnux/packages/python3-pip.sls), to install pyzipper from the standard PyPI repository of Python software:
+Here's an example of a Salt state file [pyzipper.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pyzipper.sls) to install [pyzipper](https://github.com/danifus/pyzipper), a Python library for interacting with Zip file archives. SaltStack will use the Python 3 version of pip \(pip3\), which is installed using [remnux.packages.python3-pip](https://github.com/REMnux/salt-states/blob/master/remnux/packages/python3-pip.sls), to install pyzipper from the standard PyPI repository of Python software:
 
 ```text
 include:
   - remnux.packages.python3-pip
-  - remnux.packages.python-pip
+  - remnux.python3-packages.pycryptodomex
 
 remnux-python-packages-pyzipper:
   pip.installed:
     - name: pyzipper
-    - bin_env: /usr/bin/pip3
-    - require:
-      - sls: remnux.packages.python3-pip
-```
-
-Even though the module will be installed using pip3, SaltStack needs that the Python 2 version of pip be specified in the `include:` statement \(for some reason\).
-
-For another example, consider the state file [peframe.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/peframe.sls) for installing [peframe](https://github.com/guelfoweb/peframe), which helps with the analysis of Windows executables and Microsoft Office documents. In this case, SaltStack is directed to retrieve the latest version of peframe from its Github repository, because it's not available on PyPI. The GitHub repository includes the setup.py for this tool, which allows pip to install it. The State File explicitly specifies the need to install several dependencies when installing this tool.
-
-```text
-include:
-  - remnux.packages.git
-  - remnux.packages.libssl-dev
-  - remnux.packages.swig
-  - remnux.packages.python3-pip
-  - remnux.packages.python-pip
-
-remnux-pip-peframe:
-  pip.installed:
-    - name: git+https://github.com/guelfoweb/peframe.git@master
     - bin_env: /usr/bin/python3
     - require:
-      - sls: remnux.packages.git
-      - sls: remnux.packages.libssl-dev
-      - sls: remnux.packages.swig
       - sls: remnux.packages.python3-pip
-      - sls: remnux.packages.python-pip
+      - sls: remnux.python3-packages.pycryptodomex
 ```
 
-For a more in-depth look at the peframe.sls file, consider this:
-
-* `remnux-pip-peframe` is the name or description of the state.
-* `pip.installed` is the "[Salt state function](https://docs.saltstack.com/en/getstarted/config/functions.html)."
-* `name` and `require` are the parameters the `pip.installed` SaltStack function.
-
-The state files listed using the `require` parameter ensure that SaltStack will install these dependencies in the specified order; it will only execute `pip.installed` if these the installation of these dependencees succeeds. Each of these dependencies has its own Salt State file.
-
-{% hint style="info" %}
-In the peframe.sls example above, the reference to `python-pip` is needed for some reason even though the tool relies on `python3-pip`. Without it, SaltStack produces an error even as it attempts to install the tool using `python3-pip`.
-{% endhint %}
+Since pyzipper depends on the "pycryptodomex" package, which might not be automatically installed by pip, the state file above explicitly specifies [the state file of pycryptodomex](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pycryptodomex.sls) as a dependency.
 
 ## Salt State File to Configure a Tool
 

@@ -28,7 +28,7 @@ Automatically rank strings based on their relevance to the analysis of suspiciou
 
 Statically analyze PE and Microsoft Office files.
 
-**Website**: [https://github.com/guelfoweb/peframe](https://github.com/guelfoweb/peframe)  
+**Website**: [https://github.com/guelfoweb/peframe](https://github.com/digitalsleuth/peframe)  
 **Author**: Gianni Amato: [https://twitter.com/guelfoweb](https://twitter.com/guelfoweb)  
 **License**: Free, unknown license  
 **Notes**: peframe  
