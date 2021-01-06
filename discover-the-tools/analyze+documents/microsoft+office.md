@@ -90,15 +90,6 @@ Analyze zip-compressed files.
 **License**: Public Domain  
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
 
-## officeparser
-
-Parse Microsoft Office OLE2 compound documents.
-
-**Website**: [https://github.com/unixfreak0037/officeparser](https://github.com/unixfreak0037/officeparser)  
-**Author**: John William Davison  
-**License**: MIT License: [https://github.com/unixfreak0037/officeparser/blob/master/LICENSE](https://github.com/unixfreak0037/officeparser/blob/master/LICENSE)  
-**State File**: [remnux.scripts.officeparser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/officeparser.sls)
-
 ## oledump
 
 Analyze OLE2 Structured Storage files.
