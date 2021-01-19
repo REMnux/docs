@@ -90,7 +90,7 @@ Analyze PE files and extract strings from them
 **Website**: [http://pev.sourceforge.net](http://pev.sourceforge.net)  
 **Author**: Fernando Merces, Jardel Weyrich  
 **License**: GNU General Public License \(GPL\) v2: [https://github.com/merces/pev/blob/master/LICENSE](https://github.com/merces/pev/blob/master/LICENSE)  
-**Notes**: pestr, readpe, pedis, pehash, pescan  
+**Notes**: pestr, readpe, pedis, pehash, pescan, peldd, peres  
 **State File**: [remnux.packages.pev](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pev.sls)
 
 ## PortEx
