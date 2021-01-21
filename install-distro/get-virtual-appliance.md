@@ -76,6 +76,7 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 {% tab title="Conversion" %}
 * [KVM/QEMU](https://blog.ricosharp.com/posts/2019/Converting-ova-file-to-qcow2)
 * [AWS](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
+* Hyper-V
 * [Proxmox](https://www.proxmox.com/)
 {% endtab %}
 {% endtabs %}
@@ -122,6 +123,16 @@ WaylandEnable=false
 ```
 
 Then reboot your virtual machine \(`reboot`\).
+
+### Hyper-V
+
+It's possible to import the pre-built REMnux virtual appliance into Hyper-V, but you'll need to take a few conversion steps. You'll need to extract the contents of the REMnux OVA file to obtain the enclosed VMDK file that captures the virtual disk of the distro, then convert it to the VHD format supported by Hyper-V:
+
+1. Download the General OVA of the REMnux distro, as [outlined above](get-virtual-appliance.md#download-virtual-appliance).
+2. Extract the downloaded OVA file using a tool such as "tar". One of the extracted files will have the .vmdk.gz name, such as remnux-v7-focal-disk1.vmdk.gz.
+3. Decompress the extracted .vmdk.gz file using a tool such as "gunzip" to generate a file with the .vmdk extension.
+4. Use [qemu-img](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) \(`qemu-img convert -O vhd`\) or [StarWind V2V Converter](https://www.starwindsoftware.com/starwind-v2v-converter) to convert the .vmdk file to the VHD format supported by Hyper-V.
+5. Import the generated VHD file into Hyper-V.
 
 ### Remote Cloud, Such as AWS
 
