@@ -72,6 +72,16 @@ Manipulate embedded digital signatures.
 **Notes**: disitool.py  
 **State File**: [remnux.scripts.disitool](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/disitool.sls)
 
+## Name-That-Hash
+
+Identify dfferent types of hashes. Available in the REMnux distro based on Ubuntu 20.04 \(Focal\); not available on Ubuntu 18.04 \(Bionic\).
+
+**Website**: [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash)  
+**Author**: randon / Bee: [https://twitter.com/bee\_sec\_san](https://twitter.com/bee_sec_san)  
+**License**: Free, unknown license  
+**Notes**: nth  
+**State File**: [remnux.python3-packages.name-that-hash](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/name-that-hash.sls)
+
 ## Hash ID
 
 Identify dfferent types of hashes.
