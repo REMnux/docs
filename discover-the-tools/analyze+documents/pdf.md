@@ -42,6 +42,15 @@ Parse, modify, generate PDF files.
 **Notes**: pdfcop, pdfdecompress, pdfdecrypt, pdfextract, etc.  
 **State File**: [remnux.rubygems.origami](https://github.com/REMnux/salt-states/blob/master/remnux/rubygems/origami.sls)
 
+## pdftool
+
+Analyze PDF files to identify incremental updates to the document.
+
+**Website**: [https://blog.didierstevens.com/2021/01/31/new-tool-pdftool-py/](https://blog.didierstevens.com/2021/01/31/new-tool-pdftool-py/)  
+**Author**: Didier Stevens  
+**License**: Public Domain  
+**State File**: [remnux.scripts.pdftool](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdftool.sls)
+
 ## pdf-parser
 
 Examine elements of the PDF file.
