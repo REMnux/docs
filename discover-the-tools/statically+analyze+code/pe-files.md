@@ -4,6 +4,16 @@ description: Statically Analyze Code
 
 # PE Files
 
+## Malchive
+
+Perform static analysis of various aspects of malicious code.
+
+**Website**: [https://github.com/MITRECND/malchive](https://github.com/MITRECND/malchive)  
+**Author**: The MITRE Corporation, [https://github.com/MITRECND/malchive/graphs/contributors](https://github.com/MITRECND/malchive/graphs/contributors)  
+**License**: License 2.0: [https://github.com/MITRECND/malchive/blob/main/LICENSE](https://github.com/MITRECND/malchive/blob/main/LICENSE)  
+**Notes**: Malchive command-line tools start with the prefix `malutil-`. See [utilities documentation](https://github.com/MITRECND/malchive/wiki/Utilities) for details.  
+**State File**: [remnux.python3-packages.malchive](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malchive.sls)
+
 ## Speakeasy
 
 Emulate code execution, including shellcode, Windows drivers, and Windows PE files.
