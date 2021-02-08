@@ -8,9 +8,10 @@ description: Explore Network Interactions
 
 Respond to DNS queries with the specified IP address.
 
-**Website**: [https://github.com/REMnux/distro/blob/master/files/fakedns.py](https://github.com/REMnux/distro/blob/master/files/fakedns.py)  
-**Author**: Francisco Santos, modifications by Kevin Murray  
-**License**: Free, unknown license  
+**Website**: [https://github.com/SocialExploits/fakedns/blob/main/fakedns.py](https://github.com/SocialExploits/fakedns/blob/main/fakedns.py)  
+**Author**: Mike Murr: mike@socialexploits.com, [https://socialexploits.com](https://socialexploits.com)  
+**License**: Apache License 2.0  
+**Notes**: Use the `-h` parameter to display usage and help details.  
 **State File**: [remnux.tools.fakedns](https://github.com/REMnux/salt-states/blob/master/remnux/tools/fakedns.sls)
 
 ## fakemail
