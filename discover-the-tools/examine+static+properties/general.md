@@ -74,7 +74,7 @@ Manipulate embedded digital signatures.
 
 ## Name-That-Hash
 
-Identify dfferent types of hashes. Available in the REMnux distro based on Ubuntu 20.04 \(Focal\); not available on Ubuntu 18.04 \(Bionic\).
+Identify dfferent types of hashes.
 
 **Website**: [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash)  
 **Author**: randon / Bee: [https://twitter.com/bee\_sec\_san](https://twitter.com/bee_sec_san)  

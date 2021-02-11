@@ -2,24 +2,24 @@
 
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
-## Step 1: Install Ubuntu 18.04 or 20.04 <a id="install-ubuntu"></a>
+## Step 1: Install Ubuntu 20.04 or 18.04 <a id="install-ubuntu"></a>
 
-If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit minimal ISO installation file. Get one of the following files, depending on the Ubuntu version you'd like to use as your base OS:
+If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit minimal ISO installation file. Get one of the following files, depending on the Ubuntu version you'd like to use as your base OS. Ubuntu 20.04 \(Focal\) is newer and will be supported longer, so go with that one unless you specifically need Ubuntu 18.04.
 
 {% tabs %}
-{% tab title="Ubuntu 18.04 \(Bionic\)" %}
-[Download the Ubuntu 18.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso) SHA-256 hash of the file should be: 
-
-```text
-bed8a55ae2a657f8349fe3271097cff3a5b8c3d1048cf258568f1601976fa30d 
-```
-{% endtab %}
-
 {% tab title="Ubuntu 20.04 \(Focal\)" %}
 [Download the Ubuntu 20.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/mini.iso) SHA-256 hash of the file should be: 
 
 ```text
 0e79e00bf844929d40825b1f0e8634415cda195ba23bae0b041911fde4dfe018
+```
+{% endtab %}
+
+{% tab title="Ubuntu 18.04 \(Bionic\)" %}
+[Download the Ubuntu 18.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso) SHA-256 hash of the file should be: 
+
+```text
+bed8a55ae2a657f8349fe3271097cff3a5b8c3d1048cf258568f1601976fa30d 
 ```
 {% endtab %}
 {% endtabs %}

@@ -9,17 +9,17 @@ The REMnux virtual appliance approximately 5 GB. It comes as an industry-standar
 Decide which OVA file to download by making two choices:
 
 * _Will you use VirtualBox or another hypervisor?_ Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. 
-* _Do you prefer to Ubuntu 18.04 \(Bionic\) or 20.04 \(Focal\) as the base OS?_ The 20.04 version is newer, and will be supported longer.
+* _Do you prefer to Ubuntu 20.04 \(Focal\) or 18.04 \(Bionic\) as the base OS?_ The 20.04 version is newer, and will be supported longer; go with the 20.04 unless you specifically need the 18.04 version.
 
 Then download your preferred OVA file:
 
 {% tabs %}
 {% tab title="General OVA" %}
-Download the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/3jrlp4sl) or the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/s9woxw5y). This general version works with most hypervisors; if you're using VirtualBox, get the VirtualBox version.
+Download the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/s9woxw5y) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/3jrlp4sl). These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead.
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
-Download the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr) or the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/2mh8nsyo). This VirtualBox version is specifically for VirtualBox; get the general version if you're using other hypervisors.
+Download the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/2mh8nsyo) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr). These VirtualBox OVA files are specifically for VirtualBox; get the general version if you're using other hypervisors.
 {% endtab %}
 {% endtabs %}
 

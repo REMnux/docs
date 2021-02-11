@@ -10,7 +10,7 @@ Keep your REMnux system up to date by running the following command once in a wh
 remnux upgrade
 ```
 
-Even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following command will make sure that you're running the latest versions of the installed [Debian packages](../behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
+The `remnux upgrade` command is the way to get the latest REMnux software in most cases. However, even if if the command above tells you, "No upgrades available," you can still refresh your current tools. The following command will make sure that you're running the latest versions of the installed [Debian packages](../behind-the-scenes/technologies/debian-packages.md) and Python modules, without adding adding any new tools to your system:
 
 ```text
 remnux update
