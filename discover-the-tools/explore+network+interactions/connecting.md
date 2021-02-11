@@ -43,6 +43,16 @@ Obfuscate your origins by routing traffic through a network of anonymizing nodes
 **License**: 3-Clause BSD license: [https://github.com/torproject/tor/blob/master/LICENSE](https://github.com/torproject/tor/blob/master/LICENSE)  
 **State File**: [remnux.packages.tor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tor.sls)
 
+## Anomy
+
+A wrapper around wget, ssh, sftp, ftp, and telnet to route these connections through Tor to anonymize your traffic.
+
+**Website**: [https://github.com/izm1chael/Anomy](https://github.com/izm1chael/Anomy)  
+**Author**: Mike Johnson: [https://cyber-bytes.co.uk](https://cyber-bytes.co.uk)  
+**License**: Free, unknown license  
+**Notes**: anomy  
+**State File**: [remnux.scripts.anomy](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/anomy.sls)
+
 ## EPIC IRC Client
 
 Examine IRC activities with this IRC client.
