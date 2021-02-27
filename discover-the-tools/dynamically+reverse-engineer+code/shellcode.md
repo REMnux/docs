@@ -6,7 +6,7 @@ description: Dynamically Reverse-Engineer Code
 
 ## shcode2exe
 
-Convert 32 and 64-bit shellcode to a Windows executable or a Linux binary file.
+Convert 32 and 64-bit shellcode to a Windows executable file.
 
 **Website**: [https://github.com/accidentalrebel/shcode2exe](https://github.com/accidentalrebel/shcode2exe)  
 **Author**: Karlo Licudine: [https://twitter.com/accidentalrebel](https://twitter.com/accidentalrebel)  
