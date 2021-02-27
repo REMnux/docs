@@ -4,6 +4,15 @@ description: Dynamically Reverse-Engineer Code
 
 # Shellcode
 
+## shcode2exe
+
+Convert 32 and 64-bit shellcode to a Windows executable or a Linux binary file.
+
+**Website**: [https://github.com/accidentalrebel/shcode2exe](https://github.com/accidentalrebel/shcode2exe)  
+**Author**: Karlo Licudine: [https://twitter.com/accidentalrebel](https://twitter.com/accidentalrebel)  
+**License**: GNU General Public License \(GPL\) v3.0: [https://github.com/accidentalrebel/shcode2exe/blob/master/LICENSE](https://github.com/accidentalrebel/shcode2exe/blob/master/LICENSE)  
+**State File**: [remnux.scripts.shcode2exe](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/shcode2exe.sls)
+
 ## shellcode2exe.bat
 
 Convert 32 and 64-bit shellcode to a Windows executable file.

@@ -81,6 +81,15 @@ Extract Microsoft cabinet \(cab\) files.
 **License**: GNU General Public License \(GPL\)  
 **State File**: [remnux.packages.cabextract](https://github.com/REMnux/salt-states/blob/master/remnux/packages/cabextract.sls)
 
+## nasm
+
+An x86-64 assembler
+
+**Website**: [https://www.nasm.us](https://www.nasm.us)  
+**Author**: H. Peter Anvin, Cyrill Gorcunov, Chang Seok Bae, Jim Kukunas, Frank B. Kotler, etc.: [https://github.com/netwide-assembler/nasm/blob/master/AUTHORS](https://github.com/netwide-assembler/nasm/blob/master/AUTHORS)  
+**License**: BSD 2-Clause "Simplified" License: [https://github.com/netwide-assembler/nasm/blob/master/LICENSE](https://github.com/netwide-assembler/nasm/blob/master/LICENSE)  
+**State File**: [remnux.packages.nasm](https://github.com/REMnux/salt-states/blob/master/remnux/packages/nasm.sls)
+
 ## SQLite
 
 Manage and interact with SQL database files.
