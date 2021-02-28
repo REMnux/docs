@@ -168,6 +168,16 @@ Analyze disk images and recover files from them.
 **Notes**: For a listing of commands, see [http://wiki.sleuthkit.org/index.php?title=TSK\_Tool\_Overview](http://wiki.sleuthkit.org/index.php?title=TSK_Tool_Overview)  
 **State File**: [remnux.packages.sleuthkit](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sleuthkit.sls)
 
+## binwalk
+
+Extract and analyze firmware images.
+
+**Website**: [https://github.com/ReFirmLabs/binwalk](https://github.com/ReFirmLabs/binwalk)  
+**Author**: Craig Heffner, ReFirmLabs  
+**License**: IBM Public License, Common Public License, GNU General Public License \(GPL\) v2: [https://www.sleuthkit.org/sleuthkit/licenses.php](https://www.sleuthkit.org/sleuthkit/licenses.php)  
+**Notes**: MIT License: [https://github.com/ReFirmLabs/binwalk/blob/master/LICENSE](https://github.com/ReFirmLabs/binwalk/blob/master/LICENSE)  
+**State File**: [remnux.packages.binwalk](https://github.com/REMnux/salt-states/blob/master/remnux/packages/binwalk.sls)
+
 ## file
 
 Identify file type using "magic" numbers.
