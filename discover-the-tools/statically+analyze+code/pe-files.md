@@ -34,6 +34,16 @@ Analyze I/O operations of a suspicious PE file by emulating its execution.
 **Notes**: Before using this tool, place the files your sample requires under /opt/binee-files/win10\_32. For example, the Windows DLLs it needs should go /opt/binee-files/win10\_32/windows/system32. If you have a Windows 10 64-bit system, you can get the 32-bit DLLs from C:\Windows\SysWOW64 To check which DLLs you might need by examining the import table using the "-i" parameter.  
 **State File**: [remnux.packages.binee](https://github.com/REMnux/salt-states/blob/master/remnux/packages/binee.sls)
 
+## MBCScan
+
+Scan a PE file to list the associated Malware Behavior Catalog \(MBC\) details.
+
+**Website**: [https://github.com/accidentalrebel/mbcscan](https://github.com/accidentalrebel/mbcscan)  
+**Author**: Karlo Licudine: [https://twitter.com/accidentalrebel](https://twitter.com/accidentalrebel)  
+**License**: GNU General Public License \(GPL\) v3.0: [https://github.com/accidentalrebel/mbcscan/blob/master/LICENSE](https://github.com/accidentalrebel/mbcscan/blob/master/LICENSE)  
+**Notes**: mbcscan.py  
+**State File**: [remnux.scripts.mbcscan](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/mbcscan.sls)
+
 ## capa
 
 Detect suspicious capabilites in PE files.
@@ -41,5 +51,5 @@ Detect suspicious capabilites in PE files.
 **Website**: [https://github.com/fireeye/capa](https://github.com/fireeye/capa)  
 **Author**: FireEye Inc, Willi Ballenthin: [https://twitter.com/williballenthin](https://twitter.com/williballenthin), Moritz Raabe: [https://twitter.com/m\_r\_tz](https://twitter.com/m_r_tz)  
 **License**: Apache License 2.0: [https://github.com/fireeye/capa/blob/master/LICENSE.txt](https://github.com/fireeye/capa/blob/master/LICENSE.txt)  
-**State File**: [remnux.packages.capa](https://github.com/REMnux/salt-states/blob/master/remnux/packages/capa.sls)
+**State File**: [remnux.python3-packages.capa](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/capa.sls)
 
