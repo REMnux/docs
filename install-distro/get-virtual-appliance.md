@@ -106,6 +106,13 @@ If running VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums
 
 If your REMnux window is too small when you boot it up the system in VirtualBox, activate the Scaling Mode for the VM via the VirtualBox menu View &gt; Scaling Mode.
 
+If your REMnux virtual machine is unable to communicate over the network, check whether has a network interface other than the loopback \("lo"\) by running the `ifconfig` command. If a non-loopback interface is missing, perform the following steps to add it:
+
+1. Run the `networkctl` command to determine the name of the adapter \("link"\) of type "ether". It might be named something like "enp0s17".
+2. Set up the network interface by replacing _YOUR\_NIC_ in the following command with the name you've identified in the previous step \(e.g., "enp0s17\)": `sudo ip link set up YOUR_NIC`
+3. Edit the /etc/netplan/01-netcfg.yaml file \(e.g., use the `code` command\). Under "ethernets:" replace the name there \(e.g, "ens33"\) with the name of your network card \(e.g., "enp0s17"\).
+4. Reboot your REMnux virtual machine.
+
 ### VMware
 
 VMware sometimes conflicts with the Ubuntu graphical environment, which by default uses [Wayland](https://wiki.ubuntu.com/Wayland) display protocol. The problems manifest themselves through the VM being unresponsive to keyboard and mouse; clipboard sharing and copy-and-paste VMware features might not be working, too.
