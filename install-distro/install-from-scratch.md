@@ -26,6 +26,8 @@ bed8a55ae2a657f8349fe3271097cff3a5b8c3d1048cf258568f1601976fa30d
 
 Install Ubuntu using the downloaded ISO installer. It's OK to follow default settings, but be sure to adjust them according to your needs.
 
+If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your refrence, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 60 GB disk.
+
 {% hint style="success" %}
 When the Ubuntu installer prompts you for details about the user it will create, select the following to stay consistent with the default configuration of REMnux:
 
@@ -33,8 +35,6 @@ Full name: `REMnux User`
 Username: `remnux`  
 Password: `malware`
 {% endhint %}
-
-If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your refrence, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 60 GB disk.
 
 At the "Software selection" screen don't select any software and simply press "Continue." The REMnux installer will install the necessary packages in a later step.
 
