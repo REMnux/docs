@@ -15,7 +15,7 @@ Then download your preferred OVA file:
 
 {% tabs %}
 {% tab title="General OVA" %}
-Download the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/s9woxw5y) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/3jrlp4sl). These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead.
+Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/3jrlp4sl). These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead.
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
@@ -33,30 +33,30 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 
 {% tabs %}
 {% tab title="General OVA Hash" %}
+General OVA file based on Ubuntu 20.04 \(Focal\):
+
+```text
+8be61dec9856f47bd2592b1c5b5e499cbcffc66a58114e6ca24c85e5a0fcc1d9
+```
+
 General OVA file based on Ubuntu 18.04 \(Bionic\):
 
 ```text
 bf08a6d2b0b4813131b704c1cfcb921320e81ae917c825fa5c01e2131e0409c0
 ```
-
-General OVA file based on Ubuntu 20.04 \(Focal\):
-
-```text
-20e7547bcd0c0e6a3f572a5af3de679bce716be965e9def0665a22d5ea977750
-```
 {% endtab %}
 
 {% tab title="VirtualBox OVA Hash" %}
-VirtualBox OVA file based on Ubuntu 18.04 \(Bionic\):
-
-```text
-43f7e4fe7a58bd2012df5624423846307b4a028f655ad02cf40f929b6dc8231d
-```
-
 VirtualBox OVA File based on Ubuntu 20.04 \(Focal\):
 
 ```text
 d023ad740843939c253ccd3d9d5f07170961874ff21fa24491b6a56af05dabcd
+```
+
+VirtualBox OVA file based on Ubuntu 18.04 \(Bionic\):
+
+```text
+43f7e4fe7a58bd2012df5624423846307b4a028f655ad02cf40f929b6dc8231d
 ```
 {% endtab %}
 {% endtabs %}
