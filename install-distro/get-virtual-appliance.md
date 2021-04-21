@@ -19,7 +19,7 @@ Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/u1uoseysbxk
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
-Download the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/2mh8nsyo) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr). These VirtualBox OVA files are specifically for VirtualBox; get the general version from the other tab if you're using other hypervisors.
+Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/wf8pxzgo5cvrirglmeieqsrqkncera5c) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr). These VirtualBox OVA files are specifically for VirtualBox; get the general version from the other tab if you're using other hypervisors.
 {% endtab %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ General OVA file based on Ubuntu 18.04 \(Bionic\):
 VirtualBox OVA File based on Ubuntu 20.04 \(Focal\):
 
 ```text
-d023ad740843939c253ccd3d9d5f07170961874ff21fa24491b6a56af05dabcd
+b7718176a7a9b4425111b4b733a51f6d5f3c95145aa0da53a3361f79631894d2
 ```
 
 VirtualBox OVA file based on Ubuntu 18.04 \(Bionic\):
