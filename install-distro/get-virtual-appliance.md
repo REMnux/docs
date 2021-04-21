@@ -15,11 +15,11 @@ Then download your preferred OVA file:
 
 {% tabs %}
 {% tab title="General OVA" %}
-Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/3jrlp4sl). These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead.
+Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://app.box.com/s/90on2oy03ej3p183yvd4yqw56zfidn1k). These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead from the other tab.
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
-Download the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/2mh8nsyo) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr). These VirtualBox OVA files are specifically for VirtualBox; get the general version if you're using other hypervisors.
+Download the [Ubuntu 20.04 \(Focal\) OVA file](https://ufile.io/2mh8nsyo) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://ufile.io/o6bc66wr). These VirtualBox OVA files are specifically for VirtualBox; get the general version from the other tab if you're using other hypervisors.
 {% endtab %}
 {% endtabs %}
 
@@ -42,7 +42,7 @@ General OVA file based on Ubuntu 20.04 \(Focal\):
 General OVA file based on Ubuntu 18.04 \(Bionic\):
 
 ```text
-bf08a6d2b0b4813131b704c1cfcb921320e81ae917c825fa5c01e2131e0409c0
+01d1ade3ef76e935b0f283e857a88324dda7628997a8a3ecd2c8cbc6a6c45522
 ```
 {% endtab %}
 
