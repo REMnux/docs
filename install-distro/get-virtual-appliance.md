@@ -50,7 +50,7 @@ General OVA file based on Ubuntu 18.04 \(Bionic\):
 VirtualBox OVA File based on Ubuntu 20.04 \(Focal\):
 
 ```text
-b7718176a7a9b4425111b4b733a51f6d5f3c95145aa0da53a3361f79631894d2
+041f79db1f956b22bb72554e026dfd518ae2a8bb81a927787bd22665f566a6e4
 ```
 
 VirtualBox OVA file based on Ubuntu 18.04 \(Bionic\):
