@@ -15,11 +15,17 @@ Then download your preferred OVA file:
 
 {% tabs %}
 {% tab title="General OVA" %}
-Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://app.box.com/s/90on2oy03ej3p183yvd4yqw56zfidn1k). These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead from the other tab.
+These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead from the other tab:
+
+* Ubuntu 20.04 \(Focal\) General OVA: Download from [Box](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download)
+* Ubuntu 18.04 \(Bionic\) General OVA: Download from [Box](https://app.box.com/s/90on2oy03ej3p183yvd4yqw56zfidn1k) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-bionic.ova/download)
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
-Download the [Ubuntu 20.04 \(Focal\) OVA file](https://app.box.com/s/wf8pxzgo5cvrirglmeieqsrqkncera5c) or the [Ubuntu 18.04 \(Bionic\) OVA file](https://app.box.com/s/ts82ebr1g5g7lwuzrj1x0xs5g866yi2q). These VirtualBox OVA files are specifically for VirtualBox; get the general version from the other tab if you're using other hypervisors.
+These VirtualBox OVA files are specifically for VirtualBox; get the general version from the other tab if you're using other hypervisors:
+
+* Ubuntu 20.04 \(Focal\) VirtualBox OVA: Download from [Box](https://app.box.com/s/wf8pxzgo5cvrirglmeieqsrqkncera5c) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download)
+* Ubuntu 18.04 \(Bionic\) VirtualBox OVA: Download from [Box](https://app.box.com/s/ts82ebr1g5g7lwuzrj1x0xs5g866yi2q) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-bionic-virtualbox.ova/download)
 {% endtab %}
 {% endtabs %}
 
