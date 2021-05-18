@@ -4,7 +4,7 @@ You can add REMnux to an existing system based on Ubuntu 18.04 by following inst
 
 ## Step 1: Get the REMnux Installer <a id="get-remnux-installer"></a>
 
-After logging into your existing system based on Ubuntu 18.04, download the REMnux installer:
+After logging into your existing system based on Ubuntu 20.04 or 18.04, download the REMnux installer:
 
 ```text
 wget https://REMnux.org/remnux-cli
