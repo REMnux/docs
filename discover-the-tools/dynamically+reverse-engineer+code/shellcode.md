@@ -62,16 +62,6 @@ Cut out a part of a data stream.
 **License**: Public Domain  
 **State File**: [remnux.scripts.cut-bytes](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/cut-bytes.sls)
 
-## scdbg
-
-Analyze shellcode by emulating its execution.
-
-**Website**: [http://sandsprite.com/blogs/index.php?uid=7&amp;pid=152](http://sandsprite.com/blogs/index.php?uid=7&amp;pid=152)  
-**Author**: David Zimmer  
-**License**: Free, unknown license  
-**Notes**: scdbg \(GUI\), scdbgc \(console\)  
-**State File**: [remnux.packages.scdbg](https://github.com/REMnux/salt-states/blob/master/remnux/packages/scdbg.sls)
-
 ## libemu
 
 A library for x86 code emulation and shellcode detection
