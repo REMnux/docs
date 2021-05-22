@@ -23,6 +23,16 @@ Convert 32 and 64-bit shellcode to a Windows executable file.
 **Notes**: Use full path name to specify the input file; look for the output file in /usr/local/shellcode2exe-bat  
 **State File**: [remnux.tools.shellcode2exe-bat](https://github.com/REMnux/salt-states/blob/master/remnux/tools/shellcode2exe-bat.sls)
 
+## scdbg
+
+Analyze shellcode by emulating its execution.
+
+**Website**: [http://sandsprite.com/blogs/index.php?uid=7&pid=152](http://sandsprite.com/blogs/index.php?uid=7&pid=152)  
+**Author**: David Zimmer  
+**License**: Free, unknown license  
+**Notes**: scdbg \(GUI\), scdbgc \(console\). Due to a compatibility issue, this tool is not available on an Ubuntu 20.04 SIFT Workstation system to which REMnux was added.  
+**State File**: [remnux.packages.scdbg](https://github.com/REMnux/salt-states/blob/master/remnux/packages/scdbg.sls)
+
 ## Speakeasy
 
 Emulate code execution, including shellcode, Windows drivers, and Windows PE files.
