@@ -24,6 +24,16 @@ Perform static analysis of various aspects of malicious code.
 **Notes**: Malchive command-line tools start with the prefix `malutil-`. See [utilities documentation](https://github.com/MITRECND/malchive/wiki/Utilities) for details.  
 **State File**: [remnux.python3-packages.malchive](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malchive.sls)
 
+## 1768.py
+
+Analyze Cobalt Stike beacons.
+
+**Website**: [https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/](https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**Notes**: For an overview of this tool, see the [Quick Tip](https://isc.sans.edu/forums/diary/Quick+Tip+Cobalt+Strike+Beacon+Analysis/26818) article.  
+**State File**: r[emnux.scripts.1768](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/1768.sls)
+
 ## xortool
 
 Analyze XOR-encoded data.
