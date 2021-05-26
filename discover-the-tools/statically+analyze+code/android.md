@@ -50,7 +50,7 @@ Convert an Android APK application file into an Android Studio project for easie
 **Website**: [https://maxkersten.nl/projects/androidprojectcreator](https://maxkersten.nl/projects/androidprojectcreator)  
 **Author**: Max Kersten: [https://twitter.com/LibraAnalysis](https://twitter.com/LibraAnalysis)  
 **License**: GNU General Public License \(GPL\) v3: [https://github.com/ThisIsLibra/AndroidProjectCreator/blob/master/LICENSE](https://github.com/ThisIsLibra/AndroidProjectCreator/blob/master/LICENSE)  
-**Notes**: Use AndroidProjectCreator to run the tool. Before running it for the first time, execute `AndroidProjectCreator -compactInstall` to download the latest depenencies. Use Android Studio to examine the output of the tool.  
+**Notes**: Use AndroidProjectCreator to run the tool. Before running it for the first time, execute `AndroidProjectCreator -compactInstall` to download the latest dependencies. Use Android Studio to examine the output of the tool.  
 **State File**: [remnux.packages.android-project-creator](https://github.com/REMnux/salt-states/blob/master/remnux/packages/android-project-creator.sls)
 
 ## baksmali
