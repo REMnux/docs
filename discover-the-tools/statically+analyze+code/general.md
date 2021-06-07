@@ -34,6 +34,16 @@ Reverse engineering platform powered by Rizin
 **Notes**: If you're planning to use Cutter when running REMnux as a Docker container, you'll need to include the `--privileged` parameter when invoking the REMnux distro image in Docker.  
 **State File**: [remnux.tools.cutter](https://github.com/REMnux/salt-states/blob/master/remnux/tools/cutter.sls)
 
+## Detect-It-Easy <a id="detect-it-easy"></a>
+
+Determine types of files and examine file properties. Available in the REMnux distro based on Ubuntu 20.04 \(Focal\); not available on Ubuntu 18.04 \(Bionic\).
+
+**Website**: [https://github.com/horsicq/Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy)  
+**Author**: hors: [https://twitter.com/horsicq](https://twitter.com/horsicq)  
+**License**: MIT License: [https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE](https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE)  
+**Notes**: GUI tool: `die`, command-line tool: `diec`.  
+**State File**: [remnux.tools.detect-it-easy](https://github.com/REMnux/salt-states/blob/master/remnux/tools/detect-it-easy.sls)
+
 ## Qiling
 
 Emulate code execution of PE files, shellcode, etc. for a variety of OS and hardware platforms.
