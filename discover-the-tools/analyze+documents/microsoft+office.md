@@ -90,6 +90,15 @@ Analyze zip-compressed files.
 **License**: Public Domain  
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
 
+## xmldump.py
+
+Extract contents of XML files, in particular OOXML-formatted Microsoft Office documents.
+
+**Website**: [https://blog.didierstevens.com/2017/12/18/new-tool-xmldump-py/](https://blog.didierstevens.com/2017/12/18/new-tool-xmldump-py/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/xmldump.sls)
+
 ## oledump
 
 Analyze OLE2 Structured Storage files.
