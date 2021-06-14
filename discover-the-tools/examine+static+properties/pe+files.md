@@ -75,7 +75,7 @@ Python library for analyzing static properties of PE files.
 
 ## pedump
 
-Statically analyze PE files.
+Statically analyze PE files and extract their components \(e.g., resources\).
 
 **Website**: [https://github.com/zed-0xff/pedump](https://github.com/zed-0xff/pedump)  
 **Author**: Andrey "Zed" Zaikin  
