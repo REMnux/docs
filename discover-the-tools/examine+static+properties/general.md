@@ -62,6 +62,15 @@ Convert decimal numbers to strings.
 **License**: Public Domain  
 **State File**: [remnux.scripts.numbers-to-string](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/numbers-to-string.sls)
 
+## re-search.py
+
+Search the file for built-in regular expressions of common suspicious artifacts.
+
+**Website**: [https://blog.didierstevens.com/2021/05/23/update-re-search-py-version-0-0-17/](https://blog.didierstevens.com/2021/05/23/update-re-search-py-version-0-0-17/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.re-search](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/re-search.sls)
+
 ## disitool
 
 Manipulate embedded digital signatures.
