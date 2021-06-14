@@ -32,7 +32,16 @@ Analyze Cobalt Stike beacons.
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
 **License**: Public Domain  
 **Notes**: For an overview of this tool, see the [Quick Tip](https://isc.sans.edu/forums/diary/Quick+Tip+Cobalt+Strike+Beacon+Analysis/26818) article.  
-**State File**: r[emnux.scripts.1768](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/1768.sls)
+**State File**: [remnux.scripts.1768](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/1768.sls)
+
+## sets.py
+
+Perform sets uperations on lines or bytes in text files.
+
+**Website**: [https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/](https://blog.didierstevens.com/2017/03/05/new-tool-sets-py/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.sets](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/sets.sls)
 
 ## xortool
 
