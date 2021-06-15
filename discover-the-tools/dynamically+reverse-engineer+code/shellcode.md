@@ -33,6 +33,16 @@ Analyze shellcode by emulating its execution.
 **Notes**: scdbg \(GUI\), scdbgc \(console\). Due to a compatibility issue, this tool is not available on an Ubuntu 20.04 SIFT Workstation system to which REMnux was added.  
 **State File**: [remnux.packages.scdbg](https://github.com/REMnux/salt-states/blob/master/remnux/packages/scdbg.sls)
 
+## runsc
+
+Run shellcode to trace and analyze its execution.
+
+**Website**: [https://github.com/edygert/runsc](https://github.com/edygert/runsc)  
+**Author**: Evan Dygert: [https://twitter.com/edygert](https://twitter.com/edygert)  
+**License**: MIT License: [https://github.com/edygert/runsc/blob/main/LICENSE](https://github.com/edygert/runsc/blob/main/LICENSE)  
+**Notes**: Use the `tracesc` command to execute runsc within Wine in a way that traces the execution of shellcode. WARNING! This wrapper will actually execute the shellcode on the system, which might lead to your system becoming infected. Only use this wrapper in an properly configured, isolated laboratory environment, which you can return to a pristine state at the end of your analysis.  
+**State File**: [remnux.packages.runsc](https://github.com/REMnux/salt-states/blob/master/remnux/packages/runsc.sls)
+
 ## Speakeasy
 
 Emulate code execution, including shellcode, Windows drivers, and Windows PE files.
