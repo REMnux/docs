@@ -7,8 +7,9 @@ To change the keyboard layout of your REMnux system, perhaps to another language
 1. Open the Settings window using the command `gnome-control-center`.
 2. Go to the Region & Language area.
 3. Press the + button in the Input Sources area.
-4. Select the desired language and click the Add button.
-5. Close the Settings window.
+4. Find the desired input source. You might need to press the `⋮` button, scroll down, and press Other to find the desired source.
+5. Select the desired input source and click the Add button.
+6. Close the Settings window.
 
 Sometimes you might need to reboot for the setting to take into effect. 
 
