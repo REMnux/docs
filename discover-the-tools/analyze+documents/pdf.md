@@ -4,16 +4,6 @@ description: Analyze Documents
 
 # PDF
 
-## pdfxray-lite
-
-Examine elements of the PDF file.
-
-**Website**: [https://github.com/9b/pdfxray\_lite](https://github.com/9b/pdfxray_lite)  
-**Author**: Brandon Dixon  
-**License**: Free, unknown license  
-**Notes**: pdfxray\_lite.py  
-**State File**: [remnux.tools.pdfxray\_lite](https://github.com/REMnux/salt-states/blob/master/remnux/tools/pdfxray_lite.sls)
-
 ## swf\_mastah.py
 
 Extract Flash \(SWF\) files from PDF files.
