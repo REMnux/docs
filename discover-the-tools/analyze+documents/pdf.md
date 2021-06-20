@@ -51,7 +51,7 @@ Analyze PDF files to identify incremental updates to the document.
 **License**: Public Domain  
 **State File**: [remnux.scripts.pdftool](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdftool.sls)
 
-## pdf-parser
+## pdf-parser.py
 
 Examine elements of the PDF file.
 
@@ -60,16 +60,7 @@ Examine elements of the PDF file.
 **License**: Public Domain  
 **State File**: [remnux.scripts.pdf-parser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdf-parser.sls)
 
-## pdfobjflow
-
-Create a map of object flows of a PDF file.
-
-**Website**: [https://bitbucket.org/sebastiendamaye/pdfobjflow](https://bitbucket.org/sebastiendamaye/pdfobjflow)  
-**Author**: Sebastien Damaye  
-**License**: Free, unknown license  
-**State File**: [remnux.scripts.pdfobjflow](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdfobjflow.sls)
-
-## pdfid
+## pdfid.py
 
 Identify suspicious elements of the PDF file.
 
