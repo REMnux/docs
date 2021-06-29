@@ -40,7 +40,7 @@ Compress and decompress files using a variety of algorithms.
 **Website**: [https://www.7-zip.org](https://www.7-zip.org)  
 **Author**: Igor Pavlov  
 **License**: GNU Lesser General Public License \(LGPL\)  
-**Notes**: 7z, 7za, 7zr  
+**Notes**: 7-Zip standard: 7z, 7za, 7zr. For latest alpha verison, use 7zz instead of 7z.  
 **State File**: [remnux.packages.7zip](https://github.com/REMnux/salt-states/blob/master/remnux/packages/7zip.sls)
 
 ## Firefox
