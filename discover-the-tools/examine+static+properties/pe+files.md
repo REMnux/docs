@@ -63,16 +63,6 @@ Examine contents and structure of PE files.
 **Notes**: pe-tree  
 **State File**: [remnux.python3-packages.pe-tree](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pe-tree.sls)
 
-## pefile
-
-Python library for analyzing static properties of PE files.
-
-**Website**: [https://github.com/erocarrera/pefile](https://github.com/erocarrera/pefile)  
-**Author**: Ero Carrera: [http://blog.dkbza.org](http://blog.dkbza.org)  
-**License**: MIT License: [https://github.com/erocarrera/pefile/blob/master/LICENSE](https://github.com/erocarrera/pefile/blob/master/LICENSE)  
-**Notes**: [https://github.com/erocarrera/pefile/blob/wiki/UsageExamples.md\#introduction](https://github.com/erocarrera/pefile/blob/wiki/UsageExamples.md#introduction)  
-**State File**: [remnux.python-packages.pefile](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/pefile.sls)
-
 ## pedump
 
 Statically analyze PE files and extract their components \(e.g., resources\).
