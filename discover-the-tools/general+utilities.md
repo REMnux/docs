@@ -110,6 +110,16 @@ Decompress files using a variety of algorithms.
 **Notes**: unrar  
 **State File**: [remnux.packages.unrar](https://github.com/REMnux/salt-states/blob/master/remnux/packages/unrar.sls)
 
+## RAR
+
+Compress and decompress files using a variety of algorithms.
+
+**Website**: [https://www.rarlab.com](https://www.rarlab.com)  
+**Author**: Alexander Roshal  
+**License**: Shareware: "Anyone may use this software during a test period of 40 days. Following this test period of 40 days or less, if you wish to continue to use RAR, you must purchase a license." For details, see [https://www.rarlab.com/license.htm](https://www.rarlab.com/license.htm).  
+**Notes**: rar  
+**State File**: [remnux.packages.rar](https://github.com/REMnux/salt-states/blob/master/remnux/packages/rar.sls)
+
 ## Docker
 
 Run and manage containers.
