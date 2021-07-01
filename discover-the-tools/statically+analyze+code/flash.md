@@ -4,15 +4,6 @@ description: Statically Analyze Code
 
 # Flash
 
-## swf\_mastah.py
-
-Extract Flash \(SWF\) files from PDF files.
-
-**Website**: [https://github.com/9b/pdfxray\_lite](https://github.com/9b/pdfxray_lite)  
-**Author**: Brandon Dixon  
-**License**: Free, unknown license  
-**State File**: [remnux.tools.swf\_mastah](https://github.com/REMnux/salt-states/blob/master/remnux/tools/swf_mastah.sls)
-
 ## Flare
 
 Extract and decompile ActionScript from Flash \(SWF\) files.
