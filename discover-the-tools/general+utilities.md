@@ -23,6 +23,15 @@ Determine the IP address of the default network interface.
 **License**: Public Domain  
 **State File**: [remnux.scripts.myip](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/myip.sls)
 
+## texteditor.py
+
+Edit text files from the command line using search-and-replace commands.
+
+**Website**: [https://blog.didierstevens.com/2021/07/05/new-tool-texteditor-py/](https://blog.didierstevens.com/2021/07/05/new-tool-texteditor-py/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.texteditor](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/texteditor.sls)
+
 ## OpenSSH
 
 Initiate and receive SSH and SFTP connections.
