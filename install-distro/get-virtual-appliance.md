@@ -4,28 +4,21 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 
 ## Step 1: Download the Virtual Appliance File <a id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software.
+The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ununtu 20.04 \(Focal\).
 
-Decide which OVA file to download by making two choices:
-
-* _Will you use VirtualBox or another hypervisor?_ Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. 
-* _Do you prefer to Ubuntu 20.04 \(Focal\) or 18.04 \(Bionic\) as the base OS?_ The 20.04 version is newer, and will be supported longer; go with the 20.04 unless you specifically need the 18.04 version.
-
-Then download your preferred OVA file:
+Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. Download your preferred OVA file:
 
 {% tabs %}
 {% tab title="General OVA" %}
-These OVA files work with most hypervisors; if you're using VirtualBox, get the VirtualBox version instead from the other tab:
+This general OVA file works with most hypervisors. If you're using VirtualBox, get the VirtualBox version instead from the other tab:
 
-* Ubuntu 20.04 \(Focal\) General OVA: Download from [Box](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download)
-* Ubuntu 18.04 \(Bionic\) General OVA: Download from [Box](https://app.box.com/s/90on2oy03ej3p183yvd4yqw56zfidn1k) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-bionic.ova/download)
+Download the general OVA file from [Box](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) \(primary\) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download) \(mirror\).
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
-These VirtualBox OVA files are specifically for VirtualBox; get the general version from the other tab if you're using other hypervisors:
+This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
-* Ubuntu 20.04 \(Focal\) VirtualBox OVA: Download from [Box](https://app.box.com/s/wf8pxzgo5cvrirglmeieqsrqkncera5c) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download)
-* Ubuntu 18.04 \(Bionic\) VirtualBox OVA: Download from [Box](https://app.box.com/s/ts82ebr1g5g7lwuzrj1x0xs5g866yi2q) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-bionic-virtualbox.ova/download)
+Download the VirtualBox OVA file from [Box](https://app.box.com/s/wf8pxzgo5cvrirglmeieqsrqkncera5c) \(primary\) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) \(mirror\)
 {% endtab %}
 {% endtabs %}
 
@@ -39,30 +32,18 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 
 {% tabs %}
 {% tab title="General OVA Hash" %}
-General OVA file based on Ubuntu 20.04 \(Focal\):
+The general OVA file:
 
 ```text
 8be61dec9856f47bd2592b1c5b5e499cbcffc66a58114e6ca24c85e5a0fcc1d9
 ```
-
-General OVA file based on Ubuntu 18.04 \(Bionic\):
-
-```text
-fda0d96b9b7d07f87064f5d2a3560862145802e760fba7ad78f344d0f7c19789
-```
 {% endtab %}
 
 {% tab title="VirtualBox OVA Hash" %}
-VirtualBox OVA File based on Ubuntu 20.04 \(Focal\):
+The VirtualBox OVA file:
 
 ```text
 041f79db1f956b22bb72554e026dfd518ae2a8bb81a927787bd22665f566a6e4
-```
-
-VirtualBox OVA file based on Ubuntu 18.04 \(Bionic\):
-
-```text
-2cbd42b5d31e3fe499d4f5b42f1113bf9751639a309bdc082199ca1b6f866e89
 ```
 {% endtab %}
 {% endtabs %}
