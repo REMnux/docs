@@ -1,6 +1,6 @@
 # Add to an Existing System
 
-You can add REMnux to an existing system based on Ubuntu 18.04 by following instructions below. This configuration doesn't modify your system's look and feel, so you won't have the experience of the full REMnux environment. To the full experience, consider using the [REMnux virtual appliance](get-virtual-appliance.md).
+You can add REMnux to an existing system based on Ubuntu 20.04 by following instructions below. This configuration doesn't modify your system's look and feel, so you won't have the experience of the full REMnux environment. To the full experience, consider using the [REMnux virtual appliance](get-virtual-appliance.md).
 
 ## Step 1: Get the REMnux Installer <a id="get-remnux-installer"></a>
 
