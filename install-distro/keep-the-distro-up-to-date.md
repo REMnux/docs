@@ -1,5 +1,9 @@
 # Keep the Distro Up to Date
 
+{% hint style="info" %}
+The REMnux distro can presently run on Ubuntu 18.04 \(Bionic\) and 20.04 \(Focal\). REMnux will stop supporting Ubuntu 18.04 \(Bionic\) at the end of 2021. If you're not yet using the Ubuntu 20.04 \(Focal\) version of the distro, migrate to it to continue benefiting from REMnux updates. Use the following command to see which version of Ubuntu you're running: `lsb_release -a`
+{% endhint %}
+
 ## Upgrading and Updating the REMnux Distro <a id="upgrading-updating-remnux"></a>
 
 Unless you've installed REMnux in the `addon` mode, the distro disabled automated Ubuntu update mechanisms for the OS. This allows you to control how and when your REMnux system attempts to initiate network connections, and avoids issues when REMnux on an isolated network.
