@@ -72,7 +72,7 @@ The files that describe how the package should be built are in the "debian" subd
 
 Edit several files in the "debian" subdirectory:
 
-* `changelog` should say "bionic" instead of "unstable" \(assuming "bionic" is the code name of the Ubuntu version for which you're building the package; adjust the package version number if necessary.
+* `changelog` should say "focal" instead of "unstable" \(assuming "bionic" is the code name of the Ubuntu version for which you're building the package; adjust the package version number if necessary.
 * `control` should specify "utils" as the Section; in that file, add the tool's Homepage, description, and specify Build-Depends \(which Debian packages are needed to build this one?\) and Depends \(which packages does it need to run?\).
 * `install` should list the source and destination paths of any files that should be copied as part of the installation, one set per line.
 * `copyright` should include the appropriate copyright and licensing details.
@@ -95,7 +95,7 @@ Even if you were able to build the package on your system using your local envir
 To mimic the build environment on Launchpad, go to the directory where the generated files reside \(e.g., "packagename"\) and run:
 
 ```text
-pbuilder-dist bionic amd64 build packagename_0.1.1.dsc
+pbuilder-dist focal amd64 build packagename_0.1.1.dsc
 ```
 
 Adjust the name of the .dsc file, which was fenerated by `debuild` in the previous step to match the name of your file. If necessary, change "bionic" to match the code name of the Ubuntu version for which you're building the package.
