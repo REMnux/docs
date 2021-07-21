@@ -36,7 +36,7 @@ Reverse engineering platform powered by Rizin
 
 ## Detect-It-Easy <a id="detect-it-easy"></a>
 
-Determine types of files and examine file properties. Available in the REMnux distro based on Ubuntu 20.04 \(Focal\); not available on Ubuntu 18.04 \(Bionic\).
+Determine types of files and examine file properties.
 
 **Website**: [https://github.com/horsicq/Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy)  
 **Author**: hors: [https://twitter.com/horsicq](https://twitter.com/horsicq)  

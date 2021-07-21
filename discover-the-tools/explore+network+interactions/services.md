@@ -25,7 +25,7 @@ Respond to DNS queries in a controlled way.
 
 ## fakemail
 
-Intercept and examine SMTP email activity with this fake SMTP server. Available in the REMnux distro based on Ubuntu 20.04 \(Focal\); not available on Ubuntu 18.04 \(Bionic\).
+Intercept and examine SMTP email activity with this fake SMTP server.
 
 **Website**: [https://hg.sr.ht/~olly/fakemail](https://hg.sr.ht/~olly/fakemail)  
 **Author**: Oliver Cope  
