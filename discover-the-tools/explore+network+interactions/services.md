@@ -14,6 +14,15 @@ Respond to DNS queries with the specified IP address.
 **Notes**: Use the `-h` parameter to display usage and help details.  
 **State File**: [remnux.tools.fakedns](https://github.com/REMnux/salt-states/blob/master/remnux/tools/fakedns.sls)
 
+## dnsresolver.py
+
+Respond to DNS queries in a controlled way.
+
+**Website**: [https://blog.didierstevens.com/2021/07/15/new-tool-dnsresolver-py/](https://blog.didierstevens.com/2021/07/15/new-tool-dnsresolver-py/)  
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
+**License**: Public Domain  
+**State File**: [remnux.scripts.dnsresolver](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/dnsresolver.sls)
+
 ## fakemail
 
 Intercept and examine SMTP email activity with this fake SMTP server. Available in the REMnux distro based on Ubuntu 20.04 \(Focal\); not available on Ubuntu 18.04 \(Bionic\).
