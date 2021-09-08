@@ -33,16 +33,6 @@ Python3 and JavaScript interop engine, fork of the original PyV8 project
 **License**: Apache License 2.0: [https://github.com/area1/stpyv8/blob/master/LICENSE.txt](https://github.com/area1/stpyv8/blob/master/LICENSE.txt)  
 **State File**: [remnux.python3-packages.stpyv8](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/stpyv8.sls)
 
-## JS Beautifier
-
-Reformat JavaScript scripts for easier analysis.
-
-**Website**: [https://beautifier.io/](https://beautifier.io/)  
-**Author**: Einar Lielmanis, Liam Newman, and contributors  
-**License**: MIT License: [https://github.com/beautify-web/js-beautify/blob/master/LICENSE](https://github.com/beautify-web/js-beautify/blob/master/LICENSE)  
-**Notes**: js-beautify  
-**State File**: [remnux.python3-packages.jsbeautifier](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/jsbeautifier.sls)
-
 ## JStillery
 
 Deobfuscate JavaScript scripts using AST and Partial Evaluation techniques.
@@ -62,16 +52,6 @@ Analyze suspicious JavaScript scripts.
 **License**: MIT License: [https://github.com/CapacitorSet/box-js/blob/master/LICENSE](https://github.com/CapacitorSet/box-js/blob/master/LICENSE)  
 **Notes**: box-js, box-export  
 **State File**: [remnux.node-packages.box-js](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/box-js.sls)
-
-## ExtractScripts
-
-Extract scripts from HTML files.
-
-**Website**: [https://blog.didierstevens.com/programs/extractscripts/](https://blog.didierstevens.com/programs/extractscripts/)  
-**Author**: Didier Stevens  
-**License**: Public Domain  
-**Notes**: extractscripts.py  
-**State File**: [remnux.scripts.extractscripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/extractscripts.sls)
 
 ## SpiderMonkey
 
@@ -93,7 +73,7 @@ GUI JavaScript debugger
 **Notes**: rhino-debugger  
 **State File**: [remnux.packages.rhino](https://github.com/REMnux/salt-states/blob/master/remnux/packages/rhino.sls)
 
-## PowerShell  Core
+## PowerShell Core
 
 Run PowerShell scripts and commands.
 

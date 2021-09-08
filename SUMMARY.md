@@ -22,6 +22,7 @@
   * [Unpacking](discover-the-tools/statically+analyze+code/unpacking.md)
   * [PE Files](discover-the-tools/statically+analyze+code/pe-files.md)
   * [Python](discover-the-tools/statically+analyze+code/python.md)
+  * [Scripts](discover-the-tools/statically+analyze+code/scripts.md)
   * [Java](discover-the-tools/statically+analyze+code/java.md)
   * [.NET](discover-the-tools/statically+analyze+code/.net.md)
   * [Flash](discover-the-tools/statically+analyze+code/flash.md)
