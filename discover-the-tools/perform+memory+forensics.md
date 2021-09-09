@@ -21,8 +21,7 @@ Memory forensics tool and framework
 **Website**: [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)  
 **Author**: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt)  
 **License**: GNU General Public License \(GPL\) v2: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt)  
-**Notes**: vol.py  
-**This file is based directly on https**: //github.com/teamdfir/sift-saltstack/blob/master/sift/python-packages/volatility.sls  
+**Notes**: Use `vol.py` to invoke this version of Volatility. To eliminate conflicts among command-line options for Volatility plugins, the following `yarascan` options have been changed: `-Y` became `-U` and `-C` became `-c`.  
 **State File**: [remnux.python-packages.volatility](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/volatility.sls)
 
 ## linux\_mem\_diff\_tool
