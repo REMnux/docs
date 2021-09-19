@@ -21,7 +21,6 @@ Decode and encode date and timestamps.
 **Website**: [https://github.com/digitalsleuth/time\_decode](https://github.com/digitalsleuth/time_decode)  
 **Author**: Corey Forman  
 **License**: MIT License: [https://github.com/digitalsleuth/time\_decode/blob/master/LICENSE](https://github.com/digitalsleuth/time_decode/blob/master/LICENSE)  
-**Notes**: time\_decode.py  
 **State File**: [remnux.python3-packages.time-decode](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/time-decode.sls)
 
 ## malwoverview
