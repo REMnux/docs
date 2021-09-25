@@ -34,6 +34,16 @@ Analyze Cobalt Stike beacons.
 **Notes**: For an overview of this tool, see the [Quick Tip](https://isc.sans.edu/forums/diary/Quick+Tip+Cobalt+Strike+Beacon+Analysis/26818) article.  
 **State File**: [remnux.scripts.1768](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/1768.sls)
 
+## Cobalt Strike Configuration Extractor \(CSCE\) and Parser <a id="csce"></a>
+
+Analyze Cobalt Stike beacons.
+
+**Website**: [https://github.com/strozfriedberg/cobaltstrike-config-extractor](https://github.com/strozfriedberg/cobaltstrike-config-extractor)  
+**Author**: Aon / Stroz Friedberg  
+**License**: Apache License 2.0: [https://github.com/strozfriedberg/cobaltstrike-config-extractor/blob/master/LICENSE](https://github.com/strozfriedberg/cobaltstrike-config-extractor/blob/master/LICENSE)  
+**Notes**: csce, list-cs-settings  
+**State File**: [remnux.python3-packages.csce](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/csce.sls)
+
 ## sets.py
 
 Perform sets uperations on lines or bytes in text files.
