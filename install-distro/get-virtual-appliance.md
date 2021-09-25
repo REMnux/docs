@@ -128,6 +128,8 @@ It's possible to import the pre-built REMnux virtual appliance into Hyper-V, but
 4. Use [qemu-img](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) \(`qemu-img convert -O vhd`\) or [StarWind V2V Converter](https://www.starwindsoftware.com/starwind-v2v-converter) to convert the .vmdk file to the VHD format supported by Hyper-V.
 5. Import the generated VHD file into Hyper-V.
 
+For an overview of this process, see the video [How To Install REMnux on Windows 10 Hyper-V](https://www.youtube.com/watch?v=d8uyVi0nH-U) by Cyrus.
+
 ### Remote Cloud, Such as AWS
 
 The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
