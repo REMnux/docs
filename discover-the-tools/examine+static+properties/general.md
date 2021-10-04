@@ -24,6 +24,16 @@ Statically scan a file to identify common malicious capabilities.
 **Notes**: To scan a file using these rules, you can use the wrapper around Yara: `yara-rules FILE`, where `FILE` is the path to the file you wish to scan.  
 **State File**: [remnux.tools.yara-rules](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-rules.sls)
 
+## Detect-It-Easy
+
+Determine types of files and examine file properties.
+
+**Website**: [https://github.com/horsicq/Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy)  
+**Author**: hors: [https://twitter.com/horsicq](https://twitter.com/horsicq)  
+**License**: [https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE](https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE)  
+**Notes**: GUI tool: `die`, command-line tool: `diec`.  
+**State File**: [remnux.tools.detect-it-easy](https://github.com/REMnux/salt-states/blob/master/remnux/tools/detect-it-easy.sls)
+
 ## ExifTool
 
 Tool to read from, write to, and edit EXIF metadata of various file types
