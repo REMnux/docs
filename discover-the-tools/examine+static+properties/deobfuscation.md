@@ -26,7 +26,7 @@ Perform static analysis of various aspects of malicious code.
 
 ## 1768.py
 
-Analyze Cobalt Stike beacons.
+Analyze Cobalt Strike beacons.
 
 **Website**: [https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/](https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/)  
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
@@ -36,7 +36,7 @@ Analyze Cobalt Stike beacons.
 
 ## Cobalt Strike Configuration Extractor \(CSCE\) and Parser <a id="csce"></a>
 
-Analyze Cobalt Stike beacons.
+Analyze Cobalt Strike beacons.
 
 **Website**: [https://github.com/strozfriedberg/cobaltstrike-config-extractor](https://github.com/strozfriedberg/cobaltstrike-config-extractor)  
 **Author**: Aon / Stroz Friedberg  
@@ -46,7 +46,7 @@ Analyze Cobalt Stike beacons.
 
 ## sets.py
 
-Perform sets uperations on lines or bytes in text files.
+Perform set operations on lines or bytes in text files.
 
 **Website**: [https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/](https://blog.didierstevens.com/2017/03/05/new-tool-sets-py/)  
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
