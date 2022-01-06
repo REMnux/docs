@@ -47,7 +47,7 @@ Once you're at the command prompt inside the tester container, direct SaltStack 
 salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls STATE-PATH
 ```
 
-In the command above, replace "STATE-PATH" with the Salt Stack path to your new file using dots instead of slashes. For example, if you were runing peframe.sls, which is in remnux/python-packages, you'd specify `remnux.python-packages.peframe`.
+In the command above, replace "STATE-PATH" with the Salt Stack path to your new file using dots instead of slashes. For example, if you were running peframe.sls, which is in remnux/python-packages, you'd specify `remnux.python-packages.peframe`.
 
 The command will produce verbose debug-level output, so you can diagnose any issues. Adjust your new Salt State file to address whichever problems arise, so the `salt-call` command completes successfully.
 
