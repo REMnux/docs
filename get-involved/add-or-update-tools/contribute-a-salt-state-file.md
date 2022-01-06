@@ -41,7 +41,7 @@ Once the State File is ready, test it locally by running it in a Docker containe
 The dev-state.sh script is a wrapper around Docker. It  retrieves and launches the baseline container "[teamdfir/sift-saltstack-tester](https://hub.docker.com/r/teamdfir/sift-saltstack-tester)" built for testing State Files for [SIFT Workstation](https://digital-forensics.sans.org/community/downloads) and REMnux distros. The container is just the base Ubuntu OS without any optional packages, plus Salt Stack. This minimal state allows you to confirm that the State File you'll be testing specifies all the dependencies for the new tool.
 {% endhint %}
 
-Once you're at the command promot inside the tester container, direct SaltStack to process your new Salt State file by running this command in the container:
+Once you're at the command prompt inside the tester container, direct SaltStack to process your new Salt State file by running this command in the container:
 
 ```text
 salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls STATE-PATH
