@@ -3,12 +3,12 @@
 You can add REMnux to an existing system based on Ubuntu 20.04 by following instructions below. This configuration doesn't modify your system's look and feel, so you won't have the experience of the full REMnux environment. To the full experience, consider using the [REMnux virtual appliance](get-virtual-appliance.md).
 
 {% hint style="info" %}
-REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M1 .
+REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M1.
 {% endhint %}
 
 ## Step 1: Get the REMnux Installer <a href="#get-remnux-installer" id="get-remnux-installer"></a>
 
-After logging into your existing system based on Ubuntu 20.04 or 18.04, download the REMnux installer:
+After logging into your existing system based on Ubuntu 20.04, download the REMnux installer:
 
 ```
 wget https://REMnux.org/remnux-cli
