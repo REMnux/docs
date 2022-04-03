@@ -8,7 +8,7 @@ REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM proce
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ununtu 20.04 (Focal).
+The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 20.04 (Focal).
 
 Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. Download your preferred OVA file:
 
