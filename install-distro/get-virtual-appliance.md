@@ -16,13 +16,13 @@ Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get
 {% tab title="General OVA" %}
 This general OVA file works with most hypervisors. If you're using VirtualBox, get the VirtualBox version instead from the other tab:
 
-Download the general OVA file from [Box](https://app.box.com/s/u1uoseysbxk0hay31t12hm0m45wvl8tq) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download) (mirror).
+Download the general OVA file from [Box](https://app.box.com/shared/static/48u81atwaxnzpwg0pecbnx5r6rgfhudj.ova) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download) (mirror).
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
 This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
-Download the VirtualBox OVA file from [Box](https://app.box.com/s/wf8pxzgo5cvrirglmeieqsrqkncera5c) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
+Download the VirtualBox OVA file from [Box](https://app.box.com/shared/static/e1xhm36s9r04z8dk3pnsdfdlrg243miv.ova) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
 {% endtab %}
 {% endtabs %}
 
@@ -39,7 +39,7 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 The general OVA file:
 
 ```
-8be61dec9856f47bd2592b1c5b5e499cbcffc66a58114e6ca24c85e5a0fcc1d9
+a8555a60266d0361b35502edeef83ca5a40dc71e3f38e84ea416e414894c7558
 ```
 {% endtab %}
 
@@ -47,7 +47,7 @@ The general OVA file:
 The VirtualBox OVA file:
 
 ```
-041f79db1f956b22bb72554e026dfd518ae2a8bb81a927787bd22665f566a6e4
+4c6e97b5220f041ed9829f7a1d07ed70d86d1a7ea6258c645dcd8e618c15ef26
 ```
 {% endtab %}
 {% endtabs %}
