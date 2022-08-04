@@ -22,7 +22,7 @@ Download the general OVA file from [Box](https://app.box.com/shared/static/48u81
 {% tab title="VirtualBox OVA" %}
 This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
-Download the VirtualBox OVA file from [Box](https://app.box.com/shared/static/e1xhm36s9r04z8dk3pnsdfdlrg243miv.ova) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
+Download the VirtualBox OVA file from [Box](https://app.box.com/s/e1xhm36s9r04z8dk3pnsdfdlrg243miv) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
 {% endtab %}
 {% endtabs %}
 
