@@ -3,7 +3,7 @@
 The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format, import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
 {% hint style="info" %}
-REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M1.
+REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M1 or M2.
 {% endhint %}
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
