@@ -2,7 +2,7 @@
 
 * [REMnux: A Linux Toolkit for Malware Analysis](README.md)
 
-## Install the Distro <a id="install-distro"></a>
+## Install the Distro <a href="#install-distro" id="install-distro"></a>
 
 * [Get the Virtual Appliance](install-distro/get-virtual-appliance.md)
 * [Install from Scratch](install-distro/install-from-scratch.md)
@@ -16,6 +16,7 @@
   * [General](discover-the-tools/examine+static+properties/general.md)
   * [PE Files](discover-the-tools/examine+static+properties/pe+files.md)
   * [ELF Files](discover-the-tools/examine+static+properties/elf+files.md)
+  * [.NET](discover-the-tools/examine+static+properties/.net.md)
   * [Deobfuscation](discover-the-tools/examine+static+properties/deobfuscation.md)
 * [Statically Analyze Code](discover-the-tools/statically+analyze+code/README.md)
   * [General](discover-the-tools/statically+analyze+code/general.md)
@@ -62,12 +63,12 @@
   * [Website and Docs](behind-the-scenes/technologies/website-and-docs.md)
 * [License](behind-the-scenes/license.md)
 
-## Tips and More <a id="tips"></a>
+## Tips and More <a href="#tips" id="tips"></a>
 
 * [REMnux Configuration Tips](tips/remnux-config-tips.md)
 * [REMnux Tool Tips](tips/remnux-tool-tips.md)
 * [Malware Analysis Training](tips/malware-analysis-training.md)
-* [REMnux Website](https://REMnux.org/)
+* [REMnux Website](https://remnux.org/)
 
 ## Get Involved
 
@@ -78,4 +79,3 @@
   * [Contribute a Debian Package](get-involved/add-or-update-tools/contribute-a-debian-package.md)
   * [Contribute a Dockerfile](get-involved/add-or-update-tools/contribute-dockerfile.md)
 * [Implement Enhancements](get-involved/enhancement-ideas.md)
-
