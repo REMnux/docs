@@ -38,7 +38,7 @@ Determine types of files and examine file properties.
 
 Tool to read from, write to, and edit EXIF metadata of various file types
 
-**Website**: [https://exiftool.org/](https://exiftool.org)\
+**Website**: [https://exiftool.org/](https://exiftool.org/)\
 **Author**: Phil Harvey\
 **License**: "This is free software; you can redistribute it and/or modify it under the same terms as Perl itself": [https://exiftool.org/#license](https://exiftool.org/#license)\
 **Notes**: exiftool\
@@ -89,6 +89,15 @@ Search the file for built-in regular expressions of common suspicious artifacts.
 **Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.re-search](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/re-search.sls)
+
+## strings.py
+
+Extract strings.
+
+**Website**: [https://blog.didierstevens.com/2018/12/09/release-strings-py/](https://blog.didierstevens.com/2018/12/09/release-strings-py/)\
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.strings](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/strings.sls)
 
 ## disitool
 
@@ -214,3 +223,12 @@ Identify file type using "magic" numbers.
 **Author**: Ian F. Darwin, Christos Zoulas\
 **License**: BSD 2-Clause "Alike" License: [https://github.com/file/file/blob/master/COPYING](https://github.com/file/file/blob/master/COPYING)\
 **State File**: [remnux.packages.file](https://github.com/REMnux/salt-states/blob/master/remnux/packages/file.sls)
+
+## file-magic.py
+
+Identify file type using "magic" numbers.
+
+**Website**: [https://blog.didierstevens.com/2022/12/23/update-file-magic-py-version-0-0-5/](https://blog.didierstevens.com/2022/12/23/update-file-magic-py-version-0-0-5/)\
+**Author**: Didier Stevens: https://twitter.com/DidierStevens\
+**License**: Public Domain\
+**State File**: [remnux.scripts.file-magic](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/file-magic.sls)
