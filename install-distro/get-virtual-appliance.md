@@ -65,7 +65,7 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 {% endtab %}
 
 {% tab title="Conversion" %}
-* [KVM/QEMU](https://blog.ricosharp.com/posts/2019/Converting-ova-file-to-qcow2)
+* [KVM/QEMU](https://www.vinchin.com/en/blog/convert-ova-to-qcow2.html)
 * [AWS](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
 * [Hyper-V](get-virtual-appliance.md#hyper-v)
 * [Proxmox](https://www.proxmox.com)
