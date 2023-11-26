@@ -25,7 +25,7 @@ View documents in a variety of formats, including PDF.
 
 ## dos2unix
 
-Convert text files with Windows or macOS line breaks to Unix line breaks and vise versa.
+Convert text files with Windows or macOS line breaks to Unix line breaks and vice versa.
 
 **Website**: [https://waterlan.home.xs4all.nl/dos2unix.html](https://waterlan.home.xs4all.nl/dos2unix.html)  
 **Author**: Benjamin Lin, Bernd Johannes Wuebben, Erwin Waterlander  

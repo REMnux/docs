@@ -50,7 +50,7 @@ Organize and query a collection of malware samples. (Temporarily excluded from t
 **Website**: [https://github.com/viper-framework/viper](https://github.com/viper-framework/viper)\
 **Author**: Claudio Guarnieri: [https://nex.sx](https://nex.sx)\
 **License**: BSD 3-Clause License: [https://github.com/viper-framework/viper/blob/master/LICENSE](https://github.com/viper-framework/viper/blob/master/LICENSE)\
-**Notes**: Viper is temporarily excluded from the REMnux distro due to depdendency issues. Instead, use the remnux/viper Docker image: [https://docs.remnux.org/run-tools-in-containers/remnux-containers#viper-binary-analysis-and-management-framework](https://docs.remnux.org/run-tools-in-containers/remnux-containers#viper-binary-analysis-and-management-framework)\
+**Notes**: Viper is temporarily excluded from the REMnux distro due to dependency issues. Instead, use the remnux/viper Docker image: [https://docs.remnux.org/run-tools-in-containers/remnux-containers#viper-binary-analysis-and-management-framework](https://docs.remnux.org/run-tools-in-containers/remnux-containers#viper-binary-analysis-and-management-framework)\
 **State File**: [remnux.python3-packages.viper-framework](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/viper-framework.sls)
 
 ## ioc\_parser
@@ -120,7 +120,7 @@ Query passive DNS databases for DNS data.
 
 ## DeXRAY
 
-Extract and decode data fro antivirus quarantine files.
+Extract and decode data from antivirus quarantine files.
 
 **Website**: [http://www.hexacorn.com/blog/category/software-releases/dexray/](http://www.hexacorn.com/blog/category/software-releases/dexray/)\
 **Author**: Hexacorn\
