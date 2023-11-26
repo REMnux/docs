@@ -120,4 +120,4 @@ Remove junk contents from bloated Windows executables.
 **Author**: Squiblydoo: https://twitter.com/SquiblydooBlog\
 **License**: BSD 3-Clause License: https://github.com/Squiblydoo/debloat/blob/main/LICENSE\
 **Notes**: Run the command-line version as `debloat` or the GUI version as `debloat-gui`\
-**State File**: r[emnux.python3-packages.debloat](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/debloat.sls)
+**State File**: [remnux.python3-packages.debloat](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/debloat.sls)

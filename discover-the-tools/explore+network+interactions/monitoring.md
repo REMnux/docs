@@ -12,7 +12,7 @@ Investigate website interactions using this web proxy.
 **Author**: PortSwigger\
 **License**: Free, custom license: [https://portswigger.net/burp/tc-community](https://portswigger.net/burp/tc-community)\
 **Notes**: burpsuite\
-**State File**: [remnux.packages.burpsuite-community](https://github.com/REMnux/salt-states/blob/master/remnux/packges/burpsuite-community.sls)
+**State File**: [remnux.packages.burpsuite-community](https://github.com/REMnux/salt-states/blob/master/remnux/packages/burpsuite-community.sls)
 
 ## Network Miner Free Edition
 
