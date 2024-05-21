@@ -14,6 +14,15 @@ Identify file type using signatures.
 **Notes**: trid, tridupdate\
 **State File**: [remnux.tools.trid](https://github.com/REMnux/salt-states/blob/master/remnux/tools/trid.sls)
 
+## Magika
+
+Identify file type using signatures.
+
+**Website**: [https://google.github.io/magika](https://google.github.io/magika/)\
+**Author**: Google\
+**License**: Apache License 2.0 ([https://github.com/google/magika/blob/main/LICENSE](https://github.com/google/magika/blob/main/LICENSE))\
+**State File**: [remnux.python3-packages.magika](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/magika.sls)
+
 ## Yara Rules
 
 Statically scan a file to identify common malicious capabilities.
