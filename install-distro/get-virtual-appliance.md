@@ -145,13 +145,17 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 
 ### KVM/QEMU
 
-If you converted the REMnux virtual appliance to KVM/QEMU, install install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package in the virtual machine to be able to resize the windows of your VM and copy/paste between it and your host.
+If you converted the REMnux virtual appliance to KVM/QEMU,  install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package in the virtual machine to be able to resize the windows of your VM and copy/paste between it and your host.
 
 ### Proxmox
 
-If you're planning to use the REMnux virtual appliance in Proxmox, [follow the steps in this article](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) to import the OVA. Once done, consider taking the following steps using the Proxmox interface:
+If you plan to use the REMnux virtual appliance in Proxmox, [follow the steps in this article](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) to import the OVA. However, note that the article incorrectly specifies a CPU type of `kvm64` in the screenshots. The correct CPU type for REMnux is `qemu64`.&#x20;
 
-1. VM > Hardware > Display > Set to -> SPICE(qxl)
+After importing the OVA to Proxmox, go into the Options for the VM and modify Boot Order to enable the disk that was imported as an OVA.
+
+Once done, consider taking the following steps using the Proxmox interface:
+
+1. VM > Hardware > Display > Set to > SPICE(qxl)
 2. VM > Hardware > Option > Spice Enhancements > Video Streaming: all
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
