@@ -158,6 +158,14 @@ Once done, consider taking the following steps using the Proxmox interface:
 1. VM > Hardware > Display > Set to > SPICE(qxl)
 2. VM > Hardware > Option > Spice Enhancements > Video Streaming: all
 
+After this:
+
+1. Switch CPU type to 'qemu32'.
+2. Boot the VM and let it fail startup. It'll be obvious it's not booting properly because the display will not work properly, and you'll never see the desktop.
+3. Hard power off the VM.
+4. Switch CPU type to 'qemu64'.
+5. Boot the VM. It should properly initialize the display and boot to the desktop.
+
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
 After installing the REMnux virtual machine, run the following command inside the VM as a regular, non-root user to upgrade it to the latest version of the distro:
