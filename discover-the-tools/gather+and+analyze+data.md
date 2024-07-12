@@ -40,7 +40,7 @@ Query public repositories of malware data (e.g., VirusTotal, HybridAnalysis).
 **Website**: [https://github.com/alexandreborges/malwoverview](https://github.com/alexandreborges/malwoverview)\
 **Author**: Alexandre Borges\
 **License**: GNU General Public License v3: [https://github.com/alexandreborges/malwoverview/blob/master/LICENSE](https://github.com/alexandreborges/malwoverview/blob/master/LICENSE)\
-**Notes**: malwoverview.py, add API keys to \~/.malwapi.conf\
+**Notes**: malwoverview, add API keys to \~/.malwapi.conf\
 **State File**: [remnux.python3-packages.malwoverview](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malwoverview.sls)
 
 ## Viper
