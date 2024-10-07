@@ -16,7 +16,7 @@ Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get
 {% tab title="General OVA" %}
 This general OVA file works with most hypervisors. If you're using VirtualBox, get the VirtualBox version instead from the other tab:
 
-Download the general OVA file from [Box](https://app.box.com/s/l8uo6loohghdatius2f7icuyp14q3wp6) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download) (mirror).
+Download the general OVA file from [Box](https://app.box.com/shared/static/k60473jsgmtklrlgmlhl90ikbagnek1b.ova) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download) (mirror).
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
