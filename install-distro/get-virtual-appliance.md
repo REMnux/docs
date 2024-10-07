@@ -39,7 +39,7 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 The general OVA file:
 
 ```
-76a12cc8ccf482e83f84b42ebfd9019ae47cf27915d0c2d686a9a407f8ee51ab
+796a259733604b10c69a7b060e64eeccd459e33f327f8d9faf9fd22a1ca19645
 ```
 {% endtab %}
 
