@@ -62,12 +62,12 @@ chmod +x remnux
 sudo mv remnux /usr/local/bin
 ```
 
-## Step 2: Install GnuPG <a href="#install-gnupg" id="install-gnupg"></a>
+## Step 2: Install Dependencies <a href="#install-gnupg" id="install-gnupg"></a>
 
-The minimal version of Ubuntu includes very few components. Install GnuPG, so that the REMnux installer can automatically validate the signature of the REMux configuration files it will download during the installation process. To install GnuPG, run:
+The minimal version of Ubuntu includes very few components. Install GnuPG, so that the REMnux installer can automatically validate the signature of the REMux configuration files it will download during the installation process.  You might also need to install the curl package. To do this, run:
 
 ```
-sudo apt install -y gnupg
+sudo apt install -y gnupg curl
 ```
 
 ## Step 3: Run the REMnux Installer <a href="#run-remnux-installer" id="run-remnux-installer"></a>

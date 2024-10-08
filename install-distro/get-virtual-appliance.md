@@ -3,7 +3,7 @@
 The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format, import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
 {% hint style="info" %}
-REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M1 or M2.
+REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M-series.
 {% endhint %}
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
@@ -22,7 +22,7 @@ Download the general OVA file from [Box](https://app.box.com/shared/static/k6047
 {% tab title="VirtualBox OVA" %}
 This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
-Download the VirtualBox OVA file from [Box](https://app.box.com/s/8matvs5l0gc8vkr4xfq3szdm7mc9o0ad) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
+Download the VirtualBox OVA file from [Box](https://app.box.com/s/am8a5gmibsw8dj6xn2x0thxes6a46bp6) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
 {% endtab %}
 {% endtabs %}
 
@@ -47,7 +47,7 @@ The general OVA file:
 The VirtualBox OVA file:
 
 ```
-412689aabf7d203c3fb46d141704671a1dbf858b13b404f0bbd0096f6d6bd7b9
+c93477a075a61398e6cc3e03b3b6ba8269b74f92cdc13d151d6b566bc86196fc
 ```
 {% endtab %}
 {% endtabs %}
