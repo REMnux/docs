@@ -105,7 +105,7 @@ Display Unicode character properties.
 Decode and otherwise analyze data using this command-line tool and Python library.
 
 **Website**: [https://github.com/securisec/chepy](https://github.com/securisec/chepy)\
-**Author**: Hapsida Securisec: [https://twitter.com/securisec](https://twitter.com/securisec)\
+**Author**: securisec: [https://twitter.com/securisec](https://twitter.com/securisec)\
 **License**: GNU General Public License (GPL) v3: [https://github.com/securisec/chepy/blob/master/LICENSE](https://github.com/securisec/chepy/blob/master/LICENSE)\
 **Notes**: chepy\
 **State File**: [remnux.python3-packages.chepy](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/chepy.sls)
