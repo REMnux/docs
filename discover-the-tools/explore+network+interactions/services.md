@@ -89,4 +89,4 @@ Emulate common network services and interact with malware.
 **Author**: FireEye Inc, Peter Kacherginsky, Michael Bailey: [https://github.com/fireeye/flare-fakenet-ng/blob/master/AUTHORS](https://github.com/fireeye/flare-fakenet-ng/blob/master/AUTHORS)\
 **License**: Apache License 2.0: [https://github.com/fireeye/flare-fakenet-ng/blob/master/LICENSE.txt](https://github.com/fireeye/flare-fakenet-ng/blob/master/LICENSE.txt)\
 **Notes**: Run the tool using `sudo fakenet`. First, edit `/usr/local/lib/python2.7/dist-packages/fakenet/configs/default.ini`, changing the `LinuxRestrictInterface` parameter to your Ethernet network interface name, such as `ens33`.\
-**State File**: [remnux.packages.fakenet-ng](https://github.com/REMnux/salt-states/blob/master/remnux/packages/fakenet-ng.sls)
+**State File**: [remnux.python3-packages.fakenet-ng](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/fakenet-ng.sls)
