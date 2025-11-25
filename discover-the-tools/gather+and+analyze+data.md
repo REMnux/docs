@@ -28,9 +28,9 @@ Perform a variety of forensics and incident response tasks using this DFIR frame
 
 Decode and encode date and timestamps.
 
-**Website**: [https://github.com/digitalsleuth/time\_decode](https://github.com/digitalsleuth/time\_decode)\
+**Website**: [https://github.com/digitalsleuth/time\_decode](https://github.com/digitalsleuth/time_decode)\
 **Author**: Corey Forman\
-**License**: MIT License: [https://github.com/digitalsleuth/time\_decode/blob/master/LICENSE](https://github.com/digitalsleuth/time\_decode/blob/master/LICENSE)\
+**License**: MIT License: [https://github.com/digitalsleuth/time\_decode/blob/master/LICENSE](https://github.com/digitalsleuth/time_decode/blob/master/LICENSE)\
 **State File**: [remnux.python3-packages.time-decode](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/time-decode.sls)
 
 ## malwoverview
@@ -43,23 +43,13 @@ Query public repositories of malware data (e.g., VirusTotal, HybridAnalysis).
 **Notes**: malwoverview, add API keys to \~/.malwapi.conf\
 **State File**: [remnux.python3-packages.malwoverview](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malwoverview.sls)
 
-## Viper
-
-Organize and query a collection of malware samples. (Temporarily excluded from the distro.)
-
-**Website**: [https://github.com/viper-framework/viper](https://github.com/viper-framework/viper)\
-**Author**: Claudio Guarnieri: [https://nex.sx](https://nex.sx)\
-**License**: BSD 3-Clause License: [https://github.com/viper-framework/viper/blob/master/LICENSE](https://github.com/viper-framework/viper/blob/master/LICENSE)\
-**Notes**: Viper is temporarily excluded from the REMnux distro due to dependency issues. Instead, use the remnux/viper Docker image: [https://docs.remnux.org/run-tools-in-containers/remnux-containers#viper-binary-analysis-and-management-framework](https://docs.remnux.org/run-tools-in-containers/remnux-containers#viper-binary-analysis-and-management-framework)\
-**State File**: [remnux.python3-packages.viper-framework](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/viper-framework.sls)
-
 ## ioc\_parser
 
 Extract IOCs from security report PDFs.
 
-**Website**: [https://github.com/buffer/ioc\_parser](https://github.com/buffer/ioc\_parser)\
+**Website**: [https://github.com/buffer/ioc\_parser](https://github.com/buffer/ioc_parser)\
 **Author**: Armin Buescher\
-**License**: MIT License: [https://github.com/buffer/ioc\_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc\_parser/blob/master/LICENSE.txt)\
+**License**: MIT License: [https://github.com/buffer/ioc\_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
 **State File**: [remnux.python3-packages.ioc-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ioc-parser.sls)
 
 ## ipwhois
@@ -86,9 +76,9 @@ Query and interact with VirusTotal using a command-line interface.
 
 Python library that allows for basic creation and editing of OpenIOC objects.
 
-**Website**: [https://github.com/mandiant/ioc\_writer](https://github.com/mandiant/ioc\_writer)\
+**Website**: [https://github.com/mandiant/ioc\_writer](https://github.com/mandiant/ioc_writer)\
 **Author**: William Gibb\
-**License**: Apache License 2.0: [https://github.com/mandiant/ioc\_writer/blob/master/LICENSE](https://github.com/mandiant/ioc\_writer/blob/master/LICENSE)\
+**License**: Apache License 2.0: [https://github.com/mandiant/ioc\_writer/blob/master/LICENSE](https://github.com/mandiant/ioc_writer/blob/master/LICENSE)\
 **State File**: [remnux.python-packages.ioc-writer](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/ioc-writer.sls)
 
 ## shodan
