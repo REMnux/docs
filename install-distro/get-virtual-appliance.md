@@ -3,7 +3,7 @@
 The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format, import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
 {% hint style="info" %}
-REMnux is based on an x86/amd64 version of Ubuntu, and won't run on an ARM processor such as Apple M-series.
+REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
 {% endhint %}
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
@@ -16,13 +16,13 @@ Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get
 {% tab title="General OVA" %}
 This general OVA file works with most hypervisors. If you're using VirtualBox, get the VirtualBox version instead from the other tab:
 
-Download the general OVA file from [Box](https://app.box.com/shared/static/k60473jsgmtklrlgmlhl90ikbagnek1b.ova) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-general/remnux-v7-focal.ova/download) (mirror).
+[Download the general OVA file.](https://download.remnux.org/202510/remnux-focal-amd64.ova)
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
 This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
-Download the VirtualBox OVA file from [Box](https://app.box.com/s/am8a5gmibsw8dj6xn2x0thxes6a46bp6) (primary) or [SourceForge](https://sourceforge.net/projects/remnux/files/ova-virtualbox/remnux-v7-focal-virtualbox.ova/download) (mirror)
+[Download the VirtualBox OVA file.](https://download.remnux.org/202510/remnux-focal-virtualbox-amd64.ova)
 {% endtab %}
 {% endtabs %}
 
@@ -59,9 +59,9 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 {% tabs %}
 {% tab title="Direct Import" %}
 * [VMware Workstation](https://docs.vmware.com/en/VMware-Workstation-Pro/15.0/com.vmware.ws.using.doc/GUID-DDCBE9C0-0EC9-4D09-8042-18436DA62F7A.html?hWord=N4IghgNiBcIJYFsAOB7ATgFwAQoG5hAF8g)
-* [VMware vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm\_admin.doc/GUID-17BEDA21-43F6-41F4-8FB2-E01D275FE9B4.html)
+* [VMware vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-17BEDA21-43F6-41F4-8FB2-E01D275FE9B4.html)
 * [VMware Fusion](https://docs.vmware.com/en/VMware-Fusion/11/com.vmware.fusion.using.doc/GUID-275EF202-CF74-43BF-A9E9-351488E16030.html)
-* [Oracle VM VirtualBox](https://docs.oracle.com/cd/E26217\_01/E26796/html/qs-import-vm.html)
+* [Oracle VM VirtualBox](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
 {% endtab %}
 
 {% tab title="Conversion" %}
