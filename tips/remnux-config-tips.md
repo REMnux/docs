@@ -1,6 +1,6 @@
 # REMnux Configuration Tips
 
-## Changing the Keyboard Layout <a id="keyboard-layout-change"></a>
+## Changing the Keyboard Layout <a href="#keyboard-layout-change" id="keyboard-layout-change"></a>
 
 To change the keyboard layout of your REMnux system, perhaps to another language, take the following steps:
 
@@ -11,11 +11,21 @@ To change the keyboard layout of your REMnux system, perhaps to another language
 5. Select the desired input source and click the Add button.
 6. Close the Settings window.
 
-Sometimes you might need to reboot for the setting to take into effect. 
+Sometimes you might need to reboot for the setting to take into effect.&#x20;
 
 You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
 
-## Localhost Listener on TCP and UDP Ports 53 <a id="port-53-listener"></a>
+## Adjusting Text Size and UI Scaling <a href="#port-53-listener" id="port-53-listener"></a>
+
+If the fonts and other user interface elements are too small in your REMnux virtual machine, you can increase the UI scaling factor by running this command on REMnux:
+
+```
+gsettings set org.gnome.desktop.interface scaling-factor 2
+```
+
+You can adjust the scaling factor according to your needs. By default, its value is `1`.
+
+## Localhost Listener on TCP and UDP Ports 53 <a href="#port-53-listener" id="port-53-listener"></a>
 
 Ubuntu uses a daemon named "systemd-resolved" for resolving DNS queries that you initiate from the system. This daemon listens on the localhost interface on TCP and UDP ports 53. If you're running a tool that attempts to listen on these ports on localhost, your tool might not function properly.
 
@@ -23,17 +33,17 @@ To get around this, reconfigure the tool so it listens on the Ethernet network i
 
 Alternatively, you can disable the systemd-resolved daemon until the next reboot like this:
 
-```text
+```
 sudo systemctl stop systemd-resolved
 ```
 
 If you wish to disable systemd-resolved permanently issue the following command. However, note that if you disable this daemon, you will be unable to resolve DNS queries from your REMnux system unless you reconfigure the system's DNS resolver settings. Also, some software, such as OpenVPN and other VPN clients, might not function properly if systemd-resolved is disabled.
 
-```text
+```
 sudo systemctl disable systemd-resolved
 ```
 
-## REMnux Behind a Non-Transparent Proxy <a id="behind-proxy"></a>
+## REMnux Behind a Non-Transparent Proxy <a href="#behind-proxy" id="behind-proxy"></a>
 
 The [REMnux installer](../behind-the-scenes/technologies/remnux-installer.md) is presently not compatible with non-transparent network proxies. You can still set up and use REMnux behind such a proxy, though this will involve applying [Salt state files](../behind-the-scenes/technologies/saltstack-management.md) directly, instead of using the REMnux installer to set up and upgrade your REMnux system.
 
@@ -44,7 +54,7 @@ You can start with either a pristine compatible Linux system where you'll either
 
 If you're not starting with a prebuit REMnux virtual appliance, follow [instructions to manually install SaltStack](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#manually-installing-saltstack) on the system you'll be using for REMnux. Next, modify /etc/salt/minion to include your proxy details:
 
-```text
+```
 # Set http proxy information for the minion when doing requests
 proxy_host:
 proxy_port:
@@ -55,11 +65,11 @@ proxy_password:
 Next, to install REMnux or upgrade it later, follow instructions to:
 
 1. [Retrieve the latest REMnux Salt state files.](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#retrieving-remnux-state-files)
-2. [Invoke SaltStack to install the state file grouping](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#invoking-saltstack-to-install-state-file-groupings) appropriate for you \(e.g., `remnux.dedicated`\)
+2. [Invoke SaltStack to install the state file grouping](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#invoking-saltstack-to-install-state-file-groupings) appropriate for you (e.g., `remnux.dedicated`)
 
 If you have the expertise, [consider suggesting a revision to REMnux installer](https://app.gitbook.com/@lennyzeltser/s/remnux/get-involved/enhancement-ideas#the-remnux-installer-should-work-with-non-transparent-proxies) that corrects its inability to connect through non-transparent proxies.
 
-## GUI Interactions When REMnux Is in the Cloud <a id="gui-cloud-remnux"></a>
+## GUI Interactions When REMnux Is in the Cloud <a href="#gui-cloud-remnux" id="gui-cloud-remnux"></a>
 
 If you set up a REMnux system in a cloud environment, such as AWS, you can not only interact with it using the text-based SSH interface, but also using the graphical Gnome interface that comes with REMnux.
 
@@ -89,11 +99,11 @@ Another way to remotely interact with the REMnux graphical environment is to use
 6. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
 7. Start a VNC client on your local system, directing it to connect to `localhost:1`
 
-## Transferring Files In and Out of REMnux <a id="transferring-files"></a>
+## Transferring Files In and Out of REMnux <a href="#transferring-files" id="transferring-files"></a>
 
 There are several ways of transferring files, such as malware samples, in and out of REMnux.
 
-### Virtual Machine Tools <a id="vm-tools"></a>
+### Virtual Machine Tools <a href="#vm-tools" id="vm-tools"></a>
 
 If you're running REMnux as a local VM, one way to transfer files in and out of the VM is to use the copy-and-paste or file transfer capabilities of your hypervisor. If using copy-and-paste, you can place files in and out of the VM by copying them to or from [Nautilus](../discover-the-tools/general+utilities.md#nautilus), which is the GUI file browsing tool on REMnux.
 
@@ -113,11 +123,11 @@ Another way to get files in and out of REMnux is to use the SFTP protocol, which
 
 Yet another method to transfer files in and out of REMnux is to use removable media, such as a USB drive. If running REMnux as a VM, you'd need to use your hypervisor to map the USB drive into the virtual machine.
 
-### Mapping Files into the Container <a id="mapping-files"></a>
+### Mapping Files into the Container <a href="#mapping-files" id="mapping-files"></a>
 
 If you are running [REMnux as a Docker container](../install-distro/remnux-as-a-container.md), you can invoke the container by mapping a directory on your local system into the container to create a shared location for your files. You can use [Docker's `-v` or `--mount` parameters](https://docs.docker.com/storage/volumes/) when launching the container to achieve this.
 
-## Switching REMnux Installation Mode After the Install <a id="switch-mode"></a>
+## Switching REMnux Installation Mode After the Install <a href="#switch-mode" id="switch-mode"></a>
 
 If you installed REMnux using one installation mode, for example `addon`, you can switch to another installation mode, for example `dedicated`, by taking the following steps:
 
@@ -125,10 +135,9 @@ If you installed REMnux using one installation mode, for example `addon`, you ca
 2. Run the command `remnux update`.
 3. Reboot.
 
-## Combining REMnux and SIFT Workstation <a id="combine-remnux-sift"></a>
+## Combining REMnux and SIFT Workstation <a href="#combine-remnux-sift" id="combine-remnux-sift"></a>
 
 You can install REMnux and [SIFT Workstation](https://www.sans.org/tools/sift-workstation/) on the same system to create a powerful toolkit for malware analysis and other digital forensics tasks. Follow the following guidelines to do this:
 
 * [Install REMnux and SIFT Workstation on a traditional Linux system.](https://www.sans.org/blog/how-to-install-sift-workstation-and-remnux-on-the-same-forensics-system/)
-* [Install REMnux and SIFT Workstation on Windows Subsystem for Linux \(WSL\).](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment/)
-
+* [Install REMnux and SIFT Workstation on Windows Subsystem for Linux (WSL).](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment/)
