@@ -15,7 +15,7 @@ If you're looking to recreate the lightweight environment provided by the REMnux
 [Download the Ubuntu 20.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/mini.iso) SHA-256 hash of the file should be:
 
 ```
-0e79e00bf844929d40825b1f0e8634415cda195ba23bae0b041911fde4dfe018
+c46c732f5ab8f33ce957db8b6f0827554bf100b8a26b4765410b252429a26380
 ```
 
 Install Ubuntu 20.04 using the downloaded ISO installer. It's OK to follow default settings, but be sure to adjust them according to your needs.

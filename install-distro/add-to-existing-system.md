@@ -17,7 +17,7 @@ wget https://REMnux.org/remnux-cli
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```
-16761c36ae437e0020346c026c4e6a78299993f496699d7a4b5a44d6946d03a9
+c46c732f5ab8f33ce957db8b6f0827554bf100b8a26b4765410b252429a26380
 ```
 
 To generate the hash of your  file, run:
