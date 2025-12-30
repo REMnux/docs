@@ -58,9 +58,10 @@ Java bytecode engineering toolkit/library
 
 Java decompiler
 
-**Website**: [https://bitbucket.org/mstrobel/procyon](https://bitbucket.org/mstrobel/procyon)  
-**Author**: Mike Strobel  
-**License**: Apache License 2.0: [https://bitbucket.org/mstrobel/procyon/src/default/License.html](https://bitbucket.org/mstrobel/procyon/src/default/License.html)  
-**Notes**: procyon  
+**Website**: [https://github.com/mstrobel/procyon](https://github.com/mstrobel/procyon)\
+**Author**: Mike Strobel\
+**License**: Apache License 2.0: [https://github.com/mstrobel/procyon/blob/develop/License.txt](https://github.com/mstrobel/procyon/blob/develop/License.txt)\
+**Notes**: procyon\
 **State File**: [remnux.packages.procyon-decompiler](https://github.com/REMnux/salt-states/blob/master/remnux/packages/procyon-decompiler.sls)
+
 
