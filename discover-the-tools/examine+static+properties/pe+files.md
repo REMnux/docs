@@ -89,11 +89,12 @@ Analyze static properties of PE files.
 
 Analyze PE files and extract strings from them
 
-**Website**: [https://pev.sourceforge.io](https://pev.sourceforge.io)\
+**Website**: [https://github.com/mentebinaria/readpe](https://github.com/mentebinaria/readpe)\
 **Author**: Fernando Merces, Jardel Weyrich\
 **License**: GNU General Public License (GPL) v2: [https://github.com/mentebinaria/readpe/blob/master/LICENSE](https://github.com/mentebinaria/readpe/blob/master/LICENSE)\
 **Notes**: pestr, readpe, pedis, pehash, pescan, peldd, peres\
 **State File**: [remnux.packages.pev](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pev.sls)
+
 
 ## PortEx
 
