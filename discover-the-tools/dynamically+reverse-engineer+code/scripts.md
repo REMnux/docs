@@ -28,10 +28,11 @@ Emulate common browser and PDF viewer objects, methods, and properties when deob
 
 Python3 and JavaScript interop engine, fork of the original PyV8 project
 
-**Website**: [https://github.com/area1/stpyv8](https://github.com/area1/stpyv8)  
-**Author**: Area1 Security  
-**License**: Apache License 2.0: [https://github.com/area1/stpyv8/blob/master/LICENSE.txt](https://github.com/area1/stpyv8/blob/master/LICENSE.txt)  
+**Website**: [https://github.com/cloudflare/stpyv8](https://github.com/cloudflare/stpyv8)\
+**Author**: Area1 Security\
+**License**: Apache License 2.0: [https://github.com/cloudflare/stpyv8/blob/master/LICENSE.txt](https://github.com/cloudflare/stpyv8/blob/master/LICENSE.txt)\
 **State File**: [remnux.python3-packages.stpyv8](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/stpyv8.sls)
+
 
 ## JStillery
 
