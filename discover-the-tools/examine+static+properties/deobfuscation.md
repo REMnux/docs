@@ -85,11 +85,12 @@ Python3 Decoders for Remote Access Trojans
 
 Parsing configuration information from malware.
 
-**Website**: [https://github.com/Defense-Cyber-Crime-Center/DC3-MWCP](https://github.com/Defense-Cyber-Crime-Center/DC3-MWCP)\
+**Website**: [https://github.com/Defense-Cyber-Crime-Center/DC3-mwcp](https://github.com/Defense-Cyber-Crime-Center/DC3-mwcp)\
 **Author**: Defense Cyber Crime Center - United States Government\
-**License**: Some parts Public Domain, some MIT License: [https://github.com/Defense-Cyber-Crime-Center/DC3-MWCP/blob/master/LICENSE.txt](https://github.com/Defense-Cyber-Crime-Center/DC3-MWCP/blob/master/LICENSE.txt)\
+**License**: Some parts Public Domain, some MIT License: [https://github.com/Defense-Cyber-Crime-Center/DC3-mwcp/blob/master/LICENSE.txt](https://github.com/Defense-Cyber-Crime-Center/DC3-mwcp/blob/master/LICENSE.txt)\
 **Notes**: mwcp\
 **State File**: [remnux.python3-packages.dc3-mwcp](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dc3-mwcp.sls)
+
 
 ## unicode
 
