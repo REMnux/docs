@@ -34,3 +34,12 @@ Examine binary files, including disassembling and debugging.
 **Notes**: r2, rasm2, rabin2, rahash2, rafind2  
 **State File**: [remnux.packages.radare2](https://github.com/REMnux/salt-states/blob/master/remnux/packages/radare2.sls)
 
+
+## r2pipe
+
+Examine binary files, including disassembling and debugging.
+
+**Website**: [https://rada.re/n/r2pipe.html](https://rada.re/n/r2pipe.html)\
+**Author**: radareorg\
+**License**: MIT\
+**State File**: [remnux.python3-packages.r2pipe](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/r2pipe.sls)
