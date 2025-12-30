@@ -18,11 +18,12 @@ Memory forensics tool and framework
 
 Memory forensics tool and framework
 
-**Website**: [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)\
-**Author**: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/AUTHORS.txt)\
-**License**: GNU General Public License (GPL) v2: [https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt](https://github.com/volatilityfoundation/volatility/blob/2.6.1/LICENSE.txt)\
-**Notes**: Use `vol.py` to invoke this version of Volatility. To eliminate conflicts among command-line options for Volatility plugins, the following `yarascan` options have been changed: `-Y` became `-U` and `-C` became `-c`.\
-**State File**: [remnux.python-packages.volatility](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/volatility.sls)
+**Website**: [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3)\
+**Author**: The Volatility Foundation\
+**License**: Volatility Software License: [https://github.com/volatilityfoundation/volatility3/blob/master/LICENSE.txt](https://github.com/volatilityfoundation/volatility3/blob/master/LICENSE.txt)\
+**Notes**: Invoke using: vol3, volshell3. Before using, download symbols by following the links from https://github.com/volatilityfoundation/volatility3#symbol-tables and place them in `/usr/local/lib/python3.8/dist-packages/volatility3/framework/symbols`\
+**State File**: [remnux.python3-packages.volatility3](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/volatility3.sls)
+
 
 ## linux\_mem\_diff\_tool
 
