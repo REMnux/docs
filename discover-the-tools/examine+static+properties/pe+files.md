@@ -14,18 +14,6 @@ Perform static analysis of suspicious PE files.
 **Notes**: Run "manalyze" to invoke the tool. To update the tool's Yara rules to include ClamAV, run "sudo /usr/local/manalyze/yara\_rules/update\_clamav\_signatures.py". To query VirusTotal, add your API key to /usr/local/manalyze/manalyze.conf.\
 **State File**: [remnux.tools.manalyze](https://github.com/REMnux/salt-states/blob/master/remnux/tools/manalyze.sls)
 
-## StringSifter
-
-Automatically rank strings based on their relevance to the analysis of suspicious Windows executables.
-
-**Website**: [https://github.com/fireeye/stringsifter](https://github.com/fireeye/stringsifter)\
-**Author**: FireEye Inc.\
-**License**: Apache License 2.0: [https://github.com/fireeye/stringsifter/blob/master/LICENSE](https://github.com/fireeye/stringsifter/blob/master/LICENSE)\
-**Notes**: flarestrings\
-**State File**: [remnux.python3-packages.stringsifter](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/stringsifter.sls)
-
-
-
 ## PEframe
 
 Statically analyze PE and Microsoft Office files.
