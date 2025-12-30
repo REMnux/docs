@@ -66,15 +66,6 @@ Query and interact with VirusTotal using a command-line interface.
 
 
 
-## ioc\_writer
-
-Python library that allows for basic creation and editing of OpenIOC objects.
-
-**Website**: [https://github.com/mandiant/ioc\_writer](https://github.com/mandiant/ioc_writer)\
-**Author**: William Gibb\
-**License**: Apache License 2.0: [https://github.com/mandiant/ioc\_writer/blob/master/LICENSE](https://github.com/mandiant/ioc_writer/blob/master/LICENSE)\
-**State File**: [remnux.python-packages.ioc-writer](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/ioc-writer.sls)
-
 ## shodan
 
 Query Shodan, a search engine for internet-connected devices.
