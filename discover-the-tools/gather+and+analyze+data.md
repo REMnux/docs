@@ -67,11 +67,11 @@ Retrieve and parse whois data for IP addresses.
 
 Query and interact with VirusTotal using a command-line interface.
 
-**Website**: [https://github.com/doomedraven/VirusTotalApi](https://github.com/doomedraven/VirusTotalApi)\
-**Author**: doomedraven\
-**License**: MIT License: [https://github.com/doomedraven/VirusTotalApi/blob/master/LICENSE.md](https://github.com/doomedraven/VirusTotalApi/blob/master/LICENSE.md)\
-**Notes**: vt\
+**Website**: [https://github.com/VirusTotal/vt-py](https://github.com/VirusTotal/vt-py)\
+**Author**: VirusTotal\
+**License**: Apache 2.0 ([https://github.com/VirusTotal/vt-py/blob/master/LICENSE)](https://github.com/VirusTotal/vt-py/blob/master/LICENSE))\
 **State File**: [remnux.python3-packages.virustotal-api](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/virustotal-api.sls)
+
 
 ## ioc\_writer
 
