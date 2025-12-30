@@ -160,3 +160,13 @@ Extract IOCs from security report PDFs.
 **Author**: Armin Buescher\
 **License**: MIT License: [https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
 **State File**: [remnux.python3-packages.ioc-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ioc-parser.sls)
+
+## dnslib
+
+Python library to encode/decode DNS wire-format packets
+
+**Website**: [https://github.com/paulc/dnslib](https://github.com/paulc/dnslib)\
+**Author**: Paul Chakravarti\
+**License**: BSD 2-Clause "Simplified" License ([https://github.com/paulc/dnslib/blob/master/LICENSE)](https://github.com/paulc/dnslib/blob/master/LICENSE))\
+**Notes**: Library - /opt/dnslib/bin/python3 - import dnslib\
+**State File**: [remnux.python3-packages.dnslib](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dnslib.sls)
