@@ -78,8 +78,9 @@ Python3 Decoders for Remote Access Trojans
 **Website**: [https://github.com/kevthehermit/RATDecoders](https://github.com/kevthehermit/RATDecoders)\
 **Author**: Kevin Breen: [https://twitter.com/KevTheHermit](https://twitter.com/KevTheHermit)\
 **License**: MIT License: [https://github.com/kevthehermit/RATDecoders/blob/master/LICENSE](https://github.com/kevthehermit/RATDecoders/blob/master/LICENSE)\
-**Notes**: malconf\
+**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal). malconf\
 **State File**: [remnux.python3-packages.ratdecoders](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ratdecoders.sls)
+
 
 ## DC3-MWCP
 
