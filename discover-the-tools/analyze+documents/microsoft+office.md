@@ -158,3 +158,12 @@ View, edit, and carve contents of various binary file types.
 **Notes**: hachoir-grep, hachoir-metadata, hachoir-strip, hachoir-wx  
 **State File**: [remnux.python3-packages.hachoir](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/hachoir.sls)
 
+
+## olefile
+
+Python package to parse, read and write MS OLE2 files.
+
+**Website**: [https://github.com/decalage2/olefile](https://github.com/decalage2/olefile)\
+**Author**: Philippe Lagadec\
+**License**: All Rights Reserved ([https://github.com/decalage2/olefile/blob/master/LICENSE.txt)](https://github.com/decalage2/olefile/blob/master/LICENSE.txt))\
+**State File**: [remnux.python3-packages.olefile](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/olefile.sls)
