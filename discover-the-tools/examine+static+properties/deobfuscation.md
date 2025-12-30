@@ -114,11 +114,12 @@ Decode and otherwise analyze data using this command-line tool and Python librar
 
 Extract and deobfuscate patterns from suspicious files.
 
-**Website**: [https://github.com/decalage2/balbuzard](https://github.com/decalage2/balbuzard)\
-**Author**: Philippe Lagadec: [https://twitter.com/decalage2](https://twitter.com/decalage2)\
-**License**: Free, custom license: [https://github.com/decalage2/balbuzard](https://github.com/decalage2/balbuzard)\
+**Website**: [https://github.com/digitalsleuth/balbuzard](https://github.com/digitalsleuth/balbuzard)\
+**Author**: Philippe Lagadec / Corey Forman (digitalsleuth)\
+**License**: Free, custom license: [https://github.com/digitalsleuth/balbuzard](https://github.com/digitalsleuth/balbuzard)\
 **Notes**: balbuzard, bbcrack, bbharvest, bbtrans\
-**State File**: [remnux.python-packages.balbuzard](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/balbuzard.sls)
+**State File**: [remnux.python3-packages.balbuzard](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/balbuzard.sls)
+
 
 ## base64dump
 
