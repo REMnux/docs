@@ -243,3 +243,12 @@ Extract and deobfuscate strings from PE executables.
 **License**: Apache License 2.0: [https://github.com/mandiant/flare-floss/blob/master/LICENSE.txt](https://github.com/mandiant/flare-floss/blob/master/LICENSE.txt)\
 **Notes**: floss\
 **State File**: [remnux.packages.flare-floss](https://github.com/REMnux/salt-states/blob/master/remnux/packages/flare-floss.sls)
+
+## ex_pe_xor.py
+
+Search an XOR'ed file for indications of executable binaries.
+
+**Website**: [http://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html](http://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html)\
+**Author**: Alexander Hanel\
+**License**: Free, unknown license\
+**State File**: [remnux.scripts.ex-pe-xor](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/ex-pe-xor.sls)
