@@ -41,3 +41,12 @@ Analyze Flash SWF files.
 **License**: GNU General Public License (GPL) v3.0: [https://github.com/viper-framework/xxxswf/blob/master/LICENSE.txt](https://github.com/viper-framework/xxxswf/blob/master/LICENSE.txt)\
 **Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal).\
 **State File**: [remnux.python3-packages.xxxswf](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/xxxswf.sls)
+
+## extract_swf
+
+Extract potential SWF files from Flash Projector binaries.
+
+**Website**: [https://github.com/digitalsleuth/extract_swf](https://github.com/digitalsleuth/extract_swf)\
+**Author**: Nathan Ostgard, Updated for Python 3 by Corey Forman\
+**License**: Free, unknown license\
+**State File**: [remnux.scripts.extract-swf](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/extract-swf.sls)
