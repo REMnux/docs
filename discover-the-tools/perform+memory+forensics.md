@@ -25,16 +25,6 @@ Memory forensics tool and framework
 **State File**: [remnux.python3-packages.volatility3](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/volatility3.sls)
 
 
-## linux\_mem\_diff\_tool
-
-Compare two memory images of Linux systems by using Volatility.
-
-**Website**: [https://github.com/monnappa22/linux\_mem\_diff\_tool](https://github.com/monnappa22/linux\_mem\_diff\_tool)\
-**Author**: Monnappa K A\
-**License**: Free, unknown license\
-**Notes**: linux\_mem\_diff.py\
-**State File**: [remnux.scripts.linuxmemdiff](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/linuxmemdiff.sls)
-
 ## AESKeyFinder
 
 Find 128-bit and 256-bit AES keys in a memory image.
