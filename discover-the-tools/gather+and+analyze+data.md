@@ -44,15 +44,6 @@ Query public repositories of malware data (e.g., VirusTotal, HybridAnalysis).
 **Notes**: malwoverview, add API keys to \~/.malwapi.conf\
 **State File**: [remnux.python3-packages.malwoverview](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malwoverview.sls)
 
-## ioc\_parser
-
-Extract IOCs from security report PDFs.
-
-**Website**: [https://github.com/buffer/ioc\_parser](https://github.com/buffer/ioc_parser)\
-**Author**: Armin Buescher\
-**License**: MIT License: [https://github.com/buffer/ioc\_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
-**State File**: [remnux.python3-packages.ioc-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ioc-parser.sls)
-
 ## ipwhois
 
 Retrieve and parse whois data for IP addresses.
