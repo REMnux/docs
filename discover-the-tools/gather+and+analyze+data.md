@@ -160,3 +160,12 @@ Identify and classify malware samples using Yara rules.
 **License**: BSD 3-Clause "New" or "Revised" License: [https://github.com/VirusTotal/yara/blob/master/COPYING](https://github.com/VirusTotal/yara/blob/master/COPYING)\
 **Notes**: yara\
 **State File**: [remnux.packages.yara](https://github.com/REMnux/salt-states/blob/master/remnux/packages/yara.sls)
+
+## ioc_parser
+
+Extract IOCs from security report PDFs.
+
+**Website**: [https://github.com/buffer/ioc_parser](https://github.com/buffer/ioc_parser)\
+**Author**: Armin Buescher\
+**License**: MIT License: [https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
+**State File**: [remnux.python3-packages.ioc-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ioc-parser.sls)
