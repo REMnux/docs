@@ -75,11 +75,12 @@ Deobfuscate XLM macros \(also known as Excel 4.0 macros\) from Microsoft Office 
 
 A VBA parser and emulation engine to analyze malicious macros.
 
-**Website**: [https://www.decalage.info/en/vba\_emulation](https://www.decalage.info/en/vba_emulation)  
-**Author**: Philippe Lagadec: [https://twitter.com/decalage2](https://twitter.com/decalage2)  
-**License**: Free, custom license: [https://github.com/decalage2/ViperMonkey\#license](https://github.com/decalage2/ViperMonkey#license)  
-**Notes**: vmonkey  
-**State File**: [remnux.python-packages.vipermonkey](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/vipermonkey.sls)
+**Website**: [https://www.decalage.info/en/vba_emulation](https://www.decalage.info/en/vba_emulation)\
+**Author**: Philippe Lagadec: [https://twitter.com/decalage2](https://twitter.com/decalage2)\
+**License**: Free, custom license: [https://github.com/decalage2/ViperMonkey#license](https://github.com/decalage2/ViperMonkey#license)\
+**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal). vmonkey\
+**State File**: [remnux.python3-packages.vipermonkey](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/vipermonkey.sls)
+
 
 ## msoffcrypto-crack.py
 
