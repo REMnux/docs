@@ -70,7 +70,9 @@ Query and interact with VirusTotal using a command-line interface.
 **Website**: [https://github.com/VirusTotal/vt-py](https://github.com/VirusTotal/vt-py)\
 **Author**: VirusTotal\
 **License**: Apache 2.0 ([https://github.com/VirusTotal/vt-py/blob/master/LICENSE)](https://github.com/VirusTotal/vt-py/blob/master/LICENSE))\
+**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal).\
 **State File**: [remnux.python3-packages.virustotal-api](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/virustotal-api.sls)
+
 
 
 ## ioc\_writer
