@@ -113,11 +113,12 @@ Query passive DNS databases for DNS data.
 
 Extract and decode data from antivirus quarantine files.
 
-**Website**: [http://www.hexacorn.com/blog/category/software-releases/dexray/](http://www.hexacorn.com/blog/category/software-releases/dexray/)\
+**Website**: [https://www.hexacorn.com/blog/category/software-releases/dexray/](https://www.hexacorn.com/blog/category/software-releases/dexray/)\
 **Author**: Hexacorn\
-**License**: Free; copyright by Hexacorn.com: [http://hexacorn.com/d/DeXRAY.pl](http://hexacorn.com/d/DeXRAY.pl)\
+**License**: Free; copyright by Hexacorn.com: [https://hexacorn.com/d/DeXRAY.pl](https://hexacorn.com/d/DeXRAY.pl)\
 **Notes**: dexray\
 **State File**: [remnux.scripts.dexray](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/dexray.sls)
+
 
 ## virustotal-submit
 
