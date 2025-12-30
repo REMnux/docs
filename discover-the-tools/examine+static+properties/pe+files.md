@@ -18,11 +18,12 @@ Perform static analysis of suspicious PE files.
 
 Automatically rank strings based on their relevance to the analysis of suspicious Windows executables.
 
-**Website**: [https://github.com/mandiant/stringsifter](https://github.com/mandiant/stringsifter)\
+**Website**: [https://github.com/fireeye/stringsifter](https://github.com/fireeye/stringsifter)\
 **Author**: FireEye Inc.\
-**License**: Apache License 2.0: [https://github.com/mandiant/stringsifter/blob/master/LICENSE](https://github.com/mandiant/stringsifter/blob/master/LICENSE)\
+**License**: Apache License 2.0: [https://github.com/fireeye/stringsifter/blob/master/LICENSE](https://github.com/fireeye/stringsifter/blob/master/LICENSE)\
 **Notes**: flarestrings\
 **State File**: [remnux.python3-packages.stringsifter](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/stringsifter.sls)
+
 
 
 ## PEframe
