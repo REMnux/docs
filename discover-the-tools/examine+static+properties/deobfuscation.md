@@ -144,10 +144,11 @@ Implement a XOR known plaintext attack.
 
 Help guess a file's 256-byte XOR by using frequency analysis.
 
-**Website**: [https://github.com/hiddenillusion/NoMoreXOR](https://github.com/hiddenillusion/NoMoreXOR)\
+**Website**: [https://github.com/digitalsleuth/NoMoreXOR](https://github.com/digitalsleuth/NoMoreXOR)\
 **Author**: Glenn P. Edwards Jr.\
 **License**: Free, unknown license\
 **State File**: [remnux.scripts.nomorexor](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/nomorexor.sls)
+
 
 ## unXOR
 
