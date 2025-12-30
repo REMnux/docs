@@ -8,11 +8,12 @@ description: Statically Analyze Code
 
 IDE that allows to inspect, navigate, edit and annotate control flow graphs and call graphs of disassembled code.
 
-**Website**: [https://github.com/google/binnavi](https://github.com/google/binnavi)  
-**Author**: Google/Zynamics  
-**License**: Apache License 2.0: [https://github.com/google/binnavi/blob/master/LICENSE](https://github.com/google/binnavi/blob/master/LICENSE)  
-**Notes**: binnavi  
+**Website**: [https://github.com/google/binnavi](https://github.com/google/binnavi)\
+**Author**: Google/Zynamics\
+**License**: Apache License 2.0: [https://github.com/google/binnavi/blob/master/LICENSE](https://github.com/google/binnavi/blob/master/LICENSE)\
+**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal). binnavi\
 **State File**: [remnux.tools.binnavi](https://github.com/REMnux/salt-states/blob/master/remnux/tools/binnavi.sls)
+
 
 ## Ghidra
 
