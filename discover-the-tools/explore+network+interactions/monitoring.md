@@ -38,11 +38,12 @@ Intercept and decrypt TLS traffic.
 
 Analyze HTTP traffic and extract embedded artifacts.
 
-**Website**: [https://github.com/omriher/CapTipper/tree/python3\_support](https://github.com/omriher/CapTipper/tree/python3\_support)\
+**Website**: [https://github.com/omriher/CapTipper/tree/python3_support](https://github.com/omriher/CapTipper/tree/python3_support)\
 **Author**: Omri Herscovici: [https://twitter.com/omriher](https://twitter.com/omriher)\
-**License**: GNU General Public License v3.0: [https://github.com/omriher/CapTipper/blob/python3\_support/LICENSE](https://github.com/omriher/CapTipper/blob/python3\_support/LICENSE)\
-**Notes**: CapTipper.py\
+**License**: GNU General Public License v3.0: [https://github.com/omriher/CapTipper/blob/python3_support/LICENSE](https://github.com/omriher/CapTipper/blob/python3_support/LICENSE)\
+**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal). CapTipper.py\
 **State File**: [remnux.tools.captipper](https://github.com/REMnux/salt-states/blob/master/remnux/tools/captipper.sls)
+
 
 ## mitmproxy
 
