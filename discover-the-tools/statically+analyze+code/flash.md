@@ -40,3 +40,13 @@ Examine and convert Flash (SWF) files.
 **License**: GNU General Public License (GPL) v2: [https://github.com/matthiaskramm/swftools/blob/master/COPYING](https://github.com/matthiaskramm/swftools/blob/master/COPYING)\
 **Notes**: swfdump, swfstrings, etc.\
 **State File**: [remnux.packages.swftools](https://github.com/REMnux/salt-states/blob/master/remnux/packages/swftools.sls)
+
+## xxxswf
+
+Analyze Flash SWF files.
+
+**Website**: [https://github.com/viper-framework/xxxswf](https://github.com/viper-framework/xxxswf)\
+**Author**: Alexander Hanel\
+**License**: GNU General Public License (GPL) v3.0: [https://github.com/viper-framework/xxxswf/blob/master/LICENSE.txt](https://github.com/viper-framework/xxxswf/blob/master/LICENSE.txt)\
+**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal).\
+**State File**: [remnux.python3-packages.xxxswf](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/xxxswf.sls)
