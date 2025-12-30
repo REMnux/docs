@@ -4,15 +4,6 @@ description: Discover the Tools
 
 # Investigate System Interactions
 
-## Sysdig
-
-Track and examine system activities on the local Linux system.
-
-**Website**: [https://github.com/draios/sysdig](https://github.com/draios/sysdig)  
-**Author**: Sysdig Inc: [https://sysdig.com](https://sysdig.com)  
-**License**: Apache License 2.0: [https://github.com/draios/sysdig/blob/dev/COPYING](https://github.com/draios/sysdig/blob/dev/COPYING)  
-**State File**: [remnux.packages.sysdig](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sysdig.sls)
-
 ## ProcDOT
 
 Visualize and examine the output of Process Monitor.
