@@ -214,3 +214,12 @@ Identify file type using "magic" numbers.
 **Author**: Ian F. Darwin, Christos Zoulas\
 **License**: BSD 2-Clause "Alike" License: [https://github.com/file/file/blob/master/COPYING](https://github.com/file/file/blob/master/COPYING)\
 **State File**: [remnux.packages.file](https://github.com/REMnux/salt-states/blob/master/remnux/packages/file.sls)
+
+## bulk_extractor
+
+Extract interesting strings from binary files.
+
+**Website**: [https://github.com/simsong/bulk_extractor/](https://github.com/simsong/bulk_extractor/)\
+**Author**: [https://github.com/simsong/bulk_extractor/blob/master/AUTHORS](https://github.com/simsong/bulk_extractor/blob/master/AUTHORS)\
+**License**: Portions Public Domain, portions MIT License: [https://github.com/simsong/bulk_extractor/blob/master/LICENSE.md](https://github.com/simsong/bulk_extractor/blob/master/LICENSE.md)\
+**State File**: [remnux.packages.bulk-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/bulk-extractor.sls)
