@@ -223,3 +223,13 @@ Extract interesting strings from binary files.
 **Author**: [https://github.com/simsong/bulk_extractor/blob/master/AUTHORS](https://github.com/simsong/bulk_extractor/blob/master/AUTHORS)\
 **License**: Portions Public Domain, portions MIT License: [https://github.com/simsong/bulk_extractor/blob/master/LICENSE.md](https://github.com/simsong/bulk_extractor/blob/master/LICENSE.md)\
 **State File**: [remnux.packages.bulk-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/bulk-extractor.sls)
+
+## thefuzz
+
+Fuzzy String Matching in Python
+
+**Website**: [https://github.com/seatgeek/thefuzz](https://github.com/seatgeek/thefuzz)\
+**Author**: SeatGeek\
+**License**: MIT License ([https://github.com/seatgeek/thefuzz/blob/master/LICENSE.txt)](https://github.com/seatgeek/thefuzz/blob/master/LICENSE.txt))\
+**Notes**: Updated implementation of fuzzywuzzy\
+**State File**: [remnux.python3-packages.thefuzz](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/thefuzz.sls)
