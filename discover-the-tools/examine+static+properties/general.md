@@ -176,15 +176,6 @@ Scan files for malware signatures.
 **Notes**: clamscan, freshclam\
 **State File**: [remnux.packages.clamav-daemon](https://github.com/REMnux/salt-states/blob/master/remnux/packages/clamav-daemon.sls)
 
-## bulk\_extractor
-
-Extract interesting strings from binary files.
-
-**Website**: [https://github.com/simsong/bulk\_extractor/](https://github.com/simsong/bulk\_extractor/)\
-**Author**: [https://github.com/simsong/bulk\_extractor/blob/master/AUTHORS](https://github.com/simsong/bulk\_extractor/blob/master/AUTHORS)\
-**License**: Portions Public Domain, portions MIT License: [https://github.com/simsong/bulk\_extractor/blob/master/LICENSE.md](https://github.com/simsong/bulk\_extractor/blob/master/LICENSE.md)\
-**State File**: [remnux.packages.bulk-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/bulk-extractor.sls)
-
 ## Hachoir
 
 View, edit, and carve contents of various binary file types.

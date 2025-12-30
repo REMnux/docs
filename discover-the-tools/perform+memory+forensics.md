@@ -45,15 +45,6 @@ Find 128-bit and 256-bit AES keys in a memory image.
 **Notes**: aeskeyfind\
 **State File**: [remnux.packages.aeskeyfind](https://github.com/REMnux/salt-states/blob/master/remnux/packages/aeskeyfind.sls)
 
-## bulk\_extractor
-
-Extract interesting strings from binary files.
-
-**Website**: [https://github.com/simsong/bulk\_extractor/](https://github.com/simsong/bulk\_extractor/)\
-**Author**: [https://github.com/simsong/bulk\_extractor/blob/master/AUTHORS](https://github.com/simsong/bulk\_extractor/blob/master/AUTHORS)\
-**License**: Portions Public Domain, portions MIT License: [https://github.com/simsong/bulk\_extractor/blob/master/LICENSE.md](https://github.com/simsong/bulk\_extractor/blob/master/LICENSE.md)\
-**State File**: [remnux.packages.bulk-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/bulk-extractor.sls)
-
 ## RSAKeyFinder
 
 Find BER-encoded RSA private keys in a memory image.
