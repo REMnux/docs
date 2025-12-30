@@ -188,15 +188,6 @@ Locate and decode stack strings in executable files.
 **License**: Free, unknown license\
 **State File**: [remnux.scripts.strdeob](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/strdeob.sls)
 
-## ex\_pe\_xor.py
-
-Search an XOR'ed file for indications of executable binaries.
-
-**Website**: [http://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html](http://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html)\
-**Author**: Alexander Hanel\
-**License**: Free, unknown license\
-**State File**: [remnux.scripts.ex\_pe\_xor](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/ex\_pe\_xor.sls)
-
 ## cut-bytes.py
 
 Cut out a part of a data stream.
