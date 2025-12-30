@@ -4,15 +4,6 @@ description: Analyze Documents
 
 # PDF
 
-## peepdf
-
-Examine elements of the PDF file.
-
-**Website**: [https://eternal-todo.com/tools/peepdf-pdf-analysis-tool](https://eternal-todo.com/tools/peepdf-pdf-analysis-tool)  
-**Author**: Jose Miguel Esparza  
-**License**: GNU General Public License \(GPL\) v3: [https://github.com/jesparza/peepdf/blob/master/COPYING](https://github.com/jesparza/peepdf/blob/master/COPYING)  
-**State File**: [remnux.python-packages.peepdf](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/peepdf.sls)
-
 ## Origami
 
 Parse, modify, generate PDF files.
