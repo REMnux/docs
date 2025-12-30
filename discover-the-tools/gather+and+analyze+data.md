@@ -8,11 +8,12 @@ description: Discover the Tools
 
 Gather OSINT data about IPs, domains, and hashes.
 
-**Website**: [http://www.tekdefense.com/automater/](http://www.tekdefense.com/automater/)\
-**Author**: 1aN0rmus: [https://twitter.com/TekDefense](https://twitter.com/TekDefense)\
-**License**: MIT License: [https://github.com/1aN0rmus/TekDefense-Automater/blob/master/LICENSE](https://github.com/1aN0rmus/TekDefense-Automater/blob/master/LICENSE)\
-**Notes**: Automater.py\
-**State File**: [remnux.tools.automater](https://github.com/REMnux/salt-states/blob/master/remnux/tools/automater.sls)
+**Website**: [https://github.com/digitalsleuth/TekDefense-Automater](https://github.com/digitalsleuth/TekDefense-Automater)\
+**Author**: 1aN0rmus and digitalsleuth\
+**License**: MIT License: [https://github.com/digitalsleuth/TekDefense-Automater/blob/master/LICENSE](https://github.com/digitalsleuth/TekDefense-Automater/blob/master/LICENSE)\
+**Notes**: automater\
+**State File**: [remnux.python3-packages.automater](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/automater.sls)
+
 
 ## dissect
 
