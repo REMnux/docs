@@ -24,3 +24,12 @@ Examine images to identify and extract text using optical character recognition 
 **Notes**: tesseract  
 **State File**: [remnux.packages.tesseract-ocr](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tesseract-ocr.sls)
 
+
+## Didier Stevens Scripts
+
+A collection of Python scripts for analyzing suspicious files and data from Didier Stevens.
+
+**Website**: [https://blog.didierstevens.com](https://blog.didierstevens.com)\
+**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
