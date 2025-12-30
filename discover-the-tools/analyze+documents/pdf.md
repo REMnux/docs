@@ -78,3 +78,12 @@ Manipulate \(merge, convert, transform\) PDF files.
 **License**: Apache License 2.0: [https://github.com/qpdf/qpdf/blob/master/LICENSE.txt](https://github.com/qpdf/qpdf/blob/master/LICENSE.txt)  
 **State File**: [remnux.packages.qpdf](https://github.com/REMnux/salt-states/blob/master/remnux/packages/qpdf.sls)
 
+
+## peepdf-3
+
+Examine elements of the PDF file.
+
+**Website**: [https://github.com/digitalsleuth/peepdf-3](https://github.com/digitalsleuth/peepdf-3)\
+**Author**: Jose Miguel Esparza and Corey Forman\
+**License**: GNU General Public License (GPL) v3: [https://github.com/digitalsleuth/peepdf-3/blob/main/COPYING](https://github.com/digitalsleuth/peepdf-3/blob/main/COPYING)\
+**State File**: [remnux.python3-packages.peepdf-3](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/peepdf-3.sls)
