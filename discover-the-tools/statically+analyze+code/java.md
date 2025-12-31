@@ -46,13 +46,14 @@ Analyze Java IDX files.
 
 ## Javassist
 
-Java bytecode engineering toolkit/library
+Java bytecode engineering toolkit/library.
 
-**Website**: [https://www.javassist.org/](https://www.javassist.org/)  
-**Author**: Shigeru Chiba  
-**License**: Mozilla Public License, GNU Lesser General Public License \(LGPL\) v2.1 or later, Apache License 2.0: [https://github.com/jboss-javassist/javassist/blob/master/License.html](https://github.com/jboss-javassist/javassist/blob/master/License.html)  
-**Notes**: Library installed in /usr/share/java/  
+**Website**: [https://www.javassist.org/](https://www.javassist.org/)\
+**Author**: Shigeru Chiba\
+**License**: Mozilla Public License, GNU Lesser General Public License (LGPL) v2.1 or later, Apache License 2.0: [https://github.com/jboss-javassist/javassist/blob/master/License.html](https://github.com/jboss-javassist/javassist/blob/master/License.html)\
+**Notes**: Library installed in /usr/share/java/\
 **State File**: [remnux.packages.libjavassist-java](https://github.com/REMnux/salt-states/blob/master/remnux/packages/libjavassist-java.sls)
+
 
 ## Procyon
 
