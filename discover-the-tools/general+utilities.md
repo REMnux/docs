@@ -199,13 +199,14 @@ Adjust input methods for the GUI.
 
 ## GNOME Calculator
 
-Calculator
+Calculator.
 
 **Website**: [https://wiki.gnome.org/Apps/Calculator](https://wiki.gnome.org/Apps/Calculator)\
 **Author**: [https://github.com/GNOME/gnome-calculator/graphs/contributors](https://github.com/GNOME/gnome-calculator/graphs/contributors)\
 **License**: GNU General Public License (GPL) v3: [https://github.com/GNOME/gnome-calculator/blob/mainline/COPYING](https://github.com/GNOME/gnome-calculator/blob/mainline/COPYING)\
 **Notes**: galculator\
 **State File**: [remnux.packages.galculator](https://github.com/REMnux/salt-states/blob/master/remnux/packages/galculator.sls)
+
 
 ## myjson-filter.py
 
