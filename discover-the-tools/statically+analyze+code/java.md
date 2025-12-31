@@ -6,12 +6,13 @@ description: Statically Analyze Code
 
 ## cfr
 
-Java decompiler
+Java decompiler.
 
-**Website**: [https://www.benf.org/other/cfr/](https://www.benf.org/other/cfr/)  
-**Author**: Lee Benfield  
-**License**: MIT License: [https://github.com/leibnitz27/cfr/blob/master/LICENSE](https://github.com/leibnitz27/cfr/blob/master/LICENSE)  
+**Website**: [https://www.benf.org/other/cfr/](https://www.benf.org/other/cfr/)\
+**Author**: Lee Benfield\
+**License**: MIT License: [https://github.com/leibnitz27/cfr/blob/master/LICENSE](https://github.com/leibnitz27/cfr/blob/master/LICENSE)\
 **State File**: [remnux.tools.cfr](https://github.com/REMnux/salt-states/blob/master/remnux/tools/cfr.sls)
+
 
 ## JAD Java Decompiler
 
