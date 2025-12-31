@@ -6,13 +6,14 @@ description: Analyze Documents
 
 ## SSView
 
-Analyze OLE2 Structured Storage files
+Analyze OLE2 Structured Storage files.
 
-**Website**: [https://www.mitec.cz/ssv.html](https://www.mitec.cz/ssv.html)  
-**Author**: Michal Mutl  
-**License**: Free to use for private, educational and non-commercial purposes.  
-**Notes**: ssview  
+**Website**: [https://www.mitec.cz/ssv.html](https://www.mitec.cz/ssv.html)\
+**Author**: Michal Mutl\
+**License**: Free to use for private, educational and non-commercial purposes.\
+**Notes**: ssview\
 **State File**: [remnux.tools.ssview](https://github.com/REMnux/salt-states/blob/master/remnux/tools/ssview.sls)
+
 
 ## msoffcrypto-tool
 
