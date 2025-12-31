@@ -6,7 +6,7 @@ The REMnux distro uses [SaltStack](https://www.saltstack.com) to automate the in
 REMnux uses SaltStack for locally managing the configuration of the system where the distro is installed. It doesn't use other SaltStack capabilities, such as remote command execution.
 {% endhint %}
 
-A state file can direct SaltStack to install a tool by supporting a variety of formats in which such tools migh be packages, including [Ubuntu packages](https://packages.ubuntu.com), [pip modules](https://pypi.org/project/pip/), Git repositories, [Ruby gems](https://rubygems.org), etc. Each state file represents one aspect of the state in which the system should be after SaltStack runs. The files follow the YAML markup language.
+A state file can direct SaltStack to install a tool by supporting a variety of formats in which such tools might be packaged, including [Ubuntu packages](https://packages.ubuntu.com), [pip modules](https://pypi.org/project/pip/), Git repositories, [Ruby gems](https://rubygems.org), etc. Each state file represents one aspect of the state in which the system should be after SaltStack runs. The files follow the YAML markup language.
 
 ## Salt State File to Install an Ubuntu Package <a id="state-file-ubuntu-package"></a>
 
@@ -28,32 +28,42 @@ The line `edb-debugger:` specifies the name of the Ubuntu package that SaltStack
 
 ## Salt State File to Install a pip Package <a id="state-file-pip"></a>
 
-Here's an example of a Salt state file [pyzipper.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pyzipper.sls) to install [pyzipper](https://github.com/danifus/pyzipper), a Python library for interacting with Zip file archives. SaltStack will use the Python 3 version of pip \(pip3\), which is installed using [remnux.packages.python3-pip](https://github.com/REMnux/salt-states/blob/master/remnux/packages/python3-pip.sls), to install pyzipper from the standard PyPI repository of Python software:
+Here's an example of a Salt state file [oletools.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/oletools.sls) to install [oletools](http://www.decalage.info/python/oletools), a set of Python tools for analyzing Microsoft Office documents. REMnux installs Python packages in isolated virtual environments to avoid dependency conflicts:
 
 ```text
 include:
-  - remnux.packages.python3-pip
-  - remnux.python3-packages.pycryptodomex
+  - remnux.packages.python3-virtualenv
+  - remnux.python3-packages.xlmmacrodeobfuscator
 
-remnux-python-packages-pyzipper:
-  pip.installed:
-    - name: pyzipper
-    - bin_env: /usr/bin/python3
+remnux-python3-packages-oletools-venv:
+  virtualenv.managed:
+    - name: /opt/oletools
+    - venv_bin: /usr/bin/virtualenv
+    - pip_pkgs:
+      - pip>=24.1.3
+      - setuptools>=70.0.0
     - require:
-      - sls: remnux.packages.python3-pip
-      - sls: remnux.python3-packages.pycryptodomex
+      - sls: remnux.packages.python3-virtualenv
+
+remnux-python3-packages-oletools:
+  pip.installed:
+    - name: oletools
+    - bin_env: /opt/oletools/bin/python3
+    - upgrade: True
+    - require:
+      - virtualenv: remnux-python3-packages-oletools-venv
 ```
 
-Since pyzipper depends on the "pycryptodomex" package, which might not be automatically installed by pip, the state file above explicitly specifies [the state file of pycryptodomex](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pycryptodomex.sls) as a dependency.
+The state file first creates a virtual environment at `/opt/oletools` using `virtualenv.managed`, then installs the oletools package into that environment using `pip.installed`. This pattern isolates each tool's dependencies and avoids conflicts between packages.
 
 ## Salt State File to Configure a Tool
 
-REMnux also uses Salt state files configure the environment and the tools installed as part of the distro. For example, here's a short excerpt from [the Salt state file that configures Ghidra](https://github.com/REMnux/salt-states/blob/master/remnux/config/ghidra/init.sls), which is a reverse-engineering tool that includes a disassembler and debugger. \(The installation of Ghira is handled using a separate [ghidra.sls](https://github.com/REMnux/salt-states/blob/master/remnux/tools/ghidra.sls) file.\)
+REMnux also uses Salt state files configure the environment and the tools installed as part of the distro. For example, here's a short excerpt from [the Salt state file that configures Ghidra](https://github.com/REMnux/salt-states/blob/master/remnux/config/ghidra/init.sls), which is a reverse-engineering tool that includes a disassembler and debugger. \(The installation of Ghidra is handled using a separate [ghidra.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/ghidra.sls) file.\)
 
 ```text
 remnux-config-ghidra-file-preferences:
   file.managed:
-    - name: {{ home }}/.ghidra/.ghidra_9.1.2_PUBLIC/preferences 
+    - name: {{ home }}/.ghidra/.ghidra_10.1.1_PUBLIC/preferences 
     - source: salt://remnux/config/ghidra/preferences
     - replace: False
     - user: {{ user }}
