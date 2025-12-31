@@ -16,13 +16,14 @@ Java decompiler.
 
 ## JAD Java Decompiler
 
-Java decompiler and analysis tool
+Java decompiler and analysis tool.
 
-**Website**: Unknown  
-**Author**: Pavel Kouznetsov  
-**License**: Free, unknown license  
-**Notes**: jad  
+**Website**: [Unknown](Unknown)\
+**Author**: Pavel Kouznetsov\
+**License**: Free, unknown license\
+**Notes**: jad\
 **State File**: [remnux.tools.jad](https://github.com/REMnux/salt-states/blob/master/remnux/tools/jad.sls)
+
 
 ## JD-GUI Java Decompiler
 
