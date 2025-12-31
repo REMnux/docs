@@ -27,13 +27,14 @@ Java decompiler and analysis tool.
 
 ## JD-GUI Java Decompiler
 
-Java decompiler with GUI
+Java decompiler with GUI.
 
 **Website**: [https://java-decompiler.github.io/](https://java-decompiler.github.io/)\
 **Author**: Emmanuel Dupuy\
 **License**: GNU General Public License (GPL) v3: [https://github.com/java-decompiler/jd-gui/blob/master/LICENSE](https://github.com/java-decompiler/jd-gui/blob/master/LICENSE)\
 **Notes**: jd-gui\
 **State File**: [remnux.tools.jd-gui](https://github.com/REMnux/salt-states/blob/master/remnux/tools/jd-gui.sls)
+
 
 
 ## Java IDX Parser
