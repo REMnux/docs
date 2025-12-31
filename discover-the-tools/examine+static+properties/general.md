@@ -45,13 +45,14 @@ Determine types of files and examine file properties.
 
 ## ExifTool
 
-Tool to read from, write to, and edit EXIF metadata of various file types
+Tool to read from, write to, and edit EXIF metadata of various file types.
 
-**Website**: [https://exiftool.org/](https://exiftool.org)\
+**Website**: [https://exiftool.org/](https://exiftool.org/)\
 **Author**: Phil Harvey\
 **License**: "This is free software; you can redistribute it and/or modify it under the same terms as Perl itself": [https://exiftool.org/#license](https://exiftool.org/#license)\
 **Notes**: exiftool\
 **State File**: [remnux.perl-packages.exiftool](https://github.com/REMnux/salt-states/blob/master/remnux/perl-packages/exiftool.sls)
+
 
 ## DroidLysis
 
