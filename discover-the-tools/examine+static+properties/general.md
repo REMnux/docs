@@ -131,12 +131,13 @@ Identify dfferent types of hashes.
 
 ## signsrch
 
-Find patterns of common encryption, compression, or encoding algorithms
+Find patterns of common encryption, compression, or encoding algorithms.
 
 **Website**: [http://aluigi.altervista.org/mytoolz.htm](http://aluigi.altervista.org/mytoolz.htm)\
 **Author**: Luigi Auriemma\
 **License**: Free, unknown license\
 **State File**: [remnux.packages.signsrch](https://github.com/REMnux/salt-states/blob/master/remnux/packages/signsrch.sls)
+
 
 ## ssdeep
 
