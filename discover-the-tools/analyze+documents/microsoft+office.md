@@ -34,12 +34,13 @@ Disassemble VBA p-code
 
 ## pcode2code
 
-Decompile VBA macro p-code from Microsoft Office documents
+Decompile VBA macro p-code from Microsoft Office documents.
 
-**Website**: [https://github.com/Big5-sec/pcode2code](https://github.com/Big5-sec/pcode2code)  
-**Author**: Nicolas Zilio: [https://twitter.com/Big5\_sec](https://twitter.com/Big5_sec)  
-**License**: GNU General Public License \(GPL\) v3: [https://github.com/Big5-sec/pcode2code/blob/master/LICENSE](https://github.com/Big5-sec/pcode2code/blob/master/LICENSE)  
+**Website**: [https://github.com/Big5-sec/pcode2code](https://github.com/Big5-sec/pcode2code)\
+**Author**: Nicolas Zilio: [https://twitter.com/Big5_sec](https://twitter.com/Big5_sec)\
+**License**: GNU General Public License (GPL) v3: [https://github.com/Big5-sec/pcode2code/blob/master/LICENSE](https://github.com/Big5-sec/pcode2code/blob/master/LICENSE)\
 **State File**: [remnux.python3-packages.pcode2code](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pcode2code.sls)
+
 
 ## oletools
 
