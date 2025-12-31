@@ -76,12 +76,13 @@ Cut out a part of a data stream.
 
 ## libemu
 
-A library for x86 code emulation and shellcode detection
+A library for x86 code emulation and shellcode detection.
 
 **Website**: [https://github.com/buffer/libemu](https://github.com/buffer/libemu)\
 **Author**: [https://github.com/buffer/libemu/blob/master/AUTHORS](https://github.com/buffer/libemu/blob/master/AUTHORS)\
 **License**: Free, unknown license\
 **State File**: [remnux.packages.libemu](https://github.com/REMnux/salt-states/blob/master/remnux/packages/libemu.sls)
+
 
 ## XORSearch
 
