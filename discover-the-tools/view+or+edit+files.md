@@ -45,12 +45,13 @@ Compare binary files.
 
 ## wxHexEditor
 
-Hex editor
+Hex editor.
 
-**Website**: [https://sourceforge.net/projects/wxhexeditor/](https://sourceforge.net/projects/wxhexeditor/)  
-**Author**: Unknown  
-**License**: GNU General Public License \(GPL\) v2: [https://sourceforge.net/p/wxhexeditor/code/HEAD/tree/trunk/docs/GPL.txt](https://sourceforge.net/p/wxhexeditor/code/HEAD/tree/trunk/docs/GPL.txt)  
+**Website**: [https://sourceforge.net/projects/wxhexeditor/](https://sourceforge.net/projects/wxhexeditor/)\
+**Author**: Unknown\
+**License**: GNU General Public License (GPL) v2: [https://sourceforge.net/p/wxhexeditor/code/HEAD/tree/trunk/docs/GPL.txt](https://sourceforge.net/p/wxhexeditor/code/HEAD/tree/trunk/docs/GPL.txt)\
 **State File**: [remnux.packages.wxhexeditor](https://github.com/REMnux/salt-states/blob/master/remnux/packages/wxhexeditor.sls)
+
 
 ## SciTE
 
