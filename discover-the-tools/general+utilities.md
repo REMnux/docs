@@ -220,3 +220,13 @@ Filter data formatted using the JSON format used by Didier Stevens' tools.
 **Author**: Didier Stevens: https://twitter.com/DidierStevens\
 **License**: Public Domain\
 **State File**: [remnux.scripts.myjson-filter](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/myjson-filter.sls)
+
+## Cast
+
+Install and manage SaltStack-based Linux distributions.
+
+**Website**: [https://github.com/ekristen/cast](https://github.com/ekristen/cast)\
+**Author**: Erik Kristensen\
+**License**: MIT License: [https://github.com/ekristen/cast/blob/main/LICENSE](https://github.com/ekristen/cast/blob/main/LICENSE)\
+**Notes**: cast\
+**State File**: [remnux.packages.cast](https://github.com/REMnux/salt-states/blob/master/remnux/packages/cast.sls)
