@@ -63,13 +63,14 @@ Edit text files.
 
 ## ImageMagick
 
-View and manipulate image and related files
+View and manipulate image and related files.
 
-**Website**: [https://imagemagick.org/](https://imagemagick.org/)  
-**Author**: ImageMagick Studio LLC, [https://github.com/ImageMagick/ImageMagick/blob/master/AUTHORS.txt](https://github.com/ImageMagick/ImageMagick/blob/master/AUTHORS.txt)  
-**License**: Free, custom license: [https://github.com/ImageMagick/ImageMagick/blob/master/LICENSE](https://github.com/ImageMagick/ImageMagick/blob/master/LICENSE)  
-**Notes**: display, convert, mogrify, etc.  
+**Website**: [https://imagemagick.org/](https://imagemagick.org/)\
+**Author**: ImageMagick Studio LLC, [https://github.com/ImageMagick/ImageMagick/blob/master/AUTHORS.txt](https://github.com/ImageMagick/ImageMagick/blob/master/AUTHORS.txt)\
+**License**: Free, custom license: [https://github.com/ImageMagick/ImageMagick/blob/master/LICENSE](https://github.com/ImageMagick/ImageMagick/blob/master/LICENSE)\
+**Notes**: display, convert, mogrify, etc.\
 **State File**: [remnux.packages.imagemagick](https://github.com/REMnux/salt-states/blob/master/remnux/packages/imagemagick.sls)
+
 
 ## Visual Studio Code
 
