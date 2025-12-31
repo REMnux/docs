@@ -6,12 +6,13 @@ description: Dynamically Reverse-Engineer Code
 
 ## GNU Project Debugger
 
-Multi-language debugger
+Multi-language debugger.
 
-**Website**: [https://www.sourceware.org/gdb/](https://www.sourceware.org/gdb/)  
-**Author**: [https://www.gnu.org/software/gdb/committee/](https://www.gnu.org/software/gdb/committee/)  
-**License**: GNU General Public License \(GPL\): [https://www.sourceware.org/gdb/download/onlinedocs/gdb.html\#Summary](https://www.sourceware.org/gdb/download/onlinedocs/gdb.html#Summary)  
+**Website**: [https://www.sourceware.org/gdb/](https://www.sourceware.org/gdb/)\
+**Author**: [https://www.gnu.org/software/gdb/committee/](https://www.gnu.org/software/gdb/committee/)\
+**License**: GNU General Public License (GPL): [https://www.sourceware.org/gdb/download/onlinedocs/gdb.html#Summary](https://www.sourceware.org/gdb/download/onlinedocs/gdb.html#Summary)\
 **State File**: [remnux.packages.gdb](https://github.com/REMnux/salt-states/blob/master/remnux/packages/gdb.sls)
+
 
 ## edb
 
