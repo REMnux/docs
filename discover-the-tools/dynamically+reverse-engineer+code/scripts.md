@@ -56,13 +56,14 @@ Execute and deobfuscate JavaScript using Mozilla's standalone JavaScript engine.
 
 ## Rhino Debugger
 
-GUI JavaScript debugger
+GUI JavaScript debugger.
 
-**Website**: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Debugger](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Debugger)  
-**Author**: Mozilla Project  
-**License**: Mozilla Public License v2.0: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License)  
-**Notes**: rhino-debugger  
+**Website**: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Debugger](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Debugger)\
+**Author**: Mozilla Project\
+**License**: Mozilla Public License v2.0: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/License)\
+**Notes**: rhino-debugger\
 **State File**: [remnux.packages.rhino](https://github.com/REMnux/salt-states/blob/master/remnux/packages/rhino.sls)
+
 
 ## PowerShell Core
 
