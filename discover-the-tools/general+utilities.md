@@ -12,7 +12,8 @@ Install and upgrade the REMnux distro.
 **Author**: Harbingers LLC, Erik Kristensen, revisions by Lenny Zeltser\
 **License**: MIT License: [https://github.com/REMnux/remnux-cli/blob/master/LICENSE](https://github.com/REMnux/remnux-cli/blob/master/LICENSE)\
 **Notes**: remnux\
-**State File**: [remnux.tools.remnux-cli](https://github.com/REMnux/salt-states/blob/master/remnux/tools/remnux-cli.sls)
+**State File**: [remnux.tools.remnux-installer](https://github.com/REMnux/salt-states/blob/master/remnux/tools/remnux-installer.sls)
+
 
 
 ## myip
