@@ -74,11 +74,12 @@ View and manipulate image and related files.
 
 ## Visual Studio Code
 
-Powerful source code editor
+Powerful source code editor.
 
-**Website**: [https://code.visualstudio.com/](https://code.visualstudio.com/)  
-**Author**: Microsoft Corporation  
-**License**: Custom license: [https://code.visualstudio.com/License/](https://code.visualstudio.com/License/)  
-**Notes**: code  
+**Website**: [https://code.visualstudio.com/](https://code.visualstudio.com/)\
+**Author**: Microsoft Corporation\
+**License**: Custom license: [https://code.visualstudio.com/License/](https://code.visualstudio.com/License/)\
+**Notes**: code\
 **State File**: [remnux.packages.vscode](https://github.com/REMnux/salt-states/blob/master/remnux/packages/vscode.sls)
+
 
