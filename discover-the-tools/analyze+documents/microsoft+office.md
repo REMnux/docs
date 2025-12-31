@@ -25,12 +25,13 @@ Decrypt a Microsoft Office file with password, intermediate key, or private key 
 
 ## pcodedmp
 
-Disassemble VBA p-code
+Disassemble VBA p-code.
 
-**Website**: [https://github.com/bontchev/pcodedmp](https://github.com/bontchev/pcodedmp)  
-**Author**: Vesselin Bontchev: [https://twitter.com/bontchev](https://twitter.com/bontchev)  
-**License**: GNU General Public License \(GPL\) v3: [https://github.com/bontchev/pcodedmp/blob/master/LICENSE](https://github.com/bontchev/pcodedmp/blob/master/LICENSE)  
+**Website**: [https://github.com/bontchev/pcodedmp](https://github.com/bontchev/pcodedmp)\
+**Author**: Vesselin Bontchev: [https://twitter.com/bontchev](https://twitter.com/bontchev)\
+**License**: GNU General Public License (GPL) v3: [https://github.com/bontchev/pcodedmp/blob/master/LICENSE](https://github.com/bontchev/pcodedmp/blob/master/LICENSE)\
 **State File**: [remnux.python3-packages.pcodedmp](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pcodedmp.sls)
+
 
 ## pcode2code
 
