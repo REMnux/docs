@@ -151,12 +151,13 @@ Run and manage containers.
 
 ## Nautilus
 
-Graphical file manager
+Graphical file manager.
 
 **Website**: [https://gitlab.gnome.org/GNOME/nautilus](https://gitlab.gnome.org/GNOME/nautilus)\
 **Author**: [https://gitlab.gnome.org/Teams](https://gitlab.gnome.org/Teams)\
 **License**: GNU General Public License (GPL) v3: [https://gitlab.gnome.org/GNOME/nautilus/-/blob/master/LICENSE](https://gitlab.gnome.org/GNOME/nautilus/-/blob/master/LICENSE)\
 **State File**: [remnux.packages.nautilus](https://github.com/REMnux/salt-states/blob/master/remnux/packages/nautilus.sls)
+
 
 ## PowerShell  Core
 
