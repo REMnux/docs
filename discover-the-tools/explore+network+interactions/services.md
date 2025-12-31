@@ -54,13 +54,14 @@ Read and write data across network connections.
 
 ## Nginx
 
-Web server
+Web server.
 
 **Website**: [https://nginx.org](https://nginx.org)\
 **Author**: Igor Sysoev, Nginx Inc.\
 **License**: Free, custom license: [https://nginx.org/LICENSE](https://nginx.org/LICENSE)\
-**Notes**: The webroot directory is /var/www/html. Control the daemon using: httpd \<start|stop|status|restart>.\
+**Notes**: The webroot directory is /var/www/html. Control the daemon using: httpd <start|stop|status|restart>.\
 **State File**: [remnux.packages.nginx](https://github.com/REMnux/salt-states/blob/master/remnux/packages/nginx.sls)
+
 
 ## inspircd 3
 
