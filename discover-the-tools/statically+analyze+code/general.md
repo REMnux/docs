@@ -29,13 +29,14 @@ Software reverse engineering tool suite.
 
 ## Cutter
 
-Reverse engineering platform powered by Rizin
+Reverse engineering platform powered by Rizin.
 
-**Website**: [https://cutter.re](https://cutter.re)  
-**Author**: [https://github.com/rizinorg/cutter/graphs/contributors](https://github.com/rizinorg/cutter/graphs/contributors)  
-**License**: GNU General Public License \(GPL\) v3.0: [https://github.com/rizinorg/cutter/blob/master/COPYING](https://github.com/rizinorg/cutter/blob/master/COPYING)  
-**Notes**: If you're planning to use Cutter when running REMnux as a Docker container, you'll need to include the `--privileged` parameter when invoking the REMnux distro image in Docker.  
+**Website**: [https://cutter.re](https://cutter.re)\
+**Author**: [https://github.com/rizinorg/cutter/graphs/contributors](https://github.com/rizinorg/cutter/graphs/contributors)\
+**License**: GNU General Public License (GPL) v3.0: [https://github.com/rizinorg/cutter/blob/master/COPYING](https://github.com/rizinorg/cutter/blob/master/COPYING)\
+**Notes**: If you're planning to use Cutter when running REMnux as a Docker container, you'll need to include the `--privileged` parameter when invoking the REMnux distro image in Docker.\
 **State File**: [remnux.tools.cutter](https://github.com/REMnux/salt-states/blob/master/remnux/tools/cutter.sls)
+
 
 ## Detect-It-Easy <a id="detect-it-easy"></a>
 
