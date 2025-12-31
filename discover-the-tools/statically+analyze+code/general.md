@@ -17,13 +17,14 @@ IDE that allows to inspect, navigate, edit and annotate control flow graphs and 
 
 ## Ghidra
 
-Software reverse engineering tool suite
+Software reverse engineering tool suite.
 
-**Website**: [https://ghidra-sre.org](https://ghidra-sre.org)  
-**Author**: National Security Agency  
-**License**: Apache License 2.0: [https://github.com/NationalSecurityAgency/ghidra/blob/master/LICENSE](https://github.com/NationalSecurityAgency/ghidra/blob/master/LICENSE)  
-**Notes**: Close CodeBrowser before exiting Ghidra to prevent Ghidra from freezing when you reopen the tool \(it's a Ghidra bug\).  
+**Website**: [https://ghidra-sre.org](https://ghidra-sre.org)\
+**Author**: National Security Agency\
+**License**: Apache License 2.0: [https://github.com/NationalSecurityAgency/ghidra/blob/master/LICENSE](https://github.com/NationalSecurityAgency/ghidra/blob/master/LICENSE)\
+**Notes**: Close CodeBrowser before exiting Ghidra to prevent Ghidra from freezing when you reopen the tool (it's a Ghidra bug).\
 **State File**: [remnux.packages.ghidra](https://github.com/REMnux/salt-states/blob/master/remnux/packages/ghidra.sls)
+
 
 ## Cutter
 
