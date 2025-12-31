@@ -12,16 +12,18 @@ The Salt state files for the REMnux distro are grouped into "bundles," so it's e
 
 ## Manually Installing SaltStack
 
-If you decide to interact with REMnux' Salt state files without the REMnux installer, first make sure a recent version of SaltStack is installed by executing the following commands, assuming you're using Ubuntu 20.04 \(Focal\) as the base OS:
+If you decide to interact with REMnux' Salt state files without the REMnux installer, first make sure a recent version of SaltStack is installed by executing the following commands, assuming you're using Ubuntu 24.04 \(Noble\) as the base OS:
 
 ```text
 sudo -s
-wget -O - https://repo.saltproject.io/py3/ubuntu/20.04/amd64/latest/salt-archive-keyring.gpg | apt-key add -
-echo "deb [arch=amd64] https://repo.saltproject.io/py3/ubuntu/20.04/amd64/latest focal main" | tee /etc/apt/sources.list.d/saltstack.list
-apt update -y
-apt install -y salt-minion git 
-systemctl disable salt-minion
-systemctl stop salt-minion
+apt-get update
+apt-get install -y wget gnupg git
+wget -O /etc/apt/keyrings/salt-archive-keyring.pgp https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public
+wget -O /etc/apt/sources.list.d/salt.sources https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources
+apt-get update
+apt-get install -y salt-common
+mkdir -p /etc/salt
+echo "file_client: local" > /etc/salt/minion
 ```
 
 ## Retrieving REMnux State Files
