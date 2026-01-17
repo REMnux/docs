@@ -39,25 +39,24 @@ Boot into your new Ubuntu system. You should find yourself at the command prompt
 Download the REMnux installer from the REMnux website by running this command on your new Ubuntu system:
 
 ```
-wget https://REMnux.org/remnux-cli
+wget https://REMnux.org/remnux
 ```
 
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```
-16761c36ae437e0020346c026c4e6a78299993f496699d7a4b5a44d6946d03a9
+94673eb529ec6a363f332fb68c8e94bcd2ec2137746ccfce5acc45f65016f91b
 ```
 
 To generate the hash of your  file, run:
 
 ```
-sha256sum remnux-cli
+sha256sum remnux
 ```
 
 Set up the REMnux installer by running these commands:
 
 ```
-mv remnux-cli remnux
 chmod +x remnux
 sudo mv remnux /usr/local/bin
 ```

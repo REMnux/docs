@@ -11,25 +11,24 @@ REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on AR
 After logging into your existing system based on Ubuntu 20.04, download the REMnux installer:
 
 ```
-wget https://REMnux.org/remnux-cli
+wget https://REMnux.org/remnux
 ```
 
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```
-c46c732f5ab8f33ce957db8b6f0827554bf100b8a26b4765410b252429a26380
+94673eb529ec6a363f332fb68c8e94bcd2ec2137746ccfce5acc45f65016f91b
 ```
 
 To generate the hash of your  file, run:
 
 ```
-sha256sum remnux-cli
+sha256sum remnux
 ```
 
 Set up the REMnux installer by running these commands:
 
 ```
-mv remnux-cli remnux
 chmod +x remnux
 sudo mv remnux /usr/local/bin
 ```
