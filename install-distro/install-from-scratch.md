@@ -8,29 +8,31 @@ REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on AR
 
 
 
-## Step 1: Install Ubuntu 20.04 <a href="#install-ubuntu" id="install-ubuntu"></a>
+## Step 1: Install Ubuntu 24.04 <a href="#install-ubuntu" id="install-ubuntu"></a>
 
-If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit minimal Ubuntu 20.04 ISO installation file.
+If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit Ubuntu 24.04 Server ISO installation file.
 
-[Download the Ubuntu 20.04 mini ISO image.](http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/mini.iso) SHA-256 hash of the file should be:
+[Download the Ubuntu 24.04 Server ISO image.](https://releases.ubuntu.com/noble/ubuntu-24.04.1-live-server-amd64.iso) You can verify its integrity using the checksums provided on the [Ubuntu download page](https://releases.ubuntu.com/noble/).
 
-```
-c46c732f5ab8f33ce957db8b6f0827554bf100b8a26b4765410b252429a26380
-```
+If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your reference, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 100 GB disk.
 
-Install Ubuntu 20.04 using the downloaded ISO installer. It's OK to follow default settings, but be sure to adjust them according to your needs.
+Install Ubuntu 24.04 using the downloaded ISO installer:
 
-If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your refrence, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 60 GB disk.
-
-{% hint style="success" %}
-When the Ubuntu installer prompts you for details about the user it will create, select the following to stay consistent with the default configuration of REMnux:
-
-Full name: `REMnux User`\
-Username: `remnux`\
-Password: `malware`
-{% endhint %}
-
-At the "Software selection" screen don't select any software and simply press "Continue." The REMnux installer will install the necessary packages in a later step.
+1. Boot from the ISO and select "Try or Install Ubuntu Server".
+2. Select your language and keyboard layout.
+3. When prompted for the installation type, select "Ubuntu Server (minimized)".
+4. Configure the network. DHCP is typically fine; adjust if needed.
+5. Skip the proxy configuration unless your environment requires it.
+6. Accept the default Ubuntu archive mirror.
+7. When configuring storage, **uncheck "Set up this disk as an LVM group"** to use a simpler partition layout.
+8. When prompted for the profile setup, use the following to stay consistent with the default REMnux configuration:
+   - Full name: `REMnux User`
+   - Username: `remnux`
+   - Password: `malware`
+9. Skip the Ubuntu Pro setup.
+10. Don't install OpenSSH server unless you need remote access.
+11. Don't select any additional snaps to install.
+12. Wait for the installation to complete and reboot.
 
 Boot into your new Ubuntu system. You should find yourself at the command prompt. Login using the credentials you specified during the Ubuntu installation.
 
@@ -39,7 +41,7 @@ Boot into your new Ubuntu system. You should find yourself at the command prompt
 Download the REMnux installer from the REMnux website by running this command on your new Ubuntu system:
 
 ```
-wget https://REMnux.org/remnux
+curl -O https://REMnux.org/remnux
 ```
 
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
@@ -61,25 +63,17 @@ chmod +x remnux
 sudo mv remnux /usr/local/bin
 ```
 
-## Step 2: Install Dependencies <a href="#install-gnupg" id="install-gnupg"></a>
-
-The minimal version of Ubuntu includes very few components. Install GnuPG, so that the REMnux installer can automatically validate the signature of the REMux configuration files it will download during the installation process.  You might also need to install the curl package. To do this, run:
-
-```
-sudo apt install -y gnupg curl
-```
-
 ## Step 3: Run the REMnux Installer <a href="#run-remnux-installer" id="run-remnux-installer"></a>
 
 You're now ready to install the REMnux distro.
 
-If you're planning to run REMnux in a local lab, kick off the installation by runing this command:
+If you're planning to run REMnux in a local lab, kick off the installation by running this command:
 
 ```
 sudo remnux install
 ```
 
-If you're depoying REMnux in a remote cloud environment and will need to keep the SSH daemon enabled for remotely accessing the system, use the following command instead to avoid disabling the SSH daemon. Remember to harden the system after it installs to avoid unauthorized logins:
+If you're deploying REMnux in a remote cloud environment and will need to keep the SSH daemon enabled for remotely accessing the system, use the following command instead to avoid disabling the SSH daemon. Remember to harden the system after it installs to avoid unauthorized logins:
 
 ```
 sudo remnux install --mode=cloud
@@ -88,7 +82,13 @@ sudo remnux install --mode=cloud
 The installation will take about an hour, depending on your resources and internet connection.
 
 {% hint style="info" %}
-If the REMnux installer produces an error, diagnose the issue by reviewing the saltstack.log file under /var/cache/remnux/cli in the subdirectory that matches the REMnux state-files version you're installing. Search for the log file for `result: false` messages and look at the surrounding 5 lines or the 8 lines above each message to see the state file that caused the issue. (`grep -i -C 5 'result: false'` or `grep -i -B 8 'result: false'`).
+If the REMnux installer produces an error, diagnose the issue by running:
+
+```
+remnux results
+```
+
+This command shows installation results and highlights any failures.
 {% endhint %}
 
 ## Step 4: Reboot the  REMnux System <a href="#reboot-remnux" id="reboot-remnux"></a>

@@ -132,7 +132,7 @@ If you are running [REMnux as a Docker container](../install-distro/remnux-as-a-
 If you installed REMnux using one installation mode, for example `addon`, you can switch to another installation mode, for example `dedicated`, by taking the following steps:
 
 1. Edit the /etc/remnux-config and change the mode from `addon` to `dedicated`.
-2. Run the command `remnux update`.
+2. Run the command `sudo remnux install`.
 3. Reboot.
 
 ## Combining REMnux and SIFT Workstation <a href="#combine-remnux-sift" id="combine-remnux-sift"></a>

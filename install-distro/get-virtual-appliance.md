@@ -6,6 +6,10 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
 {% endhint %}
 
+{% hint style="info" %}
+The current REMnux virtual appliance is based on Ubuntu 20.04 (Focal). A Noble-based virtual appliance is in development.
+{% endhint %}
+
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
 The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 20.04 (Focal).
@@ -72,7 +76,7 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 {% endtab %}
 {% endtabs %}
 
-When importing the REMnux virtual appliance, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. As a point of reference, most people find 4 GB RAM and 60 GB disk sufficient.
+When importing the REMnux virtual appliance, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. As a point of reference, most people find 4 GB RAM and 100 GB disk sufficient.
 
 ## Step 4: Start the REMnux Virtual Machine <a href="#start-remnux-vm" id="start-remnux-vm"></a>
 
@@ -171,7 +175,7 @@ After this:
 After installing the REMnux virtual machine, run the following command inside the VM as a regular, non-root user to upgrade it to the latest version of the distro:
 
 ```
-remnux upgrade
+sudo remnux install
 ```
 
 For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](keep-the-distro-up-to-date.md) section.

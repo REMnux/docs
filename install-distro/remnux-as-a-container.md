@@ -2,6 +2,10 @@
 
 You can run the REMnux distro as a [Docker](https://www.docker.com) container by using a prebuilt image, hosted in [the REMnux repository on Docker Hub](https://hub.docker.com/repository/docker/remnux/remnux-distro).
 
+{% hint style="info" %}
+The current REMnux container is based on Ubuntu 20.04 (Focal). A Noble-based container is in development.
+{% endhint %}
+
 ## Local Interactive Shell
 
 If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image \(approximately 4 GB\) if your system doesn't already have it.
