@@ -14,7 +14,7 @@ sudo remnux install
 If you're running the REMnux distro in a virtual machine, consider taking a snapshot before upgrading or updating your VM, so you can revert to a good state if something goes wrong.
 {% endhint %}
 
-## Issues Upgrading and Updating the REMnux Distro <a href="#issues-upgrading-updating-remnux" id="issues-upgrading-updating-remnux"></a>
+## Issues Updating the REMnux Distro <a href="#issues-upgrading-updating-remnux" id="issues-upgrading-updating-remnux"></a>
 
 If you receive an error upgrading or updating the REMnux distro when using the `remnux` command, first make sure that you're running the command as a regular, non-root user. Also, try rebooting your system and trying the operation again.
 
