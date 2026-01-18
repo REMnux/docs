@@ -32,5 +32,14 @@ docker run -d -p 22:22 remnux/remnux-distro:noble
 
 Once you connected to your REMnux container using SSH, you can access the REMnux graphical interface by [tunneling the GUI through SSH](../tips/remnux-config-tips.md#gui-cloud-remnux).
 
+## Tools Excluded from the Container
+
+To minimize the container image size, the following tools are not included:
+
+* **VS Code**: Access the container using VS Code's [Remote-SSH](https://code.visualstudio.com/docs/remote/ssh) extension from your host instead.
+* **Wine and Wine-dependent tools**: scdbg, ssview, shellcode2exe-bat, and runsc.
+
+To install these tools, run `remnux install` in the container to upgrade to a full installation. Alternatively, selectively install packages using `apt update` followed by `apt install code`, `apt install scdbg`, etc.
+
 For more details about Docker images available as part of the REMnux toolkit, see [Docker Images of Malware Analysis Tools](../run-tools-in-containers/remnux-containers.md).
 
