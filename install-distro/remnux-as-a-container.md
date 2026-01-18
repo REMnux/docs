@@ -2,18 +2,14 @@
 
 You can run the REMnux distro as a [Docker](https://www.docker.com) container by using a prebuilt image, hosted in [the REMnux repository on Docker Hub](https://hub.docker.com/repository/docker/remnux/remnux-distro).
 
-{% hint style="info" %}
-The current REMnux container is based on Ubuntu 20.04 (Focal). A Noble-based container is in development.
-{% endhint %}
-
 ## Local Interactive Shell
 
-If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image \(approximately 4 GB\) if your system doesn't already have it.
+If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image \(approximately 14 GB\) if your system doesn't already have it.
 
-To run the REMnux version built on top of Ubuntu 20.04 \(Focal\):
+To run the REMnux version built on top of Ubuntu 24.04 \(Noble\):
 
 ```text
-docker run --rm -it -u remnux remnux/remnux-distro:focal bash
+docker run --rm -it -u remnux remnux/remnux-distro:noble bash
 ```
 
 To map a local directory into the container's /home/remnux/files directory, you could use a command like this by supplying the appropriate directory name like this:
@@ -28,10 +24,10 @@ The `--rm` parameter above directs Docker to create a transient container, which
 
 To access the REMnux distro container using SSH, you can invoke it by mapping your system's TCP port 22 to the container's internal TCP port 22. One way to do this is to use the following command, which will open the SSH listener and run the container in the background.
 
-To run the REMnux version built on top of Ubuntu 20.04 \(Focal\):
+To run the REMnux version built on top of Ubuntu 24.04 \(Noble\):
 
 ```text
-docker run -d -p 22:22 remnux/remnux-distro:focal
+docker run -d -p 22:22 remnux/remnux-distro:noble
 ```
 
 Once you connected to your REMnux container using SSH, you can access the REMnux graphical interface by [tunneling the GUI through SSH](../tips/remnux-config-tips.md#gui-cloud-remnux).
