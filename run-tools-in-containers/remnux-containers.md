@@ -18,7 +18,7 @@ The following Docker images of malware analysis tools are available as part of R
 
 [Thug](https://github.com/buffer/thug) is a low-interaction honeyclient for examining suspicious websites. This tool was created by Angelo Dell'Aera. It's licensed under [GNU General Public License (GPL) v2](https://github.com/buffer/thug/blob/master/LICENSE.txt). In addition to being available as a Docker image, [Thug is also installed](../discover-the-tools/explore+network+interactions/connecting.md#thug) as part of the REMnux distro.
 
-One way to run Thug as a Docker image is to invoke it using the following command to open a shel in the container where you can run `thug` with the desired parameters, such as -F to enable file logging).
+One way to run Thug as a Docker image is to invoke it using the following command to open a shell in the container where you can run `thug` with the desired parameters, such as -F to enable file logging).
 
 ```
 docker run --rm -it --entrypoint "/bin/bash" remnux/thug
@@ -42,7 +42,7 @@ For documentation about this toolkit, including the listing of its tools, see [h
 
 ## JSDetox JavaScript Analysis Tool <a href="#jsdetox" id="jsdetox"></a>
 
-[JSDetox](http://www.relentless-coding.com/projects/jsdetox) is a browser-based tool for analyzing and deobfuscating JavaScript. It was created by [Sven Taute](https://twitter.com/sven\_t) and is licensed under [GNU General Public License (GPL) v2](https://github.com/svent/jsdetox).
+[JSDetox](https://www.relentless-coding.com/projects/jsdetox) is a browser-based tool for analyzing and deobfuscating JavaScript. It was created by [Sven Taute](https://twitter.com/sven\_t) and is licensed under [GNU General Public License (GPL) v2](https://github.com/svent/jsdetox).
 
 You can use the following command to launch the JSDetox Docker image, with the application listening locally on TCP port 3000. You can then connect to http://localhost:3000 using your web browser:
 
@@ -50,7 +50,7 @@ You can use the following command to launch the JSDetox Docker image, with the a
 docker run -d --rm --name jsdetox -p 3000:3000 remnux/jsdetox
 ```
 
-To stop JSDetox, use  the command `docker stop jsdetox`. The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/jsdetox/).
+To stop JSDetox, use the command `docker stop jsdetox`. The remnux/jsdetox image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/jsdetox/).
 
 ## de4js JavaScript Deobfuscator and Unpacker <a href="#de-4-js" id="de-4-js"></a>
 
@@ -66,13 +66,17 @@ You can use the following command to launch the de4js Docker image, with the app
 It's important to remember the trailing slash as part of the de4js URL http://localhost:4000/de4js/.
 {% endhint %}
 
-To stop de4js, use  the command `docker stop de4js`. The remnux/de4js image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/de4js/).
+To stop de4js, use the command `docker stop de4js`. The remnux/de4js image is hosted on [its Docker Hub page](https://hub.docker.com/r/remnux/de4js/).
 
 ## Rekall Memory Forensic and Incident Response Framework <a href="#rekall" id="rekall"></a>
 
+{% hint style="warning" %}
+The Rekall project has been archived by Google and is no longer maintained. Consider using [Volatility 3](https://github.com/volatilityfoundation/volatility3) for memory forensics instead.
+{% endhint %}
+
 [Rekall](https://github.com/google/rekall) is a set of tools for extracting digital artifacts from memory and other aspects of a system when performing incident response. Its components were [written by multiple people](https://github.com/google/rekall/blob/master/AUTHORS.md), and are licensed under  [GNU General Public License (GPL) v2](https://github.com/google/rekall/blob/master/LICENSE.txt).&#x20;
 
-To run Rekall, create a directory where you'll store the files you plan to examine. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directry mapped as `/home/nonroot/files` inside the container:
+To run Rekall, create a directory where you'll store the files you plan to examine. Then, use a command like this to open a shell inside the container where you can run `rekall` and have your evidence directory mapped as `/home/nonroot/files` inside the container:
 
 ```
 docker run --rm -it -v <files_directory>:/home/nonroot/files remnux/rekall bash
@@ -84,7 +88,7 @@ The password for the container's user `nonroot` is `nonroot`. The remnux/rekall 
 
 [RetDec](https://retdec.com) is a decompiler that supports a variety of file formats, include PE and ELF, and several 32 and 64-bit architectures. It was created by [Avast Software](https://www.avast.com), and is licensed under [MIT License](https://github.com/avast/retdec/blob/master/LICENSE) with [third-party components](https://github.com/avast/retdec/blob/master/LICENSE-THIRD-PARTY) that are distributed under their own licenses.
 
-To run RetDec, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/tmp/files` inside the container:
+To run RetDec, create a directory where you'll store the files you plan to examine. Then, open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/tmp/files` inside the container:
 
 ```
 docker run -it --rm -v <files_directory>:/tmp/files remnux/retdec bash
@@ -93,20 +97,20 @@ docker run -it --rm -v <files_directory>:/tmp/files remnux/retdec bash
 The password for the container's user `retdec` is `retdec`. The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
 
 {% hint style="info" %}
-The commands provided by RetDec include start with the `retdec-` prefix and include retdec-decompiler.py, retdec-unpacker, and retdec-fileinfo.
+The commands provided by RetDec start with the `retdec-` prefix and include retdec-decompiler.py, retdec-unpacker, and retdec-fileinfo.
 {% endhint %}
 
 ## Rizin Reverse-Engineering Framework <a href="#rizin" id="rizin"></a>
 
 [Rizin](https://rizin.re) is a reverse-engineering framework that includes a disassembler and analysis capabilities for a variety of executable formats and architectures. It's licensed under [GNU Lesser General Public License (LGPL) v3](https://github.com/rizinorg/rizin/blob/master/COPYING). This is a [fork of the Radare2 project](https://rizin.re/posts/faq/#why-did-you-fork-radare2).
 
-To run Rizin, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run Rizin commands (`rizin` and others that start with `rz-`) and have your local directory mapped as `/home/nonroot/workdir` inside the container:
+To run Rizin, create a directory where you'll store the files you plan to examine. Then, open a shell inside the container where you can run Rizin commands (`rizin` and others that start with `rz-`) and have your local directory mapped as `/home/nonroot/workdir` inside the container:
 
 ```
 docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/rizin
 ```
 
-If you're planning to peform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
+If you're planning to perform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
 The password for the container's user `nonroot` is `nonroot`. The remnux/rizin image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rizin).
 
@@ -114,17 +118,21 @@ The password for the container's user `nonroot` is `nonroot`. The remnux/rizin i
 
 [Radare2](https://www.radare.org/) is a reverse-engineering framework that includes a disassembler and analysis capabilities for a variety of executable formats and architectures. It's licensed under [GNU Lesser General Public License (LGPL) v3](https://github.com/radareorg/radare2/blob/master/COPYING).
 
-To run Radare2, create a directory where you'll store the files you plan to examine. Then,  open a shell inside the container where you can run Radare2 commands and have your local directory mapped as `/home/nonroot/workdir` inside the container:
+To run Radare2, create a directory where you'll store the files you plan to examine. Then, open a shell inside the container where you can run Radare2 commands and have your local directory mapped as `/home/nonroot/workdir` inside the container:
 
 ```
 docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
 ```
 
-If you're planning to peform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
+If you're planning to perform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
 The password for the container's user `nonroot` is `nonroot`. The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
 ## Viper Binary Analysis and Management Framework
+
+{% hint style="warning" %}
+The Viper project has been archived and is no longer maintained.
+{% endhint %}
 
 [Viper](https://github.com/viper-framework/viper) is a framework for analyzing and managing your collection of malware samples. It was created by [Claudio Guarnieri](https://nex.sx/) and is licensed under [BSD 3-Clause License](https://github.com/viper-framework/viper/blob/master/LICENSE).
 
