@@ -73,7 +73,7 @@ Analyze zip-compressed files.
 **License**: Public Domain\
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
 
-## msitools <a href="#numbers-to-string" id="numbers-to-string"></a>
+## msitools <a href="#msitools" id="msitools"></a>
 
 Create, inspect and extract Windows Installer (.msi) files.
 

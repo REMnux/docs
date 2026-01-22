@@ -15,7 +15,7 @@ Sometimes you might need to reboot for the setting to take into effect.&#x20;
 
 You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
 
-## Adjusting Text Size and UI Scaling <a href="#port-53-listener" id="port-53-listener"></a>
+## Adjusting Text Size and UI Scaling <a href="#text-size-scaling" id="text-size-scaling"></a>
 
 If the fonts and other user interface elements are too small in your REMnux virtual machine, you can increase the UI scaling factor by running this command on REMnux:
 
