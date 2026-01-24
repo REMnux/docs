@@ -6,13 +6,9 @@ The easiest way to get the REMnux distro is to download the REMnux virtual appli
 REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
 {% endhint %}
 
-{% hint style="info" %}
-The current REMnux virtual appliance is based on Ubuntu 20.04 (Focal). A Noble-based virtual appliance is in development.
-{% endhint %}
-
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 20.04 (Focal).
+The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 24.04 (Noble).
 
 Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. Download your preferred OVA file:
 
@@ -20,13 +16,13 @@ Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get
 {% tab title="General OVA" %}
 This general OVA file works with most hypervisors. If you're using VirtualBox, get the VirtualBox version instead from the other tab:
 
-[Download the general OVA file.](https://download.remnux.org/202510/remnux-focal-amd64.ova)
+[Download the general OVA file.](https://download.remnux.org/202601/remnux-noble-amd64.ova)
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
 This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
-[Download the VirtualBox OVA file.](https://download.remnux.org/202510/remnux-focal-virtualbox-amd64.ova)
+[Download the VirtualBox OVA file.](https://download.remnux.org/202601/remnux-noble-amd64-virtualbox.ova)
 {% endtab %}
 {% endtabs %}
 
@@ -43,7 +39,7 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 The general OVA file:
 
 ```
-796a259733604b10c69a7b060e64eeccd459e33f327f8d9faf9fd22a1ca19645
+156e0cf2db2d580cd2d90b6dc1aaf892d5bd25d340c122f9a007887c0336e151
 ```
 {% endtab %}
 
@@ -51,7 +47,7 @@ The general OVA file:
 The VirtualBox OVA file:
 
 ```
-c93477a075a61398e6cc3e03b3b6ba8269b74f92cdc13d151d6b566bc86196fc
+7cc8b55a8db32a1a9d42839fe3454922a6eb45010419428f3ce5fece4193e184
 ```
 {% endtab %}
 {% endtabs %}
@@ -108,30 +104,20 @@ If your REMnux virtual machine is unable to communicate over the network, check 
 3. Edit the /etc/netplan/01-netcfg.yaml file (e.g., use the `code` command). Under "ethernets:" replace the name there (e.g, "ens33") with the name of your network card (e.g., "enp0s17").
 4. Reboot your REMnux virtual machine.
 
-### VMware
+If you're building your own VirtualBox VM (not using the pre-built VirtualBox OVA), install VirtualBox Guest Additions from the ISO for full functionality:
 
-VMware sometimes conflicts with the Ubuntu graphical environment, which by default uses [Wayland](https://wiki.ubuntu.com/Wayland) display protocol. The problems manifest themselves through the VM being unresponsive to keyboard and mouse; clipboard sharing and copy-and-paste VMware features might not be working, too.
+1. Devices → Insert Guest Additions CD image
+2. Navigate to the mounted CD under `/media/remnux/` and run `sudo ./VBoxLinuxAdditions.run`
+3. Reboot
 
-If you encounter this issue, try configring your REMnux virtual machine to switch from Wayland to Xorg. The change should be unnoticeable to your user experience, but it might address the VMware issue. To make the switch, switch to the root user account (`sudo -s`) and edit the file /etc/gdm3/custom.conf. Uncomment this line:
-
-```
-#WaylandEnable=false
-```
-
-So it says:
-
-```
-WaylandEnable=false
-```
-
-Then reboot your virtual machine (`reboot`).
+Note: The Ubuntu `virtualbox-guest-*` packages do not provide auto-resize and clipboard support. Use the ISO-based Guest Additions instead.
 
 ### Hyper-V
 
 It's possible to import the pre-built REMnux virtual appliance into Hyper-V, but you'll need to take a few conversion steps. You'll need to extract the contents of the REMnux OVA file to obtain the enclosed VMDK file that captures the virtual disk of the distro, then convert it to the VHD format supported by Hyper-V:
 
 1. Download the General OVA of the REMnux distro, as [outlined above](get-virtual-appliance.md#download-virtual-appliance).
-2. Extract the downloaded OVA file using a tool such as "tar". One of the extracted files will have the .vmdk.gz name, such as remnux-v7-focal-disk1.vmdk.gz.
+2. Extract the downloaded OVA file using a tool such as "tar". One of the extracted files will have the .vmdk.gz name, such as remnux-noble-disk1.vmdk.gz.
 3. Decompress the extracted .vmdk.gz file using a tool such as "gunzip" to generate a file with the .vmdk extension.
 4. Use [qemu-img](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) (`qemu-img convert -O vhdx -o subformat=dynamic`) or [StarWind V2V Converter](https://www.starwindsoftware.com/starwind-v2v-converter) to convert the .vmdk file to the VHD format supported by Hyper-V.
 5. Import the generated VHD file into Hyper-V.
@@ -149,26 +135,23 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 
 ### KVM/QEMU
 
-If you converted the REMnux virtual appliance to KVM/QEMU,  install the "[spice-vdagent](http://manpages.ubuntu.com/manpages/cosmic/man1/spice-vdagent.1.html)" package in the virtual machine to be able to resize the windows of your VM and copy/paste between it and your host.
+If you converted the REMnux virtual appliance to KVM/QEMU, run `remnux install` to automatically install spice-vdagent (display resize, copy/paste) and other KVM guest tools.
 
 ### Proxmox
 
-If you plan to use the REMnux virtual appliance in Proxmox, [follow the steps in this article](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) to import the OVA. However, note that the article incorrectly specifies a CPU type of `kvm64` in the screenshots. The correct CPU type for REMnux is `qemu64`.&#x20;
+To use REMnux in Proxmox, [import the general OVA](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) using CPU type `qemu64` (not `kvm64`). After importing:
 
-After importing the OVA to Proxmox, go into the Options for the VM and modify Boot Order to enable the disk that was imported as an OVA.
+1. Go to VM > Options > Boot Order and enable the imported disk.
+2. Optionally set VM > Hardware > Display to SPICE(qxl) for better graphics.
 
-Once done, consider taking the following steps using the Proxmox interface:
+**First Boot:** The SPICE display may cause boot issues before guest tools are installed. If the VM fails to boot properly:
 
-1. VM > Hardware > Display > Set to > SPICE(qxl)
-2. VM > Hardware > Option > Spice Enhancements > Video Streaming: all
+1. Set Hardware > Display to "Standard VGA" temporarily.
+2. Boot the VM and log in.
+3. Run `remnux install` to install guest tools and apply display fixes.
+4. Shut down, change display back to SPICE, and boot normally.
 
-After this:
-
-1. Switch CPU type to 'qemu32'.
-2. Boot the VM and let it fail startup. It'll be obvious it's not booting properly because the display will not work properly, and you'll never see the desktop.
-3. Hard power off the VM.
-4. Switch CPU type to 'qemu64'.
-5. Boot the VM. It should properly initialize the display and boot to the desktop.
+After running `remnux install`, Proxmox integration (qemu-guest-agent, spice-vdagent, nomodeset) is configured automatically.
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
