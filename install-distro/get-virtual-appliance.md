@@ -8,7 +8,7 @@ REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on AR
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance approximately 5 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 24.04 (Noble).
+The REMnux virtual appliance is approximately 7 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 24.04 (Noble).
 
 Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. Download your preferred OVA file:
 
@@ -30,7 +30,7 @@ This VirtualBox OVA file is specifically for VirtualBox. Get the general version
 Some browsers ([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)) change the extension of the OVA file after downloading it, possibly giving it the incorrect .ovf extension. If that happens, rename the file so it has the .ova extension before proceeding.
 {% endhint %}
 
-## Step 2: Confirm the Hash the OVA File <a href="#confirm-hash" id="confirm-hash"></a>
+## Step 2: Confirm the Hash of the OVA File <a href="#confirm-hash" id="confirm-hash"></a>
 
 Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum` or `shasum` to make sure it matches this expected value:
 
@@ -78,7 +78,7 @@ When importing the REMnux virtual appliance, allocate resources such as RAM and 
 
 Once you start your REMnux virtual machine, it will automatically log you into the REMnux environment.
 
-There is no logon screen for accessing the REMnux environment, because analysts generally use REMnux on a system to which physical access is already restricted. When you need to elevate your privileges or access the REMnux virtual appliance remotely, note the follow default credentials:
+There is no logon screen for accessing the REMnux environment, because analysts generally use REMnux on a system to which physical access is already restricted. When you need to elevate your privileges or access the REMnux virtual appliance remotely, note the following default credentials:
 
 {% hint style="success" %}
 Username: `remnux`\
@@ -97,7 +97,7 @@ If running VirtualBox on Windows 10, be sure to [disable Hyper-V](https://forums
 
 If your REMnux window is too small when you boot it up the system in VirtualBox, activate the Scaling Mode for the VM via the VirtualBox menu View > Scaling Mode.
 
-If your REMnux virtual machine is unable to communicate over the network, check whether has a network interface other than the loopback ("lo") by running the `ifconfig` command. If a non-loopback interface is missing, perform the following steps to add it:
+If your REMnux virtual machine is unable to communicate over the network, check whether it has a network interface other than the loopback ("lo") by running the `ifconfig` command. If a non-loopback interface is missing, perform the following steps to add it:
 
 1. Run the `networkctl` command to determine the name of the adapter ("link") of type "ether". It might be named something like "enp0s17".
 2. Set up the network interface by replacing _YOUR\_NIC_ in the following command with the name you've identified in the previous step (e.g., "enp0s17)": `sudo ip link set up YOUR_NIC`

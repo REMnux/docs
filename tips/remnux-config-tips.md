@@ -111,6 +111,8 @@ If REMnux is running in VirtualBox, you can go to the Devices menu of VirtualBox
 
 In VMware, similar functionality is supported by the open-vm-tools package, which is prenistalled in the general version of the REMnux virtual appliance and if you installed the distro from scratch using the REMnux installer. You can modify settings of your REMnux virtual machine to disable `Drag and Drop` and `Copy and Paste`, if you wish; they're enabled by default. You can also enable `Shared Folders`, which are disabled by default.
 
+REMnux automatically detects your hypervisor and installs appropriate guest tools when you run `remnux install`. On VMware, it installs open-vm-tools; on KVM/QEMU/Proxmox, it installs qemu-guest-agent and spice-vdagent. For VirtualBox, install Guest Additions from the ISO as described in [the virtual appliance guide](../install-distro/get-virtual-appliance.md#virtualbox).
+
 {% hint style="danger" %}
 Enabling hypervisor-based file and clipboard sharing capabilities someone increases the risk that if you run malicious code in your REMnux virtual machine, the malware will adversely affect your underlying code. Many analysts consider this an acceptable risk.
 {% endhint %}
