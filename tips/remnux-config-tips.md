@@ -11,7 +11,7 @@ To change the keyboard layout of your REMnux system, perhaps to another language
 5. Select the desired input source and click the Add button.
 6. Close the Settings window.
 
-Sometimes you might need to reboot for the setting to take into effect.&#x20;
+Sometimes you might need to reboot for the setting to take into effect.
 
 You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
 
@@ -20,10 +20,8 @@ You can switch between the keyboard layouts by clicking the language icon in the
 If the fonts and other user interface elements are too small in your REMnux virtual machine, you can increase the UI scaling factor by running this command on REMnux:
 
 ```
-gsettings set org.gnome.desktop.interface scaling-factor 2
+set-scale
 ```
-
-You can adjust the scaling factor according to your needs. By default, its value is `1`.
 
 ## Localhost Listener on TCP and UDP Ports 53 <a href="#port-53-listener" id="port-53-listener"></a>
 
@@ -42,32 +40,6 @@ If you wish to disable systemd-resolved permanently issue the following command.
 ```
 sudo systemctl disable systemd-resolved
 ```
-
-## REMnux Behind a Non-Transparent Proxy <a href="#behind-proxy" id="behind-proxy"></a>
-
-The [REMnux installer](../behind-the-scenes/technologies/remnux-installer.md) is presently not compatible with non-transparent network proxies. You can still set up and use REMnux behind such a proxy, though this will involve applying [Salt state files](../behind-the-scenes/technologies/saltstack-management.md) directly, instead of using the REMnux installer to set up and upgrade your REMnux system.
-
-You can start with either a pristine compatible Linux system where you'll either [install REMnux](../install-distro/install-from-scratch.md) from scratch or [add REMnux](../install-distro/add-to-existing-system.md), or you can start with a prebuilt [REMnux virtual appliance](../install-distro/get-virtual-appliance.md). Configure that system to use your proxy like you'd configure any Ubuntu system. To do this, you'll usually need to:
-
-* [Configure APT to use your proxy](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/) by defining the necessary details in /etc/apt/apt.conf.d.
-* Define environment variables `https_proxy`, `http_proxy`, and `ftp_proxy` to specify your proxy.
-
-If you're not starting with a prebuit REMnux virtual appliance, follow [instructions to manually install SaltStack](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#manually-installing-saltstack) on the system you'll be using for REMnux. Next, modify /etc/salt/minion to include your proxy details:
-
-```
-# Set http proxy information for the minion when doing requests
-proxy_host:
-proxy_port:
-proxy_username:
-proxy_password:
-```
-
-Next, to install REMnux or upgrade it later, follow instructions to:
-
-1. [Retrieve the latest REMnux Salt state files.](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#retrieving-remnux-state-files)
-2. [Invoke SaltStack to install the state file grouping](https://docs.remnux.org/behind-the-scenes/technologies/state-files-without-the-remnux-installer#invoking-saltstack-to-install-state-file-groupings) appropriate for you (e.g., `remnux.dedicated`)
-
-If you have the expertise, [consider suggesting a revision to REMnux installer](https://app.gitbook.com/@lennyzeltser/s/remnux/get-involved/enhancement-ideas#the-remnux-installer-should-work-with-non-transparent-proxies) that corrects its inability to connect through non-transparent proxies.
 
 ## GUI Interactions When REMnux Is in the Cloud <a href="#gui-cloud-remnux" id="gui-cloud-remnux"></a>
 
