@@ -96,6 +96,8 @@ remnux results
 ```
 
 This command shows installation results and highlights any failures.
+
+If you need further help, you can open an issue in [the REMnux salt-states repo on Github](https://github.com/REMnux/salt-states/issues) and share out output of `remnux results` as well as your results.yml and saltstack.log file.
 {% endhint %}
 
 ## Step 4: Reboot the REMnux System <a href="#reboot-remnux" id="reboot-remnux"></a>

@@ -147,7 +147,7 @@ If you converted the REMnux virtual appliance to KVM/QEMU, use Standard VGA disp
 
 ### Proxmox
 
-REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox VE. Download it from the [Proxmox QCOW2 tab above](get-virtual-appliance.md#download-virtual-appliance).
+REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox Virtual Environment. Download it from the [Proxmox QCOW2 link above](get-virtual-appliance.md#download-virtual-appliance).
 
 To import the QCOW2 file:
 
@@ -159,19 +159,19 @@ To import the QCOW2 file:
 
 The QCOW2 image is pre-configured with:
 
-* SPICE display support (qxl)
+* SPICE display support
 * qemu-guest-agent
 * spice-vdagent (clipboard, display resize)
 * nomodeset kernel parameter
 
-**Alternative:** You can also [import the general OVA](https://syncbricks.com/how-to-import-ova-to-proxmox/) using CPU type `qemu64`. For the first boot, set the display to Standard VGA (not SPICE). After booting, run `remnux install` to install guest tools and apply display fixes. You can then switch to SPICE for better graphics.
+Alternative: You can also [import the general OVA](https://syncbricks.com/how-to-import-ova-to-proxmox/) using CPU type `qemu64`. For the first boot, set the display to Standard VGA (not SPICE). After booting, run `remnux install` to install guest tools and apply display fixes. You can then switch to SPICE for better graphics.
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
 After installing the REMnux virtual machine, run the following command inside the VM as a regular, non-root user to upgrade it to the latest version of the distro:
 
 ```
-sudo remnux install
+remnux install
 ```
 
 For more details about keeping your REMnux environment current, so you benefit from the latest enhancements, see the [Keeping REMnux Up to Date](keep-the-distro-up-to-date.md) section.

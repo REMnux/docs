@@ -7,7 +7,7 @@ Unless you've installed REMnux in the `addon` mode, the distro disabled automate
 Keep your REMnux system up to date by running the following command once in a while as a regular, non-root user, so you benefit from the latest enhancements. Be sure to first connect the system to the internet. You don't need to separately update the OS or its packages. The REMnux installer handles that automatically.
 
 ```
-sudo remnux install
+remnux install
 ```
 
 {% hint style="success" %}
@@ -21,9 +21,9 @@ If you receive an error upgrading or updating the REMnux distro when using the `
 If you still run into problems, refresh your [APT package database](../behind-the-scenes/technologies/debian-packages.md) by issuing the following commands, then try the operation again:
 
 ```
-sudo apt update
-sudo apt autoremove
-sudo apt --fix-broken install
+apt update
+apt autoremove
+apt --fix-broken install
 ```
 
 If the issue persists, diagnose the problem by running:
@@ -32,6 +32,4 @@ If the issue persists, diagnose the problem by running:
 remnux results
 ```
 
-This command shows installation results and highlights any failures.
-
-## &#x20;<a href="#run-in-containers" id="run-in-containers"></a>
+This command shows installation results and highlights any failures. If you need further help, you can open an issue in [the REMnux salt-states repo on Github](https://github.com/REMnux/salt-states/issues) and share out output of `remnux results` as well as your results.yml and saltstack.log file.

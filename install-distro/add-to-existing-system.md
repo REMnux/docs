@@ -20,7 +20,7 @@ Validate that the SHA-256 hash of the downloaded file to make sure it matches th
 94673eb529ec6a363f332fb68c8e94bcd2ec2137746ccfce5acc45f65016f91b
 ```
 
-To generate the hash of your  file, run:
+To generate the hash of your file, run:
 
 ```
 sha256sum remnux
@@ -55,9 +55,11 @@ remnux results
 ```
 
 This command shows installation results and highlights any failures.
+
+If you need further help, you can open an issue in [the REMnux salt-states repo on Github](https://github.com/REMnux/salt-states/issues) and share out output of `remnux results` as well as your results.yml and saltstack.log file.
 {% endhint %}
 
-## Step 3: Reboot the  REMnux System <a href="#reboot-remnux" id="reboot-remnux"></a>
+## Step 3: Reboot the REMnux System <a href="#reboot-remnux" id="reboot-remnux"></a>
 
 Once the REMnux installation finishes, reboot your new REMnux system by typing:
 

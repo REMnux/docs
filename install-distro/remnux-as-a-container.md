@@ -4,29 +4,29 @@ You can run the REMnux distro as a [Docker](https://www.docker.com) container by
 
 ## Local Interactive Shell
 
-If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image \(approximately 11 GB\) if your system doesn't already have it.
+If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image (approximately 11 GB) if your system doesn't already have it.
 
-To run the REMnux version built on top of Ubuntu 24.04 \(Noble\):
+To run the REMnux version built on top of Ubuntu 24.04 (Noble):
 
-```text
+```
 docker run --rm -it -u remnux remnux/remnux-distro:noble bash
 ```
 
 To map a local directory into the container's /home/remnux/files directory, you could use a command like this by supplying the appropriate directory name like this:
 
-```text
+```
 docker run --rm -it -u remnux -v <local_directory>:/home/remnux/files remnux/remnux-distro bash
 ```
 
-The `--rm` parameter above directs Docker to create a transient container, which will stop running after you exit the shell. To keep the container active in the background even after you exit, don't supply `--rm`. 
+The `--rm` parameter above directs Docker to create a transient container, which will stop running after you exit the shell. To keep the container active in the background even after you exit, don't supply `--rm`.
 
 ## SSH and Graphical Interface Access
 
 To access the REMnux distro container using SSH, you can invoke it by mapping your system's TCP port 22 to the container's internal TCP port 22. One way to do this is to use the following command, which will open the SSH listener and run the container in the background.
 
-To run the REMnux version built on top of Ubuntu 24.04 \(Noble\):
+To run the REMnux version built on top of Ubuntu 24.04 (Noble):
 
-```text
+```
 docker run -d -p 22:22 remnux/remnux-distro:noble
 ```
 
@@ -39,7 +39,6 @@ To minimize the container image size, the following tools are not included:
 * **VS Code**: Access the container using VS Code's [Remote-SSH](https://code.visualstudio.com/docs/remote/ssh) extension from your host instead.
 * **Wine and Wine-dependent tools**: scdbg, ssview, shellcode2exe-bat, and runsc.
 
-To install these tools, run `remnux install` in the container to upgrade to a full installation. Alternatively, selectively install packages using `apt update` followed by `apt install code`, `apt install scdbg`, etc.
+To install these tools, run `remnux install --user remnux` in the container to upgrade to a full installation. Alternatively, selectively install packages using `apt update` followed by `apt install code`, `apt install scdbg`, etc.
 
 For more details about Docker images available as part of the REMnux toolkit, see [Docker Images of Malware Analysis Tools](../run-tools-in-containers/remnux-containers.md).
-
