@@ -1,6 +1,6 @@
 # Get the Virtual Appliance
 
-The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format (or QCOW2 for Proxmox), import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
+The easiest way to get the REMnux distro is to download the prebuilt REMnux virtual appliance, import it into your hypervisor, then [run the update command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
 {% hint style="info" %}
 REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
@@ -8,33 +8,29 @@ REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on AR
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance is approximately 7 GB. It comes as an industry-standard OVA file, which you can import into your virtualization software. It's based on Ubuntu 24.04 (Noble).
+The REMnux virtual appliance is approximately 7 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
 
-Decide which OVA file to download. Unless you're using Oracle VM VirtualBox, get the general OVA file. If you're using VirtualBox, get the VirtualBox version. Download your preferred OVA file:
+Decide which virtual appliance file to download. If in doubt, get the General OVA file. If you're sing VirtualBox or Proxmox, download the appropriate file instead.
 
 {% tabs %}
 {% tab title="General OVA" %}
-This general OVA file works with most hypervisors. If you're using VirtualBox, get the VirtualBox version instead from the other tab:
+This general OVA file works with most hypervisors. If you're using VirtualBox or Proxmox, go to another corresponding tab.
 
 [Download the general OVA file.](https://download.remnux.org/202601/remnux-noble-amd64.ova)
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
-This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
+This VirtualBox OVA file is specifically for VirtualBox. If you're using another hypervisor, go to another corresponding tab.
 
 [Download the VirtualBox OVA file.](https://download.remnux.org/202601/remnux-noble-amd64-virtualbox.ova)
 {% endtab %}
 
 {% tab title="Proxmox QCOW2" %}
-This QCOW2 file is specifically for Proxmox VE. Get the general OVA from the other tab for other hypervisors:
+This QCOW2 file is specifically for Proxmox. If you're using another hypervisor, go to another corresponding tab.
 
-[Download the Proxmox QCOW2 file.](https://download.remnux.org/202601/remnux-noble-amd64-proxmox.qcow2)
+_The download link will be published soon._
 {% endtab %}
 {% endtabs %}
-
-{% hint style="success" %}
-Some browsers ([e.g., Brave](https://github.com/brave/brave-browser/issues/4413)) change the extension of the OVA file after downloading it, possibly giving it the incorrect .ovf extension. If that happens, rename the file so it has the .ova extension before proceeding.
-{% endhint %}
 
 ## Step 2: Confirm the Hash of the OVA File <a href="#confirm-hash" id="confirm-hash"></a>
 
@@ -66,9 +62,9 @@ The Proxmox QCOW2 file:
 {% endtab %}
 {% endtabs %}
 
-## Step 3: Import the OVA File <a href="#import-ova-file" id="import-ova-file"></a>
+## Step 3: Import the Virtual Appliance <a href="#import-ova-file" id="import-ova-file"></a>
 
-If possible, upgrade your virtualization software to the latest version. Then, use it to import the downloaded OVA file. If you're not sure how to do that, follow the instructions below:
+If possible, upgrade your virtualization software to the latest version. Then, use it to import the downloaded virtual appliance. If you're not sure how to do that, follow the instructions below:
 
 {% tabs %}
 {% tab title="Direct Import" %}
@@ -145,15 +141,11 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 3. Change the default user's password and otherwise strengthen the SSH authentication method according to your requirements and risk tolerance.
 4. Reboot your REMnux system.
 
-### KVM/QEMU
-
-If you converted the REMnux virtual appliance to KVM/QEMU, run `remnux install` to automatically install spice-vdagent (display resize, copy/paste) and other KVM guest tools.
-
 ### Proxmox
 
-REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox VE. Download it from the [Proxmox QCOW2 tab above](#download-virtual-appliance).
+REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox VE. Download it from the [Proxmox QCOW2 tab above](get-virtual-appliance.md#download-virtual-appliance).
 
-**To import the QCOW2:**
+To import the QCOW2 file:
 
 1. Upload the QCOW2 file to your Proxmox storage (e.g., via SCP to `/var/lib/vz/images/`).
 2. Create a new VM with your preferred settings (recommended: 4 GB RAM, VirtIO SCSI, SPICE display).
@@ -162,12 +154,13 @@ REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox VE. Dow
 5. Set boot order: VM > Options > Boot Order > enable the disk.
 
 The QCOW2 image is pre-configured with:
-- SPICE display support (qxl)
-- qemu-guest-agent
-- spice-vdagent (clipboard, display resize)
-- nomodeset kernel parameter
 
-**Alternative:** You can also [convert the general OVA](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) using CPU type `qemu64`, then run `remnux install` to install guest tools.
+* SPICE display support (qxl)
+* qemu-guest-agent
+* spice-vdagent (clipboard, display resize)
+* nomodeset kernel parameter
+
+Alternative: You can also [convert the general OVA](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) using CPU type `qemu64`, then run `remnux install` to install guest tools.&#x20;
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
