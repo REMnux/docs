@@ -28,11 +28,11 @@ This VirtualBox OVA file is specifically for VirtualBox. If you're using another
 {% tab title="Proxmox QCOW2" %}
 This QCOW2 file is specifically for Proxmox. If you're using another hypervisor, go to another corresponding tab.
 
-_The download link will be published soon._
+[Download the Proxmox QCOW2 file.](https://download.remnux.org/202601/remnux-noble-amd64-proxmox.qcow2)
 {% endtab %}
 {% endtabs %}
 
-## Step 2: Confirm the Hash of the OVA File <a href="#confirm-hash" id="confirm-hash"></a>
+## Step 2: Confirm the Hash of the Downloaded File <a href="#confirm-hash" id="confirm-hash"></a>
 
 Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum` or `shasum` to make sure it matches this expected value:
 
@@ -103,12 +103,12 @@ Depending on which hypervisor or environment you're using, you might need to tak
 
 ### VirtualBox
 
-If your REMnux window is too small when you boot it up the system in VirtualBox, activate the Scaling Mode for the VM via the VirtualBox menu View > Scaling Mode.
+If your REMnux window is too small when you boot the system in VirtualBox, activate the Scaling Mode for the VM via the VirtualBox menu View > Scaling Mode.
 
 If your REMnux virtual machine is unable to communicate over the network, check whether it has a network interface other than the loopback ("lo") by running the `ifconfig` command. If a non-loopback interface is missing, perform the following steps to add it:
 
 1. Run the `networkctl` command to determine the name of the adapter ("link") of type "ether". It might be named something like "enp0s17".
-2. Set up the network interface by replacing _YOUR\_NIC_ in the following command with the name you've identified in the previous step (e.g., "enp0s17)": `sudo ip link set up YOUR_NIC`
+2. Set up the network interface by replacing _YOUR\_NIC_ in the following command with the name you've identified in the previous step (e.g., "enp0s17"): `sudo ip link set up YOUR_NIC`
 3. Edit the /etc/netplan/01-netcfg.yaml file (e.g., use the `code` command). Under "ethernets:" replace the name there (e.g, "ens33") with the name of your network card (e.g., "enp0s17").
 4. Reboot your REMnux virtual machine.
 
@@ -143,7 +143,7 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 
 ### KVM/QEMU
 
-If you converted the REMnux virtual appliance to KVM/QEMU, run `remnux install` to automatically install spice-vdagent (display resize, copy/paste) and other KVM guest tools.
+If you converted the REMnux virtual appliance to KVM/QEMU, use Standard VGA display for the first boot. After booting, run `remnux install` to automatically install spice-vdagent (display resize, copy/paste) and other KVM guest tools. You can then switch to SPICE for better graphics.
 
 ### Proxmox
 
