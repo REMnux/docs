@@ -1,6 +1,6 @@
 # Get the Virtual Appliance
 
-The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format, import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
+The easiest way to get the REMnux distro is to download the REMnux virtual appliance in the OVA format (or QCOW2 for Proxmox), import it into your hypervisor, then [run the upgrade command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
 {% hint style="info" %}
 REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
@@ -23,6 +23,12 @@ This general OVA file works with most hypervisors. If you're using VirtualBox, g
 This VirtualBox OVA file is specifically for VirtualBox. Get the general version from the other tab if you're using other hypervisors:
 
 [Download the VirtualBox OVA file.](https://download.remnux.org/202601/remnux-noble-amd64-virtualbox.ova)
+{% endtab %}
+
+{% tab title="Proxmox QCOW2" %}
+This QCOW2 file is specifically for Proxmox VE. Get the general OVA from the other tab for other hypervisors:
+
+[Download the Proxmox QCOW2 file.](https://download.remnux.org/202601/remnux-noble-amd64-proxmox.qcow2)
 {% endtab %}
 {% endtabs %}
 
@@ -50,6 +56,14 @@ The VirtualBox OVA file:
 7cc8b55a8db32a1a9d42839fe3454922a6eb45010419428f3ce5fece4193e184
 ```
 {% endtab %}
+
+{% tab title="Proxmox QCOW2 Hash" %}
+The Proxmox QCOW2 file:
+
+```
+95adcfd293b29aee77c0c95b2d0a9a7f8f2f7829c49f20b3def16b5b28638e93
+```
+{% endtab %}
 {% endtabs %}
 
 ## Step 3: Import the OVA File <a href="#import-ova-file" id="import-ova-file"></a>
@@ -62,13 +76,13 @@ If possible, upgrade your virtualization software to the latest version. Then, u
 * [VMware vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-17BEDA21-43F6-41F4-8FB2-E01D275FE9B4.html)
 * [VMware Fusion](https://docs.vmware.com/en/VMware-Fusion/11/com.vmware.fusion.using.doc/GUID-275EF202-CF74-43BF-A9E9-351488E16030.html)
 * [Oracle VM VirtualBox](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
+* [Proxmox](get-virtual-appliance.md#proxmox)
 {% endtab %}
 
 {% tab title="Conversion" %}
 * [KVM/QEMU](https://www.vinchin.com/en/blog/convert-ova-to-qcow2.html)
 * [AWS](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
 * [Hyper-V](get-virtual-appliance.md#hyper-v)
-* [Proxmox](https://www.proxmox.com)
 {% endtab %}
 {% endtabs %}
 
@@ -137,19 +151,23 @@ If you converted the REMnux virtual appliance to KVM/QEMU, run `remnux install` 
 
 ### Proxmox
 
-To use REMnux in Proxmox, [import the general OVA](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) using CPU type `qemu64` (not `kvm64`). After importing:
+REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox VE. Download it from the [Proxmox QCOW2 tab above](#download-virtual-appliance).
 
-1. Go to VM > Options > Boot Order and enable the imported disk.
-2. Optionally set VM > Hardware > Display to SPICE(qxl) for better graphics.
+**To import the QCOW2:**
 
-**First Boot:** The SPICE display may cause boot issues before guest tools are installed. If the VM fails to boot properly:
+1. Upload the QCOW2 file to your Proxmox storage (e.g., via SCP to `/var/lib/vz/images/`).
+2. Create a new VM with your preferred settings (recommended: 4 GB RAM, VirtIO SCSI, SPICE display).
+3. Import the disk: `qm importdisk <vmid> /path/to/remnux-noble-amd64-proxmox.qcow2 local-lvm`
+4. Attach the imported disk: VM > Hardware > double-click "Unused Disk" > Add.
+5. Set boot order: VM > Options > Boot Order > enable the disk.
 
-1. Set Hardware > Display to "Standard VGA" temporarily.
-2. Boot the VM and log in.
-3. Run `remnux install` to install guest tools and apply display fixes.
-4. Shut down, change display back to SPICE, and boot normally.
+The QCOW2 image is pre-configured with:
+- SPICE display support (qxl)
+- qemu-guest-agent
+- spice-vdagent (clipboard, display resize)
+- nomodeset kernel parameter
 
-After running `remnux install`, Proxmox integration (qemu-guest-agent, spice-vdagent, nomodeset) is configured automatically.
+**Alternative:** You can also [convert the general OVA](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) using CPU type `qemu64`, then run `remnux install` to install guest tools.
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
