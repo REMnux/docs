@@ -64,24 +64,6 @@ The Proxmox QCOW2 file:
 
 ## Step 3: Import the Virtual Appliance <a href="#import-ova-file" id="import-ova-file"></a>
 
-If possible, upgrade your virtualization software to the latest version. Then, use it to import the downloaded virtual appliance. If you're not sure how to do that, follow the instructions below:
-
-{% tabs %}
-{% tab title="Direct Import" %}
-* [VMware Workstation](https://docs.vmware.com/en/VMware-Workstation-Pro/15.0/com.vmware.ws.using.doc/GUID-DDCBE9C0-0EC9-4D09-8042-18436DA62F7A.html?hWord=N4IghgNiBcIJYFsAOB7ATgFwAQoG5hAF8g)
-* [VMware vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-17BEDA21-43F6-41F4-8FB2-E01D275FE9B4.html)
-* [VMware Fusion](https://docs.vmware.com/en/VMware-Fusion/11/com.vmware.fusion.using.doc/GUID-275EF202-CF74-43BF-A9E9-351488E16030.html)
-* [Oracle VM VirtualBox](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
-* [Proxmox](get-virtual-appliance.md#proxmox)
-{% endtab %}
-
-{% tab title="Conversion" %}
-* [KVM/QEMU](https://www.vinchin.com/en/blog/convert-ova-to-qcow2.html)
-* [AWS](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
-* [Hyper-V](get-virtual-appliance.md#hyper-v)
-{% endtab %}
-{% endtabs %}
-
 When importing the REMnux virtual appliance, allocate resources such as RAM and disk space based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. As a point of reference, most people find 4 GB RAM and 100 GB disk sufficient.
 
 ## Step 4: Start the REMnux Virtual Machine <a href="#start-remnux-vm" id="start-remnux-vm"></a>
