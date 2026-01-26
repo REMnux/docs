@@ -10,7 +10,7 @@ REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on AR
 
 The REMnux virtual appliance is approximately 7 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
 
-Decide which virtual appliance file to download. If in doubt, get the General OVA file. If you're sing VirtualBox or Proxmox, download the appropriate file instead.
+Decide which virtual appliance file to download. If in doubt, get the General OVA file. If you're using VirtualBox or Proxmox, download the appropriate file instead.
 
 {% tabs %}
 {% tab title="General OVA" %}
@@ -141,6 +141,10 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 3. Change the default user's password and otherwise strengthen the SSH authentication method according to your requirements and risk tolerance.
 4. Reboot your REMnux system.
 
+### KVM/QEMU
+
+If you converted the REMnux virtual appliance to KVM/QEMU, run `remnux install` to automatically install spice-vdagent (display resize, copy/paste) and other KVM guest tools.
+
 ### Proxmox
 
 REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox VE. Download it from the [Proxmox QCOW2 tab above](get-virtual-appliance.md#download-virtual-appliance).
@@ -160,7 +164,7 @@ The QCOW2 image is pre-configured with:
 * spice-vdagent (clipboard, display resize)
 * nomodeset kernel parameter
 
-Alternative: You can also [convert the general OVA](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/) using CPU type `qemu64`, then run `remnux install` to install guest tools.&#x20;
+**Alternative:** You can also [import the general OVA](https://syncbricks.com/how-to-import-ova-to-proxmox/) using CPU type `qemu64`. For the first boot, set the display to Standard VGA (not SPICE). After booting, run `remnux install` to install guest tools and apply display fixes. You can then switch to SPICE for better graphics.
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
