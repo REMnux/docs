@@ -114,3 +114,13 @@ Remove junk contents from bloated Windows executables.
 **License**: BSD 3-Clause License: https://github.com/Squiblydoo/debloat/blob/main/LICENSE\
 **Notes**: Run the command-line version as `debloat` or the GUI version as `debloat-gui`\
 **State File**: [remnux.python3-packages.debloat](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/debloat.sls)
+
+## readpe (formerly pev)
+
+Analyze PE files and extract strings from them.
+
+**Website**: [https://github.com/mentebinaria/readpe](https://github.com/mentebinaria/readpe)\
+**Author**: Fernando Merces, Jardel Weyrich\
+**License**: GNU General Public License (GPL) v2: [https://github.com/mentebinaria/readpe/blob/master/LICENSE](https://github.com/mentebinaria/readpe/blob/master/LICENSE)\
+**Notes**: readpe, pestr, pedis, pehash, pescan, pesec, peldd, pepack, peres, ofs2rva, rva2ofs\
+**State File**: [remnux.packages.pev](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pev.sls)
