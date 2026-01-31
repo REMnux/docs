@@ -17,7 +17,7 @@ curl -O https://REMnux.org/remnux
 Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```
-94673eb529ec6a363f332fb68c8e94bcd2ec2137746ccfce5acc45f65016f91b
+deeea89280b6b905dfbc5f938956a14683cd838444c77616097d3355c0dc99b6
 ```
 
 To generate the hash of your file, run:
