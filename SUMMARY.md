@@ -44,6 +44,7 @@
   * [PDF](discover-the-tools/analyze+documents/pdf.md)
   * [Microsoft Office](discover-the-tools/analyze+documents/microsoft+office.md)
   * [Email Messages](discover-the-tools/analyze+documents/email+messages.md)
+* [Artificial Intelligence](discover-the-tools/artificial+intelligence.md)
 * [Gather and Analyze Data](discover-the-tools/gather+and+analyze+data.md)
 * [View or Edit Files](discover-the-tools/view+or+edit+files.md)
 * [General Utilities](discover-the-tools/general+utilities.md)
