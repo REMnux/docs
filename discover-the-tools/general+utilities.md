@@ -6,13 +6,14 @@ description: Discover the Tools
 
 ## REMnux Installer
 
-Install and upgrade the REMnux distro.
+Install and update the REMnux distro.
 
-**Website**: [https://github.com/REMnux/remnux-cli](https://github.com/REMnux/remnux-cli)\
-**Author**: Harbingers LLC, Erik Kristensen, revisions by Lenny Zeltser\
-**License**: MIT License: [https://github.com/REMnux/remnux-cli/blob/master/LICENSE](https://github.com/REMnux/remnux-cli/blob/master/LICENSE)\
-**Notes**: remnux\
+**Website**: [https://github.com/REMnux/distro/blob/master/files/remnux-installer.sh](https://github.com/REMnux/distro/blob/master/files/remnux-installer.sh)\
+**Author**: Lenny Zeltser\
+**License**: Public Domain\
+**Notes**: This is a wrapper around the Cast installer that the script uses behind the scenes. To run the tool on REMnux, type `remnux`\
 **State File**: [remnux.tools.remnux-installer](https://github.com/REMnux/salt-states/blob/master/remnux/tools/remnux-installer.sls)
+
 
 
 
