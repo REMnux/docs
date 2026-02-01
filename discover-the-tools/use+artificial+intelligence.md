@@ -2,7 +2,7 @@
 description: Discover the Tools
 ---
 
-# Artificial Intelligence
+# Use Artificial Intelligence
 
 
 ## OpenCode
