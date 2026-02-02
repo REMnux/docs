@@ -12,8 +12,9 @@ Open-source AI coding agent for the terminal.
 **Website**: [https://opencode.ai](https://opencode.ai)\
 **Author**: Anomaly: [https://github.com/anomalyco](https://github.com/anomalyco)\
 **License**: Apache License 2.0: [https://github.com/anomalyco/opencode/blob/main/LICENSE](https://github.com/anomalyco/opencode/blob/main/LICENSE)\
-**Notes**: opencode\
+**Notes**: OpenCode might come with a default model that's free, but that might use the data you supply for training. Consider changing the model to your own to ensure confidentiality.\
 **State File**: [remnux.node-packages.opencode](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/opencode.sls)
+
 
 ## REMnux MCP Server
 
