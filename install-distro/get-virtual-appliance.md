@@ -102,6 +102,14 @@ If you're building your own VirtualBox VM (not using the pre-built VirtualBox OV
 
 Note: The Ubuntu `virtualbox-guest-*` packages do not provide auto-resize and clipboard support. Use the ISO-based Guest Additions instead.
 
+### VMware
+
+If you experience an unresponsive keyboard, mouse, or broken clipboard/copy-paste when running REMnux in VMware, the issue is likely caused by VMware configuring the desktop to use Wayland instead of Xorg. To fix this:
+
+1. Edit the GDM configuration file: `sudo nano /etc/gdm3/custom.conf`
+2. Find the line `#WaylandEnable=false` and uncomment it by removing the `#`, so it reads `WaylandEnable=false`.
+3. Reboot your REMnux virtual machine.
+
 ### Hyper-V
 
 It's possible to import the pre-built REMnux virtual appliance into Hyper-V, but you'll need to take a few conversion steps. You'll need to extract the contents of the REMnux OVA file to obtain the enclosed VMDK file that captures the virtual disk of the distro, then convert it to the VHD format supported by Hyper-V:
