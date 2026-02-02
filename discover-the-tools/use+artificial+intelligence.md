@@ -24,12 +24,3 @@ MCP server for using REMnux malware analysis tools via AI assistants.
 **License**: GPL-3.0: [https://github.com/REMnux/remnux-mcp-server/blob/main/LICENSE](https://github.com/REMnux/remnux-mcp-server/blob/main/LICENSE)\
 **Notes**: remnux-mcp-server\
 **State File**: [remnux.node-packages.remnux-mcp-server](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/remnux-mcp-server.sls)
-
-## opencode
-
-Configure opencode with REMnux MCP servers.
-
-**Website**: [https://opencode.ai](https://opencode.ai)\
-**Author**: Lenny Zeltser\
-**License**: MIT License ([https://github.com/anthropics/opencode/blob/main/LICENSE)](https://github.com/anthropics/opencode/blob/main/LICENSE))\
-**State File**: [remnux.config.opencode](https://github.com/REMnux/salt-states/blob/master/remnux/config/opencode.sls)
