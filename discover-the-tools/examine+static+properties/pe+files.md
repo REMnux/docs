@@ -49,11 +49,12 @@ Python library for analyzing static properties of PE files.
 
 Examine contents and structure of PE files.
 
-**Website**: [https://github.com/blackberry/pe\_tree](https://github.com/blackberry/pe\_tree)\
-**Author**: BlackBerry Limited: [https://twitter.com/BlackBerrySpark](https://twitter.com/BlackBerrySpark) and Tom Bonner: [https://twitter.com/thomas\_bonner](https://twitter.com/thomas\_bonner)\
-**License**: Apache License 2.0: [https://github.com/blackberry/pe\_tree/blob/master/LICENSE](https://github.com/blackberry/pe\_tree/blob/master/LICENSE)\
+**Website**: [https://github.com/blackberry/pe_tree](https://github.com/blackberry/pe_tree)\
+**Author**: BlackBerry Limited: [https://x.com/BlackBerrySpark](https://x.com/BlackBerrySpark) and Tom Bonner: [https://x.com/thomas_bonner](https://x.com/thomas_bonner)\
+**License**: Apache License 2.0: [https://github.com/blackberry/pe_tree/blob/master/LICENSE](https://github.com/blackberry/pe_tree/blob/master/LICENSE)\
 **Notes**: pe-tree\
 **State File**: [remnux.python3-packages.pe-tree](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pe-tree.sls)
+
 
 ## pedump
 
