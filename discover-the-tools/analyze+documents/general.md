@@ -30,7 +30,8 @@ Examine images to identify and extract text using optical character recognition 
 A collection of Python scripts for analyzing suspicious files and data from Didier Stevens.
 
 **Website**: [https://blog.didierstevens.com](https://blog.didierstevens.com)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
 
