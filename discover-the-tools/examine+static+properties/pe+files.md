@@ -11,8 +11,9 @@ Perform static analysis of suspicious PE files.
 **Website**: [https://github.com/JusticeRage/Manalyze](https://github.com/JusticeRage/Manalyze)\
 **Author**: Ivan Kwiatkowski: [https://x.com/JusticeRage](https://x.com/JusticeRage)\
 **License**: GNU General Public License (GPL) v3: [https://github.com/JusticeRage/Manalyze/blob/master/LICENSE.txt](https://github.com/JusticeRage/Manalyze/blob/master/LICENSE.txt)\
-**Notes**: Run "manalyze" to invoke the tool. To update the tool's Yara rules to include ClamAV, run "sudo /usr/local/manalyze/yara_rules/update_clamav_signatures.py". To query VirusTotal, add your API key to /usr/local/manalyze/manalyze.conf.\
+**Notes**: Run "manalyze" to invoke the tool. To update the tool's Yara rules to include ClamAV, run "sudo python3 /usr/share/manalyze/yara_rules/update_clamav_signatures.py". To query VirusTotal, add your API key to /etc/manalyze/manalyze.conf.\
 **State File**: [remnux.tools.manalyze](https://github.com/REMnux/salt-states/blob/master/remnux/tools/manalyze.sls)
+
 
 
 ## PEframe
