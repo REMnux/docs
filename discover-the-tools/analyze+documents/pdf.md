@@ -84,3 +84,13 @@ Examine elements of the PDF file.
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
+
+## Origamindee
+
+Parse, modify, generate PDF files.
+
+**Website**: [https://github.com/mindee/origamindee](https://github.com/mindee/origamindee)\
+**Author**: Guillaume Delugre (original), Mindee (fork maintainer)\
+**License**: GNU Lesser General Public License (LGPL) v3\
+**Notes**: pdfcop, pdfdecompress, pdfdecrypt, pdfextract, etc.\
+**State File**: [remnux.rubygems.origamindee](https://github.com/REMnux/salt-states/blob/master/remnux/rubygems/origamindee.sls)
