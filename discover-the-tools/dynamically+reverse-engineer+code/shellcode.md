@@ -19,10 +19,11 @@ Convert 32 and 64-bit shellcode to a Windows executable file.
 Convert 32 and 64-bit shellcode to a Windows executable file.
 
 **Website**: [https://github.com/repnz/shellcode2exe](https://github.com/repnz/shellcode2exe)\
-**Author**: Ori Damari: [https://twitter.com/0xrepnz](https://twitter.com/0xrepnz)\
+**Author**: Ori Damari: [https://x.com/0xrepnz](https://x.com/0xrepnz)\
 **License**: Free, unknown license\
 **Notes**: Use full path name to specify the input file; look for the output file in /usr/local/shellcode2exe-bat\
 **State File**: [remnux.tools.shellcode2exe-bat](https://github.com/REMnux/salt-states/blob/master/remnux/tools/shellcode2exe-bat.sls)
+
 
 ## scdbg
 
