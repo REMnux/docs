@@ -115,10 +115,11 @@ Manipulate embedded digital signatures.
 Identify dfferent types of hashes.
 
 **Website**: [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash)\
-**Author**: randon / Bee: [https://twitter.com/bee\_sec\_san](https://twitter.com/bee\_sec\_san)\
-**License**: GNU General Public License (GPL) v3.0: ([https://github.com/HashPals/Name-That-Hash/blob/main/LICENSE](https://github.com/HashPals/Name-That-Hash/blob/main/LICENSE))\
+**Author**: Brandon / Bee: [https://x.com/bee_sec_san](https://x.com/bee_sec_san)\
+**License**: GNU General Public License (GPL) v3.0: ([https://github.com/HashPals/Name-That-Hash/blob/main/LICENSE)](https://github.com/HashPals/Name-That-Hash/blob/main/LICENSE))\
 **Notes**: nth\
 **State File**: [remnux.python3-packages.name-that-hash](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/name-that-hash.sls)
+
 
 ## Hash ID
 
