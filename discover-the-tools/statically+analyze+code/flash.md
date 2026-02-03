@@ -4,15 +4,6 @@ description: Statically Analyze Code
 
 # Flash
 
-## Flare
-
-Extract and decompile ActionScript from Flash (SWF) files.
-
-**Website**: [http://www.nowrap.de/flare.html](http://www.nowrap.de/flare.html)\
-**Author**: Igor Kogan\
-**License**: Freeware with some restrictions\
-**State File**: [remnux.tools.flare](https://github.com/REMnux/salt-states/blob/master/remnux/tools/flare.sls)
-
 ## Flasm
 
 Extract and disassemble ActionScript from Flash (SWF) files.
