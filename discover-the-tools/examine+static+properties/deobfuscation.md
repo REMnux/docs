@@ -172,15 +172,6 @@ Locate and decode stack strings in executable files.
 **License**: Free, unknown license\
 **State File**: [remnux.scripts.strdeob](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/strdeob.sls)
 
-## cut-bytes.py
-
-Cut out a part of a data stream.
-
-**Website**: [https://blog.didierstevens.com/2015/10/14/cut-bytes-py/](https://blog.didierstevens.com/2015/10/14/cut-bytes-py/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.cut-bytes](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/cut-bytes.sls)
-
 ## format-bytes.py
 
 Decompose structured binary data with format strings.

@@ -68,15 +68,6 @@ Emulate code execution of PE files, shellcode, etc. for a variety of OS and hard
 **Notes**: Use `qltool` to analyze artifacts. Before analyzing Windows artifacts, gather Windows DLLs and other components using the [dllscollector.bat](https://github.com/qilingframework/qiling/blob/master/examples/scripts/dllscollector.bat) script. Read the tool's [documentation](https://docs.qiling.io) to get started.\
 **State File**: [remnux.python3-packages.qiling](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/qiling.sls)
 
-## cut-bytes.py
-
-Cut out a part of a data stream.
-
-**Website**: [https://blog.didierstevens.com/2015/10/14/cut-bytes-py/](https://blog.didierstevens.com/2015/10/14/cut-bytes-py/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.cut-bytes](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/cut-bytes.sls)
-
 ## libemu
 
 A library for x86 code emulation and shellcode detection.
