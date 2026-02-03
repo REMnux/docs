@@ -126,15 +126,6 @@ Extract and deobfuscate patterns from suspicious files.
 **State File**: [remnux.python3-packages.balbuzard](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/balbuzard.sls)
 
 
-## xor-kpa.py
-
-Implement a XOR known plaintext attack.
-
-**Website**: [https://blog.didierstevens.com/2017/06/06/update-xor-kpa-py-version-0-0-5/](https://blog.didierstevens.com/2017/06/06/update-xor-kpa-py-version-0-0-5/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.xor-kpa](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/xor-kpa.sls)
-
 ## NoMoreXOR.py
 
 Help guess a file's 256-byte XOR by using frequency analysis.
