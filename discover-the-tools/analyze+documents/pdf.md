@@ -32,15 +32,6 @@ Examine elements of the PDF file.
 **License**: Public Domain  
 **State File**: [remnux.scripts.pdf-parser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdf-parser.sls)
 
-## pdfid.py
-
-Identify suspicious elements of the PDF file.
-
-**Website**: [https://blog.didierstevens.com/programs/pdf-tools/](https://blog.didierstevens.com/programs/pdf-tools/)  
-**Author**: Didier Stevens  
-**License**: Public Domain  
-**State File**: [remnux.scripts.pdfid](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdfid.sls)
-
 ## pdftk-java
 
 Edit, create, and examine PDF files.
