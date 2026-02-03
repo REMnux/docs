@@ -91,10 +91,11 @@ Analyze PE files and extract strings from them.
 Statically analyze PE files.
 
 **Website**: [https://github.com/katjahahn/PortEx](https://github.com/katjahahn/PortEx)\
-**Author**: Karsten Hahn: [https://twitter.com/struppigel](https://twitter.com/struppigel)\
+**Author**: Karsten Hahn: [https://x.com/struppigel](https://x.com/struppigel)\
 **License**: Apache License 2.0: [https://github.com/katjahahn/PortEx/blob/master/LICENSE](https://github.com/katjahahn/PortEx/blob/master/LICENSE)\
 **Notes**: portex\
 **State File**: [remnux.packages.portex](https://github.com/REMnux/salt-states/blob/master/remnux/packages/portex.sls)
+
 
 ## bearparser
 
