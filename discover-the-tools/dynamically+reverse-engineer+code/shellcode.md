@@ -91,7 +91,8 @@ A library for x86 code emulation and shellcode detection.
 Locate and decode strings obfuscated using common techniques.
 
 **Website**: [https://blog.didierstevens.com/programs/xorsearch/](https://blog.didierstevens.com/programs/xorsearch/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **Notes**: xorsearch\
 **State File**: [remnux.packages.xorsearch](https://github.com/REMnux/salt-states/blob/master/remnux/packages/xorsearch.sls)
+
