@@ -128,16 +128,6 @@ Extract contents of XML files, in particular OOXML-formatted Microsoft Office do
 **License**: Public Domain  
 **State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/xmldump.sls)
 
-## oledump
-
-Analyze OLE2 Structured Storage files.
-
-**Website**: [https://blog.didierstevens.com/programs/oledump-py/](https://blog.didierstevens.com/programs/oledump-py/)  
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
-**License**: Public Domain  
-**Notes**: oledump.py  
-**State File**: [remnux.packages.oledump](https://github.com/REMnux/salt-states/blob/master/remnux/packages/oledump.sls)
-
 ## libolecf
 
 Microsoft Office OLE2 compound documents.
