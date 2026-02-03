@@ -39,10 +39,11 @@ Statically scan a file to identify common malicious capabilities.
 Determine types of files and examine file properties.
 
 **Website**: [https://github.com/horsicq/Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy)\
-**Author**: hors: [https://twitter.com/horsicq](https://twitter.com/horsicq)\
-**License**: [https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE](https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE)\
+**Author**: hors: [https://x.com/horsicq](https://x.com/horsicq)\
+**License**: MIT License: [https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE](https://github.com/horsicq/Detect-It-Easy/blob/master/LICENSE)\
 **Notes**: GUI tool: `die`, command-line tool: `diec`.\
 **State File**: [remnux.tools.detect-it-easy](https://github.com/REMnux/salt-states/blob/master/remnux/tools/detect-it-easy.sls)
+
 
 ## ExifTool
 
