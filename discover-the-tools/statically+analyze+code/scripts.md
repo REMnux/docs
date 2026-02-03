@@ -20,14 +20,5 @@ Reformat JavaScript scripts for easier analysis.
 **Notes**: js-beautify  
 **State File**: [remnux.python3-packages.jsbeautifier](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/jsbeautifier.sls)
 
-## decode-vbe.py
-
-Decode encoded VBS scripts \(VBE\).
-
-**Website**: [https://blog.didierstevens.com/2016/03/29/decoding-vbe/](https://blog.didierstevens.com/2016/03/29/decoding-vbe/)  
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
-**License**: MIT License: Public Domain  
-**State File**: [remnux.scripts.decode-vbe](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/decode-vbe.sls)
-
 ## 
 
