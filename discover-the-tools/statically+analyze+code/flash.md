@@ -4,15 +4,6 @@ description: Statically Analyze Code
 
 # Flash
 
-## Flasm
-
-Extract and disassemble ActionScript from Flash (SWF) files.
-
-**Website**: [http://www.nowrap.de/flasm.html](http://www.nowrap.de/flasm.html)\
-**Author**: Igor Kogan, Wang Zhen\
-**License**: Freeware with some restrictions\
-**State File**: [remnux.tools.flasm](https://github.com/REMnux/salt-states/blob/master/remnux/tools/flasm.sls)
-
 ## SWF Tools
 
 Examine and convert Flash (SWF) files.
