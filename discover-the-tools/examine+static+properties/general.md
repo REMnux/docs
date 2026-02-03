@@ -28,10 +28,11 @@ Identify file type using signatures.
 Statically scan a file to identify common malicious capabilities.
 
 **Website**: [https://github.com/Yara-Rules/rules](https://github.com/Yara-Rules/rules)\
-**Author**: A group of IT security researchers: [https://twitter.com/yararules](https://twitter.com/yararules)\
+**Author**: A group of IT security researchers: [https://x.com/yararules](https://x.com/yararules)\
 **License**: GNU General Public License (GPL) v2: [https://github.com/Yara-Rules/rules/blob/master/LICENSE](https://github.com/Yara-Rules/rules/blob/master/LICENSE)\
 **Notes**: To scan a file using these rules, you can use the wrapper around Yara: `yara-rules FILE`, where `FILE` is the path to the file you wish to scan.\
 **State File**: [remnux.tools.yara-rules](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-rules.sls)
+
 
 ## Detect-It-Easy
 
