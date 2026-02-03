@@ -172,15 +172,6 @@ Locate and decode stack strings in executable files.
 **License**: Free, unknown license\
 **State File**: [remnux.scripts.strdeob](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/strdeob.sls)
 
-## translate.py
-
-Translate bytes according to a Python expression.
-
-**Website**: [https://blog.didierstevens.com/programs/translate/](https://blog.didierstevens.com/programs/translate/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.translate](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/translate.sls)
-
 ## XORStrings
 
 Search for XOR encoded strings in a file.
