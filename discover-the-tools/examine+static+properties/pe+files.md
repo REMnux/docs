@@ -19,10 +19,11 @@ Perform static analysis of suspicious PE files.
 Statically analyze PE and Microsoft Office files.
 
 **Website**: [https://github.com/digitalsleuth/peframe](https://github.com/digitalsleuth/peframe)\
-**Author**: Gianni Amato: [https://twitter.com/guelfoweb](https://twitter.com/guelfoweb)\
+**Author**: Gianni Amato: [https://x.com/guelfoweb](https://x.com/guelfoweb)\
 **License**: Free, unknown license\
 **Notes**: peframe\
 **State File**: [remnux.python3-packages.peframe](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/peframe.sls)
+
 
 
 ## dllcharacteristics.py
