@@ -82,7 +82,8 @@ Run PowerShell scripts and commands.
 Execute and deobfuscate JavaScript using a patched version of Mozilla's standalone JavaScript engine.
 
 **Website**: [https://blog.didierstevens.com/2018/04/19/update-patched-spidermonkey/](https://blog.didierstevens.com/2018/04/19/update-patched-spidermonkey/)\
-**Author**: SpiderMonkey by Mozilla Foundation, patched by Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: SpiderMonkey by Mozilla Foundation, patched by Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Mozilla Public License 2.0: [https://github.com/mozilla/treeherder/blob/master/LICENSE.txt](https://github.com/mozilla/treeherder/blob/master/LICENSE.txt)\
 **Notes**: js-ascii, js-file\
 **State File**: [remnux.tools.js-patched](https://github.com/REMnux/salt-states/blob/master/remnux/tools/js-patched.sls)
+
