@@ -115,10 +115,11 @@ Parse PE file contents.
 Remove junk contents from bloated Windows executables.
 
 **Website**: [https://github.com/Squiblydoo/debloat](https://github.com/Squiblydoo/debloat)\
-**Author**: Squiblydoo: https://twitter.com/SquiblydooBlog\
-**License**: BSD 3-Clause License: https://github.com/Squiblydoo/debloat/blob/main/LICENSE\
+**Author**: Squiblydoo: [https://x.com/SquiblydooBlog](https://x.com/SquiblydooBlog)\
+**License**: BSD 3-Clause License: [https://github.com/Squiblydoo/debloat/blob/main/LICENSE](https://github.com/Squiblydoo/debloat/blob/main/LICENSE)\
 **Notes**: Run the command-line version as `debloat` or the GUI version as `debloat-gui`\
 **State File**: [remnux.python3-packages.debloat](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/debloat.sls)
+
 
 ## readpe (formerly pev)
 
