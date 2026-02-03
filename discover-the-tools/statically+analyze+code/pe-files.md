@@ -51,6 +51,7 @@ Scan a PE file to list the associated Malware Behavior Catalog (MBC) details.
 Detect suspicious capabilities in PE files.
 
 **Website**: [https://github.com/fireeye/capa](https://github.com/fireeye/capa)\
-**Author**: FireEye Inc, Willi Ballenthin: [https://twitter.com/williballenthin](https://twitter.com/williballenthin), Moritz Raabe: [https://twitter.com/m\_r\_tz](https://twitter.com/m_r_tz)\
+**Author**: FireEye Inc, Willi Ballenthin: [https://x.com/williballenthin](https://x.com/williballenthin), Moritz Raabe: [https://x.com/m_r_tz](https://x.com/m_r_tz)\
 **License**: Apache License 2.0: [https://github.com/fireeye/capa/blob/master/LICENSE.txt](https://github.com/fireeye/capa/blob/master/LICENSE.txt)\
 **State File**: [remnux.tools.capa](https://github.com/REMnux/salt-states/blob/master/remnux/tools/capa.sls)
+
