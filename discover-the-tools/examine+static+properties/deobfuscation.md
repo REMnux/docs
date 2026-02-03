@@ -53,15 +53,6 @@ Analyze Cobalt Strike beacons.
 **Notes**: csce, list-cs-settings\
 **State File**: [remnux.python3-packages.csce](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/csce.sls)
 
-## sets.py
-
-Perform set operations on lines or bytes in text files.
-
-**Website**: [https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/](https://blog.didierstevens.com/2017/03/05/new-tool-sets-py/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.sets](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/sets.sls)
-
 ## xortool
 
 Analyze XOR-encoded data.
