@@ -194,6 +194,7 @@ Decrypt Cobalt Strike metadata.
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
 
+
 ## base64dump.py
 
 Locate and decode strings encoded in Base64 and other common encodings.
@@ -202,6 +203,7 @@ Locate and decode strings encoded in Base64 and other common encodings.
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
 
 ## xor-kpa.py
 
@@ -212,6 +214,7 @@ Implement a XOR known plaintext attack.
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
+
 ## cut-bytes.py
 
 Cut out a part of a data stream.
@@ -220,6 +223,7 @@ Cut out a part of a data stream.
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
 
 ## format-bytes.py
 
@@ -230,6 +234,7 @@ Decompose structured binary data with format strings.
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
+
 ## translate.py
 
 Translate bytes according to a Python expression.
@@ -238,6 +243,7 @@ Translate bytes according to a Python expression.
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
 
 ## sets.py
 
@@ -248,11 +254,67 @@ Perform set operations on lines or bytes in text files.
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
+
 ## 1768.py
 
 Analyze Cobalt Strike beacons.
 
 **Website**: [https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/](https://blog.didierstevens.com/2021/05/22/update-1768-py-version-0-0-6/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+
+## xorsearch.py
+
+Search for XOR, ROL, ROT, and SHIFT encoded strings with YARA and regex support.
+
+**Website**: [https://blog.didierstevens.com/2020/08/23/new-tool-xorsearch-py/](https://blog.didierstevens.com/2020/08/23/new-tool-xorsearch-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## re-search.py
+
+Search files using regular expressions from a built-in library or custom patterns.
+
+**Website**: [https://blog.didierstevens.com/2023/04/03/update-re-search-py-version-0-0-22/](https://blog.didierstevens.com/2023/04/03/update-re-search-py-version-0-0-22/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## hex-to-bin.py
+
+Convert hexadecimal text dumps to binary data.
+
+**Website**: [https://blog.didierstevens.com/2020/04/19/update-hex-to-bin-py-version-0-0-5/](https://blog.didierstevens.com/2020/04/19/update-hex-to-bin-py-version-0-0-5/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## numbers-to-string.py
+
+Translate number sequences into ASCII characters.
+
+**Website**: [https://blog.didierstevens.com/2020/12/12/update-numbers-to-string-py-version-0-0-11/](https://blog.didierstevens.com/2020/12/12/update-numbers-to-string-py-version-0-0-11/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## cs-analyze-processdump.py
+
+Analyze Cobalt Strike beacon process dumps to detect sleep mask encoding.
+
+**Website**: [https://blog.didierstevens.com/2021/11/25/new-tool-cs-analyze-processdump-py/](https://blog.didierstevens.com/2021/11/25/new-tool-cs-analyze-processdump-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## cs-extract-key.py
+
+Extract AES and HMAC keys from Cobalt Strike beacon process memory.
+
+**Website**: [https://blog.didierstevens.com/2021/11/03/new-tool-cs-extract-key-py/](https://blog.didierstevens.com/2021/11/03/new-tool-cs-extract-key-py/)\
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

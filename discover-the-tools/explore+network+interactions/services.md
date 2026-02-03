@@ -16,12 +16,13 @@ Respond to DNS queries with the specified IP address.
 
 ## dnsresolver.py
 
-Respond to DNS queries in a controlled way.
+DNS resolver tool for dynamic analysis with wildcard and tracking support.
 
 **Website**: [https://blog.didierstevens.com/2021/07/15/new-tool-dnsresolver-py/](https://blog.didierstevens.com/2021/07/15/new-tool-dnsresolver-py/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
-**State File**: [remnux.scripts.dnsresolver](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/dnsresolver.sls)
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
 
 ## fakemail
 

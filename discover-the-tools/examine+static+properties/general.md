@@ -231,3 +231,21 @@ Fuzzy String Matching in Python.
 **Notes**: Updated implementation of fuzzywuzzy\
 **State File**: [remnux.python3-packages.thefuzz](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/thefuzz.sls)
 
+
+## strings.py
+
+Extract ASCII and Unicode strings from binary files with length sorting and filtering.
+
+**Website**: [https://blog.didierstevens.com/2020/12/19/update-strings-py-version-0-0-6/](https://blog.didierstevens.com/2020/12/19/update-strings-py-version-0-0-6/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## file-magic.py
+
+Identify file types using the Python magic module.
+
+**Website**: [https://blog.didierstevens.com/2018/07/11/new-tool-file-magic-py/](https://blog.didierstevens.com/2018/07/11/new-tool-file-magic-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

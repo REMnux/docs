@@ -118,3 +118,12 @@ Capture and analyze network traffic with this command-line sniffer.
 **Author**: [http://tcpick.sourceforge.net/?t=1\&amp;p=AUTHORS](http://tcpick.sourceforge.net/?t=1\&amp;p=AUTHORS)\
 **License**: GNU General Public License (GPL)\
 **State File**: [remnux.packages.tcpick](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tcpick.sls)
+
+## cs-parse-traffic.py
+
+Decrypt and parse Cobalt Strike beacon network traffic.
+
+**Website**: [https://blog.didierstevens.com/2021/11/29/new-tool-cs-parse-traffic-py/](https://blog.didierstevens.com/2021/11/29/new-tool-cs-parse-traffic-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

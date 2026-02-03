@@ -133,3 +133,13 @@ Analyze static properties of PE files.
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
+
+
+## disitool.py
+
+Extract, delete, copy, and inject digital signatures in PE files.
+
+**Website**: [https://blog.didierstevens.com/programs/disitool/](https://blog.didierstevens.com/programs/disitool/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
