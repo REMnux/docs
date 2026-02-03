@@ -25,14 +25,15 @@ Statically analyze PE and Microsoft Office files.
 **State File**: [remnux.python3-packages.peframe](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/peframe.sls)
 
 
-## dllcharacteristics.py <a href="#dllcharacteristics" id="dllcharacteristics"></a>
+## dllcharacteristics.py
 
 Read and set DLL characteristics of a PE file.
 
 **Website**: [https://github.com/accidentalrebel/dllcharacteristics.py](https://github.com/accidentalrebel/dllcharacteristics.py)\
-**Author**: Karlo Licudine: [https://twitter.com/accidentalrebel](https://twitter.com/accidentalrebel)\
+**Author**: Karlo Licudine: [https://x.com/accidentalrebel](https://x.com/accidentalrebel)\
 **License**: GNU General Public License (GPL) v3.0: [https://github.com/accidentalrebel/dllcharacteristics.py/blob/master/LICENSE](https://github.com/accidentalrebel/dllcharacteristics.py/blob/master/LICENSE)\
 **State File**: [remnux.scripts.dllcharacteristics](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/dllcharacteristics.sls)
+
 
 ## pefile
 
