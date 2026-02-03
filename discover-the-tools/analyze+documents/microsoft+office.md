@@ -100,15 +100,6 @@ Recover the password of an encrypted Microsoft Office document.
 **License**: Public Domain  
 **State File**: [remnux.scripts.msoffcrypto-crack](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/msoffcrypto-crack.sls)
 
-## zipdump.py
-
-Analyze zip-compressed files.
-
-**Website**: [https://blog.didierstevens.com/2020/07/27/update-zipdump-py-version-0-0-20/](https://blog.didierstevens.com/2020/07/27/update-zipdump-py-version-0-0-20/)  
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
-**License**: Public Domain  
-**State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
-
 ## xmldump.py
 
 Extract contents of XML files, in particular OOXML-formatted Microsoft Office documents.

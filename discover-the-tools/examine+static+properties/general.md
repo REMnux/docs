@@ -66,15 +66,6 @@ Perform static analysis of Android applications.
 **Notes**: droidlysis\
 **State File**: [remnux.python3-packages.droidlysis](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/droidlysis.sls)
 
-## zipdump.py
-
-Analyze zip-compressed files.
-
-**Website**: [https://blog.didierstevens.com/2020/07/27/update-zipdump-py-version-0-0-20/](https://blog.didierstevens.com/2020/07/27/update-zipdump-py-version-0-0-20/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.zipdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/zipdump.sls)
-
 ## msitools <a href="#msitools" id="msitools"></a>
 
 Create, inspect and extract Windows Installer (.msi) files.
