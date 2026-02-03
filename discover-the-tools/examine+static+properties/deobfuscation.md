@@ -172,15 +172,6 @@ Locate and decode stack strings in executable files.
 **License**: Free, unknown license\
 **State File**: [remnux.scripts.strdeob](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/strdeob.sls)
 
-## format-bytes.py
-
-Decompose structured binary data with format strings.
-
-**Website**: [https://blog.didierstevens.com/2020/02/17/update-format-bytes-py-version-0-0-13/](https://blog.didierstevens.com/2020/02/17/update-format-bytes-py-version-0-0-13/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.format-bytes](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/format-bytes.sls)
-
 ## translate.py
 
 Translate bytes according to a Python expression.
