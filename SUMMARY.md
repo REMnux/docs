@@ -26,7 +26,6 @@
   * [Scripts](discover-the-tools/statically+analyze+code/scripts.md)
   * [Java](discover-the-tools/statically+analyze+code/java.md)
   * [.NET](discover-the-tools/statically+analyze+code/.net.md)
-  * [Flash](discover-the-tools/statically+analyze+code/flash.md)
   * [Android](discover-the-tools/statically+analyze+code/android.md)
 * [Dynamically Reverse-Engineer Code](discover-the-tools/dynamically+reverse-engineer+code/README.md)
   * [General](discover-the-tools/dynamically+reverse-engineer+code/general.md)
