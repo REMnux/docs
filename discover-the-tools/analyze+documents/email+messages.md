@@ -36,9 +36,10 @@ Convert MSG files to MBOX files.
 
 Parse raw SMTP and .MSG email messages and generate a parsed object from them.
 
-**Website**: [https://github.com/SpamScope/mail-parser](https://github.com/SpamScope/mail-parser)  
-**Author**: Fedele Mantuano: [https://twitter.com/fedelemantuano](https://twitter.com/fedelemantuano)  
-**License**: Apache License 2.0: [https://github.com/SpamScope/mail-parser/blob/develop/LICENSE.txt](https://github.com/SpamScope/mail-parser/blob/develop/LICENSE.txt)  
-**Notes:** Run the tool using command `mailparser`  
+**Website**: [https://github.com/SpamScope/mail-parser](https://github.com/SpamScope/mail-parser)\
+**Author**: Fedele Mantuano: [https://x.com/fedelemantuano](https://x.com/fedelemantuano)\
+**License**: Apache License 2.0: [https://github.com/SpamScope/mail-parser/blob/develop/LICENSE.txt](https://github.com/SpamScope/mail-parser/blob/develop/LICENSE.txt)\
+**Notes**: Run the tool using command `mailparser`\
 **State File**: [remnux.python3-packages.mail-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/mail-parser.sls)
+
 
