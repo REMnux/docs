@@ -1,15 +1,5 @@
 # Scripts
 
-## ExtractScripts
-
-Extract scripts from HTML files.
-
-**Website**: [https://blog.didierstevens.com/programs/extractscripts/](https://blog.didierstevens.com/programs/extractscripts/)  
-**Author**: Didier Stevens  
-**License**: Public Domain  
-**Notes**: extractscripts.py  
-**State File**: [remnux.scripts.extractscripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/extractscripts.sls)
-
 ## JS Beautifier
 
 Reformat JavaScript scripts for easier analysis.
