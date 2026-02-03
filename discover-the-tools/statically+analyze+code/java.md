@@ -41,11 +41,12 @@ Java decompiler with GUI.
 
 Analyze Java IDX files.
 
-**Website**: [https://github.com/digitalsleuth/Java\_IDX\_Parser](https://github.com/digitalsleuth/Java_IDX_Parser)  
-**Author**: Brian Baskin: [https://twitter.com/bbaskin](https://twitter.com/bbaskin), Updated for Python 3 by Corey Forman  
-**License**: Apache License 2.0: [https://github.com/digitalsleuth/Java\_IDX\_Parser/blob/master/LICENSE](https://github.com/digitalsleuth/Java_IDX_Parser/blob/master/LICENSE)  
-**Notes**: idx\_parser.py  
-**State File**: [remnux.scripts.java\_idx\_parser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/java_idx_parser.sls)
+**Website**: [https://github.com/digitalsleuth/Java_IDX_Parser](https://github.com/digitalsleuth/Java_IDX_Parser)\
+**Author**: Brian Baskin: [https://x.com/bbaskin](https://x.com/bbaskin), Updated for Python 3 by Corey Forman\
+**License**: Apache License 2.0: [https://github.com/digitalsleuth/Java_IDX_Parser/blob/master/LICENSE](https://github.com/digitalsleuth/Java_IDX_Parser/blob/master/LICENSE)\
+**Notes**: idx_parser.py\
+**State File**: [remnux.scripts.java-idx-parser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/java-idx-parser.sls)
+
 
 ## Javassist
 
