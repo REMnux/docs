@@ -139,3 +139,40 @@ Recover the password of an encrypted Microsoft Office document.
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+
+## oledump.py
+
+Analyze OLE2 Structured Storage files.
+
+**Website**: [https://blog.didierstevens.com/programs/oledump-py/](https://blog.didierstevens.com/programs/oledump-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## rtfdump.py
+
+Analyze a suspicious RTF file.
+
+**Website**: [https://blog.didierstevens.com/2018/12/10/update-rtfdump-py-version-0-0-9/](https://blog.didierstevens.com/2018/12/10/update-rtfdump-py-version-0-0-9/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## zipdump.py
+
+Analyze zip-compressed files.
+
+**Website**: [https://blog.didierstevens.com/2020/07/27/update-zipdump-py-version-0-0-20/](https://blog.didierstevens.com/2020/07/27/update-zipdump-py-version-0-0-20/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## xmldump.py
+
+Extract contents of XML files, in particular OOXML-formatted Microsoft Office documents.
+
+**Website**: [https://blog.didierstevens.com/2017/12/18/new-tool-xmldump-py/](https://blog.didierstevens.com/2017/12/18/new-tool-xmldump-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
