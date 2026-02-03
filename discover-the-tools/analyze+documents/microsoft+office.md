@@ -100,16 +100,6 @@ Recover the password of an encrypted Microsoft Office document.
 **License**: Public Domain  
 **State File**: [remnux.scripts.msoffcrypto-crack](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/msoffcrypto-crack.sls)
 
-## rtfdump
-
-Analyze a suspicious RTF file.
-
-**Website**: [https://blog.didierstevens.com/2018/12/10/update-rtfdump-py-version-0-0-9/](https://blog.didierstevens.com/2018/12/10/update-rtfdump-py-version-0-0-9/)  
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)  
-**License**: Public Domain  
-**Notes**: rtfdump.py  
-**State File**: [remnux.scripts.rtfdump](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/rtfdump.sls)
-
 ## zipdump.py
 
 Analyze zip-compressed files.
