@@ -27,8 +27,9 @@ Find hidden processes on the local Linux system.
 
 Find hidden processes or connections on the local Linux system.
 
-**Website**: [http://www.unhide-forensics.info](http://www.unhide-forensics.info)  
-**Author**: Yago Jesus: [https://twitter.com/YJesus](https://twitter.com/YJesus)  
-**License**: GNU General Public License \(GPL\) v3: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
+**Website**: [http://www.unhide-forensics.info](http://www.unhide-forensics.info)\
+**Author**: Yago Jesus: [https://x.com/YJesus](https://x.com/YJesus)\
+**License**: GNU General Public License (GPL) v3: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)\
 **State File**: [remnux.packages.unhide](https://github.com/REMnux/salt-states/blob/master/remnux/packages/unhide.sls)
+
 
