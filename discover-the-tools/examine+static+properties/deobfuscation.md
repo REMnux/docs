@@ -24,15 +24,6 @@ Perform static analysis of various aspects of malicious code.
 **Notes**: Malchive command-line tools start with the prefix `malutil-`. See [utilities documentation](https://github.com/MITRECND/malchive/wiki/Utilities) for details.\
 **State File**: [remnux.python3-packages.malchive](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malchive.sls)
 
-## cs-decrypt-metadata.py
-
-Decrypt Cobalt Strike metadata.
-
-**Website**: [https://blog.didierstevens.com/2021/11/12/update-cs-decrypt-metadata-py-version-0-0-2/](https://blog.didierstevens.com/2021/11/12/update-cs-decrypt-metadata-py-version-0-0-2/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**State File**: [remnux.scripts.cs-decrypt-metadata](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/cs-decrypt-metadata.sls)
-
 ## Cobalt Strike Configuration Extractor (CSCE) and Parser <a href="#csce" id="csce"></a>
 
 Analyze Cobalt Strike beacons.
