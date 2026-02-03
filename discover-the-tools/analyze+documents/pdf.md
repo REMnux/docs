@@ -23,15 +23,6 @@ Analyze PDF files to identify incremental updates to the document.
 **License**: Public Domain  
 **State File**: [remnux.scripts.pdftool](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdftool.sls)
 
-## pdf-parser.py
-
-Examine elements of the PDF file.
-
-**Website**: [https://blog.didierstevens.com/programs/pdf-tools/](https://blog.didierstevens.com/programs/pdf-tools/)  
-**Author**: Didier Stevens  
-**License**: Public Domain  
-**State File**: [remnux.scripts.pdf-parser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pdf-parser.sls)
-
 ## pdftk-java
 
 Edit, create, and examine PDF files.
