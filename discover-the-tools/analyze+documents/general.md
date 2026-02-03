@@ -25,3 +25,12 @@ A collection of Python scripts for analyzing suspicious files and data from Didi
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
 
+
+## base64dump.py
+
+Locate and decode strings encoded in Base64 and other common encodings.
+
+**Website**: [https://blog.didierstevens.com/2020/07/03/update-base64dump-py-version-0-0-12/](https://blog.didierstevens.com/2020/07/03/update-base64dump-py-version-0-0-12/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

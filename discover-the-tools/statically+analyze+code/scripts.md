@@ -12,3 +12,12 @@ Reformat JavaScript scripts for easier analysis.
 
 ## 
 
+
+## decode-vbe.py
+
+Decode encoded VBS scripts (VBE).
+
+**Website**: [https://blog.didierstevens.com/2016/03/29/decoding-vbe/](https://blog.didierstevens.com/2016/03/29/decoding-vbe/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

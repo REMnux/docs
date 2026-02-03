@@ -130,3 +130,12 @@ Python package to parse, read and write MS OLE2 files.
 **Author**: Philippe Lagadec\
 **License**: All Rights Reserved ([https://github.com/decalage2/olefile/blob/master/LICENSE.txt)](https://github.com/decalage2/olefile/blob/master/LICENSE.txt))\
 **State File**: [remnux.python3-packages.olefile](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/olefile.sls)
+
+## msoffcrypto-crack.py
+
+Recover the password of an encrypted Microsoft Office document.
+
+**Website**: [https://blog.didierstevens.com/2018/12/31/new-tool-msoffcrypto-crack-py/](https://blog.didierstevens.com/2018/12/31/new-tool-msoffcrypto-crack-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

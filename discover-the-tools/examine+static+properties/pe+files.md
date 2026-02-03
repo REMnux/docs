@@ -121,3 +121,12 @@ Analyze PE files and extract strings from them.
 **License**: GNU General Public License (GPL) v2: [https://github.com/mentebinaria/readpe/blob/master/LICENSE](https://github.com/mentebinaria/readpe/blob/master/LICENSE)\
 **Notes**: readpe, pestr, pedis, pehash, pescan, pesec, peldd, pepack, peres, ofs2rva, rva2ofs\
 **State File**: [remnux.packages.pev](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pev.sls)
+
+## pecheck.py
+
+Analyze static properties of PE files.
+
+**Website**: [https://blog.didierstevens.com/2020/03/15/pecheck-py-version-0-7-10/](https://blog.didierstevens.com/2020/03/15/pecheck-py-version-0-7-10/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

@@ -51,3 +51,12 @@ Examine elements of the PDF file.
 **Author**: Jose Miguel Esparza and Corey Forman\
 **License**: GNU General Public License (GPL) v3: [https://github.com/digitalsleuth/peepdf-3/blob/main/COPYING](https://github.com/digitalsleuth/peepdf-3/blob/main/COPYING)\
 **State File**: [remnux.python3-packages.peepdf-3](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/peepdf-3.sls)
+
+## pdftool.py
+
+Analyze PDF files to identify incremental updates to the document.
+
+**Website**: [https://blog.didierstevens.com/2021/01/31/new-tool-pdftool-py/](https://blog.didierstevens.com/2021/01/31/new-tool-pdftool-py/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

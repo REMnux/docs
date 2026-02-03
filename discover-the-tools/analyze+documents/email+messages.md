@@ -34,3 +34,12 @@ Parse raw SMTP and .MSG email messages and generate a parsed object from them.
 **State File**: [remnux.python3-packages.mail-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/mail-parser.sls)
 
 
+
+## emldump.py
+
+Parse and analyze EML files.
+
+**Website**: [https://blog.didierstevens.com/2020/11/29/update-emldump-py-version-0-0-11/](https://blog.didierstevens.com/2020/11/29/update-emldump-py-version-0-0-11/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)

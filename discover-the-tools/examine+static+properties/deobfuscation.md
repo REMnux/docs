@@ -194,3 +194,12 @@ A collection of Python scripts for analyzing suspicious files and data from Didi
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
 
+
+## cs-decrypt-metadata.py
+
+Decrypt Cobalt Strike metadata.
+
+**Website**: [https://blog.didierstevens.com/2021/11/12/update-cs-decrypt-metadata-py-version-0-0-2/](https://blog.didierstevens.com/2021/11/12/update-cs-decrypt-metadata-py-version-0-0-2/)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
+**License**: Public Domain\
+**State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
