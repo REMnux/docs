@@ -58,11 +58,12 @@ Microsoft Office OLE2 compound documents.
 
 Modify aspects of Microsoft Office documents.
 
-**Website**: [https://github.com/outflanknl/EvilClippy](https://github.com/outflanknl/EvilClippy)  
-**Author**: Stan Hegt: [https://twitter.com/StanHacked](https://twitter.com/StanHacked), with contributions from Carrie Roberts: [https://twitter.com/OrOneEqualsOne](https://twitter.com/OrOneEqualsOne)  
-**License**: GNU General Public License \(GPL\) v3.0: [https://github.com/outflanknl/EvilClippy/blob/master/LICENSE.md](https://github.com/outflanknl/EvilClippy/blob/master/LICENSE.md)  
-**Notes**: To remove VBA project password protection from the file, use the `evilclippy -uu` command.  
+**Website**: [https://github.com/outflanknl/EvilClippy](https://github.com/outflanknl/EvilClippy)\
+**Author**: Stan Hegt: [https://x.com/StanHacked](https://x.com/StanHacked), with contributions from Carrie Roberts: [https://x.com/OrOneEqualsOne](https://x.com/OrOneEqualsOne)\
+**License**: GNU General Public License (GPL) v3.0: [https://github.com/outflanknl/EvilClippy/blob/master/LICENSE.md](https://github.com/outflanknl/EvilClippy/blob/master/LICENSE.md)\
+**Notes**: To remove VBA project password protection from the file, use the `evilclippy -uu` command.\
 **State File**: [remnux.packages.evilclippy](https://github.com/REMnux/salt-states/blob/master/remnux/packages/evilclippy.sls)
+
 
 ## XLMMacroDeobfuscator
 
