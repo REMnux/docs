@@ -147,10 +147,11 @@ Microsoft Office OLE2 compound documents.
 
 Encrypt and decrypt OOXML Microsoft Office documents.
 
-**Website**: [https://github.com/herumi/msoffice](https://github.com/herumi/msoffice)  
-**Author**: Cybozu Labs Inc., Mitsunari Shigeo: [https://twitter.com/herumi](https://twitter.com/herumi)  
-**License**: Free, custom license: [https://github.com/herumi/msoffice/blob/master/COPYRIGHT](https://github.com/herumi/msoffice/blob/master/COPYRIGHT)  
+**Website**: [https://github.com/herumi/msoffice](https://github.com/herumi/msoffice)\
+**Author**: Cybozu Labs Inc., Mitsunari Shigeo: [https://x.com/herumi](https://x.com/herumi)\
+**License**: Free, custom license: [https://github.com/herumi/msoffice/blob/master/COPYRIGHT](https://github.com/herumi/msoffice/blob/master/COPYRIGHT)\
 **State File**: [remnux.packages.msoffice-crypt](https://github.com/REMnux/salt-states/blob/master/remnux/packages/msoffice-crypt.sls)
+
 
 ## Hachoir
 
