@@ -50,7 +50,9 @@ Examine elements of the PDF file.
 **Website**: [https://github.com/digitalsleuth/peepdf-3](https://github.com/digitalsleuth/peepdf-3)\
 **Author**: Jose Miguel Esparza and Corey Forman\
 **License**: GNU General Public License (GPL) v3: [https://github.com/digitalsleuth/peepdf-3/blob/main/COPYING](https://github.com/digitalsleuth/peepdf-3/blob/main/COPYING)\
+**Notes**: To run the tool, use the command "peepdf".\
 **State File**: [remnux.python3-packages.peepdf-3](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/peepdf-3.sls)
+
 
 ## pdftool.py
 
