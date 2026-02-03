@@ -67,16 +67,6 @@ Statically analyze PE files and extract their components (e.g., resources).
 **License**: MIT License: [https://github.com/zed-0xff/pedump/blob/master/LICENSE.txt](https://github.com/zed-0xff/pedump/blob/master/LICENSE.txt)\
 **State File**: [remnux.rubygems.pedump](https://github.com/REMnux/salt-states/blob/master/remnux/rubygems/pedump.sls)
 
-## pecheck
-
-Analyze static properties of PE files.
-
-**Website**: [https://blog.didierstevens.com/2020/03/15/pecheck-py-version-0-7-10/](https://blog.didierstevens.com/2020/03/15/pecheck-py-version-0-7-10/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
-**License**: Public Domain\
-**Notes**: pecheck.py\
-**State File**: [remnux.scripts.pecheck](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/pecheck.sls)
-
 ## pev
 
 Analyze PE files and extract strings from them.
