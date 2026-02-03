@@ -67,13 +67,14 @@ Modify aspects of Microsoft Office documents.
 
 ## XLMMacroDeobfuscator
 
-Deobfuscate XLM macros \(also known as Excel 4.0 macros\) from Microsoft Office files.
+Deobfuscate XLM macros (also known as Excel 4.0 macros) from Microsoft Office files.
 
-**Website**: [https://github.com/DissectMalware/XLMMacroDeobfuscator](https://github.com/DissectMalware/XLMMacroDeobfuscator)  
-**Author**: [https://twitter.com/DissectMalware](https://twitter.com/DissectMalware)  
-**License**: Apache License 2.0: [https://github.com/DissectMalware/XLMMacroDeobfuscator/blob/master/LICENSE](https://github.com/DissectMalware/XLMMacroDeobfuscator/blob/master/LICENSE)  
-**Notes**: xlmdeobfuscator  
+**Website**: [https://github.com/DissectMalware/XLMMacroDeobfuscator](https://github.com/DissectMalware/XLMMacroDeobfuscator)\
+**Author**: [https://x.com/DissectMalware](https://x.com/DissectMalware)\
+**License**: Apache License 2.0: [https://github.com/DissectMalware/XLMMacroDeobfuscator/blob/master/LICENSE](https://github.com/DissectMalware/XLMMacroDeobfuscator/blob/master/LICENSE)\
+**Notes**: xlmdeobfuscator, runxlrd2.py\
 **State File**: [remnux.python3-packages.xlmmacrodeobfuscator](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/xlmmacrodeobfuscator.sls)
+
 
 ## ViperMonkey
 
