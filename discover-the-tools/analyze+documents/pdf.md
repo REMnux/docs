@@ -4,16 +4,6 @@ description: Analyze Documents
 
 # PDF
 
-## Origami
-
-Parse, modify, generate PDF files.
-
-**Website**: [https://github.com/gdelugre/origami](https://github.com/gdelugre/origami)  
-**Author**: Guillaume Delugre  
-**License**: GNU Lesser General Public License \(LGPL\) v3: [https://github.com/gdelugre/origami/blob/master/COPYING.LESSER](https://github.com/gdelugre/origami/blob/master/COPYING.LESSER)  
-**Notes**: pdfcop, pdfdecompress, pdfdecrypt, pdfextract, etc.  
-**State File**: [remnux.rubygems.origami](https://github.com/REMnux/salt-states/blob/master/remnux/rubygems/origami.sls)
-
 ## pdftk-java
 
 Edit, create, and examine PDF files.
