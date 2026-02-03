@@ -62,11 +62,12 @@ Emulate code execution of PE files, shellcode, etc. for a variety of OS and hard
 
 Statically examine and emulate binary files.
 
-**Website**: [https://github.com/vivisect/vivisect](https://github.com/vivisect/vivisect)  
-**Author**: invisigoth: invisigoth@kenshoto.com, installable vivisect module by Willi Ballenthin: [https://twitter.com/williballenthin](https://twitter.com/williballenthin)  
-**License**: Apache License 2.0: [https://github.com/vivisect/vivisect/blob/master/LICENSE.txt](https://github.com/vivisect/vivisect/blob/master/LICENSE.txt)  
-**Notes**: vivbin, vdbbin  
+**Website**: [https://github.com/vivisect/vivisect](https://github.com/vivisect/vivisect)\
+**Author**: invisigoth: invisigoth@kenshoto.com, installable vivisect module by Willi Ballenthin: [https://x.com/williballenthin](https://x.com/williballenthin)\
+**License**: Apache License 2.0: [https://github.com/vivisect/vivisect/blob/master/LICENSE.txt](https://github.com/vivisect/vivisect/blob/master/LICENSE.txt)\
+**Notes**: vivbin, vdbbin\
 **State File**: [remnux.python3-packages.vivisect](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/vivisect.sls)
+
 
 ## objdump
 
