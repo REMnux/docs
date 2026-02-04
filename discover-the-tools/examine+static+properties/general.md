@@ -256,7 +256,8 @@ Identify file types using the Python magic module.
 Scan files with curated YARA rules from 45+ sources for malware family identification.
 
 **Website**: [https://yarahq.github.io/](https://yarahq.github.io/)\
-**Author**: Florian Roth and the YARA HQ community\
+**Author**: Florian Roth: [https://x.com/cyb3rops](https://x.com/cyb3rops)\
 **License**: Various (see individual rules); Elastic rules excluded\
-**Notes**: Run `yara-forge FILE` to identify malware families. Complements `yara-rules` which detects capabilities/behaviors.\
+**Notes**: Run `yara-forge FILE` to identify malware families.\
 **State File**: [remnux.tools.yara-forge](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-forge.sls)
+
