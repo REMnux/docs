@@ -249,3 +249,13 @@ Identify file types using the Python magic module.
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## YARA-Forge Rules
+
+Scan files with curated YARA rules from 45+ sources for malware family identification.
+
+**Website**: [https://yarahq.github.io/](https://yarahq.github.io/)\
+**Author**: Florian Roth and the YARA HQ community\
+**License**: Various (see individual rules); Elastic rules excluded\
+**Notes**: Run `yara-forge FILE` to identify malware families. Complements `yara-rules` which detects capabilities/behaviors.\
+**State File**: [remnux.tools.yara-forge](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-forge.sls)
