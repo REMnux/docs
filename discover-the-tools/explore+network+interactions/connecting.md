@@ -84,3 +84,13 @@ Interact with servers via supported protocols, including HTTP, HTTPS, FTP, IMAP,
 **Notes**: curl  
 **State File**: [remnux.packages.curl](https://github.com/REMnux/salt-states/blob/master/remnux/packages/curl.sls)
 
+
+## zbarimg
+
+Decode QR codes and barcodes from image files.
+
+**Website**: [https://github.com/mchehab/zbar](https://github.com/mchehab/zbar)\
+**Author**: [https://www.linkedin.com/in/mchehab/](https://www.linkedin.com/in/mchehab/)\
+**License**: GNU Lesser General Public License (LGPL) v2.1: [https://github.com/mchehab/zbar/blob/master/LICENSE.md](https://github.com/mchehab/zbar/blob/master/LICENSE.md)\
+**Notes**: zbarimg\
+**State File**: [remnux.packages.zbar-tools](https://github.com/REMnux/salt-states/blob/master/remnux/packages/zbar-tools.sls)
