@@ -26,3 +26,13 @@ MCP server for using the REMnux malware analysis toolkit via AI assistants.
 **Notes**: remnux-mcp-server\
 **State File**: [remnux.node-packages.remnux-mcp-server](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/remnux-mcp-server.sls)
 
+
+## GhidrAssistMCP
+
+MCP server for AI-assisted reverse engineering in Ghidra.
+
+**Website**: [https://github.com/jtang613/GhidrAssistMCP](https://github.com/jtang613/GhidrAssistMCP)\
+**Author**: Jason Tang: [https://www.linkedin.com/in/jason-tang-174652157/](https://www.linkedin.com/in/jason-tang-174652157/)\
+**License**: MIT: [https://github.com/jtang613/GhidrAssistMCP/blob/master/LICENSE](https://github.com/jtang613/GhidrAssistMCP/blob/master/LICENSE)\
+**Notes**: After installation, enable the plugin in Ghidra: File → Configure → Miscellaneous → GhidrAssistMCPPlugin. Then start the MCP server: Window → GhidrAssistMCP. The server listens on port 8080. OpenCode is pre-configured to connect at http://localhost:8080/mcp.\
+**State File**: [remnux.tools.ghidrassist-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/ghidrassist-mcp.sls)
