@@ -76,16 +76,6 @@ Web browser.
 **State File**: [remnux.packages.firefox](https://github.com/REMnux/salt-states/blob/master/remnux/packages/firefox.sls)
 
 
-## PostgreSQL
-
-Relational Database.
-
-**Website**: [https://www.postgresql.org](https://www.postgresql.org)\
-**Author**: PostgreSQL Global Development Group\
-**License**: PostgreSQL Licence: [https://www.postgresql.org/about/licence/](https://www.postgresql.org/about/licence/)\
-**State File**: [remnux.packages.postgresql](https://github.com/REMnux/salt-states/blob/master/remnux/packages/postgresql.sls)
-
-
 ## Info-ZIP
 
 Compress and decompress files using the zip algorithm.
