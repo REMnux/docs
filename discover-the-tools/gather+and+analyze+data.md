@@ -52,15 +52,6 @@ Query Shodan, a search engine for internet-connected devices.
 **License**: Custom, free license: [https://github.com/achillean/shodan-python/blob/master/LICENSE](https://github.com/achillean/shodan-python/blob/master/LICENSE)\
 **State File**: [remnux.python-packages.shodan](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/shodan.sls)
 
-## PyPDNS
-
-Python library to query passive DNS services that follow the Passive DNS - Common Output Format
-
-**Website**: [https://github.com/CIRCL/PyPDNS](https://github.com/CIRCL/PyPDNS)\
-**Author**: Raphael Vinot, Alexandre Dulaunoy, CIRCL - Computer Incident Response Center Luxembourg\
-**License**: Free, custom license: [https://github.com/CIRCL/PyPDNS/blob/master/LICENSE](https://github.com/CIRCL/PyPDNS/blob/master/LICENSE)\
-**State File**: [remnux.python-packages.pypdns](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/pypdns.sls)
-
 ## pdnstool
 
 Query passive DNS databases for DNS data.
