@@ -4,16 +4,6 @@ description: Discover the Tools
 
 # Gather and Analyze Data
 
-## Automater
-
-Gather OSINT data about IPs, domains, and hashes.
-
-**Website**: [https://github.com/digitalsleuth/TekDefense-Automater](https://github.com/digitalsleuth/TekDefense-Automater)\
-**Author**: 1aN0rmus and digitalsleuth\
-**License**: MIT License: [https://github.com/digitalsleuth/TekDefense-Automater/blob/master/LICENSE](https://github.com/digitalsleuth/TekDefense-Automater/blob/master/LICENSE)\
-**Notes**: automater\
-**State File**: [remnux.python3-packages.automater](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/automater.sls)
-
 ## dissect
 
 Perform a variety of forensics and incident response tasks using this DFIR framework and toolset.
