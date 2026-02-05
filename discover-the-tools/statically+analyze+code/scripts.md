@@ -23,3 +23,12 @@ Decode encoded VBS scripts (VBE).
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
 
+
+## AutoIt-Ripper
+
+Extract AutoIt scripts embedded in PE binaries.
+
+**Website**: [https://github.com/nazywam/AutoIt-Ripper](https://github.com/nazywam/AutoIt-Ripper)\
+**Author**: Michał Praszmo: [https://x.com/nazywam](https://x.com/nazywam)\
+**License**: MIT ([https://github.com/nazywam/AutoIt-Ripper/blob/master/LICENSE)](https://github.com/nazywam/AutoIt-Ripper/blob/master/LICENSE))\
+**State File**: [remnux.python3-packages.autoit-ripper](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/autoit-ripper.sls)
