@@ -14,7 +14,7 @@ Follow the steps appropriate for your Operating System to install [Git](https://
 
 Get a copy of the current REMnux/salt-state repository, which contains the REMnux Salt State files. A common way to do this is to run:
 
-```text
+```
 git clone https://github.com/REMnux/salt-states.git
 ```
 
@@ -23,7 +23,7 @@ git clone https://github.com/REMnux/salt-states.git
 Determine in which subdirectory under salt-states/remnux your new Salt State file should reside. Common locations are:
 
 * For Ubuntu packages: `packages`
-* For Python packages: `python-packages`
+* For Python packages: `python3-packages`
 * For tools distributed as compiled or JAR files: `tools`
 * For scipts that aren't installable using a package manager: `scripts`
 
@@ -38,16 +38,16 @@ The State File should fully describe all dependencies of the software you're aim
 Once the State File is ready, test it locally by running it in a Docker container. The easiest way to do it is to run the [dev-state.sh](https://github.com/REMnux/salt-states/blob/master/.ci/dev-state.sh) script, which is a part of the REMnux/salt-state repository in the .ci directory.
 
 {% hint style="info" %}
-The dev-state.sh script is a wrapper around Docker. It  retrieves and launches the baseline container "[teamdfir/sift-saltstack-tester](https://hub.docker.com/r/teamdfir/sift-saltstack-tester)" built for testing State Files for [SIFT Workstation](https://digital-forensics.sans.org/community/downloads) and REMnux distros. The container is just the base Ubuntu OS without any optional packages, plus Salt Stack. This minimal state allows you to confirm that the State File you'll be testing specifies all the dependencies for the new tool.
+The dev-state.sh script is a wrapper around Docker. It retrieves and launches the baseline container "[remnux/sift-saltstack-tester](https://hub.docker.com/r/teamdfir/sift-saltstack-tester)" built for testing State Files. The container is just the base Ubuntu OS without any optional packages, plus Salt Stack. This minimal state allows you to confirm that the State File you'll be testing specifies all the dependencies for the new tool.
 {% endhint %}
 
 Once you're at the command prompt inside the tester container, direct SaltStack to process your new Salt State file by running this command in the container:
 
-```text
+```
 salt-call -l debug --local --retcode-passthrough --state-output=mixed state.sls STATE-PATH
 ```
 
-In the command above, replace "STATE-PATH" with the Salt Stack path to your new file using dots instead of slashes. For example, if you were running peframe.sls, which is in remnux/python-packages, you'd specify `remnux.python-packages.peframe`.
+In the command above, replace "STATE-PATH" with the Salt Stack path to your new file using dots instead of slashes. For example, if you were running peframe.sls, which is in remnux/python3-packages, you'd specify `remnux.python3-packages.peframe`.
 
 The command will produce verbose debug-level output, so you can diagnose any issues. Adjust your new Salt State file to address whichever problems arise, so the `salt-call` command completes successfully.
 
@@ -55,7 +55,7 @@ The command will produce verbose debug-level output, so you can diagnose any iss
 
 To make sure the tool is properly included in the REMnux tool listing, included the following metadata comments on top of your Salt State file to describe the tool:
 
-```text
+```
 # Name: 
 # Website: 
 # Description: 
@@ -69,5 +69,4 @@ To make sure the tool is properly included in the REMnux tool listing, included 
 
 Once you have a working, tested Salt State file in the local copy of the REMnux/salt-states repoistory, [create a GitHub pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) for that repo, so your file may be considered for inclusion in the REMnux distro. If the pull request isn't working, consider submitting the file to Lenny Zeltser [by email](https://zeltser.com/contact).
 
-##  <a id="revise-existing-tool"></a>
-
+## &#x20;<a href="#revise-existing-tool" id="revise-existing-tool"></a>
