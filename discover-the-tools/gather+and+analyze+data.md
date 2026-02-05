@@ -43,15 +43,6 @@ Retrieve and parse whois data for IP addresses.
 **Notes**: ipwhois\_cli.py, ipwhois\_utils\_cli.py\
 **State File**: [remnux.python3-packages.ipwhois](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ipwhois.sls)
 
-## shodan
-
-Query Shodan, a search engine for internet-connected devices.
-
-**Website**: [https://github.com/achillean/shodan-python/](https://github.com/achillean/shodan-python/)\
-**Author**: John Matherly\
-**License**: Custom, free license: [https://github.com/achillean/shodan-python/blob/master/LICENSE](https://github.com/achillean/shodan-python/blob/master/LICENSE)\
-**State File**: [remnux.python-packages.shodan](https://github.com/REMnux/salt-states/blob/master/remnux/python-packages/shodan.sls)
-
 ## pdnstool
 
 Query passive DNS databases for DNS data.
