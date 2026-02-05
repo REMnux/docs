@@ -14,7 +14,6 @@ Gather OSINT data about IPs, domains, and hashes.
 **Notes**: automater\
 **State File**: [remnux.python3-packages.automater](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/automater.sls)
 
-
 ## dissect
 
 Perform a variety of forensics and incident response tasks using this DFIR framework and toolset.
@@ -54,18 +53,6 @@ Retrieve and parse whois data for IP addresses.
 **Notes**: ipwhois\_cli.py, ipwhois\_utils\_cli.py\
 **State File**: [remnux.python3-packages.ipwhois](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ipwhois.sls)
 
-## VirusTotal API
-
-Query and interact with VirusTotal using a command-line interface.
-
-**Website**: [https://github.com/VirusTotal/vt-py](https://github.com/VirusTotal/vt-py)\
-**Author**: VirusTotal\
-**License**: Apache 2.0 ([https://github.com/VirusTotal/vt-py/blob/master/LICENSE)](https://github.com/VirusTotal/vt-py/blob/master/LICENSE))\
-**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal).\
-**State File**: [remnux.python3-packages.virustotal-api](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/virustotal-api.sls)
-
-
-
 ## shodan
 
 Query Shodan, a search engine for internet-connected devices.
@@ -102,7 +89,6 @@ Extract and decode data from antivirus quarantine files.
 **License**: Free; copyright by Hexacorn.com: [https://hexacorn.com/d/DeXRAY.pl](https://hexacorn.com/d/DeXRAY.pl)\
 **Notes**: dexray\
 **State File**: [remnux.scripts.dexray](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/dexray.sls)
-
 
 ## virustotal-submit
 
@@ -152,13 +138,13 @@ Identify and classify malware samples using Yara rules.
 **Notes**: yara\
 **State File**: [remnux.packages.yara](https://github.com/REMnux/salt-states/blob/master/remnux/packages/yara.sls)
 
-## ioc_parser
+## ioc\_parser
 
 Extract IOCs from security report PDFs.
 
-**Website**: [https://github.com/buffer/ioc_parser](https://github.com/buffer/ioc_parser)\
+**Website**: [https://github.com/buffer/ioc\_parser](https://github.com/buffer/ioc_parser)\
 **Author**: Armin Buescher\
-**License**: MIT License: [https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
+**License**: MIT License: [https://github.com/buffer/ioc\_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
 **State File**: [remnux.python3-packages.ioc-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ioc-parser.sls)
 
 ## dnslib
@@ -170,4 +156,3 @@ Python library to encode/decode DNS wire-format packets.
 **License**: BSD 2-Clause "Simplified" License ([https://github.com/paulc/dnslib/blob/master/LICENSE)](https://github.com/paulc/dnslib/blob/master/LICENSE))\
 **Notes**: Library - /opt/dnslib/bin/python3 - import dnslib\
 **State File**: [remnux.python3-packages.dnslib](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dnslib.sls)
-
