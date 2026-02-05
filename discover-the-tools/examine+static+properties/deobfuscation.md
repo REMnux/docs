@@ -43,19 +43,6 @@ Analyze XOR-encoded data.
 **License**: MIT License: [https://github.com/hellman/xortool/blob/master/LICENSE](https://github.com/hellman/xortool/blob/master/LICENSE)\
 **State File**: [remnux.python3-packages.xortool](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/xortool.sls)
 
-## RATDecoders
-
-Python3 Decoders for Remote Access Trojans.
-
-**Website**: [https://github.com/kevthehermit/RATDecoders](https://github.com/kevthehermit/RATDecoders)\
-**Author**: Kevin Breen: [https://x.com/KevTheHermit](https://x.com/KevTheHermit)\
-**License**: MIT License: [https://github.com/kevthehermit/RATDecoders/blob/master/LICENSE](https://github.com/kevthehermit/RATDecoders/blob/master/LICENSE)\
-**Notes**: Only available on older version of REMnux based on Ubuntu 20.04 (Focal). malconf\
-**State File**: [remnux.python3-packages.ratdecoders](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ratdecoders.sls)
-
-
-
-
 ## DC3-MWCP
 
 Parsing configuration information from malware.
