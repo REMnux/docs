@@ -26,4 +26,5 @@ Extract AutoIt scripts embedded in PE binaries.
 **Website**: [https://github.com/nazywam/AutoIt-Ripper](https://github.com/nazywam/AutoIt-Ripper)\
 **Author**: Michał Praszmo: [https://x.com/nazywam](https://x.com/nazywam)\
 **License**: MIT License: [https://github.com/nazywam/AutoIt-Ripper/blob/master/LICENSE](https://github.com/nazywam/AutoIt-Ripper/blob/master/LICENSE)\
+**Notes:** autoit-ripper\
 **State File**: [remnux.python3-packages.autoit-ripper](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/autoit-ripper.sls)
