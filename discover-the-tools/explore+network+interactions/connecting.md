@@ -58,11 +58,12 @@ A wrapper around wget, ssh, sftp, ftp, and telnet to route these connections thr
 
 Examine IRC activities with this IRC client.
 
-**Website**: [http://www.epicsol.org/](http://www.epicsol.org/)  
-**Author**: Michael Sandroff, Troy Rollo, Matthew Green, Jake Khuon, EPIC Software Labs  
-**License**: Free, custom license: [http://www.epicsol.org/copyright](http://www.epicsol.org/copyright)  
-**Notes**: epic5  
+**Website**: [https://www.epicsol.org/](https://www.epicsol.org/)\
+**Author**: Michael Sandroff, Troy Rollo, Matthew Green, Jake Khuon, EPIC Software Labs\
+**License**: Free, custom license: [https://www.epicsol.org/copyright](https://www.epicsol.org/copyright)\
+**Notes**: epic5\
 **State File**: [remnux.packages.epic5](https://github.com/REMnux/salt-states/blob/master/remnux/packages/epic5.sls)
+
 
 ## GNU Wget
 
