@@ -42,8 +42,9 @@ Run shellcode to trace and analyze its execution.
 **Website**: [https://github.com/edygert/runsc](https://github.com/edygert/runsc)\
 **Author**: Evan Dygert: [https://x.com/edygert](https://x.com/edygert)\
 **License**: MIT License: [https://github.com/edygert/runsc/blob/main/LICENSE](https://github.com/edygert/runsc/blob/main/LICENSE)\
-**Notes**: Use the `tracesc` command to execute runsc within Wine in a way that traces the execution of shellcode. WARNING! This wrapper will actually execute the shellcode on the system, which might lead to your system becoming infected. Only use this wrapper in an properly configured, isolated laboratory environment, which you can return to a pristine state at the end of your analysis.\
+**Notes**: Use the `tracesc` command to execute runsc within Wine in a way that traces the execution of shellcode. WARNING! This wrapper will actually execute the shellcode on the system, which might lead to your system becoming infected. Only use this wrapper in a properly configured, isolated laboratory environment, which you can return to a pristine state at the end of your analysis.\
 **State File**: [remnux.packages.runsc](https://github.com/REMnux/salt-states/blob/master/remnux/packages/runsc.sls)
+
 
 
 ## Speakeasy
