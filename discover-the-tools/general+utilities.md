@@ -201,7 +201,7 @@ Calculator.
 Filter data formatted using the JSON format used by Didier Stevens' tools.
 
 **Website**: [https://blog.didierstevens.com/2022/04/09/new-tool-myjson-filter-py/](https://blog.didierstevens.com/2022/04/09/new-tool-myjson-filter-py/)\
-**Author**: Didier Stevens: https://x.com/DidierStevens\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.myjson-filter](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/myjson-filter.sls)
 
