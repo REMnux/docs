@@ -78,11 +78,12 @@ Interact with servers via HTTP, HTTPS, FTP, and FTPS using this command-line too
 
 Interact with servers via supported protocols, including HTTP, HTTPS, FTP, IMAP, etc. using this command-line tool.
 
-**Website**: [https://curl.haxx.se](https://curl.haxx.se)  
-**Author**: Daniel Stenberg and contributors: [https://curl.haxx.se/docs/thanks.html](https://curl.haxx.se/docs/thanks.html)  
-**License**: Free, custom license: [https://curl.haxx.se/docs/copyright.html](https://curl.haxx.se/docs/copyright.html)  
-**Notes**: curl  
+**Website**: [https://curl.se](https://curl.se)\
+**Author**: Daniel Stenberg and contributors: [https://curl.se/docs/thanks.html](https://curl.se/docs/thanks.html)\
+**License**: Free, custom license: [https://curl.se/docs/copyright.html](https://curl.se/docs/copyright.html)\
+**Notes**: curl\
 **State File**: [remnux.packages.curl](https://github.com/REMnux/salt-states/blob/master/remnux/packages/curl.sls)
+
 
 
 ## zbarimg
