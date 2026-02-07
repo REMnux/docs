@@ -168,10 +168,11 @@ Extract and deobfuscate strings from PE executables.
 
 Search an XOR'ed file for indications of executable binaries.
 
-**Website**: [http://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html](http://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html)\
+**Website**: [https://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html](https://hooked-on-mnemonics.blogspot.com/2014/04/expexorpy.html)\
 **Author**: Alexander Hanel\
 **License**: Free, unknown license\
 **State File**: [remnux.scripts.ex-pe-xor](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/ex-pe-xor.sls)
+
 
 ## cs-decrypt-metadata.py
 
