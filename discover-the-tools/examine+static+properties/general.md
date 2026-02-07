@@ -18,10 +18,11 @@ Identify file type using signatures.
 
 Identify file type using signatures.
 
-**Website**: [https://google.github.io/magika](https://google.github.io/magika/)\
+**Website**: [https://google.github.io/magika](https://google.github.io/magika)\
 **Author**: Google\
-**License**: Apache License 2.0 ([https://github.com/google/magika/blob/main/LICENSE](https://github.com/google/magika/blob/main/LICENSE))\
+**License**: Apache License 2.0: [https://github.com/google/magika/blob/main/LICENSE](https://github.com/google/magika/blob/main/LICENSE)\
 **State File**: [remnux.python3-packages.magika](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/magika.sls)
+
 
 ## Yara Rules
 
