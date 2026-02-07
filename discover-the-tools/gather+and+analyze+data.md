@@ -10,9 +10,10 @@ Perform a variety of forensics and incident response tasks using this DFIR frame
 
 **Website**: [https://github.com/fox-it/dissect](https://github.com/fox-it/dissect)\
 **Author**: Dissect Team: dissect@fox-it.com\
-**License**: GNU Affero General Public License v3: https://github.com/fox-it/dissect/blob/main/LICENSE\
+**License**: GNU Affero General Public License v3: [https://github.com/fox-it/dissect/blob/main/LICENSE](https://github.com/fox-it/dissect/blob/main/LICENSE)\
 **Notes**: acquire, target-fs, rdump, rgeoip, target-query, target-shell, target-dump, target-info, target-reg, target-dd, target-mount\
 **State File**: [remnux.python3-packages.dissect](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dissect.sls)
+
 
 ## time-decode
 
