@@ -40,11 +40,11 @@ Scan files for malware signatures.
 
 Extract and analyze firmware images.
 
-**Website**: [https://github.com/ReFirmLabs/binwalk](https://github.com/ReFirmLabs/binwalk)  
-**Author**: Craig Heffner, ReFirmLabs  
-**License**: IBM Public License, Common Public License, GNU General Public License \(GPL\) v2: [https://www.sleuthkit.org/sleuthkit/licenses.php](https://www.sleuthkit.org/sleuthkit/licenses.php)  
-**Notes**: MIT License: [https://github.com/ReFirmLabs/binwalk/blob/master/LICENSE](https://github.com/ReFirmLabs/binwalk/blob/master/LICENSE)  
+**Website**: [https://github.com/ReFirmLabs/binwalk](https://github.com/ReFirmLabs/binwalk)\
+**Author**: Craig Heffner, ReFirmLabs\
+**License**: MIT License: [https://github.com/ReFirmLabs/binwalk/blob/master/LICENSE](https://github.com/ReFirmLabs/binwalk/blob/master/LICENSE)\
 **State File**: [remnux.packages.binwalk](https://github.com/REMnux/salt-states/blob/master/remnux/packages/binwalk.sls)
+
 
 ## UPX
 
