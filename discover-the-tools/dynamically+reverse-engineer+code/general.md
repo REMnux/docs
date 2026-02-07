@@ -8,11 +8,12 @@ description: Dynamically Reverse-Engineer Code
 
 Trace the execution of a process to analyze its behavior.
 
-**Website**: [https://frida.re](https://frida.re)  
-**Author**: Ole Andre Vadla Ravnas  
-**License**: wxWindows Library License 3.1: [https://github.com/frida/frida/blob/master/COPYING](https://github.com/frida/frida/blob/master/COPYING)  
-**Notes**: frida, frida-ps, frida-trace, frida-discover, frida-ls-devices, frida-kill  
+**Website**: [https://frida.re](https://frida.re)\
+**Author**: Ole Andre Vadla Ravnas\
+**License**: wxWindows Library License 3.1: [https://github.com/frida/frida/blob/main/COPYING](https://github.com/frida/frida/blob/main/COPYING)\
+**Notes**: frida, frida-ps, frida-trace, frida-discover, frida-ls-devices, frida-kill\
 **State File**: [remnux.python3-packages.frida](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/frida.sls)
+
 
 ## Wine
 
