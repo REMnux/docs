@@ -192,9 +192,10 @@ Analyze disk images and recover files from them.
 
 **Website**: [https://www.sleuthkit.org/sleuthkit](https://www.sleuthkit.org/sleuthkit)\
 **Author**: Brian Carrier, and others\
-**License**: IBM Public License, Common Public License, GNU General Public License (GPL) v2: [https://www.sleuthkit.org/sleuthkit/licenses.php](https://www.sleuthkit.org/sleuthkit/licenses.php)\
-**Notes**: For a listing of commands, see [http://wiki.sleuthkit.org/index.php?title=TSK\_Tool\_Overview](http://wiki.sleuthkit.org/index.php?title=TSK\_Tool\_Overview)\
+**License**: IBM Public License,  Common Public License, GNU General Public License (GPL) v2: [https://www.sleuthkit.org/sleuthkit/licenses.php](https://www.sleuthkit.org/sleuthkit/licenses.php)\
+**Notes**: For a listing of commands, see https://wiki.sleuthkit.org/index.php?title=TSK_Tool_Overview\
 **State File**: [remnux.packages.sleuthkit](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sleuthkit.sls)
+
 
 ## binwalk
 
