@@ -152,7 +152,7 @@ The password for the container's user `nonroot` is `nonroot`. The remnux/viper i
 
 ## Ciphey Automatic Decoder and Decrypter <a href="#ciphey" id="ciphey"></a>
 
-[Ciphey](https://github.com/Ciphey/Ciphey) is designed to automatically recognize and decode/decrypt common encoding and encryption techniques, as [outlined in its documentation](https://docs.ciphey.online/en/latest/ciphers.html). It was created by [Brandon Skerritt](https://twitter.com/brandon\_skerrit) and is licensed under [MIT License](https://github.com/Ciphey/Ciphey/blob/master/license). According the author, the tool uses "natural language processing & artificial intelligence, along with some common sense."
+[Ciphey](https://github.com/Ciphey/Ciphey) is designed to automatically recognize and decode/decrypt common encoding and encryption techniques, as [outlined in its documentation](https://docs.ciphey.online/en/latest/ciphers.html). It was created by [Brandon Skerritt](https://x.com/brandon\_skerrit) and is licensed under [MIT License](https://github.com/Ciphey/Ciphey/blob/master/license). According the author, the tool uses "natural language processing & artificial intelligence, along with some common sense."
 
 To run Ciphey using this Docker container, create a directory (e.g. \~/workdir) where you'll store your input file (e.g., input.txt). Then, use a command like this to run Ciphey and have your directory mapped into the container:
 
