@@ -1,6 +1,6 @@
 # SaltStack Management
 
-The REMnux distro uses [SaltStack](https://www.saltstack.com) to automate the installation and configuration of the tools that comprise the distro. This is accomplished using [Salt state files](https://docs.saltstack.com/en/getstarted/fundamentals/states.html), each one describing the steps necessary to set up the software component. These files are stored in [the REMnux/salt-states repository on Github](https://github.com/REMnux/salt-states), and are available for your review. Read on to learn how REMnux uses these State Files to manage the configuration of a REMnux system.
+The REMnux distro uses [SaltStack](https://saltproject.io) to automate the installation and configuration of the tools that comprise the distro. This is accomplished using [Salt state files](https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html), each one describing the steps necessary to set up the software component. These files are stored in [the REMnux/salt-states repository on Github](https://github.com/REMnux/salt-states), and are available for your review. Read on to learn how REMnux uses these State Files to manage the configuration of a REMnux system.
 
 {% hint style="info" %}
 REMnux uses SaltStack for locally managing the configuration of the system where the distro is installed. It doesn't use other SaltStack capabilities, such as remote command execution.
@@ -10,7 +10,7 @@ A state file can direct SaltStack to install a tool by supporting a variety of f
 
 ## Salt State File to Install an Ubuntu Package <a id="state-file-ubuntu-package"></a>
 
-For example, here's the Salt state file [edb-debgger.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/edb-debugger.sls) for installing [edb](https://github.com/eteran/edb-debugger), a powerful debugger for examining ELF binaries:
+For example, here's the Salt state file [edb-debugger.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/edb-debugger.sls) for installing [edb](https://github.com/eteran/edb-debugger), a powerful debugger for examining ELF binaries:
 
 ```text
 include:
@@ -20,6 +20,8 @@ include:
 edb-debugger:
   pkg.installed:
     - pkgrepo: remnux
+    - version: latest
+    - upgrade: True
     - require:
       - sls: remnux.packages.xterm
 ```
@@ -58,7 +60,7 @@ The state file first creates a virtual environment at `/opt/oletools` using `vir
 
 ## Salt State File to Configure a Tool
 
-REMnux also uses Salt state files configure the environment and the tools installed as part of the distro. For example, here's a short excerpt from [the Salt state file that configures Ghidra](https://github.com/REMnux/salt-states/blob/master/remnux/config/ghidra/init.sls), which is a reverse-engineering tool that includes a disassembler and debugger. \(The installation of Ghidra is handled using a separate [ghidra.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/ghidra.sls) file.\)
+REMnux also uses Salt state files to configure the environment and the tools installed as part of the distro. For example, here's a short excerpt from [the Salt state file that configures Ghidra](https://github.com/REMnux/salt-states/blob/master/remnux/config/ghidra/init.sls), which is a reverse-engineering tool that includes a disassembler and debugger. \(The installation of Ghidra is handled using a separate [ghidra.sls](https://github.com/REMnux/salt-states/blob/master/remnux/packages/ghidra.sls) file.\)
 
 ```text
 remnux-config-ghidra-file-preferences:
@@ -72,14 +74,14 @@ remnux-config-ghidra-file-preferences:
     - require:
       - user: remnux-user-{{ user }}
     - watch:
-      - file: remnux-config-ghidra-gdt-owner
+      - archive: remnux-config-ghidra-gdt-archive
 ```
 
 In the example above:
 
-* [`file.managed`](https://docs.saltstack.com/en/latest/ref/states/all/salt.states.file.html#salt.states.file.managed) specifies the desired state of the Ghidra "preferences" file, located in the user's home directory. 
+* [`file.managed`](https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html#salt.states.file.managed) specifies the desired state of the Ghidra "preferences" file, located in the user's home directory. 
 * `source` of the file is [the version of "preferences" in the GitHub repository](https://github.com/REMnux/salt-states/blob/master/remnux/config/ghidra/preferences) where this state file resides; this directs SaltStack to copy this file to the location specified by `name`. 
-* `replace`  directs SaltStack not to replace the file if it already exists.
+* `replace` directs SaltStack not to replace the file if it already exists.
 * `user` and `group` specify that the file should be owned by the user and the user's group.
 * `makedirs` direct SaltStack to create the directory structure so the file can be placed in the location specified by `name`.
 
@@ -94,5 +96,5 @@ The state file instructions above rely on the values `home` and `user`, which ar
 {%- endif -%}
 ```
 
-This excerpt from the Ghidra configuration state file uses the "[pillars](https://docs.saltstack.com/en/master/ref/modules/all/salt.modules.pillar.html#salt.modules.pillar.get)" feature of SaltStack, which gives SaltStack access to named values defined before the state file has a chance to run. In this case, the state file sets the `user` value by retrieving the pillar variable named `remnux_user`, which is normally set by [the REMnux installer](remnux-installer.md); if it's not available, SaltStack is directed to use the default value "remnux." Further, depending on the `user` value, the state file sets the `home` value to point to the user's home directory.
+This excerpt from the Ghidra configuration state file uses the "[pillars](https://docs.saltproject.io/en/master/ref/modules/all/salt.modules.pillar.html#salt.modules.pillar.get)" feature of SaltStack, which gives SaltStack access to named values defined before the state file has a chance to run. In this case, the state file sets the `user` value by retrieving the pillar variable named `remnux_user`, which is normally set by [the REMnux installer](remnux-installer.md); if it's not available, SaltStack is directed to use the default value "remnux." Further, depending on the `user` value, the state file sets the `home` value to point to the user's home directory.
 
