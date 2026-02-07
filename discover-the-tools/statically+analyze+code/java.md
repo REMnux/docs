@@ -14,17 +14,6 @@ Java decompiler.
 **State File**: [remnux.tools.cfr](https://github.com/REMnux/salt-states/blob/master/remnux/tools/cfr.sls)
 
 
-## JAD Java Decompiler
-
-Java decompiler and analysis tool.
-
-**Website**: [Unknown](Unknown)\
-**Author**: Pavel Kouznetsov\
-**License**: Free, unknown license\
-**Notes**: jad\
-**State File**: [remnux.tools.jad](https://github.com/REMnux/salt-states/blob/master/remnux/tools/jad.sls)
-
-
 ## JD-GUI Java Decompiler
 
 Java decompiler with GUI.
