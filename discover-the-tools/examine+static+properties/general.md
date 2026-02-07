@@ -210,10 +210,11 @@ Extract and analyze firmware images.
 
 Identify file type using "magic" numbers.
 
-**Website**: [http://astron.com/pub/file/README](http://astron.com/pub/file/README)\
+**Website**: [https://github.com/file/file](https://github.com/file/file)\
 **Author**: Ian F. Darwin, Christos Zoulas\
 **License**: BSD 2-Clause Simplified License: [https://github.com/file/file/blob/master/COPYING](https://github.com/file/file/blob/master/COPYING)\
 **State File**: [remnux.packages.file](https://github.com/REMnux/salt-states/blob/master/remnux/packages/file.sls)
+
 
 
 ## bulk_extractor
