@@ -50,11 +50,12 @@ Decompile VBA macro p-code from Microsoft Office documents.
 
 Microsoft Office OLE2 compound documents.
 
-**Website**: [http://www.decalage.info/python/oletools](http://www.decalage.info/python/oletools)\
+**Website**: [https://www.decalage.info/python/oletools](https://www.decalage.info/python/oletools)\
 **Author**: Philippe Lagadec: [https://x.com/decalage2](https://x.com/decalage2)\
 **License**: Free, custom license: [https://github.com/decalage2/oletools/blob/master/LICENSE.md](https://github.com/decalage2/oletools/blob/master/LICENSE.md)\
 **Notes**: mraptor, msodde, olebrowse, oledir, oleid, olemap, olemeta, oleobj, oletimes, olevba, pyxswf, rtfobj, ezhexviewer\
 **State File**: [remnux.python3-packages.oletools](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/oletools.sls)
+
 
 
 ## EvilClippy
