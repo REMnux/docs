@@ -154,16 +154,6 @@ Graphical file manager.
 **State File**: [remnux.packages.nautilus](https://github.com/REMnux/salt-states/blob/master/remnux/packages/nautilus.sls)
 
 
-## PowerShell  Core
-
-Run PowerShell scripts and commands.
-
-**Website**: [https://github.com/powershell/powershell](https://github.com/powershell/powershell)\
-**Author**: Microsoft Corporation\
-**License**: MIT License: [https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt](https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt)\
-**Notes**: pwsh\
-**State File**: [remnux.packages.powershell](https://github.com/REMnux/salt-states/blob/master/remnux/packages/powershell.sls)
-
 ## Wine
 
 Run Windows applications.
