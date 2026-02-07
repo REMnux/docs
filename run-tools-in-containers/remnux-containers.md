@@ -42,7 +42,7 @@ For documentation about this toolkit, including the listing of its tools, see [h
 
 ## JSDetox JavaScript Analysis Tool <a href="#jsdetox" id="jsdetox"></a>
 
-[JSDetox](https://www.relentless-coding.com/projects/jsdetox) is a browser-based tool for analyzing and deobfuscating JavaScript. It was created by [Sven Taute](https://twitter.com/sven\_t) and is licensed under [GNU General Public License (GPL) v2](https://github.com/svent/jsdetox).
+[JSDetox](https://www.relentless-coding.com/projects/jsdetox) is a browser-based tool for analyzing and deobfuscating JavaScript. It was created by [Sven Taute](https://x.com/sven\_t) and is licensed under [GNU General Public License (GPL) v2](https://github.com/svent/jsdetox).
 
 You can use the following command to launch the JSDetox Docker image, with the application listening locally on TCP port 3000. You can then connect to http://localhost:3000 using your web browser:
 

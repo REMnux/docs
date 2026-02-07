@@ -30,7 +30,7 @@ The line `edb-debugger:` specifies the name of the Ubuntu package that SaltStack
 
 ## Salt State File to Install a pip Package <a id="state-file-pip"></a>
 
-Here's an example of a Salt state file [oletools.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/oletools.sls) to install [oletools](http://www.decalage.info/python/oletools), a set of Python tools for analyzing Microsoft Office documents. REMnux installs Python packages in isolated virtual environments to avoid dependency conflicts:
+Here's an example of a Salt state file [oletools.sls](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/oletools.sls) to install [oletools](https://www.decalage.info/python/oletools), a set of Python tools for analyzing Microsoft Office documents. REMnux installs Python packages in isolated virtual environments to avoid dependency conflicts:
 
 ```text
 include:
