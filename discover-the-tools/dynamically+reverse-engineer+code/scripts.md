@@ -29,11 +29,12 @@ Python3 and JavaScript interop engine, fork of the original PyV8 project.
 
 Deobfuscate JavaScript scripts using AST and Partial Evaluation techniques.
 
-**Website**: [https://github.com/mindedsecurity/jstillery](https://github.com/mindedsecurity/jstillery)  
-**Author**: Stefano Di Paola, Minded Security: [http://www.mindedsecurity.com](http://www.mindedsecurity.com)  
-**License**: GNU General Public License \(GPL\) v3: [https://github.com/mindedsecurity/JStillery/blob/master/LICENSE](https://github.com/mindedsecurity/JStillery/blob/master/LICENSE)  
-**Notes**: jstillery  
+**Website**: [https://github.com/mindedsecurity/jstillery](https://github.com/mindedsecurity/jstillery)\
+**Author**: Stefano Di Paola, Minded Security: [https://mindedsecurity.com](https://mindedsecurity.com)\
+**License**: GNU General Public License (GPL) v3: [https://github.com/mindedsecurity/JStillery/blob/master/LICENSE](https://github.com/mindedsecurity/JStillery/blob/master/LICENSE)\
+**Notes**: jstillery\
 **State File**: [remnux.node-packages.jstillery](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/jstillery.sls)
+
 
 ## box-js
 
