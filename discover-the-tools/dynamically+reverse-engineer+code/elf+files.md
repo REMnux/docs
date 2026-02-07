@@ -18,10 +18,11 @@ Multi-language debugger.
 
 An AArch32/x86/x86-64 debugger, well suited for debugging ELF files.
 
-**Website**: [https://github.com/eteran/edb-debugger](https://github.com/eteran/edb-debugger)  
-**Author**: Evan Teran: [http://codef00.com/about](http://codef00.com/about)  
-**License**: GNU General Public License \(GPL\) v2: [https://github.com/eteran/edb-debugger/blob/master/COPYING](https://github.com/eteran/edb-debugger/blob/master/COPYING)  
+**Website**: [https://github.com/eteran/edb-debugger](https://github.com/eteran/edb-debugger)\
+**Author**: Evan Teran: [https://github.com/eteran](https://github.com/eteran)\
+**License**: GNU General Public License (GPL) v2: [https://github.com/eteran/edb-debugger/blob/master/COPYING](https://github.com/eteran/edb-debugger/blob/master/COPYING)\
 **State File**: [remnux.packages.edb-debugger](https://github.com/REMnux/salt-states/blob/master/remnux/packages/edb-debugger.sls)
+
 
 ## ltrace
 
