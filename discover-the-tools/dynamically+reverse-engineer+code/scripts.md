@@ -49,11 +49,12 @@ Analyze suspicious JavaScript scripts.
 
 Execute and deobfuscate JavaScript using Mozilla's standalone JavaScript engine.
 
-**Website**: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)  
-**Author**: Mozilla Foundation  
-**License**: Mozilla Public License 2.0: [https://github.com/mozilla/treeherder/blob/master/LICENSE.txt](https://github.com/mozilla/treeherder/blob/master/LICENSE.txt)  
-**Notes**: js  
+**Website**: [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)\
+**Author**: Mozilla Foundation\
+**License**: Mozilla Public License 2.0: [https://www.mozilla.org/en-US/MPL/2.0/](https://www.mozilla.org/en-US/MPL/2.0/)\
+**Notes**: js\
 **State File**: [remnux.packages.spidermonkey](https://github.com/REMnux/salt-states/blob/master/remnux/packages/spidermonkey.sls)
+
 
 ## Rhino Debugger
 
