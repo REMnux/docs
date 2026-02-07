@@ -87,10 +87,11 @@ Emulate common network services and interact with malware.
 
 Emulate common network services and interact with malware.
 
-**Website**: [https://github.com/fireeye/flare-fakenet-ng](https://github.com/fireeye/flare-fakenet-ng)\
-**Author**: FireEye Inc, Peter Kacherginsky, Michael Bailey: [https://github.com/fireeye/flare-fakenet-ng/blob/master/AUTHORS](https://github.com/fireeye/flare-fakenet-ng/blob/master/AUTHORS)\
-**License**: Apache License 2.0: [https://github.com/fireeye/flare-fakenet-ng/blob/master/LICENSE.txt](https://github.com/fireeye/flare-fakenet-ng/blob/master/LICENSE.txt)\
+**Website**: [https://github.com/mandiant/flare-fakenet-ng](https://github.com/mandiant/flare-fakenet-ng)\
+**Author**: Mandiant, Peter Kacherginsky, Michael Bailey: [https://github.com/mandiant/flare-fakenet-ng/blob/master/AUTHORS](https://github.com/mandiant/flare-fakenet-ng/blob/master/AUTHORS)\
+**License**: Apache License 2.0: [https://github.com/mandiant/flare-fakenet-ng/blob/master/LICENSE.txt](https://github.com/mandiant/flare-fakenet-ng/blob/master/LICENSE.txt)\
 **Notes**: Run the tool using `sudo fakenet`. First, edit `/opt/fakenet-ng/lib/python3.x/site-packages/fakenet/configs/default.ini`, changing the `LinuxRestrictInterface` parameter to your Ethernet network interface name, such as `ens33`.\
 **State File**: [remnux.python3-packages.fakenet-ng](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/fakenet-ng.sls)
+
 
 
