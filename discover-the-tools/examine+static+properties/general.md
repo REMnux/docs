@@ -231,9 +231,10 @@ Fuzzy String Matching in Python.
 
 **Website**: [https://github.com/seatgeek/thefuzz](https://github.com/seatgeek/thefuzz)\
 **Author**: SeatGeek\
-**License**: MIT License ([https://github.com/seatgeek/thefuzz/blob/master/LICENSE.txt)](https://github.com/seatgeek/thefuzz/blob/master/LICENSE.txt))\
+**License**: MIT License: [https://github.com/seatgeek/thefuzz/blob/master/LICENSE.txt](https://github.com/seatgeek/thefuzz/blob/master/LICENSE.txt)\
 **Notes**: Updated implementation of fuzzywuzzy\
 **State File**: [remnux.python3-packages.thefuzz](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/thefuzz.sls)
+
 
 
 ## strings.py
