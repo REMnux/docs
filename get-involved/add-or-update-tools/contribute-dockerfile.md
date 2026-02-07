@@ -1,139 +1,210 @@
 # Contribute a Dockerfile
 
-Please contribute to the [REMnux collection of Docker images](../../run-tools-in-containers/remnux-containers.md) of malware analysis applications. You'll get a chance to experiment with [Docker](https://www.docker.com), become a master at setting up an application of your choice, and expand the set of tools that others can run for examining malicious software.
+The following steps describe how you can create a Dockerfile for a malware analysis tool and contribute it to the [REMnux collection of Docker images](../../run-tools-in-containers/remnux-containers.md).
 
 To get started, review:
 
-1. [REMnux documentation section on Docker images.](../../run-tools-in-containers/remnux-containers.md)
+1. [REMnux documentation on Docker images.](../../run-tools-in-containers/remnux-containers.md)
 2. [Docker documentation on Dockerfile creation.](https://docs.docker.com/engine/reference/builder/)
-3. [Dockerfiles in the REMnux Docker repository on Github.](https://github.com/remnux/docker)
-4. The details in this section below.
+3. [Dockerfiles in the REMnux Docker repository on GitHub.](https://github.com/remnux/docker)
+4. The details below.
 
-{% hint style="success" %}
-Before creating the Dockerfile for the application you'd like to contribute to the REMnux toolkit, [reach out to Lenny Zeltser](https://zeltser.com/contact), the primary REMnux maintainer, to confirm that the application is a fit for REMnux.
+{% hint style="info" %}
+Before starting this work, consider [reaching out to Lenny Zeltser](https://zeltser.com/contact) to confirm that it makes sense to include the tool as part of the REMnux collection of Docker images.
 {% endhint %}
 
-## Creating a Dockerfile
+## 1. Install Git and Docker
 
-A properly-formatted Dockerfile describes the steps necessary to build and configure your application inside a Docker container in a repeatable and unattended manner. To get a sense for the structure of such files, browse the [REMnux repository of Dockerfiles on Github](https://github.com/REMnux/docker/). To explain how to build such files, we'll use the [JSDetox Dockerfile](https://github.com/REMnux/docker/blob/master/jsdetox/Dockerfile) as an example.
+Follow the steps appropriate for your operating system to install [Git](https://git-scm.com) and [Docker](https://www.docker.com/products/docker-desktop) on your system.
 
-The beginning of your Dockerfile should include comments that state which application is included in the image, who created the app and where it can be obtained in a traditional form. The comments should explain how the use of the image should run it. For instance:
+Clone the REMnux/docker repository, which contains the existing Dockerfiles:
 
 ```text
-# This Docker image encapsulates the JSDetox malware analysis tool by @sven_t
-# from http://www.relentless-coding.com/projects/jsdetox
+git clone https://github.com/REMnux/docker.git
+```
+
+Browse the existing Dockerfiles in the repository to see how other tools are packaged. Instead of creating a file from scratch, consider using an existing Dockerfile as a starting point for your own.
+
+## 2. Create the Dockerfile
+
+Create a subdirectory named after your tool in the local copy of the repository, and add a `Dockerfile` inside it. A REMnux Dockerfile follows a consistent structure. The sections below explain each part, using the [radare2 Dockerfile](https://github.com/REMnux/docker/blob/master/radare2/Dockerfile) as the primary example.
+
+### Header Comments
+
+Begin the file with comments that state the tool's name, website, description, author, license, and usage instructions:
+
+```text
+# Name: radare2
+# Website: https://www.radare.org/n/radare2.html
+# Description: Examine binary files, including disassembling and debugging.
+# Category: Dynamically Reverse-Engineer Code: General
+# Author: https://github.com/radareorg/radare2/blob/master/AUTHORS.md
+# License: GNU Lesser General Public License (LGPL) v3: https://github.com/radareorg/radare2/blob/master/COPYING
+# Notes: r2, rasm2, rabin2, rahash2, rafind2, r2agent
 #
-# To run this image after installing Docker, use the following command:
-# sudo docker run -d --rm --name jsdetox -p 3000:3000 remnux/jsdetox
-# Then, connect to http://localhost:3000 using your web browser.
+# To run this image after installing Docker, use the command below, replacing
+# "~/workdir" with the path to your working directory on the underlying host.
+# Before running the docker, create ~/workdir on your host.
+#
+# docker run --rm -it --cap-drop=ALL --cap-add=SYS_PTRACE -v ~/workdir:/home/nonroot/workdir remnux/radare2
+#
+# Then run "r2" or other Radare2 commands inside the container.
 ```
 
-REMnux images typically use a minimal Docker image of Ubuntu 18.04 as a starting point, as designated by the `FROM` directive below. The `LABEL` directive specify meta data such as the maintainer and version of the Dockerfile:
+### Base Image and Labels
+
+Use a `FROM` directive to specify the base image, followed by `LABEL` directives for maintainer information and the date of the last update:
 
 ```text
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 LABEL maintainer="Lenny Zeltser (@lennyzeltser, www.zeltser.com)"
-LABEL updated="1 May 2020"
+LABEL updated="13 Apr 2022"
+LABEL updated_by="Corey Forman"
 ```
 
-The `USER` directive specifies the user inside the container that should perform the installation steps \("root"\). The `RUN` directive specifies the commands to run inside the container to install the software. Your Dockerfile file should include the `apt-get update` command, followed by `apt-get install -y` and a listing of the Ubuntu packages the application requires.The starting point for the image is a minimal Ubuntu installation, so assume that a given package is absent unless you explicitly install it:
+{% hint style="success" %}
+New Dockerfiles should use a current Ubuntu LTS base image such as `ubuntu:22.04`. Some existing images in the repository use older versions.
+{% endhint %}
+
+### Locale Settings
+
+Set the locale environment variables so that tools don't encounter encoding issues:
+
+```text
+ENV LANG C.UTF-8
+ENV LANGUAGE C.UTF-8
+ENV LC_ALL C.UTF-8
+```
+
+### Build Arguments
+
+Use `ARG` to define version numbers as build-time variables. This makes it easy to update the tool version later without changing multiple lines:
+
+```text
+ARG R2VER=5.6.6
+```
+
+### Package Installation
+
+Install the Ubuntu packages your tool requires using `apt-get`. Chain commands with `&&` and clean up the package cache in the same `RUN` layer to minimize the image size. The `\` character breaks the package list across multiple lines for readability. Assume that a given package is absent unless you explicitly install it, since the base image is a minimal Ubuntu installation:
 
 ```text
 USER root
 RUN apt-get update && apt-get install -y \
-  git \
-  ruby \
-  ruby-dev \
-  bundler \
-  zlib1g-dev \
-  build-essential && \
+  sudo \
+  wget \
+  git && \
   rm -rf /var/lib/apt/lists/*
 ```
 
-Note that the `RUN` command above links several commands together using `&&` and employs `\` to break this sequence of commands into multiple lines for readability. We're linking several commands like this to slightly minimize the size of the resulting Docker image file. This is also the reason why we include the `rm` command to get rid of the package listing.
+### Non-Root User Creation
 
-The followng `RUN` directive sets up the non-root user creatively named "nonroot", so that commands and applications that don't require root provileges have a more restricted environment within which to run:
+Create a non-root user so that the tool runs with restricted privileges. The following block creates the user, sets up a home directory and working directory, and grants passwordless sudo access:
 
 ```text
 RUN groupadd -r nonroot && \
-  useradd -r -g nonroot -d /home/nonroot -s /sbin/nologin -c "Nonroot User" nonroot && \
-  mkdir /home/nonroot && \
-  chown -R nonroot:nonroot /home/nonroot
+  useradd -m -d /home/nonroot -g nonroot -s /usr/sbin/nologin -c "Nonroot User" nonroot && \
+  mkdir -p /home/nonroot/workdir && \
+  chown -R nonroot:nonroot /home/nonroot && \
+  usermod -a -G sudo nonroot && echo 'nonroot:nonroot' | chpasswd && \
+  echo "nonroot ALL=(ALL) NOPASSWD: ALL" >/etc/sudoers.d/nonroot
 ```
 
-The next set of directives tells Docker to start running commands using the newly-set up "nonroot" user, defines the working directory to match that user's home directory and retrieves the code for the application we're installing \(JSDetox, in this case\):
+### Application Installation
+
+The installation steps vary by tool. The radare2 Dockerfile downloads a `.deb` package from a GitHub release and installs it using `dpkg`. The `ARG` variable defined earlier keeps the version number in one place:
+
+```text
+RUN wget -O /tmp/radare2_${R2VER}_amd64.deb https://github.com/radareorg/radare2/releases/download/${R2VER}/radare2_${R2VER}_amd64.deb && \
+  dpkg -i /tmp/radare2_${R2VER}_amd64.deb && \
+  r2pm init && \
+  r2pm update && \
+  rm /tmp/radare2_${R2VER}_amd64.deb
+```
+
+### Final Directives
+
+The closing directives switch to the non-root user, set the working directory, declare a volume for file sharing, expose network ports, and specify the default command:
 
 ```text
 USER nonroot
-WORKDIR /home/nonroot
-RUN git clone https://github.com/svent/jsdetox.git
+ENV HOME /home/nonroot
+WORKDIR /home/nonroot/workdir
+VOLUME ["/home/nonroot/workdir"]
+EXPOSE 8080
+CMD ["/bin/bash"]
 ```
 
-The following instructions will install the application using the `bundle install` command, according the JSDetox installation instructions. These steps need to run as "root" to have the ability to copy the application's files into protected locations:
+{% hint style="info" %}
+`CMD` specifies a default command that can be overridden when the user launches the container. `ENTRYPOINT` specifies a command that always runs, with any arguments passed at launch appended to it. For example, the [thug Dockerfile](https://github.com/REMnux/docker/blob/master/thug/Dockerfile) uses `ENTRYPOINT ["thug"]` so users can pass URLs directly: `docker run --rm remnux/thug http://example.com`. Most REMnux images use `CMD ["/bin/bash"]` to provide an interactive shell by default.
+{% endhint %}
+
+{% hint style="success" %}
+Simple Python tools can use a `python:3-slim` base image instead of Ubuntu. For an example, see the [binary-refinery Dockerfile](https://github.com/REMnux/docker/blob/master/binary-refinery/Dockerfile), which installs the tool using `pip` directly.
+{% endhint %}
+
+## 3. Build and Test the Image
+
+It's difficult to create a working Dockerfile in one step. When developing your Dockerfile, consider launching a base container interactively to figure out the installation commands:
 
 ```text
-USER root
-WORKDIR /home/nonroot/jsdetox
-RUN sed "s/, '0.9.8'/, '0.12.3'/g" -i Gemfile
-RUN bundle install
+docker run --rm -it ubuntu:22.04 bash
 ```
 
-The final set of directives below tells Docker to switch back to using the "nonroot" user and sets the working directory to the location from which JSDetox should be launched. It also specifies which command Docker should run when this image is launched without any parameters:
+Manually type and test each installation command inside the container's shell. Once you've validated that a specific sequence of commands works, transcribe them into your Dockerfile.
+
+{% hint style="success" %}
+This prototyping workflow saves time: launch the base container, figure out the steps interactively, then write them into the Dockerfile one or two directives at a time.
+{% endhint %}
+
+Once your Dockerfile is ready, go to the directory where it resides and build the image, replacing "image-name" with the name you'd like to assign:
 
 ```text
-USER nonroot
-EXPOSE 3000
-WORKDIR /home/nonroot/jsdetox
-CMD ./jsdetox -l $HOSTNAME 2>/dev/null
+docker build -t image-name .
 ```
 
-By default, JSDetox listens on localhost. To give us the opportunity to connect to JSDetox from outside of its container, the command above launches the tool with the `-l` parameter and specifies the $HOSTNAME varilable. This environment variable is automatically defined to match the hostname that Docker will assign when this container runs, which will allow JSDetox to listen on the network interface accessible from our underlying host.
-
-## Building a Image from the Dockerfile
-
-It’s difficult to create a Dockerfile, such as the one we reviewed above, in one step. Inevitably, some command will run in an unexpected manner, preventing the application from installing properly. Before documenting your steps in Dockerfile, consider launching the base Ubuntu container like this:
-
-```text
-docker run --rm -it ubuntu:18.04 bash
-```
-
-Then, manually type and write down the commands into the container's shell to install the desired application. Once you've validated that a specific sequence of commands works, start building a Dockerfile by adding your instructions one or two at a time to validate that they work as intended.
-
-Once you've created a Dockerfile that contains the desired directives, go to the directory where the file is present and run the following command, where "image-name" is he name you'd like to assign to the image file you're building:
-
-```text
-docker build -t=image-name .
-```
-
-After Docker builds the image, you can run it using the following command to get a shell in the container where your application has been installed:
+After Docker builds the image, run it to verify that the tool works:
 
 ```text
 docker run --rm -it image-name bash
 ```
 
-Of course, "image-name" in the command above should correspond to the name you've assigned to the image. The `--rm` parameter directs Docker to automatically remove the container once it finishes running. This gets rid of any changes the application may have made to its local environment when it ran, but does not remove the cached image file that represents the app on your system. The `-it` parameter requests that Docker open an interactive session to the container so you can interact with it.
+Test the following inside the container:
 
-Once you have built and tested your Dockerfile, [share it with Lenny Zeltser](https://zeltser.com/contact), so he can review it and, if appropriate, add your contribution to the REMnux repository.
+* The tool runs and produces expected output.
+* The non-root user is active (check with `whoami`).
+* Volume mounting works: run with `-v ~/workdir:/home/nonroot/workdir` and verify files are accessible.
 
-## Facilitating File System and Network Interactions
+## 4. Handle File and Network Interactions
 
-The container will be isolated from the host system: by default it will be able to communicate over the network in the outbound direction, but won't accept inbound traffic. Also, if the container is invoked with the `--rm` parameter, its contents will disappear after it stops running. When building the image, anticipate the user's need to communicate with the app inside the container over the network or to pass files in and out of the container.
+The container is isolated from the host system: by default it can communicate over the network in the outbound direction, but won't accept inbound traffic. If the container is invoked with the `--rm` parameter, its contents disappear after it stops running. When building the image, anticipate the user's need to communicate with the application inside the container over the network or to pass files in and out of the container.
 
-### **Accessing Network Ports in the Container**
+### Accessing Network Ports in the Container
 
-In the JSDetox example above, the application listens on TCP port 3000. In its default configuration, JSDetox listens on localhost, which would make its port inaccessible from outside its Docker container. This is why we launched JSDetox with the `-l $HOSTNAME` parameter. This directed the application to listen on the network interface that could be accessed from outside the container.
-
-Unless the user explicitly requests access to the container's port when launching its image, no ports will be accessible from the underlying system. Fortunately, Docker allows us to use the `-p` parameter to specify that a specific port within the container should be accessible from outside the container. For example, to access JSDetox’ port 3000, the user needs to specify `-p 3000:3000`. This maps the container’s port 3000 to the underlying host’s port 3000, allowing the user to communicate with JSDetox by connecting to http://localhost:3000 using a web browser.
-
-### **Sharing Files with the Container**
-
-There is no need to share files with JSDetox inside the container by using the file system, because this application interacts with the user through the web browser. In contrast, some files expect the user to provide input or share output via the file system. Docker supports the `-v` parameter to share a directory between the underlying host and the container.
-
-For example, let’s say we wanted to share a folder with the container running [Rekall](../../run-tools-in-containers/remnux-containers.md#rekall), which is available in the REMnux repository on Docker Hub. If the memory image file that you’d like to analyze is on your underlying host in the ~/files directory, you could share that directory with the Rekall container by specifying `-v ~/files:/home/nonroot/files` when running the application’s image:
+If the tool listens on a network port, the user must explicitly expose it when launching the container using the `-p` parameter. For example, radare2 includes `r2agent`, which provides a web interface on port 8080. To access this from outside the container, the user specifies `-p 8080:8080`:
 
 ```text
-sudo docker run --rm -it -v ~/files:/home/nonroot/files remnux/rekall bash
+docker run --rm -it -p 8080:8080 remnux/radare2
 ```
 
-This maps the local ~/files directory to the /home/nonroot/files directory inside the container. The Rekall image is built to run the user-designated command \(e.g., `bash`\) as the user "nonroot". To ensure that the non-root user has access to the underlying hosts ~/files directory, the user of the app will need to make that directory world-accessible \(i.e., `chmod a+xwr ~/files`\) before launching the container.
+This maps the container's port 8080 to the underlying host's port 8080, allowing the user to connect by browsing to `http://localhost:8080`. Use the `EXPOSE` directive in the Dockerfile to document which ports the application uses, and include the `-p` flag in the usage instructions in the header comments.
 
+### Sharing Files with the Container
+
+Some tools expect the user to provide input or retrieve output via the file system. Docker supports the `-v` parameter to share a directory between the underlying host and the container. For example, to share a working directory with the radare2 container:
+
+```text
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
+```
+
+This maps the local `~/workdir` directory to `/home/nonroot/workdir` inside the container. Use the `VOLUME` directive in the Dockerfile to declare the expected mount point. To ensure the non-root user inside the container has access to the shared directory, the user may need to make it world-accessible (`chmod a+xwr ~/workdir`) before launching the container.
+
+## 5. Create a Pull Request
+
+Once you have a working, tested Dockerfile in the local copy of the REMnux/docker repository, [create a GitHub pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for that repo, so your Dockerfile may be considered for inclusion in the REMnux collection. Your pull request should include a directory named after the tool, containing the Dockerfile.
+
+If the pull request isn't working, consider submitting the file to Lenny Zeltser [by email](https://zeltser.com/contact).
+
+{% hint style="info" %}
+After accepting the pull request, the REMnux maintainer handles building and publishing the Docker image to [Docker Hub](https://hub.docker.com/u/remnux). You don't need to push the image yourself.
+{% endhint %}
