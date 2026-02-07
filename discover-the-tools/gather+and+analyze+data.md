@@ -125,6 +125,7 @@ Python library to encode/decode DNS wire-format packets.
 
 **Website**: [https://github.com/paulc/dnslib](https://github.com/paulc/dnslib)\
 **Author**: Paul Chakravarti\
-**License**: BSD 2-Clause "Simplified" License ([https://github.com/paulc/dnslib/blob/master/LICENSE)](https://github.com/paulc/dnslib/blob/master/LICENSE))\
+**License**: BSD 2-Clause "Simplified" License: [https://github.com/paulc/dnslib/blob/master/LICENSE](https://github.com/paulc/dnslib/blob/master/LICENSE)\
 **Notes**: Library - /opt/dnslib/bin/python3 - import dnslib\
 **State File**: [remnux.python3-packages.dnslib](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dnslib.sls)
+
