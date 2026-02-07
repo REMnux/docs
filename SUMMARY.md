@@ -52,6 +52,14 @@
 
 * [Docker Images of Malware Analysis Tools](run-tools-in-containers/remnux-containers.md)
 
+## Tips and More <a href="#tips" id="tips"></a>
+
+* [Using AI with REMnux](tips/using-ai.md)
+* [REMnux Configuration Tips](tips/remnux-config-tips.md)
+* [REMnux Tool Tips](tips/remnux-tool-tips.md)
+* [Malware Analysis Training](tips/malware-analysis-training.md)
+* [REMnux Website](https://remnux.org/)
+
 ## Behind the Scenes
 
 * [People](behind-the-scenes/people.md)
@@ -62,14 +70,6 @@
   * [Debian Packages](behind-the-scenes/technologies/debian-packages.md)
   * [Website and Docs](behind-the-scenes/technologies/website-and-docs.md)
 * [License](behind-the-scenes/license.md)
-
-## Tips and More <a href="#tips" id="tips"></a>
-
-* [REMnux Configuration Tips](tips/remnux-config-tips.md)
-* [REMnux Tool Tips](tips/remnux-tool-tips.md)
-* [Malware Analysis Training](tips/malware-analysis-training.md)
-* [Using AI with REMnux](tips/using-ai.md)
-* [REMnux Website](https://remnux.org/)
 
 ## Get Involved
 
