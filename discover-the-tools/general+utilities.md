@@ -213,3 +213,13 @@ Install and manage SaltStack-based Linux distributions.
 **License**: MIT License: [https://github.com/ekristen/cast/blob/main/LICENSE](https://github.com/ekristen/cast/blob/main/LICENSE)\
 **Notes**: cast\
 **State File**: [remnux.packages.cast](https://github.com/REMnux/salt-states/blob/master/remnux/packages/cast.sls)
+
+## PowerShell Core
+
+Run PowerShell scripts and commands.
+
+**Website**: [https://github.com/powershell/powershell](https://github.com/powershell/powershell)\
+**Author**: Microsoft Corporation\
+**License**: MIT License: [https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt](https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt)\
+**Notes**: pwsh\
+**State File**: [remnux.packages.powershell](https://github.com/REMnux/salt-states/blob/master/remnux/packages/powershell.sls)
