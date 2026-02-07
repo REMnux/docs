@@ -8,11 +8,12 @@ description: Analyze Documents
 
 Extract emails and attachments from MSG files.
 
-**Website**: [https://github.com/TeamMsgExtractor/msg-extractor](https://github.com/TeamMsgExtractor/msg-extractor)  
-**Author**: [https://github.com/TeamMsgExtractor/msg-extractor\#credits](https://github.com/TeamMsgExtractor/msg-extractor#credits)  
-**License**: GNU General Public LIcense v3.0: [https://github.com/TeamMsgExtractor/msg-extractor/blob/master/LICENSE.txt](https://github.com/TeamMsgExtractor/msg-extractor/blob/master/LICENSE.txt)  
-**Notes:** extract\_msg  
+**Website**: [https://github.com/TeamMsgExtractor/msg-extractor](https://github.com/TeamMsgExtractor/msg-extractor)\
+**Author**: [https://github.com/TeamMsgExtractor/msg-extractor#credits](https://github.com/TeamMsgExtractor/msg-extractor#credits)\
+**License**: GNU General Public License v3.0: [https://github.com/TeamMsgExtractor/msg-extractor/blob/master/LICENSE.txt](https://github.com/TeamMsgExtractor/msg-extractor/blob/master/LICENSE.txt)\
+**Notes**: extract_msg\
 **State File**: [remnux.python3-packages.msg-extractor](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/msg-extractor.sls)
+
 
 ## msgconvert
 
