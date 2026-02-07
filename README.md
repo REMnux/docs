@@ -6,7 +6,7 @@ description: REMnux Documentation
 
 <figure><img src=".gitbook/assets/remnux-banner.png" alt=""><figcaption></figcaption></figure>
 
-This site provides documentation for [REMnux](https://remnux.org/)®, a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools.
+This site provides documentation for [REMnux](https://remnux.org/)®, a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools. The toolkit also includes AI-powered capabilities that let AI assistants [run REMnux tools automatically](tips/using-ai.md).
 
 ## Install the REMnux Distro
 
@@ -49,5 +49,6 @@ You can learn about:
 * [People](behind-the-scenes/people.md) and [technologies](behind-the-scenes/technologies/) that make REMnux possible
 * [REMnux configuration tips](tips/remnux-config-tips.md) for getting the most out of the distro
 * [Tips for using the tools](tips/remnux-tool-tips.md) on REMnux
+* [Using AI](tips/using-ai.md) to run malware analysis tools with AI assistants
 
 Many of the tools available in the REMnux toolkit are discussed in the SANS course [FOR610: Reverse Engineering Malware](https://sans.org/for610). Lenny Zeltser, the founder and primary maintainer of REMnux, is also the primary author of this course.
