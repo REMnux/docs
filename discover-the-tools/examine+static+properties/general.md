@@ -106,7 +106,7 @@ Manipulate embedded digital signatures.
 
 ## Name-That-Hash
 
-Identify dfferent types of hashes.
+Identify different types of hashes.
 
 **Website**: [https://github.com/HashPals/Name-That-Hash](https://github.com/HashPals/Name-That-Hash)\
 **Author**: Brandon / Bee: [https://x.com/bee_sec_san](https://x.com/bee_sec_san)\
@@ -117,7 +117,7 @@ Identify dfferent types of hashes.
 
 ## Hash ID
 
-Identify dfferent types of hashes.
+Identify different types of hashes.
 
 **Website**: [https://github.com/blackploit/hash-identifier](https://github.com/blackploit/hash-identifier)\
 **Author**: Zion3R\

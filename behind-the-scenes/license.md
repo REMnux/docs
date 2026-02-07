@@ -4,7 +4,7 @@ The tools that are a part of REMnux are free, but they come with individual lice
 
 The configuration, code, and other contents created for the REMnux toolkit that "glue" the tools together are licensed under [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) unless stated otherwise.
 
-In addition, note this importaing disclaimer about REMnux:
+In addition, note this important disclaimer about REMnux:
 
 {% hint style="warning" %}
 THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

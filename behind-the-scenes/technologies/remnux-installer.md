@@ -6,7 +6,7 @@ The REMnux installer is the tool that starts the installation or upgrade of the 
 
 At a high level, the REMnux installer takes the following actions:
 
-1. Installs, if necessary, a recent version of [SaltStack](https://www.saltstack.com), which [manages the setup and configuraton of REMnux tools](saltstack-management.md).
+1. Installs, if necessary, a recent version of [SaltStack](https://www.saltstack.com), which [manages the setup and configuration of REMnux tools](saltstack-management.md).
 2. Retrieves the appropriate release of REMnux Salt state files from the [REMnux/salt-states](https://github.com/REMnux/salt-states) repository on GitHub, which describe how SaltStack should install and configure the tools.
 3. Validates that the retrieved state files are properly signed with the REMnux PGP key.
 4. Runs SaltState, directing it to execute state files that correspond to specified installation or upgrade options.

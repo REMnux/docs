@@ -68,6 +68,7 @@
 * [REMnux Configuration Tips](tips/remnux-config-tips.md)
 * [REMnux Tool Tips](tips/remnux-tool-tips.md)
 * [Malware Analysis Training](tips/malware-analysis-training.md)
+* [Using AI with REMnux](tips/using-ai.md)
 * [REMnux Website](https://remnux.org/)
 
 ## Get Involved
@@ -78,4 +79,4 @@
   * [Contribute a Salt State File](get-involved/add-or-update-tools/contribute-a-salt-state-file.md)
   * [Contribute a Debian Package](get-involved/add-or-update-tools/contribute-a-debian-package.md)
   * [Contribute a Dockerfile](get-involved/add-or-update-tools/contribute-dockerfile.md)
-* [Implement Enhancements](get-involved/enhancement-ideas.md)
+

@@ -81,12 +81,12 @@ If you're running REMnux as a local VM, one way to transfer files in and out of 
 
 If REMnux is running in VirtualBox, you can go to the Devices menu of VirtualBox for your REMnux VM and select `Shared Folders`, `Shared Clipboard` , and `Drag and Drop`. To enable this functionality, you need to have Guest Additions installed in the REMnux virtual machine, which is preinstalled as part of the VirtualBox version of the REMnux virtual appliance. The appliance ships with `Shared Clipboard` and `Drag and Drop` enabled.
 
-In VMware, similar functionality is supported by the open-vm-tools package, which is prenistalled in the general version of the REMnux virtual appliance and if you installed the distro from scratch using the REMnux installer. You can modify settings of your REMnux virtual machine to disable `Drag and Drop` and `Copy and Paste`, if you wish; they're enabled by default. You can also enable `Shared Folders`, which are disabled by default.
+In VMware, similar functionality is supported by the open-vm-tools package, which is preinstalled in the general version of the REMnux virtual appliance and if you installed the distro from scratch using the REMnux installer. You can modify settings of your REMnux virtual machine to disable `Drag and Drop` and `Copy and Paste`, if you wish; they're enabled by default. You can also enable `Shared Folders`, which are disabled by default.
 
 REMnux automatically detects your hypervisor and installs appropriate guest tools when you run `remnux install`. On VMware, it installs open-vm-tools; on KVM/QEMU/Proxmox, it installs qemu-guest-agent and spice-vdagent. For VirtualBox, install Guest Additions from the ISO as described in [the virtual appliance guide](../install-distro/get-virtual-appliance.md#virtualbox).
 
 {% hint style="danger" %}
-Enabling hypervisor-based file and clipboard sharing capabilities someone increases the risk that if you run malicious code in your REMnux virtual machine, the malware will adversely affect your underlying code. Many analysts consider this an acceptable risk.
+Enabling hypervisor-based file and clipboard sharing capabilities somewhat increases the risk that if you run malicious code in your REMnux virtual machine, the malware will adversely affect your underlying code. Many analysts consider this an acceptable risk.
 {% endhint %}
 
 ### SFTP
