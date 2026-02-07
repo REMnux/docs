@@ -2,7 +2,7 @@
 
 REMnux includes tools that let AI assistants run malware analysis tools via the [Model Context Protocol](https://modelcontextprotocol.io) (MCP). MCP is an open protocol that lets AI assistants use external tools and data sources. Any MCP-compatible AI agent can use the REMnux MCP server to analyze samples. [OpenCode](../discover-the-tools/use+artificial+intelligence.md), a terminal-based AI assistant, is pre-installed and pre-configured as the quickest way to get started.
 
-For details about the individual AI tools included in REMnux, see the [Use Artificial Intelligence](../discover-the-tools/use+artificial+intelligence.md) page.
+For details about the individual AI tools included in REMnux, see the [Use Artificial Intelligence](../discover-the-tools/use+artificial+intelligence.md) page. For a walkthrough of AI-assisted malware analysis in practice, read [Using AI Agents to Analyze Malware on REMnux](https://zeltser.com/ai-malware-analysis-remnux).
 
 ## Using AI Assistants on REMnux <a href="#ai-assistants" id="ai-assistants"></a>
 

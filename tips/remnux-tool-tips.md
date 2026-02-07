@@ -2,6 +2,7 @@
 
 If you create an article, blog post, or video, showcasing how you use a tool installed on REMnux for malware analysis, please [reach out to Lenny Zeltser,](https://zeltser.com/contact) so he can point to your content from here.
 
+* [Using AI Agents to Analyze Malware on REMnux](https://zeltser.com/ai-malware-analysis-remnux) - Demonstrates AI-assisted analysis workflows using the REMnux MCP server, by Lenny Zeltser.
 * One-page [cheat sheet for using REMnux](https://zeltser.com/remnux-malware-analysis-tips/), providing an overview of some of the most useful tools available as part of the distro.
 * How you can [use memory forensics and other tools installed on REMnux](https://www.youtube.com/watch?v=AONAkmt0Vdg) for malware analysis - A video by [Aaron Sparling](https://x.com/OSINTlabworks).
 * [Analyzing Windows Malware on Linux: Getting Started Tips and Examples](https://www.youtube.com/watch?v=J85991pPYoc) - A video that showcases REMnux, presented by Lenny Zeltser.
