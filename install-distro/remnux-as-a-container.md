@@ -12,10 +12,10 @@ To run the REMnux version built on top of Ubuntu 24.04 (Noble):
 docker run --rm -it -u remnux remnux/remnux-distro:noble bash
 ```
 
-To map a local directory into the container's /home/remnux/files directory, you could use a command like this by supplying the appropriate directory name like this:
+To map a local directory into the container's /home/remnux/files directory, you could use a command like this, supplying the appropriate directory name:
 
 ```
-docker run --rm -it -u remnux -v <local_directory>:/home/remnux/files remnux/remnux-distro bash
+docker run --rm -it -u remnux -v <local_directory>:/home/remnux/files remnux/remnux-distro:noble bash
 ```
 
 The `--rm` parameter above directs Docker to create a transient container, which will stop running after you exit the shell. To keep the container active in the background even after you exit, don't supply `--rm`.
@@ -30,7 +30,7 @@ To run the REMnux version built on top of Ubuntu 24.04 (Noble):
 docker run -d -p 22:22 remnux/remnux-distro:noble
 ```
 
-Once you connected to your REMnux container using SSH, you can access the REMnux graphical interface by [tunneling the GUI through SSH](../tips/remnux-config-tips.md#gui-cloud-remnux).
+Once you've connected to your REMnux container using SSH, you can access the REMnux graphical interface by [tunneling the GUI through SSH](../tips/remnux-config-tips.md#gui-cloud-remnux).
 
 ## Tools Excluded from the Container
 

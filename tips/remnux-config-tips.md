@@ -11,7 +11,7 @@ To change the keyboard layout of your REMnux system, perhaps to another language
 5. Select the desired input source and click the Add button.
 6. Close the Settings window.
 
-Sometimes you might need to reboot for the setting to take into effect.
+Sometimes you might need to reboot for the setting to take effect.
 
 You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
 
@@ -61,13 +61,13 @@ For an example of performing some of these steps, consider an AWS blog post on [
 
 ### VNC Access
 
-Another way to remotely interact with the REMnux graphical environment is to use a VNC tol such as [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
+Another way to remotely interact with the REMnux graphical environment is to use a VNC tool such as [TigerVNC](https://tigervnc.org), which you can tunnel over SSH and set up like this:
 
 1. Install TigerVNC viewer on the local system from which you're planning to access the remote REMnux system.
 2. Connect to your remote REMnux system using SSH, assuming the SSH daemon on REMnux is active.
 3. Install TigerVNC server on your remote REMnux system: `sudo apt install -y tigervnc-standalone-server`
 4. Set up your VNC password using the [vncpasswd](https://tigervnc.org/doc/vncpasswd.html) command.
-5. On your local system create an SSH tunnel from port 5901 to port 5901 using a command such as `ssh -L 5901:localhost:5901`
+5. On your local system create an SSH tunnel from port 5901 to port 5901 using a command such as `ssh -L 5901:localhost:5901 user@your-remnux-ip`
 6. Launch a TigerVNC server on your remote REMnux system: `vncserver :1`
 7. Start a VNC client on your local system, directing it to connect to `localhost:1`
 
@@ -86,7 +86,7 @@ In VMware, similar functionality is supported by the open-vm-tools package, whic
 REMnux automatically detects your hypervisor and installs appropriate guest tools when you run `remnux install`. On VMware, it installs open-vm-tools; on KVM/QEMU/Proxmox, it installs qemu-guest-agent and spice-vdagent. For VirtualBox, install Guest Additions from the ISO as described in [the virtual appliance guide](../install-distro/get-virtual-appliance.md#virtualbox).
 
 {% hint style="danger" %}
-Enabling hypervisor-based file and clipboard sharing capabilities somewhat increases the risk that if you run malicious code in your REMnux virtual machine, the malware will adversely affect your underlying code. Many analysts consider this an acceptable risk.
+Enabling hypervisor-based file and clipboard sharing capabilities somewhat increases the risk that if you run malicious code in your REMnux virtual machine, the malware will adversely affect your underlying host. Many analysts consider this an acceptable risk.
 {% endhint %}
 
 ### SFTP

@@ -63,7 +63,7 @@ LABEL updated_by="Corey Forman"
 ```
 
 {% hint style="success" %}
-New Dockerfiles should use a current Ubuntu LTS base image such as `ubuntu:22.04`. Some existing images in the repository use older versions.
+New Dockerfiles should use a current Ubuntu LTS base image such as `ubuntu:24.04`. Some existing images in the repository use older versions.
 {% endhint %}
 
 ### Locale Settings
@@ -148,7 +148,7 @@ Simple Python tools can use a `python:3-slim` base image instead of Ubuntu. For 
 It's difficult to create a working Dockerfile in one step. When developing your Dockerfile, consider launching a base container interactively to figure out the installation commands:
 
 ```text
-docker run --rm -it ubuntu:22.04 bash
+docker run --rm -it ubuntu:24.04 bash
 ```
 
 Manually type and test each installation command inside the container's shell. Once you've validated that a specific sequence of commands works, transcribe them into your Dockerfile.

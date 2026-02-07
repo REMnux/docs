@@ -51,7 +51,7 @@ Download the REMnux installer from the REMnux website by running this command on
 curl -O https://REMnux.org/remnux
 ```
 
-Validate that the SHA-256 hash of the downloaded file to make sure it matches this expected value:
+Validate the SHA-256 hash of the downloaded file to make sure it matches this expected value:
 
 ```
 deeea89280b6b905dfbc5f938956a14683cd838444c77616097d3355c0dc99b6
@@ -97,7 +97,7 @@ remnux results
 
 This command shows installation results and highlights any failures.
 
-If you need further help, you can open an issue in [the REMnux salt-states repo on Github](https://github.com/REMnux/salt-states/issues) and share out output of `remnux results` as well as your results.yml and saltstack.log file.
+If you need further help, you can open an issue in [the REMnux salt-states repo on Github](https://github.com/REMnux/salt-states/issues) and share the output of `remnux results` as well as your results.yaml and saltstack.log files.
 {% endhint %}
 
 ## Step 4: Reboot the REMnux System <a href="#reboot-remnux" id="reboot-remnux"></a>

@@ -24,4 +24,4 @@ remnux results
 
 Also, consider rebooting your system and trying the operation again.
 
-If the issue persists, you can open an issue in [the REMnux salt-states repo on GitHub](https://github.com/REMnux/salt-states/issues) and share the output of `remnux results` as well as your results.yml and saltstack.log file.
+If the issue persists, you can open an issue in [the REMnux salt-states repo on GitHub](https://github.com/REMnux/salt-states/issues) and share the output of `remnux results` as well as your results.yaml and saltstack.log files.
