@@ -16,13 +16,14 @@ Identify file type using signatures.
 
 ## Bytehist
 
-Generate byte-usage-histograms for all types of files with a focus PE files.
+Generate byte-usage-histograms for all types of files with a focus on PE files.
 
 **Website**: [https://www.cert.at/downloads/software/bytehist_en.html](https://www.cert.at/downloads/software/bytehist_en.html)\
 **Author**: Christian Wojner: [https://x.com/Didelphodon](https://x.com/Didelphodon)\
 **License**: ISC License: [https://en.wikipedia.org/wiki/ISC_license](https://en.wikipedia.org/wiki/ISC_license)\
 **Notes**: bytehist\
 **State File**: [remnux.tools.bytehist](https://github.com/REMnux/salt-states/blob/master/remnux/tools/bytehist.sls)
+
 
 
 ## ClamAV
