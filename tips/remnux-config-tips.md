@@ -13,7 +13,7 @@ To change the keyboard layout of your REMnux system, perhaps to another language
 
 Sometimes you might need to reboot for the setting to take effect.
 
-You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://websiteforstudents.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
+You can switch between the keyboard layouts by clicking the language icon in the top right corner of your desktop. If you need additional guidance, please [see this article](https://geekrewind.com/configure-ubuntu-18-04-lts-beta-keyboard-layout-for-native-languages/).
 
 ## Adjusting Text Size and UI Scaling <a href="#text-size-scaling" id="text-size-scaling"></a>
 

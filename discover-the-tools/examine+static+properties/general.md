@@ -82,7 +82,7 @@ Create, inspect and extract Windows Installer (.msi) files.
 Convert decimal numbers to strings.
 
 **Website**: [https://blog.didierstevens.com/2020/12/12/update-numbers-to-string-py-version-0-0-11/](https://blog.didierstevens.com/2020/12/12/update-numbers-to-string-py-version-0-0-11/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.numbers-to-string](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/numbers-to-string.sls)
 
@@ -91,7 +91,7 @@ Convert decimal numbers to strings.
 Search the file for built-in regular expressions of common suspicious artifacts.
 
 **Website**: [https://blog.didierstevens.com/2021/05/23/update-re-search-py-version-0-0-17/](https://blog.didierstevens.com/2021/05/23/update-re-search-py-version-0-0-17/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.re-search](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/re-search.sls)
 

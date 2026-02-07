@@ -67,7 +67,7 @@ Extract and decode data from antivirus quarantine files.
 Submit files to VirusTotal.
 
 **Website**: [https://blog.didierstevens.com/programs/virustotal-tools/](https://blog.didierstevens.com/programs/virustotal-tools/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **Notes**: virustotal-submit.py\
 **State File**: [remnux.scripts.virustotal-submit](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/virustotal-submit.sls)
@@ -77,7 +77,7 @@ Submit files to VirusTotal.
 Search VirusTotal for file hashes.
 
 **Website**: [https://blog.didierstevens.com/programs/virustotal-tools/](https://blog.didierstevens.com/programs/virustotal-tools/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **Notes**: virustotal-search.py\
 **State File**: [remnux.scripts.virustotal-search](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/virustotal-search.sls)
@@ -96,7 +96,7 @@ Carve contents out of binary files, such as partitions.
 Look up MD5 file hashes in the NIST National Software Reference Library (NSRL).
 
 **Website**: [https://github.com/rjhansen/nsrllookup](https://github.com/rjhansen/nsrllookup)\
-**Author**: Robert J. Hansen: [https://twitter.com/robertjhansen](https://twitter.com/robertjhansen)\
+**Author**: Robert J. Hansen: [https://x.com/robertjhansen](https://x.com/robertjhansen)\
 **License**: ISC License: [https://github.com/rjhansen/nsrllookup/blob/master/LICENSE](https://github.com/rjhansen/nsrllookup/blob/master/LICENSE)\
 **State File**: [remnux.packages.nsrllookup](https://github.com/REMnux/salt-states/blob/master/remnux/packages/nsrllookup.sls)
 

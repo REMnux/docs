@@ -32,7 +32,7 @@ Determine the IP address of the default network interface.
 Edit text files from the command line using search-and-replace commands.
 
 **Website**: [https://blog.didierstevens.com/2021/07/05/new-tool-texteditor-py/](https://blog.didierstevens.com/2021/07/05/new-tool-texteditor-py/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.texteditor](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/texteditor.sls)
 
@@ -41,7 +41,7 @@ Edit text files from the command line using search-and-replace commands.
 Sort text files using canonicalization functions built into this tool.
 
 **Website**: [https://blog.didierstevens.com/2022/06/18/new-tool-sortcanon-py/](https://blog.didierstevens.com/2022/06/18/new-tool-sortcanon-py/)\
-**Author**: Didier Stevens: [https://twitter.com/DidierStevens](https://twitter.com/DidierStevens)\
+**Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.sortcanon](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/sortcanon.sls)
 
@@ -201,7 +201,7 @@ Calculator.
 Filter data formatted using the JSON format used by Didier Stevens' tools.
 
 **Website**: [https://blog.didierstevens.com/2022/04/09/new-tool-myjson-filter-py/](https://blog.didierstevens.com/2022/04/09/new-tool-myjson-filter-py/)\
-**Author**: Didier Stevens: https://twitter.com/DidierStevens\
+**Author**: Didier Stevens: https://x.com/DidierStevens\
 **License**: Public Domain\
 **State File**: [remnux.scripts.myjson-filter](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/myjson-filter.sls)
 

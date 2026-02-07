@@ -43,7 +43,7 @@ Analyze I/O operations of a suspicious PE file by emulating its execution.
 Scan a PE file to list the associated Malware Behavior Catalog (MBC) details.
 
 **Website**: [https://github.com/accidentalrebel/mbcscan](https://github.com/accidentalrebel/mbcscan)\
-**Author**: Karlo Licudine: [https://twitter.com/accidentalrebel](https://twitter.com/accidentalrebel)\
+**Author**: Karlo Licudine: [https://x.com/accidentalrebel](https://x.com/accidentalrebel)\
 **License**: GNU General Public License (GPL) v3.0: [https://github.com/accidentalrebel/mbcscan/blob/master/LICENSE](https://github.com/accidentalrebel/mbcscan/blob/master/LICENSE)\
 **Notes**: mbcscan.py\
 **State File**: [remnux.scripts.mbcscan](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/mbcscan.sls)
