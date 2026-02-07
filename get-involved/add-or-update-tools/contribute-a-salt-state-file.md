@@ -10,9 +10,9 @@ Before starting this work, consider [reaching out to Lenny Zeltser](https://zelt
 
 Follow the steps appropriate for your Operating System to install [Git](https://git-scm.com) and [Docker](https://www.docker.com/products/docker-desktop) on your system.
 
-## 2. Clone the REMnux/salt-state Repository
+## 2. Clone the REMnux/salt-states Repository
 
-Get a copy of the current REMnux/salt-state repository, which contains the REMnux Salt State files. A common way to do this is to run:
+Get a copy of the current REMnux/salt-states repository, which contains the REMnux Salt State files. A common way to do this is to run:
 
 ```
 git clone https://github.com/REMnux/salt-states.git
@@ -24,8 +24,11 @@ Determine in which subdirectory under salt-states/remnux your new Salt State fil
 
 * For Ubuntu packages: `packages`
 * For Python packages: `python3-packages`
+* For Node.js packages: `node-packages`
+* For Perl packages: `perl-packages`
+* For Ruby gems: `rubygems`
 * For tools distributed as compiled or JAR files: `tools`
-* For scipts that aren't installable using a package manager: `scripts`
+* For scripts that aren't installable using a package manager: `scripts`
 
 Instead of attempting to create a file from scratch, consider identifying a State File that operates similarly to what you have in mind, and copying its contents to form the basis of your new file.
 
@@ -35,10 +38,10 @@ The State File should fully describe all dependencies of the software you're aim
 
 ## 4. Test the Salt State File
 
-Once the State File is ready, test it locally by running it in a Docker container. The easiest way to do it is to run the [dev-state.sh](https://github.com/REMnux/salt-states/blob/master/.ci/dev-state.sh) script, which is a part of the REMnux/salt-state repository in the .ci directory.
+Once the State File is ready, test it locally by running it in a Docker container. The easiest way to do it is to run the [dev-state.sh](https://github.com/REMnux/salt-states/blob/master/.ci/dev-state.sh) script, which is a part of the REMnux/salt-states repository in the .ci directory.
 
 {% hint style="info" %}
-The dev-state.sh script is a wrapper around Docker. It retrieves and launches the baseline container "[remnux/sift-saltstack-tester](https://hub.docker.com/r/teamdfir/sift-saltstack-tester)" built for testing State Files. The container is just the base Ubuntu OS without any optional packages, plus Salt Stack. This minimal state allows you to confirm that the State File you'll be testing specifies all the dependencies for the new tool.
+The dev-state.sh script is a wrapper around Docker. It retrieves and launches the baseline container "[remnux/saltstack-tester](https://hub.docker.com/r/remnux/saltstack-tester)" built for testing State Files. The container is just the base Ubuntu OS without any optional packages, plus Salt Stack. This minimal state allows you to confirm that the State File you'll be testing specifies all the dependencies for the new tool.
 {% endhint %}
 
 Once you're at the command prompt inside the tester container, direct SaltStack to process your new Salt State file by running this command in the container:
@@ -53,7 +56,7 @@ The command will produce verbose debug-level output, so you can diagnose any iss
 
 ## 5. Add Metadata to the Salt State File
 
-To make sure the tool is properly included in the REMnux tool listing, included the following metadata comments on top of your Salt State file to describe the tool:
+To make sure the tool is properly included in the REMnux tool listing, include the following metadata comments on top of your Salt State file to describe the tool:
 
 ```
 # Name: 
@@ -65,8 +68,10 @@ To make sure the tool is properly included in the REMnux tool listing, included 
 # Notes: 
 ```
 
-## 6. Create a Pull Request
+## 6. Update the Directory's init.sls File
 
-Once you have a working, tested Salt State file in the local copy of the REMnux/salt-states repoistory, [create a GitHub pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) for that repo, so your file may be considered for inclusion in the REMnux distro. If the pull request isn't working, consider submitting the file to Lenny Zeltser [by email](https://zeltser.com/contact).
+Add a reference to your new State File in the `init.sls` file in the same directory. This file controls which states are included in the REMnux installation. Without this entry, your new tool won't be installed as part of the distro.
 
-## &#x20;<a href="#revise-existing-tool" id="revise-existing-tool"></a>
+## 7. Create a Pull Request
+
+Once you have a working, tested Salt State file in the local copy of the REMnux/salt-states repository, [create a GitHub pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for that repo, so your file may be considered for inclusion in the REMnux distro. If the pull request isn't working, consider submitting the file to Lenny Zeltser [by email](https://zeltser.com/contact).
