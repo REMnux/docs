@@ -33,7 +33,7 @@ The [Binary Refinery](https://github.com/binref/refinery)™ is a collection of 
 To run Binary Refinery tools within the "remnux/binary-refinery" container, create a directory where you'll store your input files, e.g. \~/workdir. Then, use a command like this to launch the container and have your directory mapped as /home/nonroot/workdir inside the container:
 
 ```
-docker run -it --rm -v ~/workdir:/home/nonroot/workdir remnux/binary-refinery
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/binary-refinery
 ```
 
 The binary-refinery Docker image is hosted in [the REMnux Docker Hub repository](https://hub.docker.com/repository/docker/remnux/binary-refinery).
@@ -86,18 +86,18 @@ The password for the container's user `nonroot` is `nonroot`. The remnux/rekall 
 
 ## RetDec Retargetable Machine-Code Decompiler <a href="#retdec" id="retdec"></a>
 
-[RetDec](https://retdec.com) is a decompiler that supports a variety of file formats, including PE and ELF, and several 32 and 64-bit architectures. It was created by [Avast Software](https://www.avast.com), and is licensed under [MIT License](https://github.com/avast/retdec/blob/master/LICENSE) with [third-party components](https://github.com/avast/retdec/blob/master/LICENSE-THIRD-PARTY) that are distributed under their own licenses.
+[RetDec](https://github.com/avast/retdec) is a decompiler that supports a variety of file formats, including PE and ELF, and several 32 and 64-bit architectures. It was created by [Avast Software](https://www.avast.com), and is licensed under [MIT License](https://github.com/avast/retdec/blob/master/LICENSE) with [third-party components](https://github.com/avast/retdec/blob/master/LICENSE-THIRD-PARTY) that are distributed under their own licenses.
 
-To run RetDec, create a directory where you'll store the files you plan to examine. Then, open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/tmp/files` inside the container:
+To run RetDec, create a directory where you'll store the files you plan to examine. Then, open a shell inside the container where you can run RetDec commands and have your local directory mapped as `/home/retdec/workdir` inside the container:
 
 ```
-docker run -it --rm -v <files_directory>:/tmp/files remnux/retdec bash
+docker run --rm -it -v ~/workdir:/home/retdec/workdir remnux/retdec
 ```
 
-The password for the container's user `retdec` is `retdec`. The remnux/retdec image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
+The password for the container's user `retdec` is `retdec`. The remnux/retdec image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/retdec).
 
 {% hint style="info" %}
-The commands provided by RetDec start with the `retdec-` prefix and include retdec-decompiler.py, retdec-unpacker, and retdec-fileinfo.
+The commands provided by RetDec start with the `retdec-` prefix and include retdec-decompiler, retdec-unpacker, and retdec-fileinfo.
 {% endhint %}
 
 ## Rizin Reverse-Engineering Framework <a href="#rizin" id="rizin"></a>
@@ -112,7 +112,7 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/rizin
 
 If you're planning to perform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
-The password for the container's user `nonroot` is `nonroot`. The remnux/rizin image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rizin).
+The password for the container's user `nonroot` is `nonroot`. The remnux/rizin image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/rizin).
 
 ## Radare2 Reverse-Engineering Framework <a href="#radare2" id="radare2"></a>
 
@@ -126,7 +126,7 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
 
 If you're planning to perform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
-The password for the container's user `nonroot` is `nonroot`. The remnux/radare2 image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
+The password for the container's user `nonroot` is `nonroot`. The remnux/radare2 image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
 
 ## Viper Binary Analysis and Management Framework
 
@@ -139,7 +139,7 @@ The Viper project has been archived and is no longer maintained.
 To run Viper, create a directory where you'll store your malware samples. Then, use a command like this to open a shell inside the container where you can run `viper` and have your samples directory mapped as `/home/nonroot/workdir` inside the container:
 
 ```
-docker run -it --rm -v ~/workdir:/home/nonroot/workdir remnux/viper
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/viper
 ```
 
 To run the "clamav" Viper plugin, the clamav-daemon must be running in the container. You can enable it by running the following command in the container:
@@ -148,7 +148,7 @@ To run the "clamav" Viper plugin, the clamav-daemon must be running in the conta
 sudo service clamav-daemon start
 ```
 
-The password for the container's user `nonroot` is `nonroot`. The remnux/viper image is hosted on its [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/viper/).
+The password for the container's user `nonroot` is `nonroot`. The remnux/viper image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/viper/).
 
 ## Ciphey Automatic Decoder and Decrypter <a href="#ciphey" id="ciphey"></a>
 
@@ -157,13 +157,13 @@ The password for the container's user `nonroot` is `nonroot`. The remnux/viper i
 To run Ciphey using this Docker container, create a directory (e.g. \~/workdir) where you'll store your input file (e.g., input.txt). Then, use a command like this to run Ciphey and have your directory mapped into the container:
 
 ```
-docker run -it --rm -v ~/workdir:/home/nonroot/workdir remnux/ciphey -f input.txt 
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/ciphey -f input.txt
 ```
 
 Or for a text input on the command-line run:
 
 ```
-docker run -it --rm remnux/ciphey "=MXazlHbh5WQgUmchdHbh1EIy9mZgQXarx2bvRFI4VnbpxEIBBiO4VnbNVkU"
+docker run --rm -it remnux/ciphey "=MXazlHbh5WQgUmchdHbh1EIy9mZgQXarx2bvRFI4VnbpxEIBBiO4VnbNVkU"
 ```
 
 The [remnux/ciphey](https://hub.docker.com/repository/docker/remnux/ciphey/) image is hosted on its  [Docker Hub page](https://hub.docker.com/repository/docker/remnux/ciphey).
