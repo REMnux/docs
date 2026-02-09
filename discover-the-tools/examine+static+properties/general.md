@@ -267,3 +267,13 @@ Scan files with curated YARA rules from 45+ sources for malware family identific
 **Notes**: Run `yara-forge FILE` to identify malware families.\
 **State File**: [remnux.tools.yara-forge](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-forge.sls)
 
+
+## LIEF
+
+Parse and analyze PE, ELF, MachO, DEX, OAT, VDEX, and ART executable formats.
+
+**Website**: [https://lief.re](https://lief.re)\
+**Author**: Romain Thomas: [https://github.com/romainthomas](https://github.com/romainthomas)\
+**License**: Apache License 2.0: [https://github.com/lief-project/LIEF/blob/main/LICENSE](https://github.com/lief-project/LIEF/blob/main/LICENSE)\
+**Notes**: To use, run `/opt/lief/bin/python3` then `import lief`. Use `lief.parse("sample")` to auto-detect format and extract imports, exports, sections, and signatures.\
+**State File**: [remnux.python3-packages.lief](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/lief.sls)
