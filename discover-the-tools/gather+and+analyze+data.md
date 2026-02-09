@@ -130,3 +130,13 @@ Python library to encode/decode DNS wire-format packets.
 **Notes**: Library - /opt/dnslib/bin/python3 - import dnslib\
 **State File**: [remnux.python3-packages.dnslib](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dnslib.sls)
 
+
+## YARA-X
+
+Scan files using YARA rules, the next generation of YARA written in Rust.
+
+**Website**: [https://github.com/VirusTotal/yara-x](https://github.com/VirusTotal/yara-x)\
+**Author**: Victor M. Alvarez, VirusTotal: [https://github.com/VirusTotal](https://github.com/VirusTotal)\
+**License**: BSD-3-Clause License: [https://github.com/VirusTotal/yara-x/blob/main/LICENSE](https://github.com/VirusTotal/yara-x/blob/main/LICENSE)\
+**Notes**: yr scan, yr compile. Coexists with classic YARA; uses `yr` command.\
+**State File**: [remnux.tools.yara-x](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-x.sls)
