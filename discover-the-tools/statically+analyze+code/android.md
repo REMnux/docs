@@ -73,3 +73,13 @@ Examine Dalvik Executable (dex) files.
 **License**: Apache License 2.0: [https://github.com/pxb1988/dex2jar/blob/2.x/LICENSE.txt](https://github.com/pxb1988/dex2jar/blob/2.x/LICENSE.txt)\
 **Notes**: dex-tools, d2j-dex2jar, d2j-\*\
 **State File**: [remnux.packages.dex2jar](https://github.com/REMnux/salt-states/blob/master/remnux/packages/dex2jar.sls)
+
+## APKiD
+
+Identify compilers, packers, and obfuscators used to protect Android APK and DEX files.
+
+**Website**: [https://github.com/rednaga/APKiD](https://github.com/rednaga/APKiD)\
+**Author**: Caleb Fenton, Tim Strazzere: [https://github.com/rednaga](https://github.com/rednaga)\
+**License**: GNU General Public License v3.0: [https://github.com/rednaga/APKiD/blob/master/LICENSE.GPL](https://github.com/rednaga/APKiD/blob/master/LICENSE.GPL)\
+**Notes**: apkid\
+**State File**: [remnux.python3-packages.apkid](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/apkid.sls)
