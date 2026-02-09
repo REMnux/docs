@@ -8,7 +8,7 @@ REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on AR
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance is approximately 7 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
+The REMnux virtual appliance is approximately 9 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
 
 Decide which virtual appliance file to download. If in doubt, get the General OVA file. If you're using VirtualBox or Proxmox, download the appropriate file instead.
 
@@ -16,7 +16,7 @@ Decide which virtual appliance file to download. If in doubt, get the General OV
 {% tab title="General OVA" %}
 This general OVA file works with most hypervisors. If you're using VirtualBox or Proxmox, go to another corresponding tab.
 
-[Download the general OVA file.](https://download.remnux.org/202601/remnux-noble-amd64.ova)
+[Download the general OVA file.](https://download.remnux.org/202602/remnux-noble-amd64.ova)
 {% endtab %}
 
 {% tab title="VirtualBox OVA" %}
@@ -41,7 +41,7 @@ Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum
 The general OVA file:
 
 ```
-c84c3a117d6f1f1c46eae2d0aba72dcca2c7dc91874f20eee77399eb0b610ee9
+1b10f522671d42b5fac60238d660871001ecdd94474aace55e0ef2b88e2bdecb
 ```
 {% endtab %}
 
