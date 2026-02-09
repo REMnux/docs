@@ -149,21 +149,3 @@ sudo service clamav-daemon start
 ```
 
 The password for the container's user `nonroot` is `nonroot`. The remnux/viper image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/viper/).
-
-## Ciphey Automatic Decoder and Decrypter <a href="#ciphey" id="ciphey"></a>
-
-[Ciphey](https://github.com/Ciphey/Ciphey) is designed to automatically recognize and decode/decrypt common encoding and encryption techniques, as [outlined in its documentation](https://docs.ciphey.online/en/latest/ciphers.html). It was created by [Brandon Skerritt](https://x.com/brandon\_skerrit) and is licensed under [MIT License](https://github.com/Ciphey/Ciphey/blob/master/license). According the author, the tool uses "natural language processing & artificial intelligence, along with some common sense."
-
-To run Ciphey using this Docker container, create a directory (e.g. \~/workdir) where you'll store your input file (e.g., input.txt). Then, use a command like this to run Ciphey and have your directory mapped into the container:
-
-```
-docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/ciphey -f input.txt
-```
-
-Or for a text input on the command-line run:
-
-```
-docker run --rm -it remnux/ciphey "=MXazlHbh5WQgUmchdHbh1EIy9mZgQXarx2bvRFI4VnbpxEIBBiO4VnbNVkU"
-```
-
-The [remnux/ciphey](https://hub.docker.com/repository/docker/remnux/ciphey/) image is hosted on its  [Docker Hub page](https://hub.docker.com/repository/docker/remnux/ciphey).
