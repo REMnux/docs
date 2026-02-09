@@ -56,10 +56,10 @@ Begin the file with comments that state the tool's name, website, description, a
 Use a `FROM` directive to specify the base image, followed by `LABEL` directives for maintainer information and the date of the last update:
 
 ```text
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 LABEL maintainer="Lenny Zeltser (@lennyzeltser, www.zeltser.com)"
-LABEL updated="13 Apr 2022"
-LABEL updated_by="Corey Forman"
+LABEL updated="9 Feb 2026"
+LABEL updated_by="lennyzeltser"
 ```
 
 {% hint style="success" %}
@@ -71,9 +71,9 @@ New Dockerfiles should use a current Ubuntu LTS base image such as `ubuntu:24.04
 Set the locale environment variables so that tools don't encounter encoding issues:
 
 ```text
-ENV LANG C.UTF-8
-ENV LANGUAGE C.UTF-8
-ENV LC_ALL C.UTF-8
+ENV LANG=C.UTF-8
+ENV LANGUAGE=C.UTF-8
+ENV LC_ALL=C.UTF-8
 ```
 
 ### Build Arguments
@@ -81,7 +81,7 @@ ENV LC_ALL C.UTF-8
 Use `ARG` to define version numbers as build-time variables. This makes it easy to update the tool version later without changing multiple lines:
 
 ```text
-ARG R2VER=5.6.6
+ARG R2VER=6.0.8
 ```
 
 ### Package Installation
@@ -90,11 +90,13 @@ Install the Ubuntu packages your tool requires using `apt-get`. Chain commands w
 
 ```text
 USER root
-RUN apt-get update && apt-get install -y \
-  sudo \
-  wget \
-  git && \
-  rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    ca-certificates \
+    sudo \
+    wget \
+    git && \
+    rm -rf /var/lib/apt/lists/*
 ```
 
 ### Non-Root User Creation
@@ -112,23 +114,28 @@ RUN groupadd -r nonroot && \
 
 ### Application Installation
 
-The installation steps vary by tool. The radare2 Dockerfile downloads a `.deb` package from a GitHub release and installs it using `dpkg`. The `ARG` variable defined earlier keeps the version number in one place:
+The installation steps vary by tool. The radare2 Dockerfile downloads a `.deb` package from a GitHub release and installs it using `apt-get`, which also resolves any dependencies the package requires. The `ARG` variable defined earlier keeps the version number in one place:
 
 ```text
-RUN wget -O /tmp/radare2_${R2VER}_amd64.deb https://github.com/radareorg/radare2/releases/download/${R2VER}/radare2_${R2VER}_amd64.deb && \
-  dpkg -i /tmp/radare2_${R2VER}_amd64.deb && \
-  r2pm init && \
-  r2pm update && \
-  rm /tmp/radare2_${R2VER}_amd64.deb
+RUN wget -q -O /tmp/radare2_${R2VER}_amd64.deb \
+    https://github.com/radareorg/radare2/releases/download/${R2VER}/radare2_${R2VER}_amd64.deb && \
+    apt-get update && \
+    apt-get install -y /tmp/radare2_${R2VER}_amd64.deb && \
+    (apt-get remove --purge -y libradare2-common 2>/dev/null || true) && \
+    rm -f /tmp/radare2_${R2VER}_amd64.deb && \
+    rm -rf /var/lib/apt/lists/*
 ```
 
 ### Final Directives
 
-The closing directives switch to the non-root user, set the working directory, declare a volume for file sharing, expose network ports, and specify the default command:
+The closing directives switch to the non-root user, run any user-level initialization the tool requires, set environment variables and the working directory, declare a volume for file sharing, expose network ports, and specify the default command:
 
 ```text
 USER nonroot
-ENV HOME /home/nonroot
+RUN r2pm -U
+
+ENV HOME=/home/nonroot
+ENV USER=nonroot
 WORKDIR /home/nonroot/workdir
 VOLUME ["/home/nonroot/workdir"]
 EXPOSE 8080
