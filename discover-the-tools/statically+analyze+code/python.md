@@ -25,3 +25,13 @@ Python bytecode disassembler and decompiler.
 **State File**: [remnux.packages.pycdc](https://github.com/REMnux/salt-states/blob/master/remnux/packages/pycdc.sls)
 
 
+
+## pyinstxtractor-ng
+
+Extract contents of PyInstaller-generated executables without requiring a matching Python version.
+
+**Website**: [https://github.com/pyinstxtractor/pyinstxtractor-ng](https://github.com/pyinstxtractor/pyinstxtractor-ng)\
+**Author**: extremecoders-re\
+**License**: GNU General Public License v3.0: [https://github.com/pyinstxtractor/pyinstxtractor-ng/blob/main/LICENSE](https://github.com/pyinstxtractor/pyinstxtractor-ng/blob/main/LICENSE)\
+**Notes**: pyinstxtractor-ng\
+**State File**: [remnux.python3-packages.pyinstxtractor-ng](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pyinstxtractor-ng.sls)
