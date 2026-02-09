@@ -140,3 +140,13 @@ Scan files using YARA rules, the next generation of YARA written in Rust.
 **License**: BSD-3-Clause License: [https://github.com/VirusTotal/yara-x/blob/main/LICENSE](https://github.com/VirusTotal/yara-x/blob/main/LICENSE)\
 **Notes**: yr scan, yr compile. Coexists with classic YARA; uses `yr` command.\
 **State File**: [remnux.tools.yara-x](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-x.sls)
+
+## yara-x
+
+Python bindings for YARA-X, the next generation of YARA written in Rust.
+
+**Website**: [https://github.com/VirusTotal/yara-x](https://github.com/VirusTotal/yara-x)\
+**Author**: Victor M. Alvarez, VirusTotal: [https://github.com/VirusTotal](https://github.com/VirusTotal)\
+**License**: BSD-3-Clause License: [https://github.com/VirusTotal/yara-x/blob/main/LICENSE](https://github.com/VirusTotal/yara-x/blob/main/LICENSE)\
+**Notes**: To use, run `/opt/yara-x/bin/python3` then `import yara_x`. Coexists with classic yara-python.\
+**State File**: [remnux.python3-packages.yara-x](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/yara-x.sls)
