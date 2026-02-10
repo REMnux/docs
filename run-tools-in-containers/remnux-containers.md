@@ -6,11 +6,7 @@ The REMnux toolkit provides [Docker](https://www.docker.com) images of popular m
 In addition to the Docker images of individual tools, described below, you can run the [REMnux distro inside a pre-built Docker container](../install-distro/remnux-as-a-container.md).
 {% endhint %}
 
-Docker is installed as part of the REMnux distro. If you're planning to run REMnux Docker images on another system, you may need to [install Docker](https://docs.docker.com/get-docker/). The first time you run an [image](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/) (e.g., using the `docker run` command), Docker will automatically download the image from Docker Hub, run it locally as an active [container](https://www.docker.com/resources/what-container). Your system will need to be connected to the internet to retrieve the image; afterwards, Docker will use a locally cached copy. You can use the `docker pull` command to update the cached version of the image. To update all local images from a Linux-like shell, run:
-
-```
-docker images |cut -d' ' -f1 | grep -v REPOSITORY | xargs -I %s docker pull %s
-```
+Docker is installed as part of the REMnux distro. If you're planning to run REMnux Docker images on another system, you may need to [install Docker](https://docs.docker.com/get-docker/). The first time you run an [image](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/) (e.g., using the `docker run` command), Docker will automatically download the image from Docker Hub, run it locally as an active [container](https://www.docker.com/resources/what-container). Your system will need to be connected to the internet to retrieve the image; afterwards, Docker will use a locally cached copy. You can use the `docker pull` command to update the cached version of the image.
 
 The following Docker images of malware analysis tools are available as part of REMnux. If you have the expertise, consider adding to this collection by [contributing a Dockerfile](../get-involved/add-or-update-tools/contribute-dockerfile.md) to the REMnux toolkit.
 
@@ -39,6 +35,24 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/binary-refinery
 The binary-refinery Docker image is hosted in [the REMnux Docker Hub repository](https://hub.docker.com/repository/docker/remnux/binary-refinery).
 
 For documentation about this toolkit, including the listing of its tools, see [https://binref.github.io](https://binref.github.io/) and [https://github.com/binref/refinery](https://github.com/binref/refinery).
+
+## PyLingual Python Bytecode Decompiler <a href="#pylingual" id="pylingual"></a>
+
+[PyLingual](https://github.com/syssec-utd/PyLingual) is an ML-based decompiler that translates Python 3.9+ bytecode back to source code using transformer models. It was created by UT Dallas Systems Security (syssec-utd) and is licensed under the [GNU General Public License (GPL) v3](https://github.com/syssec-utd/PyLingual/blob/main/LICENSE). PyLingual complements the [Decompyle++](../discover-the-tools/statically+analyze+code/python.md) and other Python bytecode decompilers already included in REMnux by covering Python 3.9 and later.
+
+To run PyLingual, create a directory where you'll store the `.pyc` files you plan to decompile. Then, open a shell inside the container:
+
+```
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/pylingual
+```
+
+PyLingual downloads ML models from Hugging Face on first use. To persist the model cache across container runs, mount a second volume:
+
+```
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir -v ~/pylingual-models:/home/nonroot/.cache/huggingface remnux/pylingual
+```
+
+The remnux/pylingual image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/pylingual).
 
 ## RetDec Retargetable Machine-Code Decompiler <a href="#retdec" id="retdec"></a>
 
