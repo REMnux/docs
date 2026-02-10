@@ -38,7 +38,7 @@ For documentation about this toolkit, including the listing of its tools, see [h
 
 ## PyLingual Python Bytecode Decompiler <a href="#pylingual" id="pylingual"></a>
 
-[PyLingual](https://github.com/syssec-utd/PyLingual) is an ML-based decompiler that translates Python 3.9+ bytecode back to source code using transformer models. It was created by UT Dallas Systems Security (syssec-utd) and is licensed under the [GNU General Public License (GPL) v3](https://github.com/syssec-utd/PyLingual/blob/main/LICENSE). PyLingual complements the [Decompyle++](../discover-the-tools/statically+analyze+code/python.md) and other Python bytecode decompilers already included in REMnux by covering Python 3.9 and later.
+[PyLingual](https://github.com/syssec-utd/PyLingual) is an ML-based decompiler that translates Python 3.9+ bytecode back to source code using transformer models. It was created by UT Dallas Systems Security (syssec-utd) and is licensed under the [GNU General Public License (GPL) v3](https://github.com/syssec-utd/PyLingual/blob/main/LICENSE).
 
 To run PyLingual, create a directory where you'll store the `.pyc` files you plan to decompile. Then, open a shell inside the container:
 
