@@ -54,6 +54,22 @@ You can also use AI tools running outside REMnux (such as Claude Code or Cursor)
 
 See the [REMnux MCP server documentation](https://github.com/REMnux/remnux-mcp-server) for setup instructions and configuration examples for each scenario.
 
+## Using r2ai Inside Radare2 <a href="#r2ai" id="r2ai"></a>
+
+The MCP-based tools above work by having an AI assistant orchestrate REMnux tools from the outside. [Radare2](../discover-the-tools/dynamically+reverse-engineer+code/general.md) offers a complementary approach: its [r2ai](https://github.com/radareorg/r2ai) and [decai](https://github.com/radareorg/r2ai) plugins embed AI directly inside the reverse engineering environment. You interact with the LLM from the radare2 prompt while it has full access to your current analysis session — disassembly, strings, cross-references, and more.
+
+To use r2ai, set your API key and model, then ask questions about the binary you have open:
+
+```
+$ r2 /path/to/sample
+[0x00401000]> decai -e api=openai
+[0x00401000]> decai -e model=gpt-4o
+[0x00401000]> decai -e apikey=sk-...
+[0x00401000]> decai -d
+```
+
+The `decai -d` command decompiles the current function using AI. You can also use `r2ai` for conversational queries about the binary. For local inference without sending data to an external API, point r2ai at a local [Ollama](https://ollama.com) instance.
+
 ## Security Considerations <a href="#security" id="security"></a>
 
 As always, be careful in all your interactions with malware. Consider dedicating a system to your research tasks. Keep the following design principles and precautions in mind.
