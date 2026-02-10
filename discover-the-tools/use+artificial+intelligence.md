@@ -36,3 +36,13 @@ MCP server for AI-assisted reverse engineering in Ghidra.
 **License**: MIT: [https://github.com/jtang613/GhidrAssistMCP/blob/master/LICENSE](https://github.com/jtang613/GhidrAssistMCP/blob/master/LICENSE)\
 **Notes**: After installation, enable the plugin in Ghidra: File → Configure → Miscellaneous → GhidrAssistMCPPlugin. Then start the MCP server: Window → GhidrAssistMCP. The server listens on port 8080. OpenCode is pre-configured to connect at http://localhost:8080/mcp.\
 **State File**: [remnux.tools.ghidrassist-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/ghidrassist-mcp.sls)
+
+## radare2
+
+Examine binary files, including disassembling and debugging. Includes r2ai and decai plugins for LLM-powered analysis (API key or local Ollama required).
+
+**Website**: [https://www.radare.org/n/radare2.html](https://www.radare.org/n/radare2.html)\
+**Author**: [https://github.com/radareorg/radare2/blob/master/AUTHORS.md](https://github.com/radareorg/radare2/blob/master/AUTHORS.md)\
+**License**: GNU Lesser General Public License (LGPL) v3: [https://github.com/radareorg/radare2/blob/master/COPYING](https://github.com/radareorg/radare2/blob/master/COPYING)\
+**Notes**: r2, rasm2, rabin2, rahash2, rafind2, r2ai, decai\
+**State File**: [remnux.packages.radare2](https://github.com/REMnux/salt-states/blob/master/remnux/packages/radare2.sls)
