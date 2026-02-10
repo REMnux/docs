@@ -96,4 +96,10 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/radare2
 
 If you're planning to perform kernel-mode debugging, process tracing, or syscall tracing inside the container, then supply the parameters `--cap-drop=ALL --cap-add=SYS_PTRACE` when launching it.
 
+The image includes [r2ai](https://github.com/radareorg/r2ai) and decai plugins for LLM-powered reverse engineering. These require an LLM backend such as a cloud API or a local model server like Ollama. To use a cloud API, pass the API key and configure the provider inside `r2`:
+
+```
+docker run --rm -it -e OPENAI_API_KEY=your-key -v ~/workdir:/home/nonroot/workdir remnux/radare2
+```
+
 The password for the container's user `nonroot` is `nonroot`. The remnux/radare2 image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/radare2).
