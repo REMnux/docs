@@ -35,3 +35,13 @@ Extract contents of PyInstaller-generated executables without requiring a matchi
 **License**: GNU General Public License v3.0: [https://github.com/pyinstxtractor/pyinstxtractor-ng/blob/main/LICENSE](https://github.com/pyinstxtractor/pyinstxtractor-ng/blob/main/LICENSE)\
 **Notes**: pyinstxtractor-ng\
 **State File**: [remnux.python3-packages.pyinstxtractor-ng](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pyinstxtractor-ng.sls)
+
+## uncompyle6
+
+Python cross-version bytecode decompiler for Python 1.0 through 3.8.
+
+**Website**: [https://github.com/rocky/python-uncompyle6](https://github.com/rocky/python-uncompyle6)\
+**Author**: Rocky Bernstein: [https://github.com/rocky](https://github.com/rocky)\
+**License**: GNU General Public License v3.0: [https://github.com/rocky/python-uncompyle6/blob/master/COPYING](https://github.com/rocky/python-uncompyle6/blob/master/COPYING)\
+**Notes**: uncompyle6\
+**State File**: [remnux.python3-packages.uncompyle6](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/uncompyle6.sls)
