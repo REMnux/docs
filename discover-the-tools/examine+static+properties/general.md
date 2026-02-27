@@ -284,7 +284,8 @@ Parse and analyze PE, ELF, MachO, DEX, OAT, VDEX, ART, and DWARF executable form
 Analyze binary files using a hex editor, disassembler, and file dissector.
 
 **Website**: [https://malcat.fr](https://malcat.fr)\
-**Author**: [https://malcat.fr](https://malcat.fr), [https://x.com/malcat4ever](https://x.com/malcat4ever)\
+**Author**: Malcat EI: [https://x.com/malcat4ever](https://x.com/malcat4ever)\
 **License**: Proprietary (Lite edition free): [https://malcat.fr/index.html](https://malcat.fr/index.html)\
 **Notes**: The Lite version of the tool may not be used in a professional environment per its license.\
 **State File**: [remnux.tools.malcat](https://github.com/REMnux/salt-states/blob/master/remnux/tools/malcat.sls)
+
