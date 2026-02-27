@@ -278,3 +278,13 @@ Parse and analyze PE, ELF, MachO, DEX, OAT, VDEX, ART, and DWARF executable form
 **Notes**: To use, run `/opt/lief/bin/python3` then `import lief`. Use `lief.parse("sample")` to auto-detect format and extract imports, exports, sections, and signatures.\
 **State File**: [remnux.python3-packages.lief](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/lief.sls)
 
+
+## Malcat Lite
+
+Analyze binary files using a hex editor, disassembler, and file dissector.
+
+**Website**: [https://malcat.fr](https://malcat.fr)\
+**Author**: [https://malcat.fr](https://malcat.fr), [https://x.com/malcat4ever](https://x.com/malcat4ever)\
+**License**: Proprietary (Lite edition free): [https://malcat.fr/index.html](https://malcat.fr/index.html)\
+**Notes**: The Lite version of the tool may not be used in a professional environment per its license.\
+**State File**: [remnux.tools.malcat](https://github.com/REMnux/salt-states/blob/master/remnux/tools/malcat.sls)
