@@ -152,7 +152,8 @@ The QCOW2 image is pre-configured with:
 * SPICE display support
 * qemu-guest-agent
 * spice-vdagent (clipboard, display resize)
-* nomodeset kernel parameter
+
+If REMnux is stuck at a low resolution (such as 640x480) in Proxmox, run `remnux install` and reboot.
 
 Alternative: You can also [import the general OVA](https://syncbricks.com/how-to-import-ova-to-proxmox/) using CPU type `qemu64`. For the first boot, set the display to Standard VGA (not SPICE). After booting, run `remnux install` to install guest tools and apply display fixes. You can then switch to SPICE for better graphics.
 
