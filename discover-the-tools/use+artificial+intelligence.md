@@ -48,14 +48,3 @@ Examine binary files, including disassembling and debugging. Includes r2ai and d
 **State File**: [remnux.packages.radare2](https://github.com/REMnux/salt-states/blob/master/remnux/packages/radare2.sls)
 
 
-
-## r2mcp
-
-Model Context Protocol server that lets AI agents drive radare2 to open binaries, analyze code, decompile functions, and find vulnerabilities. Pre-configured for OpenCode as the radare2 MCP server.
-
-**Website**: [https://github.com/radareorg/radare2-mcp](https://github.com/radareorg/radare2-mcp)\
-**Author**: pancake: [https://github.com/radareorg/radare2-mcp](https://github.com/radareorg/radare2-mcp)\
-**License**: MIT: [https://github.com/radareorg/radare2-mcp/blob/main/LICENSE](https://github.com/radareorg/radare2-mcp/blob/main/LICENSE)\
-**Notes**: r2mcp, r2mcp-svc\
-**State File**: [remnux.packages.r2mcp](https://github.com/REMnux/salt-states/blob/master/remnux/packages/r2mcp.sls)
-
