@@ -91,3 +91,13 @@ Execute and deobfuscate JavaScript using a patched version of Mozilla's standalo
 **State File**: [remnux.tools.js-patched](https://github.com/REMnux/salt-states/blob/master/remnux/tools/js-patched.sls)
 
 
+
+## JavaScript Deobfuscator
+
+Deobfuscate JavaScript by removing common obfuscation techniques such as string arrays and proxy functions.
+
+**Website**: [https://github.com/ben-sb/javascript-deobfuscator](https://github.com/ben-sb/javascript-deobfuscator)\
+**Author**: ben-sb: [https://github.com/ben-sb](https://github.com/ben-sb)\
+**License**: Apache License 2.0: [https://github.com/ben-sb/javascript-deobfuscator/blob/master/LICENSE](https://github.com/ben-sb/javascript-deobfuscator/blob/master/LICENSE)\
+**Notes**: js-deobfuscator -i input.js -o output.js\
+**State File**: [remnux.node-packages.js-deobfuscator](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/js-deobfuscator.sls)
