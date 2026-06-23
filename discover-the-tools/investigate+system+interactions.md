@@ -34,3 +34,13 @@ Find hidden processes or connections on the local Linux system.
 **State File**: [remnux.packages.unhide](https://github.com/REMnux/salt-states/blob/master/remnux/packages/unhide.sls)
 
 
+
+## ProcmonMCP
+
+MCP server that lets AI assistants analyze Process Monitor (Procmon) XML captures.
+
+**Website**: [https://github.com/JameZUK/ProcmonMCP](https://github.com/JameZUK/ProcmonMCP)\
+**Author**: James (JameZUK): [https://github.com/JameZUK](https://github.com/JameZUK)\
+**License**: MIT\
+**Notes**: Pre-configured for OpenCode as the "procmon" MCP server. On Windows, export the Procmon capture to XML (the native .PML format is not supported), copy the XML to REMnux, then ask the assistant to load it. Large captures with millions of events can take several minutes to load.\
+**State File**: [remnux.tools.procmon-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/procmon-mcp.sls)
