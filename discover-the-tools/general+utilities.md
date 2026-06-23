@@ -224,3 +224,13 @@ Run PowerShell scripts and commands.
 **License**: MIT License: [https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt](https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt)\
 **Notes**: pwsh\
 **State File**: [remnux.packages.powershell](https://github.com/REMnux/salt-states/blob/master/remnux/packages/powershell.sls)
+
+## sshpass
+
+Supply a password to SSH non-interactively for automated logins.
+
+**Website**: [https://sourceforge.net/projects/sshpass/](https://sourceforge.net/projects/sshpass/)\
+**Author**: Shachar Shemesh\
+**License**: GPLv2: [https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)\
+**Notes**: sshpass\
+**State File**: [remnux.packages.sshpass](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sshpass.sls)
