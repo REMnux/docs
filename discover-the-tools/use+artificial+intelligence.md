@@ -54,7 +54,8 @@ Examine binary files, including disassembling and debugging. Includes r2ai and d
 MCP server that lets AI assistants analyze Process Monitor (Procmon) XML captures.
 
 **Website**: [https://github.com/JameZUK/ProcmonMCP](https://github.com/JameZUK/ProcmonMCP)\
-**Author**: James (JameZUK): [https://github.com/JameZUK](https://github.com/JameZUK)\
-**License**: MIT\
+**Author**: James (JameZUK): [https://x.com/JameZUK](https://x.com/JameZUK)\
+**License**: MIT License: [https://github.com/JameZUK/ProcmonMCP/blob/procmon_parser/LICENSE](https://github.com/JameZUK/ProcmonMCP/blob/procmon_parser/LICENSE)\
 **Notes**: Pre-configured for OpenCode as the "procmon" MCP server. On Windows, export the Procmon capture to XML (the native .PML format is not supported), copy the XML to REMnux, then ask the assistant to load it. Large captures with millions of events can take several minutes to load.\
 **State File**: [remnux.tools.procmon-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/procmon-mcp.sls)
+
