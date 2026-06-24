@@ -59,3 +59,13 @@ MCP server that lets AI assistants analyze Process Monitor (Procmon) XML capture
 **Notes**: Pre-configured for OpenCode as the "procmon" MCP server. On Windows, export the Procmon capture to XML (the native .PML format is not supported), copy the XML to REMnux, then ask the assistant to load it. Large captures with millions of events can take several minutes to load.\
 **State File**: [remnux.tools.procmon-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/procmon-mcp.sls)
 
+
+## x64dbg Automate MCP (OpenCode skills)
+
+Drive x64dbg on a remote Windows VM from OpenCode on REMnux, with eight AI commands for tracing, unpacking, state snapshots, decompiling, YARA scanning, and vulnerability hunting.
+
+**Website**: [https://github.com/REMnux/x64dbg-skills-opencode](https://github.com/REMnux/x64dbg-skills-opencode)\
+**Author**: Darius Houle: [https://github.com/dariushoule](https://github.com/dariushoule)\
+**License**: MIT License: [https://github.com/REMnux/x64dbg-skills-opencode/blob/main/LICENSE](https://github.com/REMnux/x64dbg-skills-opencode/blob/main/LICENSE)\
+**Notes**: Ships disabled by default in OpenCode. It only works once x64dbg runs with the x64dbg-automate plugin in Remote mode on a separate Windows VM and you connect to it from OpenCode. The eight commands are /x64dbg-tracealyzer, /x64dbg-find-oep, /x64dbg-shellcode-analyzer, /x64dbg-state-snapshot, /x64dbg-state-diff, /x64dbg-decompile, /x64dbg-yara-sigs, and /x64dbg-vuln-hunter. Forked from dariushoule/x64dbg-skills (a Claude Code plugin) and adapted for OpenCode on REMnux.\
+**State File**: [remnux.tools.x64dbg-automate-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/x64dbg-automate-mcp.sls)
