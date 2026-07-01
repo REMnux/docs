@@ -116,3 +116,13 @@ Decrypt and parse Cobalt Strike beacon network traffic.
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
+
+## monitor-network
+
+Monitor traffic on the first active network interface using tshark, printing a live summary to the screen or saving it to a pcapng file.
+
+**Website**: [https://github.com/REMnux/distro/blob/master/files/monitor-network](https://github.com/REMnux/distro/blob/master/files/monitor-network)\
+**Author**: Lenny Zeltser\
+**License**: Public Domain\
+**Notes**: monitor-network [filename]\
+**State File**: [remnux.scripts.monitor-network](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/monitor-network.sls)
