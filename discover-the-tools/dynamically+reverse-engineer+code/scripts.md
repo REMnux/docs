@@ -101,3 +101,13 @@ Deobfuscate JavaScript by removing common obfuscation techniques such as string 
 **License**: Apache License 2.0: [https://github.com/ben-sb/javascript-deobfuscator/blob/master/LICENSE](https://github.com/ben-sb/javascript-deobfuscator/blob/master/LICENSE)\
 **Notes**: js-deobfuscator -i input.js -o output.js\
 **State File**: [remnux.node-packages.js-deobfuscator](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/js-deobfuscator.sls)
+
+## Webcrack
+
+Deobfuscate, unminify, and unpack bundled JavaScript, including scripts protected with obfuscator.io.
+
+**Website**: [https://github.com/j4k0xb/webcrack](https://github.com/j4k0xb/webcrack)\
+**Author**: j4k0xb: [https://github.com/j4k0xb](https://github.com/j4k0xb)\
+**License**: MIT License: [https://github.com/j4k0xb/webcrack/blob/master/LICENSE](https://github.com/j4k0xb/webcrack/blob/master/LICENSE)\
+**Notes**: webcrack input.js -o output-dir\
+**State File**: [remnux.node-packages.webcrack](https://github.com/REMnux/salt-states/blob/master/remnux/node-packages/webcrack.sls)
