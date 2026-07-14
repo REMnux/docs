@@ -119,5 +119,6 @@ Monitor and deobfuscate JavaScript behavior in a headless browser to analyze mal
 **Website**: [https://github.com/edygert/js_unshroud](https://github.com/edygert/js_unshroud)\
 **Author**: Evan H. Dygert: [https://www.linkedin.com/in/evandygert/](https://www.linkedin.com/in/evandygert/)\
 **License**: MIT License: [https://github.com/edygert/js_unshroud/blob/master/LICENSE.txt](https://github.com/edygert/js_unshroud/blob/master/LICENSE.txt)\
-**Notes**: js_unshroud. Capture with `js_unshroud run --url <url> --out events.jsonl`; run it without arguments to see usage. Needs a display (use `xvfb-run` if headless).\
+**Notes**: js_unshroud. Capture with `js_unshroud run --url <url> --out events.jsonl`; run it without arguments to see usage. Needs a display; on headless systems the wrapper starts a virtual one automatically (xvfb).\
 **State File**: [remnux.tools.js_unshroud](https://github.com/REMnux/salt-states/blob/master/remnux/tools/js_unshroud.sls)
+
