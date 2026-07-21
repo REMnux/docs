@@ -227,10 +227,11 @@ Supply a password to SSH non-interactively for automated logins.
 
 ## restrict-egress
 
-Restrict the host's outbound network access to an allowlist of domains and CIDRs, using an nftables default-deny egress policy that survives reboots and re-resolves load-balanced endpoints.
+Restrict the host's outbound network access to an allowlist of domains and CIDRs, using an nftables default-deny egress policy that survives reboots and re-resolves load-balanced endpoints. Requires systemd, so it runs on a host or VM only and is not functional inside containers.
 
 **Website**: [https://github.com/REMnux/distro/blob/master/files/restrict-egress](https://github.com/REMnux/distro/blob/master/files/restrict-egress)\
 **Author**: Lenny Zeltser: [https://x.com/lennyzeltser](https://x.com/lennyzeltser)\
 **License**: MIT\
 **Notes**: Not active by default. Define allowed destinations in /etc/restrict-egress.conf, then enable with `restrict-egress on` (as root) and disable with `restrict-egress off` before apt or remnux install. Requires systemd, so not functional inside containers.\
 **State File**: [remnux.scripts.restrict-egress](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/restrict-egress.sls)
+
