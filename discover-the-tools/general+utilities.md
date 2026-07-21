@@ -224,3 +224,13 @@ Supply a password to SSH non-interactively for automated logins.
 **License**: GPLv2: [https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)\
 **Notes**: sshpass\
 **State File**: [remnux.packages.sshpass](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sshpass.sls)
+
+## restrict-egress
+
+Restrict the host's outbound network access to an allowlist of domains and CIDRs, using an nftables default-deny egress policy that survives reboots and re-resolves load-balanced endpoints.
+
+**Website**: [https://github.com/REMnux/distro/blob/master/files/restrict-egress](https://github.com/REMnux/distro/blob/master/files/restrict-egress)\
+**Author**: Lenny Zeltser: [https://x.com/lennyzeltser](https://x.com/lennyzeltser)\
+**License**: MIT\
+**Notes**: Not active by default. Define allowed destinations in /etc/restrict-egress.conf, then enable with `restrict-egress on` (as root) and disable with `restrict-egress off` before apt or remnux install. Requires systemd, so not functional inside containers.\
+**State File**: [remnux.scripts.restrict-egress](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/restrict-egress.sls)
