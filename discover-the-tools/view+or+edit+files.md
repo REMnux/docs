@@ -84,3 +84,13 @@ Powerful source code editor.
 **State File**: [remnux.packages.vscode](https://github.com/REMnux/salt-states/blob/master/remnux/packages/vscode.sls)
 
 
+
+## Mermaid Viewer
+
+View Mermaid diagrams, such as AI-generated code-analysis workflow diagrams, in a local browser.
+
+**Website**: [https://mermaid.js.org/](https://mermaid.js.org/)\
+**Author**: Mermaid.js contributors: [https://github.com/mermaid-js/mermaid](https://github.com/mermaid-js/mermaid)\
+**License**: MIT License: [https://github.com/mermaid-js/mermaid/blob/develop/LICENSE](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE)\
+**Notes**: mermaid-view. Renders offline with `mermaid-view diagram.mmd`; needs a graphical browser, so it does not work on headless installs.\
+**State File**: [remnux.tools.mermaid-view](https://github.com/REMnux/salt-states/blob/master/remnux/tools/mermaid-view.sls)
