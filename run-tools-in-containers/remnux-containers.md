@@ -54,6 +54,24 @@ docker run --rm -it -v ~/workdir:/home/nonroot/workdir -v ~/pylingual-models:/ho
 
 The remnux/pylingual image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/pylingual).
 
+## JSC Deobfuscator <a href="#jscdeobfuscator" id="jscdeobfuscator"></a>
+
+[JSC Deobfuscator](https://github.com/hasherezade/jsc_deobfuscator) statically deobfuscates compiled V8 JavaScript bytecode (`.jsc`) that was protected with [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator), producing View8 pseudocode for static inspection. It was created by Aleksandra "Hasherezade" Doniec at Check Point Research and is licensed under the [GNU General Public License (GPL) v2 or later](https://github.com/hasherezade/jsc_deobfuscator/blob/main/LICENSE). The image bundles the complete pipeline: the version-matched v8dasm disassembler, the View8 decompiler, brotli, and the deobfuscation filters.
+
+To run JSC Deobfuscator, create a directory where you'll store the `.jsc` payloads you plan to examine. Then, open a shell inside the container where you can run the pipeline and have your local directory mapped as `/home/nonroot/workdir` inside the container:
+
+```
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/jsc-deobfuscator
+```
+
+{% hint style="info" %}
+The bundled v8dasm disassembler targets V8 version 10.2.154.26, used by JSCeal-era payloads. Payloads compiled with a different V8 build need a matching disassembler, as explained in the [project wiki](https://github.com/hasherezade/jsc_deobfuscator/wiki/Building-V8-Disasm). This image is amd64-only; on Apple Silicon and other arm64 hosts, add `--platform linux/amd64`.
+{% endhint %}
+
+The optional LLM-assisted function renaming needs an API key passed into the container, such as `-e ANTHROPIC_API_KEY` or `-e OPENAI_API_KEY`, or a reachable Ollama server.
+
+The remnux/jsc-deobfuscator image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/jsc-deobfuscator).
+
 ## RetDec Retargetable Machine-Code Decompiler <a href="#retdec" id="retdec"></a>
 
 [RetDec](https://github.com/avast/retdec) is a decompiler that supports a variety of file formats, including PE and ELF, and several 32 and 64-bit architectures. It was created by [Avast Software](https://www.avast.com), and is licensed under [MIT License](https://github.com/avast/retdec/blob/master/LICENSE) with [third-party components](https://github.com/avast/retdec/blob/master/LICENSE-THIRD-PARTY) that are distributed under their own licenses.
