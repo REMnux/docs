@@ -84,3 +84,13 @@ Parse, modify, generate PDF files.
 **License**: GNU Lesser General Public License (LGPL) v3\
 **Notes**: pdfcop, pdfdecompress, pdfdecrypt, pdfextract, etc.\
 **State File**: [remnux.rubygems.origamindee](https://github.com/REMnux/salt-states/blob/master/remnux/rubygems/origamindee.sls)
+
+## mutool
+
+Examine, convert, and manipulate PDF files, including extracting embedded streams and repairing malformed documents.
+
+**Website**: [https://mupdf.com](https://mupdf.com)\
+**Author**: Artifex Software: [https://artifex.com](https://artifex.com)\
+**License**: GNU Affero General Public License (AGPL) v3: [https://www.gnu.org/licenses/agpl-3.0.html](https://www.gnu.org/licenses/agpl-3.0.html)\
+**Notes**: Installed from the Ubuntu mupdf-tools package.\
+**State File**: [remnux.packages.mutool](https://github.com/REMnux/salt-states/blob/master/remnux/packages/mutool.sls)
