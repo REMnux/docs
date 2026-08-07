@@ -140,3 +140,13 @@ Scan files using YARA rules, the next generation of YARA written in Rust.
 **License**: BSD-3-Clause License: [https://github.com/VirusTotal/yara-x/blob/main/LICENSE](https://github.com/VirusTotal/yara-x/blob/main/LICENSE)\
 **Notes**: yr scan, yr compile. Coexists with classic YARA; uses `yr` command.\
 **State File**: [remnux.tools.yara-x](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-x.sls)
+
+## etl-parser
+
+Parse Windows Event Trace Log (ETL) files.
+
+**Website**: [https://github.com/airbus-cert/etl-parser](https://github.com/airbus-cert/etl-parser)\
+**Author**: Airbus CERT: [https://github.com/airbus-cert](https://github.com/airbus-cert)\
+**License**: Apache License 2.0: [https://github.com/airbus-cert/etl-parser/blob/main/LICENSE](https://github.com/airbus-cert/etl-parser/blob/main/LICENSE)\
+**Notes**: Convert a trace to XML with `etl2xml -i input.etl -o output.xml`. REMnux adds a schema so that AMSI traces captured with `logman` decode as well.\
+**State File**: [remnux.python3-packages.etl-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/etl-parser.sls)
