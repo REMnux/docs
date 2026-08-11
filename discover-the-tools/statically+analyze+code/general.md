@@ -77,3 +77,13 @@ Examine binary files, including disassembling and debugging. Includes r2ai and d
 **Notes**: r2, rasm2, rabin2, rahash2, rafind2, r2ai, decai, pdg\
 **State File**: [remnux.packages.radare2](https://github.com/REMnux/salt-states/blob/master/remnux/packages/radare2.sls)
 
+
+## r2decomp
+
+Decompile the function behind a capa match using radare2 and the Ghidra decompiler.
+
+**Website**: [https://github.com/lennyzeltser/r2decomp](https://github.com/lennyzeltser/r2decomp)\
+**Author**: Lenny Zeltser: [https://x.com/lennyzeltser](https://x.com/lennyzeltser)\
+**License**: MIT: [https://github.com/lennyzeltser/r2decomp/blob/master/LICENSE](https://github.com/lennyzeltser/r2decomp/blob/master/LICENSE)\
+**Notes**: Pairs with capa. Run "r2decomp doctor" to confirm radare2 and the r2ghidra pdg decompiler are present.\
+**State File**: [remnux.scripts.r2decomp](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/r2decomp.sls)
