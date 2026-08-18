@@ -227,12 +227,13 @@ Supply a password to SSH non-interactively for automated logins.
 
 ## restrict-egress
 
-Restrict outbound network access to an allowlist of domains and CIDRs using an nftables default-deny egress policy. It installs a persistent, self-refreshing lockdown on a VM or host, or enforces a one-shot lockdown inside a container with the apply command.
+Restrict outbound network access to an allowlist of domains and CIDRs using an nftables default-deny egress policy. It installs a persistent, self-refreshing lockdown on a VM or host, or enforces a one-shot lockdown inside a container with the apply command. Where dnsmasq and systemd-resolved are present, domain entries are coupled to DNS: a local dnsmasq inserts each answered IP into the allow set before the client sees it, so rotating load-balancer addresses never miss.
 
 **Website**: [https://github.com/REMnux/distro/blob/master/files/restrict-egress](https://github.com/REMnux/distro/blob/master/files/restrict-egress)\
 **Author**: Lenny Zeltser: [https://x.com/lennyzeltser](https://x.com/lennyzeltser)\
 **License**: MIT\
-**Notes**: Not active by default. Define allowed destinations in /etc/restrict-egress.conf, then enable with `restrict-egress on` (as root) and disable with `restrict-egress off` before apt or remnux install. In a container (no systemd), use `restrict-egress apply` and run the container with --cap-add=NET_ADMIN.\
+**Notes**: Not active by default. Define allowed destinations in /etc/restrict-egress.conf, then enable with `restrict-egress on` (as root) and disable with `restrict-egress off` before apt or remnux install. `restrict-egress diagnose` explains why a name cannot be reached through the lockdown. In a container (no systemd), use `restrict-egress apply` and run the container with --cap-add=NET_ADMIN.\
 **State File**: [remnux.scripts.restrict-egress](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/restrict-egress.sls)
+
 
 
