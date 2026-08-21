@@ -59,3 +59,13 @@ Drive x64dbg on a remote Windows VM from OpenCode on REMnux, with eight AI comma
 **Notes**: Ships disabled by default in OpenCode. It only works once x64dbg runs with the x64dbg-automate plugin in Remote mode on a separate Windows VM and you connect to it from OpenCode. The skills add OpenCode commands that begin with /x64dbg. Forked from dariushoule/x64dbg-skills (a Claude Code plugin) and adapted for OpenCode on REMnux.\
 **State File**: [remnux.tools.x64dbg-automate-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/x64dbg-automate-mcp.sls)
 
+
+## x64dbg Documentation
+
+Read the official x64dbg documentation offline, including the command reference and format specifiers.
+
+**Website**: [https://github.com/x64dbg/docs](https://github.com/x64dbg/docs)\
+**Author**: x64dbg contributors: [https://github.com/x64dbg](https://github.com/x64dbg)\
+**License**: MIT License: [https://github.com/x64dbg/docs/blob/master/LICENSE](https://github.com/x64dbg/docs/blob/master/LICENSE)\
+**Notes**: The documentation is in /usr/local/share/x64dbg-docs. It refreshes every time you run `remnux install`, so you can look up x64dbg command syntax without internet access.\
+**State File**: [remnux.tools.x64dbg-docs](https://github.com/REMnux/salt-states/blob/master/remnux/tools/x64dbg-docs.sls)
