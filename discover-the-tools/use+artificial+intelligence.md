@@ -70,3 +70,13 @@ Drive x64dbg on a remote Windows VM from OpenCode on REMnux, with eight AI comma
 **Notes**: Ships disabled by default in OpenCode. It only works once x64dbg runs with the x64dbg-automate plugin in Remote mode on a separate Windows VM and you connect to it from OpenCode. The skills add OpenCode commands that begin with /x64dbg. Forked from dariushoule/x64dbg-skills (a Claude Code plugin) and adapted for OpenCode on REMnux.\
 **State File**: [remnux.tools.x64dbg-automate-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/x64dbg-automate-mcp.sls)
 
+
+## AIDebug
+
+AI-assisted malware reverse-engineering debugger with ATT&CK, YARA, IOC, JSON, and analyst report output.
+
+**Website**: [https://github.com/anpa1200/AIDebug](https://github.com/anpa1200/AIDebug)\
+**Author**: Andrey Pautov: [https://1200km.com](https://1200km.com)\
+**License**: MIT: [https://github.com/anpa1200/AIDebug/blob/main/LICENSE](https://github.com/anpa1200/AIDebug/blob/main/LICENSE)\
+**Notes**: To run the tool, use the command "aidebug". Add --offline to keep analysis local. Otherwise it sends sample data to the LLM provider whose API key is set in the environment.\
+**State File**: [remnux.python3-packages.aidebug](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/aidebug.sls)

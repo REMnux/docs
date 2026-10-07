@@ -87,3 +87,13 @@ Decompile the function behind a capa match using radare2 and the Ghidra decompil
 **License**: MIT: [https://github.com/lennyzeltser/r2decomp/blob/master/LICENSE](https://github.com/lennyzeltser/r2decomp/blob/master/LICENSE)\
 **Notes**: Pairs with capa. Run "r2decomp doctor" to confirm radare2 and the r2ghidra pdg decompiler are present.\
 **State File**: [remnux.scripts.r2decomp](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/r2decomp.sls)
+
+## AIDebug
+
+AI-assisted malware reverse-engineering debugger with ATT&CK, YARA, IOC, JSON, and analyst report output.
+
+**Website**: [https://github.com/anpa1200/AIDebug](https://github.com/anpa1200/AIDebug)\
+**Author**: Andrey Pautov: [https://1200km.com](https://1200km.com)\
+**License**: MIT: [https://github.com/anpa1200/AIDebug/blob/main/LICENSE](https://github.com/anpa1200/AIDebug/blob/main/LICENSE)\
+**Notes**: To run the tool, use the command "aidebug". Add --offline to keep analysis local. Otherwise it sends sample data to the LLM provider whose API key is set in the environment.\
+**State File**: [remnux.python3-packages.aidebug](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/aidebug.sls)
