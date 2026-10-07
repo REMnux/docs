@@ -160,7 +160,8 @@ Extract and deobfuscate strings from PE executables.
 **Author**: Mandiant, Willi Ballenthin: [https://x.com/williballenthin](https://x.com/williballenthin), Moritz Raabe\
 **License**: Apache License 2.0: [https://github.com/mandiant/flare-floss/blob/master/LICENSE.txt](https://github.com/mandiant/flare-floss/blob/master/LICENSE.txt)\
 **Notes**: floss\
-**State File**: [remnux.packages.flare-floss](https://github.com/REMnux/salt-states/blob/master/remnux/packages/flare-floss.sls)
+**State File**: [remnux.python3-packages.flare-floss](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/flare-floss.sls)
+
 
 
 
