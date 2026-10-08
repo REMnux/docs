@@ -2,7 +2,7 @@
 
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
-{% hint style="info" %}
+{% hint style="success" %}
 REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Some tools and features are unavailable on arm64. To check a tool's availability, limitations, and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
 {% endhint %}
 

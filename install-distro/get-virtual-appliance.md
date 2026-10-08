@@ -2,7 +2,7 @@
 
 The easiest way to get the REMnux distro is to download the prebuilt REMnux virtual appliance, import it into your hypervisor, then [run the update command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
-{% hint style="info" %}
+{% hint style="success" %}
 REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Some tools and features are unavailable on arm64. To check a tool's availability, limitations, and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
 {% endhint %}
 
