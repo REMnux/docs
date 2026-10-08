@@ -81,3 +81,15 @@ AI-assisted malware reverse-engineering debugger with ATT&CK, YARA, IOC, JSON, a
 **Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: To run the tool, use the command "aidebug". Add --offline to keep analysis local. Otherwise it sends sample data to the LLM provider whose API key is set in the environment.\
 **State File**: [remnux.python3-packages.aidebug](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/aidebug.sls)
+
+## r2mcp
+
+Model Context Protocol server that lets AI agents drive radare2 to open binaries, analyze code, decompile functions, and find vulnerabilities. Pre-configured for OpenCode as the radare2 MCP server.
+
+**Website**: [https://github.com/radareorg/radare2-mcp](https://github.com/radareorg/radare2-mcp)\
+**Author**: pancake: [https://github.com/radareorg/radare2-mcp](https://github.com/radareorg/radare2-mcp)\
+**License**: MIT: [https://github.com/radareorg/radare2-mcp/blob/main/LICENSE](https://github.com/radareorg/radare2-mcp/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) only\
+**Alternative on arm64**: No alternative identified.\
+**Notes**: r2mcp, r2mcp-svc\
+**State File**: [remnux.packages.r2mcp](https://github.com/REMnux/salt-states/blob/master/remnux/packages/r2mcp.sls)
