@@ -3,18 +3,18 @@
 If [starting with a pre-built virtual appliance](get-virtual-appliance.md) is impractical or you prefer to customize all aspects of the system, you can build a dedicated REMnux environment from scratch by taking the following steps. This allows you to install the REMnux distro on a physical host or a virtual machine.
 
 {% hint style="info" %}
-REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
+REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Some tools and features are unavailable on arm64. To check a tool's availability, limitations, and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
 {% endhint %}
 
 ## Step 1: Install Ubuntu 24.04 <a href="#install-ubuntu" id="install-ubuntu"></a>
 
 If you're looking to recreate the lightweight environment provided by the REMnux pre-built virtual appliance, start with the 64-bit Ubuntu 24.04 Server ISO installation file.
 
-Download the latest Ubuntu 24.04 Server ISO image [from this Ubuntu page](https://releases.ubuntu.com/noble/).
+Download the latest Ubuntu 24.04 Server ISO image for your system's processor.
 
-* Be sure to select "64-bit PC (AMD64) server install image" as the file you'll download.
-* As of this writing, [you can use this](https://releases.ubuntu.com/noble/ubuntu-24.04.3-live-server-amd64.iso) link, but if the link doesn't work, get it from the Ubuntu page.
-* You can verify its integrity using the checksums provided on that Ubuntu download page.
+* For an Intel or AMD system (amd64), get the "64-bit PC (AMD64) server install image" [from this Ubuntu page](https://releases.ubuntu.com/noble/). As of this writing, [you can use this link](https://releases.ubuntu.com/noble/ubuntu-24.04.5-live-server-amd64.iso).
+* For a 64-bit ARM system (arm64), such as a virtual machine on an Apple M-series Mac, use the ARM image. Get the "64-bit ARM (ARMv8/AArch64) server install image" [from this Ubuntu page](https://cdimage.ubuntu.com/releases/noble/release/). As of this writing, [you can use this link](https://cdimage.ubuntu.com/releases/noble/release/ubuntu-24.04.5-live-server-arm64.iso).
+* If a link doesn't work, get the file from its Ubuntu page. You can verify the file's integrity using the checksums on that page.
 
 If you're installing Ubuntu in a virtual machine, allocate resources based on what you have available. REMnux is a relatively lightweight distro, but the more you allocate to it, the faster it will run. For your reference, the [prebuilt REMnux virtual appliance](get-virtual-appliance.md) ships with 4 GB RAM and 100 GB disk.
 

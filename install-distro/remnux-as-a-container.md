@@ -12,6 +12,10 @@ To run the REMnux version built on top of Ubuntu 24.04 (Noble):
 docker run --rm -it -u remnux remnux/remnux-distro:noble bash
 ```
 
+{% hint style="info" %}
+The REMnux container image is available for amd64 only. To run it on an arm64 system, add `--platform linux/amd64` after `docker run` in the commands on this page. The container will then run under amd64 emulation, which is slower. Docker Desktop includes this emulation. On Linux, set it up first, as explained in [Docker's documentation](https://docs.docker.com/build/building/multi-platform/).
+{% endhint %}
+
 To map a local directory into the container's /home/remnux/files directory, you could use a command like this, supplying the appropriate directory name:
 
 ```

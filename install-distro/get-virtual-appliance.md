@@ -3,64 +3,51 @@
 The easiest way to get the REMnux distro is to download the prebuilt REMnux virtual appliance, import it into your hypervisor, then [run the update command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
 {% hint style="info" %}
-REMnux is currently based on an x86/amd64 version of Ubuntu, and won't run on ARM processors such as Apple's M-series chips.
+REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Some tools and features are unavailable on arm64. To check a tool's availability, limitations, and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
 {% endhint %}
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
 The REMnux virtual appliance is approximately 9 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
 
-Decide which virtual appliance file to download. If in doubt, get the General OVA file. If you're using VirtualBox or Proxmox, download the appropriate file instead.
+Choose the file for your system's processor, then the one for your hypervisor. Apple M-series Macs need the arm64 files, which are coming soon. On an Intel or AMD system, if in doubt, get the General OVA file.
 
 {% tabs %}
-{% tab title="General OVA" %}
-This general OVA file works with most hypervisors. If you're using VirtualBox or Proxmox, go to another corresponding tab.
-
-[Download the general OVA file.](https://download.remnux.org/202602/remnux-noble-amd64.ova)
-{% endtab %}
-
-{% tab title="VirtualBox OVA" %}
-This VirtualBox OVA file is specifically for VirtualBox. If you're using another hypervisor, go to another corresponding tab.
-
-[Download the VirtualBox OVA file.](https://download.remnux.org/202602/remnux-noble-amd64-virtualbox.ova)
-{% endtab %}
-
-{% tab title="Proxmox QCOW2" %}
-This QCOW2 file is specifically for Proxmox. If you're using another hypervisor, go to another corresponding tab.
-
-[Download the Proxmox QCOW2 file.](https://download.remnux.org/202601/remnux-noble-amd64-proxmox.qcow2)
-{% endtab %}
-{% endtabs %}
-
-## Step 2: Confirm the Hash of the Downloaded File <a href="#confirm-hash" id="confirm-hash"></a>
-
-Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum` or `shasum` to make sure it matches this expected value:
-
-{% tabs %}
-{% tab title="General OVA Hash" %}
-The general OVA file:
+{% tab title="Intel or AMD (amd64)" %}
+**General OVA** works with most hypervisors. [Download the general OVA file.](https://download.remnux.org/202602/remnux-noble-amd64.ova)
 
 ```
 1b10f522671d42b5fac60238d660871001ecdd94474aace55e0ef2b88e2bdecb
 ```
-{% endtab %}
 
-{% tab title="VirtualBox OVA Hash" %}
-The VirtualBox OVA file:
+**VirtualBox OVA** is specifically for VirtualBox. [Download the VirtualBox OVA file.](https://download.remnux.org/202602/remnux-noble-amd64-virtualbox.ova)
 
 ```
 1ba3196ad82f3536954404546aa510ff09cf0c6c0567847272a9389e2e160a7b
 ```
-{% endtab %}
 
-{% tab title="Proxmox QCOW2 Hash" %}
-The Proxmox QCOW2 file:
+**Proxmox QCOW2** is specifically for Proxmox. [Download the Proxmox QCOW2 file.](https://download.remnux.org/202601/remnux-noble-amd64-proxmox.qcow2)
 
 ```
 95adcfd293b29aee77c0c95b2d0a9a7f8f2f7829c49f20b3def16b5b28638e93
 ```
 {% endtab %}
+
+{% tab title="ARM (arm64)" %}
+Use these files on Apple M-series Macs and other 64-bit ARM systems.
+
+| Hypervisor    | File        |
+| ------------- | ----------- |
+| VMware Fusion | Coming soon |
+| UTM           | Coming soon |
+
+Until they're available, you can [install REMnux from scratch](install-from-scratch.md) on Ubuntu 24.04 for arm64.
+{% endtab %}
 {% endtabs %}
+
+## Step 2: Confirm the Hash of the Downloaded File <a href="#confirm-hash" id="confirm-hash"></a>
+
+Validate the SHA-256 hash of the downloaded file using a tool such as `sha256sum` or `shasum`. Make sure it matches the hash listed under the file's download link in Step 1.
 
 ## Step 3: Import the Virtual Appliance <a href="#import-ova-file" id="import-ova-file"></a>
 
@@ -126,10 +113,11 @@ For an overview of this process, see the video [How To Install REMnux on Windows
 
 The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
 
-1. Edit the /etc/remnux-config and change the mode from `dedicated` to `cloud`.
-2. Enable the SSH daemon by running: `sudo systemctl enable ssh`.
-3. Change the default user's password and otherwise strengthen the SSH authentication method according to your requirements and risk tolerance.
-4. Reboot your REMnux system.
+1. If the file `/etc/remnux-config` exists from an older REMnux installer, delete it. Otherwise, the installer will keep using the mode listed in that file when you later update REMnux.
+2. Switch to the `cloud` installation mode by running `sudo remnux install --mode=cloud`. The installer will save this mode and apply it when you later update REMnux, so SSH will stay enabled. Connect the system to the internet first, because this command will also update the distro.
+3. Create any missing SSH host keys by running `sudo ssh-keygen -A`. Then enable and start the SSH daemon with `sudo systemctl enable --now ssh`.
+4. Change the default user's password and otherwise strengthen the SSH authentication method according to your requirements and risk tolerance.
+5. Reboot your REMnux system.
 
 ### KVM/QEMU
 
