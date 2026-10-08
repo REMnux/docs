@@ -68,6 +68,19 @@ To make sure the tool is properly included in the REMnux tool listing, include t
 # Notes: 
 ```
 
+Use two optional fields to tell users which processor architectures the tool works on. REMnux installs on amd64 systems, which have Intel or AMD processors, and on ARM-based arm64 systems. When REMnux installs the tool on both, omit the `Architecture` field. When it can install the tool on only one, add an `Architecture` line after the `License` line. Then add a note for users of the other architecture:
+
+```
+# Architecture: amd64
+# Arm64: Use file or Detect It Easy instead.
+```
+
+Finish a single-architecture tool by naming an alternative and skipping the installation on the other architecture. In the note, name an alternative tool, or write "No alternative identified." Then wrap the installation steps in an `osarch` check, as [trid.sls](https://github.com/REMnux/salt-states/blob/master/remnux/tools/trid.sls) does. On the unsupported architecture, add a `test.show_notification` state instead. Its text should start with `Skipped on arm64:`, or `Skipped on amd64:` for an arm64-only tool.
+
+When some of a tool's features don't work on arm64, describe the gap in an `Arm64` note. Leave out the `Architecture` line, because REMnux still installs the tool on both architectures. Here's the note for peepdf-3: `# Arm64: JavaScript emulation is unavailable.` That way, arm64 users know what to expect before they reach for the feature.
+
+Two REMnux scripts display and check these fields. The `update-docs.py` script uses them to show each tool's architectures, alternatives, and limitations on this site. When you submit your pull request, a GitHub workflow will run `audit-arch.py`, which renders your State File for each architecture. The script will then compare the renders with your `Architecture` field. If the script reports differences between the two architectures, add them with a one-line reason to the `.ci/arch-acks.json` file.
+
 ## 6. Update the Directory's init.sls File
 
 Add a reference to your new State File in the `init.sls` file in the same directory. This file controls which states are included in the REMnux installation. Without this entry, your new tool won't be installed as part of the distro.
