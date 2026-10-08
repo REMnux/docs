@@ -21,8 +21,8 @@ Find hidden processes on the local Linux system.
 **Website**: [https://github.com/sandflysecurity/sandfly-processdecloak](https://github.com/sandflysecurity/sandfly-processdecloak)\
 **Author**: Sandfly Security: [https://x.com/SandflySecurity](https://x.com/SandflySecurity)\
 **License**: MIT License: [https://github.com/sandflysecurity/sandfly-processdecloak/blob/master/LICENSE](https://github.com/sandflysecurity/sandfly-processdecloak/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.sandfly-processdecloak](https://github.com/REMnux/salt-states/blob/master/remnux/packages/sandfly-processdecloak.sls)
-
 
 ## Unhide
 
@@ -31,9 +31,8 @@ Find hidden processes or connections on the local Linux system.
 **Website**: [http://www.unhide-forensics.info](http://www.unhide-forensics.info)\
 **Author**: Yago Jesus: [https://x.com/YJesus](https://x.com/YJesus)\
 **License**: GNU General Public License (GPL) v3: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.unhide](https://github.com/REMnux/salt-states/blob/master/remnux/packages/unhide.sls)
-
-
 
 ## ProcmonMCP
 
@@ -42,6 +41,6 @@ MCP server that lets AI assistants analyze Process Monitor (Procmon) XML capture
 **Website**: [https://github.com/JameZUK/ProcmonMCP](https://github.com/JameZUK/ProcmonMCP)\
 **Author**: James (JameZUK): [https://x.com/JameZUK](https://x.com/JameZUK)\
 **License**: MIT License: [https://github.com/JameZUK/ProcmonMCP/blob/procmon_parser/LICENSE](https://github.com/JameZUK/ProcmonMCP/blob/procmon_parser/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: Pre-configured for OpenCode as the "procmon" MCP server. On Windows, export the Procmon capture to XML (the native .PML format is not supported), copy the XML to REMnux, then ask the assistant to load it. Large captures with millions of events can take several minutes to load.\
 **State File**: [remnux.tools.procmon-mcp](https://github.com/REMnux/salt-states/blob/master/remnux/tools/procmon-mcp.sls)
-

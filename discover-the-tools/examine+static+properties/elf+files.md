@@ -11,7 +11,6 @@ Python library for parsing and analyzing ELF files and DWARF debugging informati
 **Website**: [https://github.com/eliben/pyelftools](https://github.com/eliben/pyelftools)\
 **Author**: Eli Bendersky\
 **License**: Public Domain: [https://github.com/eliben/pyelftools/blob/master/LICENSE](https://github.com/eliben/pyelftools/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: readelf.py\
 **State File**: [remnux.python3-packages.pyelftools](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/pyelftools.sls)
-
-

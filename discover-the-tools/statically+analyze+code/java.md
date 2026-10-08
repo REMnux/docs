@@ -11,8 +11,8 @@ Java decompiler.
 **Website**: [https://www.benf.org/other/cfr/](https://www.benf.org/other/cfr/)\
 **Author**: Lee Benfield\
 **License**: MIT License: [https://github.com/leibnitz27/cfr/blob/master/LICENSE](https://github.com/leibnitz27/cfr/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.tools.cfr](https://github.com/REMnux/salt-states/blob/master/remnux/tools/cfr.sls)
-
 
 ## JD-GUI Java Decompiler
 
@@ -21,10 +21,9 @@ Java decompiler with GUI.
 **Website**: [https://java-decompiler.github.io/](https://java-decompiler.github.io/)\
 **Author**: Emmanuel Dupuy\
 **License**: GNU General Public License (GPL) v3: [https://github.com/java-decompiler/jd-gui/blob/master/LICENSE](https://github.com/java-decompiler/jd-gui/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: jd-gui\
 **State File**: [remnux.tools.jd-gui](https://github.com/REMnux/salt-states/blob/master/remnux/tools/jd-gui.sls)
-
-
 
 ## Java IDX Parser
 
@@ -33,9 +32,9 @@ Analyze Java IDX files.
 **Website**: [https://github.com/digitalsleuth/Java_IDX_Parser](https://github.com/digitalsleuth/Java_IDX_Parser)\
 **Author**: Brian Baskin: [https://x.com/bbaskin](https://x.com/bbaskin), Updated for Python 3 by Corey Forman\
 **License**: Apache License 2.0: [https://github.com/digitalsleuth/Java_IDX_Parser/blob/master/LICENSE](https://github.com/digitalsleuth/Java_IDX_Parser/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: idx_parser.py\
 **State File**: [remnux.scripts.java-idx-parser](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/java-idx-parser.sls)
-
 
 ## Javassist
 
@@ -44,9 +43,9 @@ Java bytecode engineering toolkit/library.
 **Website**: [https://www.javassist.org/](https://www.javassist.org/)\
 **Author**: Shigeru Chiba\
 **License**: Mozilla Public License, GNU Lesser General Public License (LGPL) v2.1 or later, Apache License 2.0: [https://github.com/jboss-javassist/javassist/blob/master/License.html](https://github.com/jboss-javassist/javassist/blob/master/License.html)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: Library installed in /usr/share/java/\
 **State File**: [remnux.packages.libjavassist-java](https://github.com/REMnux/salt-states/blob/master/remnux/packages/libjavassist-java.sls)
-
 
 ## Procyon
 
@@ -55,8 +54,6 @@ Java decompiler.
 **Website**: [https://github.com/mstrobel/procyon](https://github.com/mstrobel/procyon)\
 **Author**: Mike Strobel\
 **License**: Apache License 2.0: [https://github.com/mstrobel/procyon/blob/develop/License.txt](https://github.com/mstrobel/procyon/blob/develop/License.txt)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: procyon\
 **State File**: [remnux.packages.procyon-decompiler](https://github.com/REMnux/salt-states/blob/master/remnux/packages/procyon-decompiler.sls)
-
-
-

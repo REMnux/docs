@@ -11,6 +11,8 @@ Investigate website interactions using this web proxy.
 **Website**: [https://portswigger.net](https://portswigger.net)\
 **Author**: PortSwigger\
 **License**: Free, custom license: [https://portswigger.net/burp/tc-community](https://portswigger.net/burp/tc-community)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
+**Limitations on arm64**: The built-in browser doesn't run.\
 **Notes**: burpsuite\
 **State File**: [remnux.packages.burpsuite-community](https://github.com/REMnux/salt-states/blob/master/remnux/packages/burpsuite-community.sls)
 
@@ -18,9 +20,10 @@ Investigate website interactions using this web proxy.
 
 Examine network traffic and carve PCAP capture files.
 
-**Website**: [https://www.netresec.com/](https://www.netresec.com)\
+**Website**: [https://www.netresec.com/](https://www.netresec.com/)\
 **Author**: NETRESEC AB\
 **License**: GNU General Public License (GPL) v2: [https://www.netresec.com/?page=NetworkMinerSourceCode](https://www.netresec.com/?page=NetworkMinerSourceCode)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: networkminer\
 **State File**: [remnux.tools.networkminer](https://github.com/REMnux/salt-states/blob/master/remnux/tools/networkminer.sls)
 
@@ -28,9 +31,10 @@ Examine network traffic and carve PCAP capture files.
 
 Intercept and decrypt TLS traffic.
 
-**Website**: [https://www.netresec.com/](https://www.netresec.com)\
+**Website**: [https://www.netresec.com/](https://www.netresec.com/)\
 **Author**: NETRESEC AB\
 **License**: Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) License: [https://www.netresec.com/?page=PolarProxy](https://www.netresec.com/?page=PolarProxy)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: polarproxy\
 **State File**: [remnux.tools.polarproxy](https://github.com/REMnux/salt-states/blob/master/remnux/tools/polarproxy.sls)
 
@@ -38,9 +42,10 @@ Intercept and decrypt TLS traffic.
 
 Investigate website interactions using this web proxy.
 
-**Website**: [https://mitmproxy.org/](https://mitmproxy.org)\
+**Website**: [https://mitmproxy.org/](https://mitmproxy.org/)\
 **Author**: [https://github.com/orgs/mitmproxy/people](https://github.com/orgs/mitmproxy/people)\
-**License**: MIT License: [https://github.com/mitmproxy/mitmproxy/blob/master/LICENSE](https://github.com/mitmproxy/mitmproxy/blob/master/LICENSE)\
+**License**: MIT License: [https://github.com/mitmproxy/mitmproxy/blob/main/LICENSE](https://github.com/mitmproxy/mitmproxy/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: mitmproxy, mitmdump, mitmweb\
 **State File**: [remnux.python3-packages.mitmproxy](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/mitmproxy.sls)
 
@@ -51,6 +56,7 @@ Capture and analyze network traffic with this console-based sniffer.
 **Website**: [https://www.wireshark.org](https://www.wireshark.org)\
 **Author**: Gerald Combs and contributors: [https://www.wireshark.org/about.html#authors](https://www.wireshark.org/about.html#authors)\
 **License**: GNU General Public License (GPL) v2: [https://www.wireshark.org/about.html#legal](https://www.wireshark.org/about.html#legal)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.tshark](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tshark.sls)
 
 ## wireshark
@@ -60,15 +66,17 @@ Capture and analyze network traffic with this sniffer.
 **Website**: [https://www.wireshark.org](https://www.wireshark.org)\
 **Author**: Gerald Combs and contributors: [https://www.wireshark.org/about.html#authors](https://www.wireshark.org/about.html#authors)\
 **License**: GNU General Public License (GPL) v2: [https://www.wireshark.org/about.html#legal](https://www.wireshark.org/about.html#legal)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.wireshark](https://github.com/REMnux/salt-states/blob/master/remnux/packages/wireshark.sls)
 
 ## tcpdump
 
 Capture and analyze network traffic with this command-line sniffer.
 
-**Website**: [https://www.tcpdump.org/](https://www.tcpdump.org)\
+**Website**: [https://www.tcpdump.org/](https://www.tcpdump.org/)\
 **Author**: [https://github.com/the-tcpdump-group/tcpdump/blob/master/CREDITS](https://github.com/the-tcpdump-group/tcpdump/blob/master/CREDITS)\
 **License**: 3-Clause BSD license: [https://www.tcpdump.org/license.html](https://www.tcpdump.org/license.html)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.tcpdump](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tcpdump.sls)
 
 ## ngrep
@@ -78,15 +86,17 @@ Look for patterns in network traffic.
 **Website**: [https://github.com/jpr5/ngrep/](https://github.com/jpr5/ngrep/)\
 **Author**: Jordan Ritter\
 **License**: Free, custom license: [https://github.com/jpr5/ngrep/blob/master/LICENSE](https://github.com/jpr5/ngrep/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.ngrep](https://github.com/REMnux/salt-states/blob/master/remnux/packages/ngrep.sls)
 
 ## tcpxtract
 
 Extract files from network traffic.
 
-**Website**: [http://tcpxtract.sourceforge.net/](http://tcpxtract.sourceforge.net)\
+**Website**: [http://tcpxtract.sourceforge.net/](http://tcpxtract.sourceforge.net/)\
 **Author**: Nick Harbour\
 **License**: GNU General Public License (GPL) v2\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.tcpxtract](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tcpxtract.sls)
 
 ## tcpflow
@@ -96,16 +106,17 @@ Analyze the flow of network traffic.
 **Website**: [https://downloads.digitalcorpora.org/downloads/tcpflow/](https://downloads.digitalcorpora.org/downloads/tcpflow/)\
 **Author**: Simson L. Garfinkel\
 **License**: GNU General Public License (GPL) v3: [https://github.com/simsong/tcpflow/blob/master/COPYING](https://github.com/simsong/tcpflow/blob/master/COPYING)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.tcpflow](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tcpflow.sls)
-
 
 ## tcpick
 
 Capture and analyze network traffic with this command-line sniffer.
 
 **Website**: [http://tcpick.sourceforge.net](http://tcpick.sourceforge.net)\
-**Author**: [http://tcpick.sourceforge.net/?t=1\&amp;p=AUTHORS](http://tcpick.sourceforge.net/?t=1\&amp;p=AUTHORS)\
+**Author**: [http://tcpick.sourceforge.net/?t=1&p=AUTHORS](http://tcpick.sourceforge.net/?t=1&p=AUTHORS)\
 **License**: GNU General Public License (GPL)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.tcpick](https://github.com/REMnux/salt-states/blob/master/remnux/packages/tcpick.sls)
 
 ## cs-parse-traffic.py
@@ -115,6 +126,7 @@ Decrypt and parse Cobalt Strike beacon network traffic.
 **Website**: [https://blog.didierstevens.com/2021/11/29/new-tool-cs-parse-traffic-py/](https://blog.didierstevens.com/2021/11/29/new-tool-cs-parse-traffic-py/)\
 **Author**: Didier Stevens: [https://x.com/DidierStevens](https://x.com/DidierStevens)\
 **License**: Public Domain\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.scripts.didier-stevens-scripts](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/didier-stevens-scripts.sls)
 
 ## monitor-network
@@ -124,5 +136,6 @@ Monitor traffic on the first active network interface using tshark, printing a l
 **Website**: [https://github.com/REMnux/distro/blob/master/files/monitor-network](https://github.com/REMnux/distro/blob/master/files/monitor-network)\
 **Author**: Lenny Zeltser\
 **License**: Public Domain\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: monitor-network [filename]\
 **State File**: [remnux.scripts.monitor-network](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/monitor-network.sls)

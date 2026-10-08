@@ -11,9 +11,9 @@ Perform static analysis of various aspects of malicious code.
 **Website**: [https://github.com/MITRECND/malchive](https://github.com/MITRECND/malchive)\
 **Author**: The MITRE Corporation, [https://github.com/MITRECND/malchive/graphs/contributors](https://github.com/MITRECND/malchive/graphs/contributors)\
 **License**: Apache License 2.0: [https://github.com/MITRECND/malchive/blob/main/LICENSE](https://github.com/MITRECND/malchive/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: Malchive command-line tools start with the prefix `malutil-`. See [utilities documentation](https://github.com/MITRECND/malchive/wiki/Utilities) for details.\
 **State File**: [remnux.python3-packages.malchive](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malchive.sls)
-
 
 ## Speakeasy
 
@@ -22,11 +22,9 @@ Emulate code execution, including shellcode, Windows drivers, and Windows PE fil
 **Website**: [https://github.com/mandiant/speakeasy](https://github.com/mandiant/speakeasy)\
 **Author**: Mandiant, Andrew Davis\
 **License**: MIT License: [https://github.com/mandiant/speakeasy/blob/master/LICENSE.txt](https://github.com/mandiant/speakeasy/blob/master/LICENSE.txt)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: To run the tool, use `speakeasy`, `emu_exe.py`, and `emu_dll.py` commands.\
 **State File**: [remnux.python3-packages.speakeasy](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/speakeasy.sls)
-
-
-
 
 ## binee (Binary Emulation Environment)
 
@@ -35,7 +33,9 @@ Analyze I/O operations of a suspicious PE file by emulating its execution.
 **Website**: [https://github.com/carbonblack/binee](https://github.com/carbonblack/binee)\
 **Author**: Carbon Black, Kyle Gwinnup, John Holowczak\
 **License**: GNU General Public License (GPL) v2: [https://github.com/carbonblack/binee/blob/master/LICENSE](https://github.com/carbonblack/binee/blob/master/LICENSE)\
-**Notes**: Before using this tool, place the files your sample requires under /opt/binee-files/win10\_32. For example, the Windows DLLs it needs should go /opt/binee-files/win10\_32/windows/system32. If you have a Windows 10 64-bit system, you can get the 32-bit DLLs from C:\Windows\SysWOW64 To check which DLLs you might need by examining the import table using the "-i" parameter.\
+**Available on**: Intel/AMD (amd64) only\
+**Alternative on arm64**: Use speakeasy or qiling instead.\
+**Notes**: Before using this tool, place the files your sample requires under /opt/binee-files/win10_32. For example, the Windows DLLs it needs should go /opt/binee-files/win10_32/windows/system32. If you have a Windows 10 64-bit system, you can get the 32-bit DLLs from C:\Windows\SysWOW64 To  check which DLLs you might need by examining the import table using the "-i" parameter.\
 **State File**: [remnux.packages.binee](https://github.com/REMnux/salt-states/blob/master/remnux/packages/binee.sls)
 
 ## mbcscan
@@ -55,6 +55,5 @@ Detect suspicious capabilities in PE files.
 **Website**: [https://github.com/mandiant/capa](https://github.com/mandiant/capa)\
 **Author**: Mandiant, Willi Ballenthin: [https://x.com/williballenthin](https://x.com/williballenthin), Moritz Raabe: [https://x.com/m_r_tz](https://x.com/m_r_tz)\
 **License**: Apache License 2.0: [https://github.com/mandiant/capa/blob/master/LICENSE.txt](https://github.com/mandiant/capa/blob/master/LICENSE.txt)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.tools.capa](https://github.com/REMnux/salt-states/blob/master/remnux/tools/capa.sls)
-
-

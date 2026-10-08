@@ -11,17 +11,18 @@ Perform a variety of forensics and incident response tasks using this DFIR frame
 **Website**: [https://github.com/fox-it/dissect](https://github.com/fox-it/dissect)\
 **Author**: Dissect Team: dissect@fox-it.com\
 **License**: GNU Affero General Public License v3: [https://github.com/fox-it/dissect/blob/main/LICENSE](https://github.com/fox-it/dissect/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: acquire, target-fs, rdump, rgeoip, target-query, target-shell, target-dump, target-info, target-reg, target-dd, target-mount\
 **State File**: [remnux.python3-packages.dissect](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dissect.sls)
-
 
 ## time-decode
 
 Decode and encode date and timestamps.
 
-**Website**: [https://github.com/digitalsleuth/time\_decode](https://github.com/digitalsleuth/time_decode)\
+**Website**: [https://github.com/digitalsleuth/time_decode](https://github.com/digitalsleuth/time_decode)\
 **Author**: Corey Forman\
-**License**: MIT License: [https://github.com/digitalsleuth/time\_decode/blob/master/LICENSE](https://github.com/digitalsleuth/time_decode/blob/master/LICENSE)\
+**License**: MIT License: [https://github.com/digitalsleuth/time_decode/blob/master/LICENSE](https://github.com/digitalsleuth/time_decode/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.python3-packages.time-decode](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/time-decode.sls)
 
 ## malwoverview
@@ -31,7 +32,8 @@ Query public repositories of malware data (e.g., VirusTotal, HybridAnalysis).
 **Website**: [https://github.com/alexandreborges/malwoverview](https://github.com/alexandreborges/malwoverview)\
 **Author**: Alexandre Borges\
 **License**: GNU General Public License v3: [https://github.com/alexandreborges/malwoverview/blob/master/LICENSE](https://github.com/alexandreborges/malwoverview/blob/master/LICENSE)\
-**Notes**: malwoverview, add API keys to \~/.malwapi.conf\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
+**Notes**: malwoverview, add API keys to ~/.malwapi.conf\
 **State File**: [remnux.python3-packages.malwoverview](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/malwoverview.sls)
 
 ## ipwhois
@@ -41,7 +43,8 @@ Retrieve and parse whois data for IP addresses.
 **Website**: [https://github.com/secynic/ipwhois](https://github.com/secynic/ipwhois)\
 **Author**: Philip Hane\
 **License**: BSD 2-Clause "Simplified" License: [https://github.com/secynic/ipwhois/blob/master/LICENSE.txt](https://github.com/secynic/ipwhois/blob/master/LICENSE.txt)\
-**Notes**: ipwhois\_cli.py, ipwhois\_utils\_cli.py\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
+**Notes**: ipwhois_cli, ipwhois_utils_cli\
 **State File**: [remnux.python3-packages.ipwhois](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ipwhois.sls)
 
 ## pdnstool
@@ -51,6 +54,7 @@ Query passive DNS databases for DNS data.
 **Website**: [https://github.com/chrislee35/passivedns-client](https://github.com/chrislee35/passivedns-client)\
 **Author**: Chris Lee\
 **License**: MIT License: [https://github.com/chrislee35/passivedns-client/blob/master/LICENSE.txt](https://github.com/chrislee35/passivedns-client/blob/master/LICENSE.txt)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.rubygems.pdnstool](https://github.com/REMnux/salt-states/blob/master/remnux/rubygems/pdnstool.sls)
 
 ## DeXRAY
@@ -60,6 +64,7 @@ Extract and decode data from antivirus quarantine files.
 **Website**: [https://www.hexacorn.com/blog/category/software-releases/dexray/](https://www.hexacorn.com/blog/category/software-releases/dexray/)\
 **Author**: Hexacorn\
 **License**: Free; copyright by Hexacorn.com: [https://hexacorn.com/d/DeXRAY.pl](https://hexacorn.com/d/DeXRAY.pl)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: dexray\
 **State File**: [remnux.scripts.dexray](https://github.com/REMnux/salt-states/blob/master/remnux/scripts/dexray.sls)
 
@@ -88,8 +93,9 @@ Search VirusTotal for file hashes.
 Carve contents out of binary files, such as partitions.
 
 **Website**: [https://github.com/sleuthkit/scalpel](https://github.com/sleuthkit/scalpel)\
-**Author**: Golden G. Richard III, Vassil Roussev\
+**Author**: Golden G. Richard III,  Vassil Roussev\
 **License**: Apache License 2.0: [https://github.com/sleuthkit/scalpel/blob/master/LICENSE-2.0.txt](https://github.com/sleuthkit/scalpel/blob/master/LICENSE-2.0.txt)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **State File**: [remnux.packages.scalpel](https://github.com/REMnux/salt-states/blob/master/remnux/packages/scalpel.sls)
 
 ## nsrllookup
@@ -108,6 +114,7 @@ Identify and classify malware samples using Yara rules.
 **Website**: [https://virustotal.github.io/yara/](https://virustotal.github.io/yara/)\
 **Author**: [https://github.com/VirusTotal/yara/blob/master/AUTHORS](https://github.com/VirusTotal/yara/blob/master/AUTHORS)\
 **License**: BSD 3-Clause "New" or "Revised" License: [https://github.com/VirusTotal/yara/blob/master/COPYING](https://github.com/VirusTotal/yara/blob/master/COPYING)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: yara\
 **State File**: [remnux.packages.yara](https://github.com/REMnux/salt-states/blob/master/remnux/packages/yara.sls)
 
@@ -127,9 +134,9 @@ Python library to encode/decode DNS wire-format packets.
 **Website**: [https://github.com/paulc/dnslib](https://github.com/paulc/dnslib)\
 **Author**: Paul Chakravarti\
 **License**: BSD 2-Clause "Simplified" License: [https://github.com/paulc/dnslib/blob/master/LICENSE](https://github.com/paulc/dnslib/blob/master/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: Library - /opt/dnslib/bin/python3 - import dnslib\
 **State File**: [remnux.python3-packages.dnslib](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/dnslib.sls)
-
 
 ## YARA-X
 
@@ -138,6 +145,7 @@ Scan files using YARA rules, the next generation of YARA written in Rust.
 **Website**: [https://github.com/VirusTotal/yara-x](https://github.com/VirusTotal/yara-x)\
 **Author**: Victor M. Alvarez, VirusTotal: [https://github.com/VirusTotal](https://github.com/VirusTotal)\
 **License**: BSD-3-Clause License: [https://github.com/VirusTotal/yara-x/blob/main/LICENSE](https://github.com/VirusTotal/yara-x/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: yr scan, yr compile. Coexists with classic YARA; uses `yr` command.\
 **State File**: [remnux.tools.yara-x](https://github.com/REMnux/salt-states/blob/master/remnux/tools/yara-x.sls)
 
@@ -148,5 +156,16 @@ Parse Windows Event Trace Log (ETL) files.
 **Website**: [https://github.com/airbus-cert/etl-parser](https://github.com/airbus-cert/etl-parser)\
 **Author**: Airbus CERT: [https://github.com/airbus-cert](https://github.com/airbus-cert)\
 **License**: Apache License 2.0: [https://github.com/airbus-cert/etl-parser/blob/main/LICENSE](https://github.com/airbus-cert/etl-parser/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: Convert a trace to XML with `etl2xml -i input.etl -o output.xml`. REMnux adds a schema so that AMSI traces captured with `logman` decode as well.\
 **State File**: [remnux.python3-packages.etl-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/etl-parser.sls)
+
+## ioc_parser
+
+Extract IOCs from security report PDFs.
+
+**Website**: [https://github.com/buffer/ioc_parser](https://github.com/buffer/ioc_parser)\
+**Author**: Armin Buescher\
+**License**: MIT License: [https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt](https://github.com/buffer/ioc_parser/blob/master/LICENSE.txt)\
+**Available on**: Intel/AMD (amd64) and ARM (arm64)\
+**State File**: [remnux.python3-packages.ioc-parser](https://github.com/REMnux/salt-states/blob/master/remnux/python3-packages/ioc-parser.sls)
