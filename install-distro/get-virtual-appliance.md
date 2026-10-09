@@ -8,28 +8,28 @@ REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
-The REMnux virtual appliance is approximately 9 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
+The REMnux virtual appliance is approximately 8 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
 
 Choose the file for your system's processor, then the one for your hypervisor. Apple M-series Macs need the arm64 files, which are coming soon. On an Intel or AMD system, if in doubt, get the General OVA file.
 
 {% tabs %}
 {% tab title="Intel or AMD (amd64)" %}
-**General OVA** works with most hypervisors. [Download the general OVA file.](https://download.remnux.org/202602/remnux-noble-amd64.ova)
+**General OVA** works with most hypervisors. [Download the general OVA file.](https://download.remnux.org/202610/remnux-noble-amd64.ova)
 
 ```
-1b10f522671d42b5fac60238d660871001ecdd94474aace55e0ef2b88e2bdecb
+56d41f42f65c7463f62f0e5052a489ef564f062486716e09c953406f6ad01a7d
 ```
 
-**VirtualBox OVA** is specifically for VirtualBox. [Download the VirtualBox OVA file.](https://download.remnux.org/202602/remnux-noble-amd64-virtualbox.ova)
+**VirtualBox OVA** is specifically for VirtualBox. [Download the VirtualBox OVA file.](https://download.remnux.org/202610/remnux-noble-amd64-virtualbox.ova)
 
 ```
-1ba3196ad82f3536954404546aa510ff09cf0c6c0567847272a9389e2e160a7b
+6f50160d929b6e222062b8ec90ea72f29b749d190f016e16a322a23fd35806d7
 ```
 
-**Proxmox QCOW2** is specifically for Proxmox. [Download the Proxmox QCOW2 file.](https://download.remnux.org/202601/remnux-noble-amd64-proxmox.qcow2)
+**Proxmox QCOW2** is specifically for Proxmox. [Download the Proxmox QCOW2 file.](https://download.remnux.org/202610/remnux-noble-amd64-proxmox.qcow2)
 
 ```
-95adcfd293b29aee77c0c95b2d0a9a7f8f2f7829c49f20b3def16b5b28638e93
+a993c2aed3f8d3b903ba5cbc3a9c4a9d9683aa0f05894d4fdae922c41c4949c8
 ```
 {% endtab %}
 
