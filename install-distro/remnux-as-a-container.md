@@ -4,7 +4,7 @@ You can run the REMnux distro as a [Docker](https://www.docker.com) container by
 
 ## Local Interactive Shell
 
-If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image (approximately 11 GB) if your system doesn't already have it.
+If you have Docker installed, you can start the REMnux distro container in interactive mode, as explained below. The following command will automatically download the distro image (approximately 6 GB to download and 14 GB on disk) if your system doesn't already have it.
 
 To run the REMnux version built on top of Ubuntu 24.04 (Noble):
 
