@@ -81,7 +81,7 @@ ENV LC_ALL=C.UTF-8
 Use `ARG` to define version numbers as build-time variables. This makes it easy to update the tool version later without changing multiple lines:
 
 ```text
-ARG R2VER=6.0.8
+ARG R2VER=6.2.4
 ```
 
 ### Package Installation
@@ -117,14 +117,17 @@ RUN groupadd -r nonroot && \
 The installation steps vary by tool. The radare2 Dockerfile downloads a `.deb` package from a GitHub release and installs it using `apt-get`, which also resolves any dependencies the package requires. The `ARG` variable defined earlier keeps the version number in one place:
 
 ```text
-RUN wget -q -O /tmp/radare2_${R2VER}_amd64.deb \
-    https://github.com/radareorg/radare2/releases/download/${R2VER}/radare2_${R2VER}_amd64.deb && \
+RUN ARCH=$(dpkg --print-architecture) && \
+    wget -q -O /tmp/radare2.deb \
+    https://github.com/radareorg/radare2/releases/download/${R2VER}/radare2_${R2VER}_${ARCH}.deb && \
     apt-get update && \
-    apt-get install -y /tmp/radare2_${R2VER}_amd64.deb && \
+    apt-get install -y /tmp/radare2.deb && \
     (apt-get remove --purge -y libradare2-common 2>/dev/null || true) && \
-    rm -f /tmp/radare2_${R2VER}_amd64.deb && \
+    rm -f /tmp/radare2.deb && \
     rm -rf /var/lib/apt/lists/*
 ```
+
+The REMnux maintainer publishes each image for amd64 and, when the tool supports it, for arm64. To support both architectures, choose each download with `dpkg --print-architecture`, which reports the architecture of the image Docker is building. If your tool exists only for amd64, say so in the Dockerfile's header comments.
 
 ### Final Directives
 
@@ -182,6 +185,15 @@ Test the following inside the container:
 * The non-root user is active (check with `whoami`).
 * Volume mounting works: run with `-v ~/workdir:/home/nonroot/workdir` and verify files are accessible.
 
+If the tool supports arm64, build and test an arm64 image too:
+
+```text
+docker buildx build --platform linux/arm64 -t image-name .
+docker run --rm -it --platform linux/arm64 image-name bash
+```
+
+On an amd64 system, Docker builds and runs the arm64 image through emulation, which takes longer.
+
 ## 4. Handle File and Network Interactions
 
 The container is isolated from the host system: by default it can communicate over the network in the outbound direction, but won't accept inbound traffic. If the container is invoked with the `--rm` parameter, its contents disappear after it stops running. When building the image, anticipate the user's need to communicate with the application inside the container over the network or to pass files in and out of the container.
@@ -213,5 +225,5 @@ Once you have a working, tested Dockerfile in the local copy of the REMnux/docke
 If the pull request isn't working, consider submitting the file to Lenny Zeltser [by email](https://zeltser.com/contact).
 
 {% hint style="info" %}
-After accepting the pull request, the REMnux maintainer handles building and publishing the Docker image to [Docker Hub](https://hub.docker.com/u/remnux). You don't need to push the image yourself.
+After accepting the pull request, the REMnux maintainer builds the image on GitHub Actions and publishes it to [Docker Hub](https://hub.docker.com/u/remnux). You don't need to push the image yourself.
 {% endhint %}

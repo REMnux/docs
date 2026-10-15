@@ -10,6 +10,8 @@ Docker is installed as part of the REMnux distro. If you're planning to run REMn
 
 The following Docker images of malware analysis tools are available as part of REMnux. If you have the expertise, consider adding to this collection by [contributing a Dockerfile](../get-involved/add-or-update-tools/contribute-dockerfile.md) to the REMnux toolkit.
 
+The Radare2, Rizin, Binary Refinery, and PyLingual images run on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64). Docker downloads the version that matches your processor, such as arm64 on Apple's M-series Macs. The Thug, JSC Deobfuscator, and RetDec images are amd64-only, because some of their components exist only for that architecture. To run one of them on an arm64 system, add `--platform linux/amd64` to the `docker run` command. Docker Desktop then runs the image through emulation, which is slower than running it natively.
+
 ## Thug Low-Interaction Honeyclient <a href="#thug" id="thug"></a>
 
 [Thug](https://github.com/buffer/thug) is a low-interaction honeyclient for examining suspicious websites. This tool was created by Angelo Dell'Aera. It's licensed under [GNU General Public License (GPL) v2](https://github.com/buffer/thug/blob/master/LICENSE.txt). In addition to being available as a Docker image, [Thug is also installed](../discover-the-tools/explore+network+interactions/connecting.md#thug) as part of the REMnux distro.
