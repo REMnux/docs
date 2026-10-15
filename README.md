@@ -6,7 +6,7 @@ description: REMnux Documentation
 
 <figure><img src=".gitbook/assets/remnux-banner.png" alt=""><figcaption></figcaption></figure>
 
-This site provides documentation for [REMnux](https://remnux.org/)®, a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools. The toolkit also includes AI-powered capabilities that let AI assistants [run REMnux tools automatically](tips/using-ai.md).
+This site provides documentation for [REMnux](https://remnux.org/)®, a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware hands-on or by directing AI agents, without having to find, install, and configure the tools. The [REMnux MCP server](tips/using-ai.md) provides those agents with guidance on which tools to run and how to interpret the results.
 
 ## Install the REMnux Distro
 
