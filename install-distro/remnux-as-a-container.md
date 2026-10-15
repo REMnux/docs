@@ -13,7 +13,7 @@ docker run --rm -it -u remnux remnux/remnux-distro:noble bash
 ```
 
 {% hint style="info" %}
-The REMnux container image is available for amd64 only. To run it on an arm64 system, add `--platform linux/amd64` after `docker run` in the commands on this page. The container will then run under amd64 emulation, which is slower. Docker Desktop includes this emulation. On Linux, set it up first, as explained in [Docker's documentation](https://docs.docker.com/build/building/multi-platform/).
+The image runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Docker downloads the image that matches your system. Some tools are unavailable on arm64, as listed at the end of this page.
 {% endhint %}
 
 To map a local directory into the container's /home/remnux/files directory, you could use a command like this, supplying the appropriate directory name:
@@ -44,5 +44,23 @@ To minimize the container image size, the following tools are not included:
 * **Wine and Wine-dependent tools**: scdbg, ssview, shellcode2exe-bat, and runsc.
 
 To install these tools, run `remnux install --user remnux` in the container to upgrade to a full installation. Alternatively, selectively install packages using `apt update` followed by `apt install code`, `apt install scdbg`, etc.
+
+## Tools Unavailable on ARM Systems
+
+On arm64 systems, the container lacks the following tools, because REMnux supports them only on amd64:
+
+* **binee**: Use speakeasy or qiling instead.
+* **Bytehist**: No alternative identified.
+* **edb**: Use gdb or radare2 instead.
+* **js_unshroud**: No alternative identified.
+* **Malcat Lite**: Use Ghidra or radare2 instead.
+* **r2mcp**: No alternative identified.
+* **RAR**: To extract RAR archives, use unrar or 7zz instead.
+* **SpiderMonkey (Patched)**: Use js115 instead.
+* **STPyV8**: No alternative identified.
+* **thug**: Run thug on an amd64 system, for example in the remnux/thug container.
+* **TrID**: Use `file` or Detect It Easy instead.
+
+Some tools run with limits on arm64. Vivisect lacks its graphical interface, and peepdf-3 can't emulate JavaScript. Burp Suite's built-in browser doesn't run, and Ghidra can't open 7-Zip archives. To check any tool's availability and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
 
 For more details about Docker images available as part of the REMnux toolkit, see [Docker Images of Malware Analysis Tools](../run-tools-in-containers/remnux-containers.md).
