@@ -137,7 +137,7 @@ Compress and decompress files using a variety of algorithms.
 **Author**: Alexander Roshal\
 **License**: Shareware: "Anyone may use this software during a test period of 40 days. Following this test period of 40 days or less, if you wish to continue to use RAR, you must purchase a license." For details, see [https://www.rarlab.com/license.htm.](https://www.rarlab.com/license.htm.)\
 **Available on**: Intel/AMD (amd64) only\
-**Alternative on arm64**: To extract RAR archives, use unrar or 7zz instead.\
+**Alternative on arm64**: To extract RAR archives, use 7zz instead.\
 **Notes**: rar\
 **State File**: [remnux.packages.rar](https://github.com/REMnux/salt-states/blob/master/remnux/packages/rar.sls)
 
