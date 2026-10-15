@@ -10,11 +10,11 @@ REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm
 
 The REMnux virtual appliance is approximately 8 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
 
-Choose the file for your system's processor, then the one for your hypervisor. Apple M-series Macs need the arm64 files, which are coming soon. On an Intel or AMD system, if in doubt, get the General OVA file.
+Choose the file for your system's processor, then the one for your hypervisor. Apple M-series Macs need the arm64 files. On an Intel or AMD system with another hypervisor, try the VMware OVA file.
 
 {% tabs %}
 {% tab title="Intel or AMD (amd64)" %}
-**General OVA** works with most hypervisors. [Download the general OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64.ova)
+**VMware OVA** is for VMware Workstation and for VMware Fusion on Intel Macs. Other hypervisors that accept OVA files can import it too. [Download the VMware OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64.ova)
 
 ```
 060acb0087c7ae6d138d7a994f5a1daf957fe3f9d0fdf72012b2c43e88876ef9
@@ -36,12 +36,19 @@ a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 {% tab title="ARM (arm64)" %}
 Use these files on Apple M-series Macs and other 64-bit ARM systems.
 
-| Hypervisor    | File        |
-| ------------- | ----------- |
-| VMware Fusion | Coming soon |
-| UTM           | Coming soon |
+**VMware Fusion ZIP** is specifically for VMware Fusion. [Download the Fusion ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-fusion.zip)
 
-Until they're available, you can [install REMnux from scratch](install-from-scratch.md) on Ubuntu 24.04 for arm64.
+```
+d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
+```
+
+**UTM ZIP** is specifically for UTM. [Download the UTM ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-utm.zip)
+
+```
+59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
+```
+
+The arm64 appliance lacks the tools that REMnux supports only on amd64. They include Wine and the tools that depend on it, such as scdbg, plus the tools [listed for the container](remnux-as-a-container.md#tools-unavailable-on-arm-systems).
 {% endtab %}
 {% endtabs %}
 
@@ -97,11 +104,17 @@ If you experience an unresponsive keyboard, mouse, or broken clipboard/copy-past
 2. Find the line `#WaylandEnable=false` and uncomment it by removing the `#`, so it reads `WaylandEnable=false`.
 3. Reboot your REMnux virtual machine.
 
+### VMware Fusion and UTM on Apple M-series Macs
+
+The arm64 files are ZIP archives. Unzip the file you downloaded. Then open the `.vmwarevm` folder in VMware Fusion, or the `.utm` file in UTM.
+
+Newer versions of Fusion may ask whether to upgrade the virtual machine. Either answer works. If you might also open the virtual machine in Fusion 13, choose not to upgrade it.
+
 ### Hyper-V
 
 It's possible to import the pre-built REMnux virtual appliance into Hyper-V, but you'll need to take a few conversion steps. You'll need to extract the contents of the REMnux OVA file to obtain the enclosed VMDK file that captures the virtual disk of the distro, then convert it to the VHD format supported by Hyper-V:
 
-1. Download the General OVA of the REMnux distro, as [outlined above](get-virtual-appliance.md#download-virtual-appliance).
+1. Download the VMware OVA of the REMnux distro, as [outlined above](get-virtual-appliance.md#download-virtual-appliance).
 2. Extract the downloaded OVA file using a tool such as "tar". One of the extracted files will have the .vmdk.gz name, such as remnux-noble-disk1.vmdk.gz.
 3. Decompress the extracted .vmdk.gz file using a tool such as "gunzip" to generate a file with the .vmdk extension.
 4. Use [qemu-img](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) (`qemu-img convert -O vhdx -o subformat=dynamic`) or [StarWind V2V Converter](https://www.starwindsoftware.com/starwind-v2v-converter) to convert the .vmdk file to the VHD format supported by Hyper-V.
@@ -142,8 +155,6 @@ The QCOW2 image is pre-configured with:
 * spice-vdagent (clipboard, display resize)
 
 If REMnux is stuck at a low resolution (such as 640x480) in Proxmox, run `remnux install` and reboot.
-
-Alternative: You can also [import the general OVA](https://syncbricks.com/how-to-import-ova-to-proxmox/) using CPU type `qemu64`. For the first boot, set the display to Standard VGA (not SPICE). After booting, run `remnux install` to install guest tools and apply display fixes. You can then switch to SPICE for better graphics.
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
