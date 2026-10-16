@@ -58,7 +58,7 @@ d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
 ```
 
-**Proxmox QCOW2** is for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) on ARM hosts, which Proxmox supports starting with version 9.2. Follow the [ARM steps](get-virtual-appliance.md#proxmox-on-arm) to import it.
+**Proxmox QCOW2** is for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) on ARM hosts. Follow the [ARM steps](get-virtual-appliance.md#proxmox-on-arm) to import it.
 
 <a href="https://download.remnux.org/202610b/remnux-noble-arm64-proxmox.qcow2" class="button secondary" data-icon="download">Download Proxmox QCOW2</a>
 
