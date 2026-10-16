@@ -1,10 +1,6 @@
 # Add to an Existing System
 
-You can add REMnux to an existing system based on Ubuntu 24.04 by following instructions below. This configuration doesn't modify your system's look and feel, so you won't have the experience of the full REMnux environment. For the full experience, consider using the [REMnux virtual appliance](get-virtual-appliance.md) or [installing REMnux from scratch](install-from-scratch.md).
-
-{% hint style="success" %}
-REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Some tools and features are unavailable on arm64. To check a tool's availability, limitations, and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
-{% endhint %}
+You can add REMnux to an existing system based on Ubuntu 24.04 by following instructions below. This configuration doesn't modify your system's look and feel, so you won't have the experience of the full REMnux environment. For the full experience, consider using the [REMnux virtual appliance](get-virtual-appliance.md) or [installing REMnux from scratch](install-from-scratch.md). On 64-bit ARM (arm64) systems, some tools are unavailable. To check a tool, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
 
 ## Step 1: Get the REMnux Installer <a href="#get-remnux-installer" id="get-remnux-installer"></a>
 
