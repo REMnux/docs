@@ -1,6 +1,6 @@
 # Get the Virtual Appliance
 
-The easiest way to get the REMnux distro is to download the prebuilt REMnux virtual appliance, import it into your hypervisor, then [run the update command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
+The easiest way to get the REMnux distro is to download the prebuilt REMnux virtual appliance, import it into your hypervisor, then [run the update command](keep-the-distro-up-to-date.md) to make sure it's up-to-date. On AWS, you can [launch the REMnux AMI](run-remnux-on-aws.md) instead.
 
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
@@ -33,6 +33,10 @@ a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 ```
 9ef87306cd9b982de9109d08627040a15b2eb9d75040c9ceeffabce1a0004568
 ```
+
+**Amazon EC2 AMI** is for running REMnux on Intel or AMD instances in AWS, instead of downloading a file. Choose it for those instance types whatever processor your own computer has.
+
+<a href="run-remnux-on-aws.md" class="button secondary" data-icon="cloud">Run REMnux on AWS</a>
 {% endtab %}
 
 {% tab title="ARM (arm64)" %}
@@ -53,6 +57,10 @@ d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 ```
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
 ```
+
+**Amazon EC2 AMI** is for running REMnux on Graviton instances in AWS, instead of downloading a file. Choose it for those instance types whatever processor your own computer has.
+
+<a href="run-remnux-on-aws.md" class="button secondary" data-icon="cloud">Run REMnux on AWS</a>
 
 The arm64 appliance lacks the tools that REMnux supports only on amd64. They include Wine and the tools that depend on it, such as scdbg, plus the tools [listed for the container](remnux-as-a-container.md#tools-unavailable-on-arm-systems).
 {% endtab %}
@@ -76,6 +84,8 @@ There is no logon screen for accessing the REMnux environment, because analysts 
 Username: `remnux`\
 Password: `malware`
 {% endhint %}
+
+These credentials apply to the downloadable virtual appliance. On instances launched from the [REMnux AMIs](run-remnux-on-aws.md), the `remnux` password is locked. You sign in to them over SSH with your key pair.
 
 If necessary, [change the keyboard layout](../tips/remnux-config-tips.md#keyboard-layout-change) of your system to match your locale and setup.
 
@@ -129,6 +139,8 @@ It's possible to import the pre-built REMnux virtual appliance into Hyper-V, but
 For an overview of this process, see the video [How To Install REMnux on Windows 10 Hyper-V](https://www.youtube.com/watch?v=d8uyVi0nH-U) by Cyrus.
 
 ### Remote Cloud, Such as AWS
+
+To run REMnux on AWS, [launch the REMnux AMI](run-remnux-on-aws.md) instead. It has SSH turned on and set to accept only your key pair. The steps below are for running the virtual appliance in other cloud environments.
 
 The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
 

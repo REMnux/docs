@@ -28,6 +28,8 @@ Install Ubuntu 24.04 using the downloaded ISO installer:
    * Server's name: `remnux`
    * Username: `remnux`
    * Password: `malware`
+
+   If people will reach this system over a network, such as in a cloud, choose a strong password instead.
 9. Skip the Ubuntu Pro setup.
 10. Don't install OpenSSH server unless you need remote access.
 11. Don't select any additional snaps to install.

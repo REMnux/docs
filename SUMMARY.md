@@ -5,6 +5,7 @@
 ## Install the Distro <a href="#install-distro" id="install-distro"></a>
 
 * [Get the Virtual Appliance](install-distro/get-virtual-appliance.md)
+* [Run REMnux on AWS](install-distro/run-remnux-on-aws.md)
 * [Install from Scratch](install-distro/install-from-scratch.md)
 * [Add to an Existing System](install-distro/add-to-existing-system.md)
 * [Run REMnux as a Container](install-distro/remnux-as-a-container.md)
