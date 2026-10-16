@@ -26,7 +26,7 @@ Choose the file for your system's processor, then the one for your hypervisor. A
 a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 ```
 
-**Proxmox QCOW2** is specifically for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview).
+**Proxmox QCOW2** is specifically for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) on Intel or AMD hosts. To import it, follow the steps in [Proxmox on Intel or AMD](get-virtual-appliance.md#proxmox).
 
 <a href="https://download.remnux.org/202610b/remnux-noble-amd64-proxmox.qcow2" class="button secondary" data-icon="download">Download Proxmox QCOW2</a>
 
@@ -58,7 +58,7 @@ d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
 ```
 
-**Proxmox QCOW2** is for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) on ARM hosts. Follow the [ARM steps](get-virtual-appliance.md#proxmox-on-arm) to import it.
+**Proxmox QCOW2** is for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) on ARM hosts. To import it, follow the steps in [Proxmox on ARM](get-virtual-appliance.md#proxmox-on-arm).
 
 <a href="https://download.remnux.org/202610b/remnux-noble-arm64-proxmox.qcow2" class="button secondary" data-icon="download">Download Proxmox QCOW2</a>
 
@@ -162,9 +162,9 @@ The REMnux virtual appliance ships in "dedicated" installation mode, which autom
 
 If you converted the REMnux virtual appliance to KVM/QEMU, use Standard VGA display for the first boot. After booting, run `remnux install` to automatically install spice-vdagent (display resize, copy/paste) and other KVM guest tools. You can then switch to SPICE for better graphics.
 
-### Proxmox
+### Proxmox on Intel or AMD <a href="#proxmox" id="proxmox"></a>
 
-REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox Virtual Environment. Download it from the [Proxmox QCOW2 link above](get-virtual-appliance.md#download-virtual-appliance).
+REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox Virtual Environment. Download it from the [Proxmox QCOW2 link](get-virtual-appliance.md#download-virtual-appliance) on the Intel or AMD tab above.
 
 To import the QCOW2 file:
 
