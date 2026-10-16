@@ -58,6 +58,14 @@ d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
 ```
 
+**Proxmox QCOW2** is for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) on ARM hosts, which Proxmox supports starting with version 9.2. Follow the [ARM steps](get-virtual-appliance.md#proxmox-on-arm) to import it.
+
+<a href="https://download.remnux.org/202610b/remnux-noble-arm64-proxmox.qcow2" class="button secondary" data-icon="download">Download Proxmox QCOW2</a>
+
+```
+944940dc22b0844e97afb01359f5e511005c417d67baaf9fffa5f66453d15077
+```
+
 **Amazon EC2 AMI** is for running REMnux on Graviton instances in AWS.
 
 <a href="run-remnux-on-aws.md" class="button secondary" data-icon="cloud">Run REMnux on AWS</a>
@@ -161,10 +169,26 @@ REMnux provides a prebuilt QCOW2 virtual appliance optimized for Proxmox Virtual
 To import the QCOW2 file:
 
 1. Upload the QCOW2 file to your Proxmox storage (e.g., via SCP to `/var/lib/vz/images/`).
-2. Create a new VM with your preferred settings (recommended: 4 GB RAM, VirtIO SCSI, SPICE display).
+2. Create a new VM with the settings the REMnux maintainers tested:
+   * 2 cores, CPU type `x86-64-v2-AES`, and 4 GB RAM
+   * The VirtIO SCSI single controller
+   * A VirtIO network card on `vmbr0`
+   * SPICE display (QXL)
+   * The QEMU guest agent turned on
+   * The default SeaBIOS firmware
 3. Import the disk: `qm importdisk <vmid> /path/to/remnux-noble-amd64-proxmox.qcow2 local-lvm`
 4. Attach the imported disk: VM > Hardware > double-click "Unused Disk" > Add.
 5. Set boot order: VM > Options > Boot Order > enable the disk.
+
+The imported disk is 100 GB. On thin storage such as `local-lvm`, it will use about 20 GB at first.
+
+To create the VM from the Proxmox shell instead of steps 2, 4, and 5, run these commands. Replace `100` with an unused VM ID and `vm-100-disk-0` with the disk that `qm importdisk` reports.
+
+```
+qm create 100 --name remnux --ostype l26 --cores 2 --cpu x86-64-v2-AES --memory 4096 --scsihw virtio-scsi-single --net0 virtio,bridge=vmbr0 --vga qxl --agent enabled=1
+qm importdisk 100 /var/lib/vz/images/remnux-noble-amd64-proxmox.qcow2 local-lvm
+qm set 100 --scsi0 local-lvm:vm-100-disk-0,discard=on --boot order=scsi0
+```
 
 The QCOW2 image is pre-configured with:
 
@@ -173,6 +197,25 @@ The QCOW2 image is pre-configured with:
 * spice-vdagent (clipboard, display resize)
 
 If REMnux is stuck at a low resolution (such as 640x480) in Proxmox, run `remnux install` and reboot.
+
+### Proxmox on ARM <a href="#proxmox-on-arm" id="proxmox-on-arm"></a>
+
+The arm64 QCOW2 boots through UEFI, so its VM needs Proxmox's OVMF firmware and an EFI disk. Upload the file to your ARM Proxmox host, such as with SCP to `/var/lib/vz/images/`. Then run these commands in the host's shell, replacing `100` with an unused VM ID:
+
+```
+qm create 100 --name remnux --ostype l26 --bios ovmf --efidisk0 local-lvm:1,efitype=4m,pre-enrolled-keys=0 --cores 2 --memory 4096 --scsihw virtio-scsi-single --net0 virtio,bridge=vmbr0 --vga virtio --agent enabled=1
+qm importdisk 100 /var/lib/vz/images/remnux-noble-arm64-proxmox.qcow2 local-lvm
+qm config 100 | grep unused
+```
+
+Proxmox names the EFI disk `vm-100-disk-0`, so `qm config` usually lists the imported disk as `unused0: local-lvm:vm-100-disk-1`. Attach the disk it lists, then start the VM:
+
+```
+qm set 100 --scsi0 local-lvm:vm-100-disk-1,discard=on --boot order=scsi0
+qm start 100
+```
+
+Keep `pre-enrolled-keys=0`, which leaves Secure Boot off. Keep the disk on the VirtIO SCSI controller too, because Proxmox's ARM firmware can't boot from a SATA disk.
 
 ## Step 6: Upgrade the REMnux Virtual Machine <a href="#upgrade-remnux" id="upgrade-remnux"></a>
 
