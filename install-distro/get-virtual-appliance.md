@@ -2,10 +2,6 @@
 
 The easiest way to get the REMnux distro is to download the prebuilt REMnux virtual appliance, import it into your hypervisor, then [run the update command](keep-the-distro-up-to-date.md) to make sure it's up-to-date.
 
-{% hint style="success" %}
-REMnux runs on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64), such as Apple's M-series chips. Some tools and features are unavailable on arm64. To check a tool's availability, limitations, and alternatives, look it up in [Discover the Tools](../discover-the-tools/examine+static+properties/).
-{% endhint %}
-
 ## Step 1: Download the Virtual Appliance File <a href="#download-virtual-appliance" id="download-virtual-appliance"></a>
 
 The REMnux virtual appliance is approximately 8 GB. It's based on Ubuntu 24.04 (Noble), and is available in several formats.
@@ -14,19 +10,19 @@ Choose the file for your system's processor, then the one for your hypervisor. A
 
 {% tabs %}
 {% tab title="Intel or AMD (amd64)" %}
-**VMware OVA** is for VMware Workstation and for VMware Fusion on Intel Macs. Other hypervisors that accept OVA files can import it too. [Download the VMware OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64.ova)
+**VMware OVA** is for [VMware Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and for [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) on Intel Macs. Other hypervisors that accept OVA files can import it too. [Download the VMware OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64.ova)
 
 ```
 060acb0087c7ae6d138d7a994f5a1daf957fe3f9d0fdf72012b2c43e88876ef9
 ```
 
-**VirtualBox OVA** is specifically for VirtualBox. [Download the VirtualBox OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64-virtualbox.ova)
+**VirtualBox OVA** is specifically for [VirtualBox](https://www.virtualbox.org/). [Download the VirtualBox OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64-virtualbox.ova)
 
 ```
 a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 ```
 
-**Proxmox QCOW2** is specifically for Proxmox. [Download the Proxmox QCOW2 file.](https://download.remnux.org/202610b/remnux-noble-amd64-proxmox.qcow2)
+**Proxmox QCOW2** is specifically for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview). [Download the Proxmox QCOW2 file.](https://download.remnux.org/202610b/remnux-noble-amd64-proxmox.qcow2)
 
 ```
 9ef87306cd9b982de9109d08627040a15b2eb9d75040c9ceeffabce1a0004568
@@ -36,13 +32,13 @@ a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 {% tab title="ARM (arm64)" %}
 Use these files on Apple M-series Macs and other 64-bit ARM systems.
 
-**VMware Fusion ZIP** is specifically for VMware Fusion. [Download the Fusion ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-fusion.zip)
+**VMware Fusion ZIP** is specifically for [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). [Download the Fusion ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-fusion.zip)
 
 ```
 d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 ```
 
-**UTM ZIP** is specifically for UTM. [Download the UTM ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-utm.zip)
+**UTM ZIP** is specifically for [UTM](https://mac.getutm.app/). [Download the UTM ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-utm.zip)
 
 ```
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
