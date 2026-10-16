@@ -10,19 +10,25 @@ Choose the file for your system's processor, then the one for your hypervisor. A
 
 {% tabs %}
 {% tab title="Intel or AMD (amd64)" %}
-**VMware OVA** is for [VMware Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and for [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) on Intel Macs. Other hypervisors that accept OVA files can import it too. [Download the VMware OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64.ova)
+**VMware OVA** is for [VMware Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and for [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) on Intel Macs. Other hypervisors that accept OVA files can import it too.
+
+<a href="https://download.remnux.org/202610b/remnux-noble-amd64.ova" class="button primary" data-icon="download">Download the VMware OVA</a>
 
 ```
 060acb0087c7ae6d138d7a994f5a1daf957fe3f9d0fdf72012b2c43e88876ef9
 ```
 
-**VirtualBox OVA** is specifically for [VirtualBox](https://www.virtualbox.org/). [Download the VirtualBox OVA file.](https://download.remnux.org/202610b/remnux-noble-amd64-virtualbox.ova)
+**VirtualBox OVA** is specifically for [VirtualBox](https://www.virtualbox.org/).
+
+<a href="https://download.remnux.org/202610b/remnux-noble-amd64-virtualbox.ova" class="button primary" data-icon="download">Download the VirtualBox OVA</a>
 
 ```
 a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 ```
 
-**Proxmox QCOW2** is specifically for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview). [Download the Proxmox QCOW2 file.](https://download.remnux.org/202610b/remnux-noble-amd64-proxmox.qcow2)
+**Proxmox QCOW2** is specifically for [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview).
+
+<a href="https://download.remnux.org/202610b/remnux-noble-amd64-proxmox.qcow2" class="button primary" data-icon="download">Download the Proxmox QCOW2</a>
 
 ```
 9ef87306cd9b982de9109d08627040a15b2eb9d75040c9ceeffabce1a0004568
@@ -32,13 +38,17 @@ a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 {% tab title="ARM (arm64)" %}
 Use these files on Apple M-series Macs and other 64-bit ARM systems.
 
-**VMware Fusion ZIP** is specifically for [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). [Download the Fusion ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-fusion.zip)
+**VMware Fusion ZIP** is specifically for [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
+
+<a href="https://download.remnux.org/202610b/remnux-noble-arm64-fusion.zip" class="button primary" data-icon="download">Download the Fusion ZIP</a>
 
 ```
 d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 ```
 
-**UTM ZIP** is specifically for [UTM](https://mac.getutm.app/). [Download the UTM ZIP file.](https://download.remnux.org/202610b/remnux-noble-arm64-utm.zip)
+**UTM ZIP** is specifically for [UTM](https://mac.getutm.app/).
+
+<a href="https://download.remnux.org/202610b/remnux-noble-arm64-utm.zip" class="button primary" data-icon="download">Download the UTM ZIP</a>
 
 ```
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
