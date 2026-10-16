@@ -111,7 +111,4 @@ If you installed REMnux using one installation mode, for example `addon`, you ca
 
 ## Combining REMnux and SIFT Workstation <a href="#combine-remnux-sift" id="combine-remnux-sift"></a>
 
-You can install REMnux and [SIFT Workstation](https://www.sans.org/tools/sift-workstation/) on the same system to create a powerful toolkit for malware analysis and other digital forensics tasks. Follow the following guidelines to do this:
-
-* [Install REMnux and SIFT Workstation on a traditional Linux system.](https://www.sans.org/blog/how-to-install-sift-workstation-and-remnux-on-the-same-forensics-system/)
-* [Install REMnux and SIFT Workstation on Windows Subsystem for Linux (WSL).](https://bakerstreetforensics.com/2021/05/26/adding-sift-and-remnux-to-your-windows-forensics-environment/)
+You can install REMnux and [SIFT Workstation](https://www.sans.org/tools/sift-workstation/) on the same system to create a powerful toolkit for malware analysis and other digital forensics tasks. For instructions, see [How to Install SIFT Workstation and REMnux on the Same System](https://www.sans.org/blog/how-to-install-sift-workstation-and-remnux-on-the-same-forensics-system/).
