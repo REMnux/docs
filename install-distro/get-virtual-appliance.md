@@ -140,7 +140,7 @@ For an overview of this process, see the video [How To Install REMnux on Windows
 
 ### Remote Cloud, Such as AWS
 
-To run REMnux on AWS, [launch the REMnux AMI](run-remnux-on-aws.md). It has SSH turned on and set to accept only your key pair. The steps below are for running the virtual appliance in other cloud environments.
+You can run REMnux in a cloud environment by importing the virtual appliance into it. You can also [install REMnux from scratch](install-from-scratch.md) on a cloud VM. On AWS, you can launch the [REMnux AMI](run-remnux-on-aws.md) if you prefer. It already has SSH set up for your key pair.
 
 The REMnux virtual appliance ships in "dedicated" installation mode, which automatically turns off the SSH daemon. This configuration is generally desirable when running REMnux in a local lab. If you're deploying the virtual appliance in a cloud environment, you might need to keep SSH enabled to remotely access your REMnux system. In that case:
 
