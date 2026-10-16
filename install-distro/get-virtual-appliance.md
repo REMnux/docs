@@ -34,7 +34,7 @@ a6b164fe044a12a6c21ae1d0c1f9ebffb708cefb24ebad0607434cdbf6841f73
 9ef87306cd9b982de9109d08627040a15b2eb9d75040c9ceeffabce1a0004568
 ```
 
-**Amazon EC2 AMI** is for running REMnux on Intel or AMD instances in AWS, instead of downloading a file. Choose it for those instance types whatever processor your own computer has.
+**Amazon EC2 AMI** is for running REMnux on Intel or AMD instances in AWS.
 
 <a href="run-remnux-on-aws.md" class="button secondary" data-icon="cloud">Run REMnux on AWS</a>
 {% endtab %}
@@ -58,7 +58,7 @@ d3af2491f029068972419e3208e58800e8c9944a99e6a7e3227a5fce0273b295
 59f3035e7ac3767f4626b1670a86782f483cae7961c9d39f05c968c3245bfa48
 ```
 
-**Amazon EC2 AMI** is for running REMnux on Graviton instances in AWS, instead of downloading a file. Choose it for those instance types whatever processor your own computer has.
+**Amazon EC2 AMI** is for running REMnux on Graviton instances in AWS.
 
 <a href="run-remnux-on-aws.md" class="button secondary" data-icon="cloud">Run REMnux on AWS</a>
 
