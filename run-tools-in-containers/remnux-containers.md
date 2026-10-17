@@ -10,7 +10,7 @@ Docker is installed as part of the REMnux distro. If you're planning to run REMn
 
 The following Docker images of malware analysis tools are available as part of REMnux. If you have the expertise, consider adding to this collection by [contributing a Dockerfile](../get-involved/add-or-update-tools/contribute-dockerfile.md) to the REMnux toolkit.
 
-The Radare2, Rizin, Binary Refinery, and PyLingual images run on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64). Docker downloads the version that matches your processor, such as arm64 on Apple's M-series Macs. The Thug, JSC Deobfuscator, and RetDec images are amd64-only, because some of their components exist only for that architecture. To run one of them on an arm64 system, add `--platform linux/amd64` to the `docker run` command. Docker Desktop then runs the image through emulation, which is slower than running it natively.
+The Radare2, Rizin, Binary Refinery, PyLingual, and Sogen images run on Intel or AMD processors (amd64) and on 64-bit ARM processors (arm64). Docker downloads the version that matches your processor, such as arm64 on Apple's M-series Macs. The Thug, JSC Deobfuscator, and RetDec images are amd64-only, because some of their components exist only for that architecture. To run one of them on an arm64 system, add `--platform linux/amd64` to the `docker run` command. Docker Desktop then runs the image through emulation, which is slower than running it natively.
 
 ## Thug Low-Interaction Honeyclient <a href="#thug" id="thug"></a>
 
@@ -73,6 +73,32 @@ The bundled v8dasm disassembler targets V8 version 10.2.154.26, used by JSCeal-e
 The optional LLM-assisted function renaming needs an API key passed into the container, such as `-e ANTHROPIC_API_KEY` or `-e OPENAI_API_KEY`, or a reachable Ollama server.
 
 The remnux/jsc-deobfuscator image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/jsc-deobfuscator).
+
+## Sogen Windows User-Mode Emulator <a href="#sogen" id="sogen"></a>
+
+[Sogen](https://github.com/momo5502/sogen) emulates Windows user-mode programs on Linux. Instead of reimplementing the Windows API, it runs the real Windows system DLLs on an emulated CPU, so you can trace a program's API calls and syscalls, debug it over GDB from outside the emulated process, take snapshots, and make runs reproducible. Sogen was created by Maurice Heumann and is licensed under the [GNU General Public License (GPL) v2](https://github.com/momo5502/sogen/blob/main/LICENSE).
+
+To run Sogen, create a directory where you'll store your samples. Then, open a shell inside the container and have your local directory mapped as `/home/nonroot/workdir` inside the container:
+
+```
+docker run --rm -it -v ~/workdir:/home/nonroot/workdir remnux/sogen
+```
+
+Sogen needs an emulation root: a directory with the Windows system DLLs, registry hives, and API set map that the emulated program will see. The image doesn't include one, because Microsoft owns those files. When you open a shell in the container and no root exists in your working directory, a message explains how to get one. Run `get-sogen-root` inside the container to download the prebuilt root that the Sogen project publishes (about 180 MB, 520 MB unpacked) into `~/workdir/root`, or build your own on a Windows system by following the [Sogen wiki](https://github.com/momo5502/sogen/wiki/Run-The-Emulator). You do this once, since the root stays in your working directory.
+
+With the root in place, copy a sample into `~/workdir` and run:
+
+```
+analyzer sample.exe
+```
+
+The `analyzer` command maps the sample to `c:\` inside the emulated Windows and runs it from there. Add `-v` for verbose logging, `--report run.jsonl` for a machine-readable event log, `-s` to see only the program's own output, or `-d` to wait for a GDB connection. Run `analyzer --help` for the full list of options. Sogen runs native Windows executables. The .NET runtime files are absent from the prebuilt root, so .NET assemblies stop early with error 0x80131700. The emulated program's sockets stay inside the emulator unless you add `--network live` to the analyzer command. To keep the container itself offline as well, add `--network none` to `docker run`.
+
+{% hint style="info" %}
+To debug the emulated program from the host with GDB or IDA, publish the debug port on loopback when you start the container, such as `-p 127.0.0.1:28960:28960`, then run `analyzer -d --bind 0.0.0.0 --port 28960 sample.exe` inside it. The image's README on GitHub has the details.
+{% endhint %}
+
+The remnux/sogen image is hosted on [its Docker Hub page](https://hub.docker.com/repository/docker/remnux/sogen).
 
 ## RetDec Retargetable Machine-Code Decompiler <a href="#retdec" id="retdec"></a>
 
