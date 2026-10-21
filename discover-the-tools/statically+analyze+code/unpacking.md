@@ -59,3 +59,15 @@ Pack and unpack PE files.
 **Available on**: Intel/AMD (amd64) and ARM (arm64)\
 **Notes**: upx\
 **State File**: [remnux.packages.upx-ucl](https://github.com/REMnux/salt-states/blob/master/remnux/packages/upx-ucl.sls)
+
+## CILantro
+
+Deobfuscate and unpack .NET programs protected with .NET Reactor, ConfuserEx, Babel .NET, or Dotfuscator, without running them.
+
+**Website**: [https://github.com/jgajek/cilantro](https://github.com/jgajek/cilantro)\
+**Author**: Jacob Gajek: [https://github.com/jgajek](https://github.com/jgajek)\
+**License**: MIT License: [https://github.com/jgajek/cilantro/blob/main/LICENSE](https://github.com/jgajek/cilantro/blob/main/LICENSE)\
+**Available on**: Intel/AMD (amd64) only\
+**Alternative on arm64**: Use ILSpy to decompile .NET programs, though it doesn't deobfuscate them.\
+**Notes**: cilantro\
+**State File**: [remnux.tools.cilantro](https://github.com/REMnux/salt-states/blob/master/remnux/tools/cilantro.sls)
